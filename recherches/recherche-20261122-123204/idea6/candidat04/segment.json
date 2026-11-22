@@ -1,0 +1,40 @@
+{
+  "rang": 4,
+  "score": 0.6034,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "The holographic principle proposes that all the information contained in a volume of space can be encoded on its boundary surface, as if our three-dimensional universe were a projection from a two-dimensional surface."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=6260s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 127,
+  "debut": 6260.36,
+  "fin": 6339.04,
+  "duree_s": 78.68,
+  "temps_estime": false,
+  "titre": "Théorie des cordes et dimensions supplémentaires",
+  "resume": "To understand how bubbles of nothing could form, the narrator introduces string theory, which tries to unify general relativity and quantum physics and the four fundamental forces. It relies on assumptions that cannot yet be proven and requires more than the four observable dimensions, with at least a few extra invisible dimensions.",
+  "mots_cles": [
+    "string theory",
+    "general relativity",
+    "quantum physics",
+    "four forces",
+    "theory of everything",
+    "extra dimensions",
+    "hidden dimensions",
+    "unproven assumptions"
+  ],
+  "texte": "So, how could a bubble of nothing form in the first place? To understand how bubbles of nothing might form, we have to dive into a string theory of it. Don't worry, it won't be that bad. String theory attempts to tie together the two most basic [music] laws of physics, the theory of general relativity or gravity with quantum physics, the study of the very smallest particles that make up the universe. [music] String theory also attempts to unify the four forces in the universe, electromagnetic force, strong nuclear force, weak nuclear force, and gravity into one model. String theory may indeed turn out to be the theory of everything, but it's important to know that string theory relies on a lot of assumptions about particles and [music] forces that can't yet be proven. Don't worry, scientists aren't just blindly guessing. These assumptions are all based on solid scientific evidence and complex mathematical [music] equations. Needless to say, you'd need a PhD in physics to truly understand the intricacies of string theory. Now, the biggest problem with string theory is that it requires more than the four observable [music] dimensions to work. We can easily observe the three dimensions of space and the extra dimension of time, but for string [music] theory to work, there must be at least a few other dimensions that are invisible to us. As cool as the idea of hidden dimension sounds, it's not [music] the parallel universe you might be picturing, you know, the one where you're you but with money and power and good looks.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 158,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

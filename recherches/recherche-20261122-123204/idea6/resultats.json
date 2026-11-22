@@ -1,0 +1,131 @@
+{
+  "idee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "The holographic principle proposes that all the information contained in a volume of space can be encoded on its boundary surface, as if our three-dimensional universe were a projection from a two-dimensional surface."
+  },
+  "modele": "BAAI/bge-base-en-v1.5",
+  "nb_candidats": 10,
+  "candidats": [
+    {
+      "rang": 1,
+      "dossier": "candidat01",
+      "score": 0.8194,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 19,
+      "debut": 848.04,
+      "fin": 890.76,
+      "titre": "Le principe holographique et la réalité 3D projetée",
+      "frames": true
+    },
+    {
+      "rang": 2,
+      "dossier": "candidat02",
+      "score": 0.659,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 20,
+      "debut": 890.76,
+      "fin": 927.53,
+      "titre": "L'holographie explique l'action fantomatique et l'illusion du temps",
+      "frames": true
+    },
+    {
+      "rang": 3,
+      "dossier": "candidat03",
+      "score": 0.6452,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 76,
+      "debut": 3474.95,
+      "fin": 3519.45,
+      "titre": "Solutions proposées au paradoxe de l'information et si l'information est détruite",
+      "frames": true
+    },
+    {
+      "rang": 4,
+      "dossier": "candidat04",
+      "score": 0.6034,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 127,
+      "debut": 6260.36,
+      "fin": 6339.04,
+      "titre": "Théorie des cordes et dimensions supplémentaires",
+      "frames": true
+    },
+    {
+      "rang": 5,
+      "dossier": "candidat05",
+      "score": 0.5907,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 105,
+      "debut": 5155.57,
+      "fin": 5202.19,
+      "titre": "Trous noirs comme bouton de suppression et risque d'être débranché",
+      "frames": true
+    },
+    {
+      "rang": 6,
+      "dossier": "candidat06",
+      "score": 0.5905,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 95,
+      "debut": 4534.09,
+      "fin": 4595.59,
+      "titre": "The Matrix et l'hypothèse de la simulation selon Vopson",
+      "frames": true
+    },
+    {
+      "rang": 7,
+      "dossier": "candidat07",
+      "score": 0.5853,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 90,
+      "debut": 4205.07,
+      "fin": 4275.08,
+      "titre": "La théorie de Melvin Vopson : l'information défie l'entropie",
+      "frames": true
+    },
+    {
+      "rang": 8,
+      "dossier": "candidat08",
+      "score": 0.5843,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 21,
+      "debut": 927.53,
+      "fin": 971.77,
+      "titre": "Le dilemme terrifiant : libre arbitre ou espace-temps",
+      "frames": true
+    },
+    {
+      "rang": 9,
+      "dossier": "candidat09",
+      "score": 0.5779,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 102,
+      "debut": 5009.82,
+      "fin": 5066.79,
+      "titre": "Qui fait fonctionner la simulation ? Des univers simulés par milliards",
+      "frames": true
+    },
+    {
+      "rang": 10,
+      "dossier": "candidat10",
+      "score": 0.5778,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 101,
+      "debut": 4949.46,
+      "fin": 5009.82,
+      "titre": "Si l'univers est un programme : Wigner et l'univers participatif de Wheeler",
+      "frames": true
+    }
+  ]
+}

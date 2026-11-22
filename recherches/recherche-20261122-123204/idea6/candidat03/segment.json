@@ -1,0 +1,39 @@
+{
+  "rang": 3,
+  "score": 0.6452,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "The holographic principle proposes that all the information contained in a volume of space can be encoded on its boundary surface, as if our three-dimensional universe were a projection from a two-dimensional surface."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=3474s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 76,
+  "debut": 3474.95,
+  "fin": 3519.45,
+  "duree_s": 44.5,
+  "temps_estime": true,
+  "titre": "Solutions proposées au paradoxe de l'information et si l'information est détruite",
+  "resume": "Proposed answers include information encoded in Hawking radiation, written on the black hole's surface like a hard drive, or stored in a higher dimensional realm if space-time is an illusion. If black holes truly destroy information, every moment of history could be erased and made as if it never existed.",
+  "mots_cles": [
+    "Hawking radiation",
+    "information paradox solutions",
+    "Stephen Hawking",
+    "holographic surface",
+    "space-time illusion",
+    "higher dimensions",
+    "erased history"
+  ],
+  "texte": "Some theorists think [music] that information is somehow encoded in the Hawking radiation that black holes emit. This is residual thermal energy named after the famous [music] first proponent of the information paradox, Stephen Hawking. Others suggest it's written on the black hole's surface particle interactions, like a deep space [music] hard drive. But, some think space-time itself might be an illusion, and information [music] exists in some higher dimensional realm that we can't access. But, what if none of these solutions work? What if black holes really do destroy information? Then, everything [music] that has ever happened, every human life, every thought, every moment could theoretically be permanently erased, and not just from existence, but from the possibility of ever having existed.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 89,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

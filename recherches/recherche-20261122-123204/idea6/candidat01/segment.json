@@ -1,0 +1,39 @@
+{
+  "rang": 1,
+  "score": 0.8194,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "The holographic principle proposes that all the information contained in a volume of space can be encoded on its boundary surface, as if our three-dimensional universe were a projection from a two-dimensional surface."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=848s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 19,
+  "debut": 848.04,
+  "fin": 890.76,
+  "duree_s": 42.72,
+  "temps_estime": true,
+  "titre": "Le principe holographique et la réalité 3D projetée",
+  "resume": "The holographic principle proposes that our 3D reality is a projection from a 2D screen at the edge of the cosmos, where there is no gravity or spatial distance, only interacting quantum bits. It is compared to a 3D movie that looks deep but is flat when you touch the screen.",
+  "mots_cles": [
+    "holographic principle",
+    "holographic universe",
+    "2D screen",
+    "3D projection",
+    "quantum bits",
+    "edge of the cosmos",
+    "3D movie analogy"
+  ],
+  "texte": "And as theoretical physicists slowly turn away from Einstein's teachings, they've had to to up with an alternative way to visualize the universe, the holographic principle or holographic universe. This theory suggests that our 3D reality is actually a kind of projection emanating from the vast 2D screen that sits at the edge of the cosmos. On that screen, there's no such thing as gravity, spatial distance, or 3D space. It's just a collection of quantum bits all interacting with each other to project our reality into existence. It's almost like when you watch a movie in 3D, it might look and feel as though the objects are moving toward you, but if you stand up and touch the screen, everything is flat.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 85,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

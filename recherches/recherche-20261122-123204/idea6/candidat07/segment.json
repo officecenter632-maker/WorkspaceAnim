@@ -1,0 +1,40 @@
+{
+  "rang": 7,
+  "score": 0.5853,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "The holographic principle proposes that all the information contained in a volume of space can be encoded on its boundary surface, as if our three-dimensional universe were a projection from a two-dimensional surface."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=4205s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 90,
+  "debut": 4205.07,
+  "fin": 4275.08,
+  "duree_s": 70.01,
+  "temps_estime": true,
+  "titre": "La théorie de Melvin Vopson : l'information défie l'entropie",
+  "resume": "Physicist Melvin Vopson proposes that information does not follow the second law and instead organizes itself, with patterns and knowledge becoming more arranged and optimized over time. Like Skittles sorting themselves into piles, this resembles optimized code and suggests reality may be designed, as in The Sims.",
+  "mots_cles": [
+    "Melvin Vopson",
+    "information",
+    "entropy",
+    "self-organizing information",
+    "optimization",
+    "The Sims",
+    "simulation hypothesis",
+    "Skittles analogy"
+  ],
+  "texte": "But, here is where that starts to matter, because a physicist named Dr. Melvin Vopson just dropped a new theory that says information doesn't follow that rule. Instead of getting messier over time, information actually organizes itself. Patterns in data, structures in nature, even the way knowledge grows, all of it seems to be defying entropy rather than [music] succumbing to it. It's getting more arranged, more optimized over time, like some unseen force is cleaning up the mess instead of making more of it. Which, if true, could mean that we're all living inside a cosmic version of The Sims. Imagine you spill a bag of Skittles on the floor. According to regular thermodynamics, those Skittles should stay scattered unless you put effort into cleaning them up, or your mom tells you to. But, Vopson is saying that when it comes to information, the Skittles somehow start arranging themselves into neat color-coded [music] piles all on their own, which is not how messy random universes are supposed to act. In video games, code doesn't decay into chaos, it refines itself, updates, and gets optimized. If reality behaves more like a perfectly tuned algorithm than a random messy universe, then maybe it's not real at all. Maybe it's designed.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 140,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}
