@@ -1,0 +1,131 @@
+{
+  "idee": {
+    "numero": 4,
+    "id": 4,
+    "texte": "Brain freeze is caused by something very cold touching the roof of the mouth, which makes blood vessels tighten and then widen suddenly, triggering a sharp headache."
+  },
+  "modele": "BAAI/bge-base-en-v1.5",
+  "nb_candidats": 10,
+  "candidats": [
+    {
+      "rang": 1,
+      "dossier": "candidat01",
+      "score": 0.7917,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 15,
+      "debut": 511.28,
+      "fin": 546.48,
+      "titre": "Brain freeze (sphenopalatine ganglioneuralgia)",
+      "frames": true
+    },
+    {
+      "rang": 2,
+      "dossier": "candidat02",
+      "score": 0.7015,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 78,
+      "debut": 2435.36,
+      "fin": 2478.16,
+      "titre": "TBI headaches and neurological pain",
+      "frames": true
+    },
+    {
+      "rang": 3,
+      "dossier": "candidat03",
+      "score": 0.6828,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 302,
+      "debut": 13371.2,
+      "fin": 13403.28,
+      "titre": "Number 8: the hypothalamus and cluster headaches",
+      "frames": true
+    },
+    {
+      "rang": 4,
+      "dossier": "candidat04",
+      "score": 0.6724,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 204,
+      "debut": 8261.92,
+      "fin": 8327.2,
+      "titre": "Number 5: spinal headache",
+      "frames": true
+    },
+    {
+      "rang": 5,
+      "dossier": "candidat05",
+      "score": 0.6692,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 300,
+      "debut": 13308.4,
+      "fin": 13338.96,
+      "titre": "Number 10: cluster headaches are not migraines",
+      "frames": true
+    },
+    {
+      "rang": 6,
+      "dossier": "candidat06",
+      "score": 0.6583,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 211,
+      "debut": 8614.08,
+      "fin": 8685.6,
+      "titre": "Cluster headaches",
+      "frames": true
+    },
+    {
+      "rang": 7,
+      "dossier": "candidat07",
+      "score": 0.6526,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 214,
+      "debut": 8752.48,
+      "fin": 8809.52,
+      "titre": "Number 1: trigeminal neuralgia",
+      "frames": true
+    },
+    {
+      "rang": 8,
+      "dossier": "candidat08",
+      "score": 0.646,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 128,
+      "debut": 4761.36,
+      "fin": 4826.08,
+      "titre": "Trigeminal neuralgia as number one",
+      "frames": true
+    },
+    {
+      "rang": 9,
+      "dossier": "candidat09",
+      "score": 0.6356,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 57,
+      "debut": 2386.7,
+      "fin": 2456.07,
+      "titre": "Causes supposées et réapparitions de l'encéphalite léthargique",
+      "frames": true
+    },
+    {
+      "rang": 10,
+      "dossier": "candidat10",
+      "score": 0.6323,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 303,
+      "debut": 13403.28,
+      "fin": 13438.8,
+      "titre": "Number 7: stop-gap treatments, high-flow oxygen",
+      "frames": true
+    }
+  ]
+}

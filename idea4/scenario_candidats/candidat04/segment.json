@@ -1,0 +1,40 @@
+{
+  "rang": 4,
+  "score": 0.6724,
+  "idee_recherchee": {
+    "numero": 4,
+    "id": 4,
+    "texte": "Brain freeze is caused by something very cold touching the roof of the mouth, which makes blood vessels tighten and then widen suddenly, triggering a sharp headache."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=8261s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 204,
+  "debut": 8261.92,
+  "fin": 8327.2,
+  "duree_s": 65.28,
+  "temps_estime": false,
+  "titre": "Number 5: spinal headache",
+  "resume": "A spinal headache feels like the head splitting apart, with visual disturbances and nausea lasting hours, and usually follows a spinal tap or spinal anesthesia, such as epidurals. It results from spinal fluid leaking through a puncture hole in the membrane around the spinal cord and may cause dizziness, hearing loss or seizures.",
+  "mots_cles": [
+    "spinal headache",
+    "spinal tap",
+    "epidural",
+    "spinal fluid leak",
+    "post-dural puncture headache",
+    "nausea",
+    "visual disturbances",
+    "seizure"
+  ],
+  "texte": "The next one sounds like something Satan invented. Number five. If tarantula hawk wasp is a scary name for an animal, we think spinal headache is a scary name for a condition. Imagine telling your buddy on the phone, \"Hey, I'm going to skip that nuclear assault concert tonight. I got a spinal headache.\" Joking aside, people have said that when you have one of these very special headaches, it feels as though someone is trying to split your head apart. Intense pain is often accompanied by what one medical website called [music] visual disturbances or feelings of nausea. They can last for hours and the pain can move from inside the head to the face. That sounds like any old headache [music] though and you all have them from time to time. Again, we are the bearer of good news because spinal headaches usually only happen after someone has had a spinal tap or spinal anesthesia. That's why some women who've been pregnant get them. It happens because spinal fluid leaks through a puncture hole in the membrane around the spinal cord. When that happens, you might not only start tripping, but also get dizzy, [music] lose your hearing, and possibly have a seizure. Thank god spinal headaches are uncommon. But if you've had one of those procedures that we just mentioned, there's a chance you'll have",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 131,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

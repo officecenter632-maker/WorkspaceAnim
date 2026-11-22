@@ -1,0 +1,39 @@
+{
+  "rang": 5,
+  "score": 0.6692,
+  "idee_recherchee": {
+    "numero": 4,
+    "id": 4,
+    "texte": "Brain freeze is caused by something very cold touching the roof of the mouth, which makes blood vessels tighten and then widen suddenly, triggering a sharp headache."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=13308s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 300,
+  "debut": 13308.4,
+  "fin": 13338.96,
+  "duree_s": 30.56,
+  "temps_estime": false,
+  "titre": "Number 10: cluster headaches are not migraines",
+  "resume": "Cluster headaches are worse than any ordinary headache, occurring in clusters of time usually at the same time each day, with intense bursts of head pain that make the worst migraine or brain freeze feel like nothing. They can be completely debilitating.",
+  "mots_cles": [
+    "cluster headaches",
+    "not a migraine",
+    "brain freeze",
+    "clusters of time",
+    "debilitating",
+    "head pain",
+    "daily attacks"
+  ],
+  "texte": "Number 10, not a migraine. We've all had headaches. Maybe you didn't sleep enough and tried to cover it up with too much coffee. Or maybe you woken up from a night out drinking with your friends with your head spinning. But some headaches are worse than others, and none are worse than cluster headaches. Getting that name because they tend to occur in clusters of time, usually at the same time each day. These headaches are associated with intense bursts of head pain that make the worst migraine or brain [music] freeze feel like nothing and they can be completely debilitating. Number nine, high",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 61,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

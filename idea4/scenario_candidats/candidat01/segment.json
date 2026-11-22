@@ -1,0 +1,38 @@
+{
+  "rang": 1,
+  "score": 0.7917,
+  "idee_recherchee": {
+    "numero": 4,
+    "id": 4,
+    "texte": "Brain freeze is caused by something very cold touching the roof of the mouth, which makes blood vessels tighten and then widen suddenly, triggering a sharp headache."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=511s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 15,
+  "debut": 511.28,
+  "fin": 546.48,
+  "duree_s": 35.2,
+  "temps_estime": false,
+  "titre": "Brain freeze (sphenopalatine ganglioneuralgia)",
+  "resume": "Fact 7: brain freeze, sphenopalatine ganglioneuralgia, happens because pain receptors in the mouth are linked to those in the forehead, so signals get crossed when eating cold treats.",
+  "mots_cles": [
+    "brain freeze",
+    "ice cream",
+    "sphenopalatine ganglioneuralgia",
+    "pain receptors",
+    "forehead",
+    "crossed signals"
+  ],
+  "texte": "that's not the only time something good betrays you and causes pain. Number seven, ow. There's nothing like an ice cream cone on a hot summer day or a slurpee or Italian ice. You're digging into the frozen treat when suddenly, ow, it's like a jackhammer going off in your brain. You've fallen prey to the notorious brain freeze, but your brain hasn't actually frozen. This condition, actually called spopalatine ganglio neuralgia, happens because [music] the pain receptors in your mouth are linked to the ones in your forehead. Thus, the signals get crossed and when your mouth gets the news that something's too hot, [music] it gets transmitted to the brain. Oh well, that ice cream still",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 70,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

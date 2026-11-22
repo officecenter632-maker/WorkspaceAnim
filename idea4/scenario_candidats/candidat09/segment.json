@@ -1,0 +1,40 @@
+{
+  "rang": 9,
+  "score": 0.6356,
+  "idee_recherchee": {
+    "numero": 4,
+    "id": 4,
+    "texte": "Brain freeze is caused by something very cold touching the roof of the mouth, which makes blood vessels tighten and then widen suddenly, triggering a sharp headache."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=2386s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 57,
+  "debut": 2386.7,
+  "fin": 2456.07,
+  "duree_s": 69.37,
+  "temps_estime": true,
+  "titre": "Causes supposées et réapparitions de l'encéphalite léthargique",
+  "resume": "Theories blame a virus infecting the nervous system or a rare strain of streptococcus that makes the immune system attack the brain. The disease vanished for years and returned in the 1950s and in a girl in China in the early 2000s, and scientists are unsure whether recent similar cases are the same illness.",
+  "mots_cles": [
+    "encephalitis lethargica",
+    "virus",
+    "streptococcus",
+    "immune system attacks brain",
+    "recurrence",
+    "China",
+    "unknown cause",
+    "pandemic"
+  ],
+  "texte": "Some scientists think that the sleeping sickness was caused by a virus that found its way into the brain and infected [music] the nervous system, causing bodily systems to shut down while keeping synaptic activity going for its own benefit. Others think that the disease came from a rare strain of streptococcus, which would cause swelling in the nervous tissue, resulting in a person's own immune system attacking their brain. This nightmare could only last for a few hours, but it would go on for days in most cases. [music] Those incredibly unlucky people were living statues for weeks and even years of their life because of the disease. And if the disease itself wasn't scary enough, it did something even more mysterious that baffled scientists. Encephalitis lethargica disappeared for several years at a time, only to resurface again in different parts of the world. This happened in 1950s in Europe, and then [music] in the early 2000s, a girl in China was infected by the disease and became trapped within her own body. There have been sporadic cases of other diseases that cause symptoms similar to encephalitis lethargica more recently, >> [music] >> but scientists are unsure if this is the same illness or a mutated form of whatever causes the sleeping [music] sickness. Either way, scientists don't know the exact reason it can cause someone to become a living statue, but hopefully they can figure it out before it reaches [music] pandemic levels as it did in the early 1900s.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 139,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

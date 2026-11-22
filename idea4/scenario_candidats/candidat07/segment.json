@@ -1,0 +1,40 @@
+{
+  "rang": 7,
+  "score": 0.6526,
+  "idee_recherchee": {
+    "numero": 4,
+    "id": 4,
+    "texte": "Brain freeze is caused by something very cold touching the roof of the mouth, which makes blood vessels tighten and then widen suddenly, triggering a sharp headache."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=8752s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 214,
+  "debut": 8752.48,
+  "fin": 8809.52,
+  "duree_s": 57.04,
+  "temps_estime": false,
+  "titre": "Number 1: trigeminal neuralgia",
+  "resume": "Trigeminal neuralgia feels like a knife through the head up to 100 times a day, with attacks lasting months, caused by a blood vessel compressing the trigeminal nerve. Drugs can help but attacks return, and one man said it was 100 times worse than the worst pain he had felt.",
+  "mots_cles": [
+    "trigeminal neuralgia",
+    "trigeminal nerve",
+    "blood vessel compression",
+    "100 attacks a day",
+    "knife through head",
+    "unbearable pain",
+    "drug treatment",
+    "nerve pain"
+  ],
+  "texte": "now thinking, how do we top that? What on earth could be worse than a cluster headache? Number one, hello darkness, my old friend. I've come to talk with you again. These are the words people might hear when they have another bout of trigeminal neuralgia. These are similar in some ways to cluster headaches, but they certainly aren't the same. Still, [music] they might feel like a knife going through your head, which might happen 100 times a day. No kidding. You can't live a normal life when you have them. The attacks might go on for months at a time. They're caused when something called the trigeminal nerve is compressed by a blood vessel. And while there are drugs that can help, the attacks might come back. We're not allowed to give you the nickname of this disease since YouTube doesn't like the word. So, let's just say that people who have these attacks literally cannot put up with them. [music] In this case, unbearable means unbearable. As one man explained, it's 100 times worse than the worst pain you've ever felt, but pulsating and persistent like someone's trying to pull your eye out. It's the",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 115,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

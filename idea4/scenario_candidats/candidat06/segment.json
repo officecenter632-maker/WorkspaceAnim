@@ -1,0 +1,40 @@
+{
+  "rang": 6,
+  "score": 0.6583,
+  "idee_recherchee": {
+    "numero": 4,
+    "id": 4,
+    "texte": "Brain freeze is caused by something very cold touching the roof of the mouth, which makes blood vessels tighten and then widen suddenly, triggering a sharp headache."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=8614s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 211,
+  "debut": 8614.08,
+  "fin": 8685.6,
+  "duree_s": 71.52,
+  "temps_estime": false,
+  "titre": "Cluster headaches",
+  "resume": "Cluster headaches are excruciating one-sided attacks around the eye, like a hot knife through the head, lasting 15 minutes to 3 hours up to eight times a day for 4 to 12 weeks, then stopping for months or years. Some sufferers have searched euthanasia clinics; causes may involve the hypothalamus, smoking, smells or genes.",
+  "mots_cles": [
+    "cluster headaches",
+    "hot knife in head",
+    "hypothalamus",
+    "15 minutes to 3 hours",
+    "euthanasia clinic",
+    "smokers",
+    "attacks around the eye",
+    "genes"
+  ],
+  "texte": "us to cluster headaches. The most awful thing or second most awful thing on this list nature ever passed on to us. Maybe God had read the marquitaad because cluster headaches really feel like the invention of a satist. They are described as excruciating attacks, usually on one side of the head and around the eye that can come on at any time with no warning at all. They can bring you down to your knees, make you bite onto wood, scream, cry, and crawl around like a dog on broken legs. It's like being stabbed through the head with a hot knife. People have been known to bash their heads against walls, knocking themselves down just to do something. [music] They can be like that anywhere from 15 minutes to 3 hours and the bouts might happen up to eight times a day. This usually goes on for 4 [music] to 12 weeks and then they usually stop. They might stop for months or years and then start all over again. Welcome to hell. It doesn't really get worse than this, which is why some sufferers have Googled the words euthanasia clinic in their darkest hours. We don't even know what causes them, although some scientists have said they seem to cause activity in a part of the brain called the hypothalamus. It seems smokers get them bore, but they might also be related to certain smells, and they could be passed on through genes. Regular meds will do",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 143,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

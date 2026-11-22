@@ -1,0 +1,38 @@
+{
+  "rang": 3,
+  "score": 0.6828,
+  "idee_recherchee": {
+    "numero": 4,
+    "id": 4,
+    "texte": "Brain freeze is caused by something very cold touching the roof of the mouth, which makes blood vessels tighten and then widen suddenly, triggering a sharp headache."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=13371s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 302,
+  "debut": 13371.2,
+  "fin": 13403.28,
+  "duree_s": 32.08,
+  "temps_estime": false,
+  "titre": "Number 8: the hypothalamus and cluster headaches",
+  "resume": "Doctors have not found a concrete cause of cluster headaches, but brain scans during attacks showed elevated activity in the hypothalamus, which regulates several key nervous system roles. It is unclear whether this is the cause or a side effect.",
+  "mots_cles": [
+    "cluster headache cause",
+    "hypothalamus",
+    "brain scans",
+    "nervous system",
+    "unknown cause",
+    "attack brain activity"
+  ],
+  "texte": "Number eight, all in the mind. Doctors have examined the brains of cluster headache sufferers, but haven't come up with any concrete answers to what causes them. However, they did find a possible clue in one tiny gland deep in the brain. Via brain scans, they were able to examine activity in different parts of the brain during an attack and found elevated activity in the hypothalamus, which is responsible for regulating several key nervous system roles. Is this the cause of the disorder or just an unfortunate side effect? No one is sure yet, but for those suffering from the disorder, time is at a premium.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 64,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "rang": 2,
+  "score": 0.7015,
+  "idee_recherchee": {
+    "numero": 4,
+    "id": 4,
+    "texte": "Brain freeze is caused by something very cold touching the roof of the mouth, which makes blood vessels tighten and then widen suddenly, triggering a sharp headache."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=2435s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 78,
+  "debut": 2435.36,
+  "fin": 2478.16,
+  "duree_s": 42.8,
+  "temps_estime": false,
+  "titre": "TBI headaches and neurological pain",
+  "resume": "People with TBI suffer headaches that can start right away or months later, from ordinary headaches to migraines like a spike in the skull. Brain misfiring causes neurological phantom pain with burning, electric, hot or cold sensations, numbness and tingling, anywhere in the body and without physical cause.",
+  "mots_cles": [
+    "TBI headaches",
+    "migraines",
+    "neurological pain",
+    "phantom pain",
+    "burning",
+    "tingling",
+    "brain misfiring"
+  ],
+  "texte": "kinds of pain. The first is headaches, which usually start right away after the injury, but can manifest months later. These can range from your typical headache you might feel when sick to more intense migraines, which last for hours and feel like someone is driving a spike into your skull. Chemical changes in the brain or damage to its structure can result in neurological pain. This pain typically has no cause and results from the brain misfiring and creating phantom pains that your nerves dutifully report. Individuals might feel like they're burning, have electricity coursing through them, feel cold, hot, or experience painful numbness and tingling. The fact that there is no physical cause to the pain, which can also manifest anywhere on the body, can be extremely maddening to deal with. TBI",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 86,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

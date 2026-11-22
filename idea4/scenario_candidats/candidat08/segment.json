@@ -1,0 +1,39 @@
+{
+  "rang": 8,
+  "score": 0.646,
+  "idee_recherchee": {
+    "numero": 4,
+    "id": 4,
+    "texte": "Brain freeze is caused by something very cold touching the roof of the mouth, which makes blood vessels tighten and then widen suddenly, triggering a sharp headache."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=4761s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 128,
+  "debut": 4761.36,
+  "fin": 4826.08,
+  "duree_s": 64.72,
+  "temps_estime": false,
+  "titre": "Trigeminal neuralgia as number one",
+  "resume": "Number 1: trigeminal neuralgia feels like an electric shock through the face lasting seconds to minutes, possibly hundreds of attacks a day, caused by a blood vessel compressing the trigeminal nerve; it affects about 10 per 100,000 in the UK, and a woman with 25 attacks a day could not brush her teeth or touch her face.",
+  "mots_cles": [
+    "trigeminal neuralgia",
+    "trigeminal nerve",
+    "blood vessel compression",
+    "NHS",
+    "25 attacks a day",
+    "electric shock",
+    "unbearable"
+  ],
+  "texte": "Number one, it's called trigeminal neuralgia. Like cluster headaches, it's something that has made people say [music] they'd rather die than experience the pain again. It's supposed to feel like an electric shock going through the face with attacks lasting from just a few seconds to a couple minutes. The NHS writes, \"People with the condition may experience attacks of pain regularly for days, weeks, or months at a time. In severe cases, attacks might happen hundreds of times a day. This is why they make life so unbearable because they keep coming back and they can't be cured. They're caused when something called the trigeminal nerve is compressed by [music] a blood vessel. And while there are drugs that can help, the attacks might come back. In the UK, they happened to about 10 people in 100,000. As for personal experiences, a woman in the UK said she started having about 25 attacks every day. This greatly affected her well-being. She said the disease had completely consumed my life. I can't brush my hair or my teeth, eat, sleep, stand in the wind, touch my face without feeling like I'm being electrocuted across my face. So, between these [music] and cluster headaches, we really can't say which is the worst, but they both sound equally horrific. From having",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 130,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

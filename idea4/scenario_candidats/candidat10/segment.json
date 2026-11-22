@@ -1,0 +1,38 @@
+{
+  "rang": 10,
+  "score": 0.6323,
+  "idee_recherchee": {
+    "numero": 4,
+    "id": 4,
+    "texte": "Brain freeze is caused by something very cold touching the roof of the mouth, which makes blood vessels tighten and then widen suddenly, triggering a sharp headache."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=13403s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 303,
+  "debut": 13403.28,
+  "fin": 13438.8,
+  "duree_s": 35.52,
+  "temps_estime": false,
+  "titre": "Number 7: stop-gap treatments, high-flow oxygen",
+  "resume": "Severe cluster headache periods can turn a high-functioning professional into a shut-in within weeks, and there are no cures, only prevention and alleviation. High-flow oxygen mid-attack shows 75 percent effectiveness in reducing severity, while standard headache medications have proven ineffective.",
+  "mots_cles": [
+    "cluster headache treatment",
+    "high-flow oxygen",
+    "75% effectiveness",
+    "prevention",
+    "headache medication ineffective",
+    "no cure"
+  ],
+  "texte": "Number seven, stop gap measures. For those dealing with cluster headaches, they're usually desperate for any answers. Bad attacks of cluster headaches can take a person from a high functioning professional to a shutin in only a few weeks. There are no concrete cures. [music] The main focus is on prevention and alleviation. The best way to stop or slow down a cluster headache mid attack [music] is through the use of high flow oxygen, which has shown 75% effectiveness in reducing their severity. Medication is also used, but standard headache relief medications have proven ineffective. But there may be hope if research is allowed to",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 71,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}
