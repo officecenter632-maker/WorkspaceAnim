@@ -1,0 +1,40 @@
+{
+  "rang": 1,
+  "score": 0.7437,
+  "idee_recherchee": {
+    "numero": 8,
+    "id": 8,
+    "texte": "The Big Bang was not an explosion in space but the rapid expansion of space itself from an extremely hot and dense state about 13.8 billion years ago, and the question of what came before it remains unanswered."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=5802s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 118,
+  "debut": 5802.71,
+  "fin": 5883.95,
+  "duree_s": 81.24,
+  "temps_estime": true,
+  "titre": "Quelle était la taille du Big Bang ?",
+  "resume": "The narrator asks how big the Big Bang explosion was and admits nobody knows how it began or what existed beforehand. A fraction of a second after it, the universe began expanding dramatically, and since its size today is unknown it is impossible to say, though it was probably the biggest explosion. He concludes that humans have explored only a small fraction of the universe and understand less than what remains unknown.",
+  "mots_cles": [
+    "Big Bang",
+    "universe expansion",
+    "size of the universe",
+    "origin of the universe",
+    "infinite universe",
+    "unknown physics",
+    "biggest explosion",
+    "smallness of humans"
+  ],
+  "texte": ">> [music] >> And there you have it, the biggest explosion since the Big Bang. At this point, you're probably wondering just how big the Big Bang explosion was in the first place. Well, [music] I'm afraid nobody knows. We don't know much about the Big Bang at all, but we can guess, which is almost as good, right? Nobody quite knows how the Big Bang initially happened. It's way too complex for our tiny brains [music] to comprehend right now. How can an explosion take place if there was nothing there in the first place? Wouldn't something have needed to exist before? But how would that thing have been created? It's all very confusing. But a fraction of a second after it happened, we can start to have a better idea of what was going on. As soon as the explosion started, the universe began to [music] dramatically expand at a speed we can't comprehend. Basically, there was a bang, a really large explosion. It took what was out there, just a few bits of [music] stuff floating around, to a whole universe with various galaxies. So, how big was it? We don't even know how big the universe [music] is now, so it's impossible to say. We just know it's been constantly expanding at an ever-increasing pace ever since the Big Bang. It could be infinite, but it's fair to assume that since it created everything [music] else, it was probably the biggest explosion. As we gaze up into the vastness of outer space, we are reminded of just how small we are in the grand scheme of the universe. We've only explored just a small fraction of the universe, and even physicists know [music] that there's more that we don't understand about outer space than what we figured out.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 162,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

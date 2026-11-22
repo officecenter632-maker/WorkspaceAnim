@@ -1,0 +1,39 @@
+{
+  "rang": 9,
+  "score": 0.6463,
+  "idee_recherchee": {
+    "numero": 8,
+    "id": 8,
+    "texte": "The Big Bang was not an explosion in space but the rapid expansion of space itself from an extremely hot and dense state about 13.8 billion years ago, and the question of what came before it remains unanswered."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=5262s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 107,
+  "debut": 5262.11,
+  "fin": 5344.83,
+  "duree_s": 82.72,
+  "temps_estime": true,
+  "titre": "L'amas de galaxies MS0735.6+7421 et ses cavités géantes",
+  "resume": "Scientists studying galaxy cluster MS0735.6+7421, about 2.6 billion light-years away in Camelopardalis, saw a huge black hole growing fast even though it should have stopped. Two vast cavities extended from the black hole, suggesting the biggest explosion since the Big Bang.",
+  "mots_cles": [
+    "MS0735.6+7421",
+    "galaxy cluster",
+    "Camelopardalis",
+    "2.6 billion light-years",
+    "supermassive black hole",
+    "cavities",
+    "biggest explosion"
+  ],
+  "texte": "One day scientists were studying [music] the galaxy cluster named MS0735.6 + 7421, which .6 + 7421, which a disappointingly boring name for something [music] as cool as a galaxy cluster. It's literally one of the largest structures in the universe, containing thousands of galaxies, dark matter, and hot gas. >> [music] >> This particular cluster is around 2.6 billion light-years away from us, so maybe they used up all the catchy names by the time they came around to it. But, it does lie in the constellation Camelopardalis, also known as the giraffe. Now, there's a name I can get behind. But, anyway, those guys noticed something intriguing. [music] Not only was there a huge black hole, but that black hole was growing fast. But, that didn't make any sense because the black hole was already massive, [music] and it should have stopped expanding. In fact, the amount of matter that had been swallowed was so large that researchers weren't even sure where it had come from. Had the gas [music] from the host galaxy cooled and then been swallowed? And there was another strange thing, too. There were two huge cavities in [music] the galaxy cluster, extending away from the black hole, as if something had caused those cavities. Are you thinking what I'm thinking? But, the idea of a black hole causing the cavities should have been impossible. [music] For one, everything known about black holes suggested that this one should have stopped expanding. And [music] secondly, if it was true, we'd be talking about the biggest explosion ever, or at least the largest since the Big Bang. It was a big deal, and the researchers needed to get to the bottom of it.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 165,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

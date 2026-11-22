@@ -1,0 +1,40 @@
+{
+  "rang": 4,
+  "score": 0.6717,
+  "idee_recherchee": {
+    "numero": 8,
+    "id": 8,
+    "texte": "The Big Bang was not an explosion in space but the rapid expansion of space itself from an extremely hot and dense state about 13.8 billion years ago, and the question of what came before it remains unanswered."
+  },
+  "video_id": "eOZblHcqkvo",
+  "titre_video": "The Big Bang Theory Is Wrong, This New Theory Is Even Stranger",
+  "url_video": "https://www.youtube.com/watch?v=eOZblHcqkvo",
+  "url_au_debut": "https://www.youtube.com/watch?v=eOZblHcqkvo&t=0s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-eozblhcqkvo-src",
+  "segment_id": 1,
+  "debut": 0.32,
+  "fin": 29.03,
+  "duree_s": 28.71,
+  "temps_estime": true,
+  "titre": "Intro: the Big Bang singularity as a cosmic error code",
+  "resume": "Opening hook: the claim that the universe exploded from a single infinitesimal point is impossible, because the singularity is a glitch where physics and gravity break down. Deep space exploration is exposing cracks in cosmology and raises the question of what really happened at the start of the universe.",
+  "mots_cles": [
+    "Big Bang",
+    "singularity",
+    "cosmology",
+    "universe origin",
+    "error code",
+    "physics breakdown",
+    "deep space exploration",
+    "hook"
+  ],
+  "texte": "13.8 billion years ago, the universe exploded out of a single, infinitesimal point. It’s a great story… and it’s impossible. The point of singularity isn’t a real place. It’s a glitch. A cosmic error code where physics and gravity broke down. Now deep space exploration is exposing the cracks at the foundation of cosmology. And it’s shattering reality. If the Bang wasn’t the beginning… what really happened at the start of the universe?",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 58,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

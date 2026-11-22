@@ -1,0 +1,41 @@
+{
+  "rang": 5,
+  "score": 0.6616,
+  "idee_recherchee": {
+    "numero": 8,
+    "id": 8,
+    "texte": "The Big Bang was not an explosion in space but the rapid expansion of space itself from an extremely hot and dense state about 13.8 billion years ago, and the question of what came before it remains unanswered."
+  },
+  "video_id": "eOZblHcqkvo",
+  "titre_video": "The Big Bang Theory Is Wrong, This New Theory Is Even Stranger",
+  "url_video": "https://www.youtube.com/watch?v=eOZblHcqkvo",
+  "url_au_debut": "https://www.youtube.com/watch?v=eOZblHcqkvo&t=271s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-eozblhcqkvo-src",
+  "segment_id": 7,
+  "debut": 271.44,
+  "fin": 350.08,
+  "duree_s": 78.64,
+  "temps_estime": false,
+  "titre": "Expected cosmic timeline versus fully formed early galaxies",
+  "resume": "Lambda CDM predicts rapid expansion, cooling, then 380,000 years and tens of millions of years of cosmic dark ages before gas gathered in dark matter pockets to form stars and, over billions of years, mature galaxies. Deep observations instead found fully formed galaxies with orderly rotation and heavy elements, leaving cosmology with an impossible timeline, a broken Zero Hour and a missing 95%.",
+  "mots_cles": [
+    "cosmic dark ages",
+    "early galaxies",
+    "mature galaxies",
+    "heavy elements",
+    "galaxy formation timeline",
+    "Lambda CDM",
+    "380,000 years",
+    "impossible timeline",
+    "dark sector"
+  ],
+  "texte": "According to the Lambda CDM model, after the Big Bang, there was a period of rapid expansion, then a period of cooling. After 380,000 years, the universe transitioned into the so-called “cosmic dark ages.” For tens of millions of years, the universe was a ghost town. No stars. No galaxies. Nothing. It was just a primordial mixture of gases drifting across space. Gravity then supposedly pulled these gases into pockets of dark matter. It took millions of years to create the first generation of primitive star formations. And it took billions of years to build mature galaxies. But when scientists took a closer look at the deepest stretches of space, they uncovered something that absolutely shattered the pre-existing timeline. Instead of the dark and sparse space soup they expected, they found fully formed galaxies. They had complex structures, orderly rotations, and high concentrations of heavy elements that simply couldn’t exist at the start of space. Complex and mature galaxies shouldn’t be able to exist without hundreds of millions of years of history behind them. Faced with an impossible timeline, a broken “Zero Hour” and a missing 95% “dark sector,” cosmology is now facing up to a frightening new reality. It’s a reality that forces them to throw out everything they thought they knew about the known universe.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 158,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

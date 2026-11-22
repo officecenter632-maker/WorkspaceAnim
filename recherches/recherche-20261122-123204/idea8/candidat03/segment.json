@@ -1,0 +1,40 @@
+{
+  "rang": 3,
+  "score": 0.6733,
+  "idee_recherchee": {
+    "numero": 8,
+    "id": 8,
+    "texte": "The Big Bang was not an explosion in space but the rapid expansion of space itself from an extremely hot and dense state about 13.8 billion years ago, and the question of what came before it remains unanswered."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=9595s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 196,
+  "debut": 9595.84,
+  "fin": 9644.38,
+  "duree_s": 48.54,
+  "temps_estime": true,
+  "titre": "Les trous noirs primordiaux : naissance juste après le Big Bang",
+  "resume": "Primordial black holes are believed to have formed seconds after the Big Bang when some matter was hot and dense enough to collapse immediately. Their masses could range from 100,000 times less than a paperclip, micro black holes, to 100,000 times the sun, and they would have been growing for hundreds of millions of years before the first stellar mass black holes.",
+  "mots_cles": [
+    "primordial black holes",
+    "Big Bang",
+    "micro black holes",
+    "paperclip mass",
+    "early universe",
+    "original singularity",
+    "hypothetical black holes",
+    "formation"
+  ],
+  "texte": "Primordial black holes, the final classification that scientists use for black holes is primordial black holes. These are black holes that formed seconds after the Big Bang. It's believed [music] that as the universe was born from the original singularity, some of the matter might have been hot and dense enough to immediately form black holes. Scientists theorize that these very early black holes could have had masses that ranged from [music] 100,000 times less than a paperclip, making them micro black holes, to 100,000 times more than the mass of our sun. After the Big Bang, the universe quickly cooled and the formation of primordial black holes ended. These black holes would have already been consuming [music] matter and growing hundreds of millions or even billions of years before the first stellar mass black holes even formed from stars going [music] supernova.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 97,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}
