@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "nom": "recherche-20261122-123204",
+  "date": "2026-11-22 11:42:49",
+  "nb_idees": 8,
+  "top": 10,
+  "modele": "BAAI/bge-base-en-v1.5",
+  "videos_indexees": [
+    {
+      "video_id": "r8mu868qqBA",
+      "titre": "Why Ancient Human Drug Use Was 10x More Lethal Than Today",
+      "dataset": "futuradevdevelopers/lexiax-r8mu868qqba-src",
+      "nb_idees": 25
+    },
+    {
+      "video_id": "j16_OPRTT4g",
+      "titre": "Why Phone Scammers Wait Exactly 3 Seconds Before Speaking",
+      "dataset": "futuradevdevelopers/lexiax-j16-oprtt4g-src",
+      "nb_idees": 31
+    },
+    {
+      "video_id": "6A5dqQdGK6Q",
+      "titre": "The Solar Storm That Could Shut Down the AI Economy",
+      "dataset": "futuradevdevelopers/lexiax-6a5dqqdgk6q-src",
+      "nb_idees": 23
+    },
+    {
+      "video_id": "dfELHX3VuJc",
+      "titre": "You NEED to STOP Using Windows 11 Right Now. Microsoft is OVER",
+      "dataset": "futuradevdevelopers/lexiax-dfelhx3vujc-src",
+      "nb_idees": 212
+    },
+    {
+      "video_id": "f39h7wgh2rQ",
+      "titre": "When the AI Bubble Bursts: A Financial Collapse Has Already Begun",
+      "dataset": "futuradevdevelopers/lexiax-f39h7wgh2rq-src",
+      "nb_idees": 239
+    },
+    {
+      "video_id": "baO2fIL4coI",
+      "titre": "The US Dollar Collapse in Real Time (Day by Day)",
+      "dataset": "futuradevdevelopers/lexiax-bao2fil4coi-src",
+      "nb_idees": 41
+    },
+    {
+      "video_id": "QHjI2Hb2xEw",
+      "titre": "Why is the UK telling people to stockpile?",
+      "dataset": "futuradevdevelopers/lexiax-qhji2hb2xew-src",
+      "nb_idees": 29
+    },
+    {
+      "video_id": "Ou_ZjQLUPoo",
+      "titre": "Everything You Need to Know About the Coming US-China War",
+      "dataset": "futuradevdevelopers/lexiax-ou-zjqlupoo-src",
+      "nb_idees": 272
+    },
+    {
+      "video_id": "_huy9jU9UAA",
+      "titre": "The Internet JUST Went Dark. The COLLAPSE Is Happening.",
+      "dataset": "futuradevdevelopers/lexiax-huy9ju9uaa-src",
+      "nb_idees": 54
+    },
+    {
+      "video_id": "gKF7NMxZ754",
+      "titre": "Why is War in Ukraine Still Happening?",
+      "dataset": "futuradevdevelopers/lexiax-gkf7nmxz754-src",
+      "nb_idees": 37
+    },
+    {
+      "video_id": "Df0v8WoVscI",
+      "titre": "We Have Lost the Control of AI...",
+      "dataset": "futuradevdevelopers/lexiax-df0v8wovsci-src",
+      "nb_idees": 23
+    },
+    {
+      "video_id": "eOZblHcqkvo",
+      "titre": "The Big Bang Theory Is Wrong, This New Theory Is Even Stranger",
+      "dataset": "futuradevdevelopers/lexiax-eozblhcqkvo-src",
+      "nb_idees": 17
+    },
+    {
+      "video_id": "L-gAoGQrvp0",
+      "titre": "California Ran Out of Water, So They Re-Engineered the Entire State",
+      "dataset": "futuradevdevelopers/lexiax-l-gaogqrvp0-src",
+      "nb_idees": 28
+    },
+    {
+      "video_id": "of8B3F59iFs",
+      "titre": "Bond markets are falling apart now...",
+      "dataset": "futuradevdevelopers/lexiax-of8b3f59ifs-src",
+      "nb_idees": 32
+    },
+    {
+      "video_id": "Y2JYWeB2w50",
+      "titre": "Military Conspiracies That Sound 100% Fake but Were True",
+      "dataset": "futuradevdevelopers/lexiax-y2jyweb2w50-src",
+      "nb_idees": 32
+    },
+    {
+      "video_id": "nniss6cDLAE",
+      "titre": "70 Cents of Every Dollar Is Over: The Collapse of American Defense Dominance",
+      "dataset": "futuradevdevelopers/lexiax-nniss6cdlae-src",
+      "nb_idees": 27
+    },
+    {
+      "video_id": "NATQAFAFZ6I",
+      "titre": "United States Starts to Crack. Economy and Military Collapse Coming",
+      "dataset": "futuradevdevelopers/lexiax-natqafafz6i-src",
+      "nb_idees": 276
+    },
+    {
+      "video_id": "L4Bobswuv8k",
+      "titre": "The Fat-Cure Hype Faces COLLAPSE. Tesamorelin Peptide Has a Cancer Warning.",
+      "dataset": "futuradevdevelopers/lexiax-l4bobswuv8k-src",
+      "nb_idees": 22
+    },
+    {
+      "video_id": "Jq-aPTb4gb4",
+      "titre": "Windows users are freaking out now...",
+      "dataset": "futuradevdevelopers/lexiax-jq-aptb4gb4-src",
+      "nb_idees": 26
+    },
+    {
+      "video_id": "0DYYdcGrbMM",
+      "titre": "History Is Repeating. This Is Where It Goes Wrong.",
+      "dataset": "futuradevdevelopers/lexiax-0dyydcgrbmm-src",
+      "nb_idees": 19
+    },
+    {
+      "video_id": "_KCvoOhUqHA",
+      "titre": "The Man Who Smoked Weed for 10 Years",
+      "dataset": "futuradevdevelopers/lexiax-kcvoohuqha-src",
+      "nb_idees": 23
+    },
+    {
+      "video_id": "OOxp8bShXaQ",
+      "titre": "The Collapse of the Dollar (And Why You're Already Poorer)",
+      "dataset": "futuradevdevelopers/lexiax-ooxp8bshxaq-src",
+      "nb_idees": 355
+    },
+    {
+      "video_id": "f1MGkmM28wA",
+      "titre": "Foreign Nations JUST Left the US Bond Market. Wall Street Panics RIGHT NOW.",
+      "dataset": "futuradevdevelopers/lexiax-f1mgkmm28wa-src",
+      "nb_idees": 22
+    },
+    {
+      "video_id": "rMMejoeZYQ0",
+      "titre": "Wall Street Is Hiding Something...",
+      "dataset": "futuradevdevelopers/lexiax-rmmejoezyq0-src",
+      "nb_idees": 21
+    },
+    {
+      "video_id": "mEP1xCHdfyI",
+      "titre": "China's Robot Army Situation is Terrifying",
+      "dataset": "futuradevdevelopers/lexiax-mep1xchdfyi-src",
+      "nb_idees": 34
+    },
+    {
+      "video_id": "SSVG6rJM8Cw",
+      "titre": "Why the 2022 Car Bubble is Bursting Now",
+      "dataset": "futuradevdevelopers/lexiax-ssvg6rjm8cw-src",
+      "nb_idees": 25
+    },
+    {
+      "video_id": "tehBa2ZjG-I",
+      "titre": "Why You Don't Want to Earn $150,000 to $250,000",
+      "dataset": "futuradevdevelopers/lexiax-tehba2zjg-i-src",
+      "nb_idees": 30
+    },
+    {
+      "video_id": "0oV87yfN59g",
+      "titre": "The End of the World Scenarios. Humanity is FINISHED.",
+      "dataset": "futuradevdevelopers/lexiax-0ov87yfn59g-src",
+      "nb_idees": 253
+    },
+    {
+      "video_id": "TPiiTEK8OPE",
+      "titre": "Holy f***ing sh*t your gym routine is useless...",
+      "dataset": "futuradevdevelopers/lexiax-tpiitek8ope-src",
+      "nb_idees": 29
+    },
+    {
+      "video_id": "c8dlJJuqcOQ",
+      "titre": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "dataset": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+      "nb_idees": 213
+    }
+  ],
+  "datasets_ignores": [],
+  "avertissements": []
+}
