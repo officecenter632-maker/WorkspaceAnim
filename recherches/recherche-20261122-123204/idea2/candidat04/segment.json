@@ -1,0 +1,40 @@
+{
+  "rang": 4,
+  "score": 0.6691,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "Einstein's general relativity describes gravity as the curvature of spacetime caused by mass and energy, where massive objects like stars and black holes bend the fabric around them and other objects follow those curved paths."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=10178s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 209,
+  "debut": 10178.36,
+  "fin": 10213.23,
+  "duree_s": 34.87,
+  "temps_estime": true,
+  "titre": "Lentilles gravitationnelles et ondes gravitationnelles",
+  "resume": "Scientists also see starlight and gas bend around black holes, and telescope advances allow indirect and direct views of them. Astronomers also detect colliding black holes from gravitational ripples in space-time, which reveal the black holes' masses, distance from Earth and speed at collision.",
+  "mots_cles": [
+    "gravitational waves",
+    "gravitational lensing",
+    "colliding black holes",
+    "ripples in space-time",
+    "telescopes",
+    "black hole mass",
+    "indirect observation",
+    "detection methods"
+  ],
+  "texte": "Scientists can also see the light of stars and gases bend around [music] the gravity of black holes. These phenomena provide evidence that there is a black hole nearby. Observations [music] such as these and advancements in telescopes have allowed scientists to both indirectly and directly view black holes in our universe. Astronomers have also recently developed methods for [music] detecting black holes from the gravitational ripples in space-time that they cause when they collide. This signal can actually tell scientists how much mass the black holes had, how far away from Earth the collision occurred, and [music] how fast the black holes were traveling when they smashed into one another.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 70,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

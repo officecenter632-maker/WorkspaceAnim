@@ -1,0 +1,41 @@
+{
+  "rang": 6,
+  "score": 0.6626,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "Einstein's general relativity describes gravity as the curvature of spacetime caused by mass and energy, where massive objects like stars and black holes bend the fabric around them and other objects follow those curved paths."
+  },
+  "video_id": "eOZblHcqkvo",
+  "titre_video": "The Big Bang Theory Is Wrong, This New Theory Is Even Stranger",
+  "url_video": "https://www.youtube.com/watch?v=eOZblHcqkvo",
+  "url_au_debut": "https://www.youtube.com/watch?v=eOZblHcqkvo&t=576s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-eozblhcqkvo-src",
+  "segment_id": 11,
+  "debut": 576.08,
+  "fin": 660.88,
+  "duree_s": 84.8,
+  "temps_estime": false,
+  "titre": "Einstein-Cartan-Sciama-Kibble theory: torsion and the black hole bounce",
+  "resume": "Einstein assumed space-time could curve but not twist (no intrinsic torsion), so collapse led to a singularity. ECSK theory says extreme spin density creates a torsional field, inverting gravity from attractive to repulsive and triggering a Big Bounce inside a black hole, an idea championed by physicist Nikodem Poplawski.",
+  "mots_cles": [
+    "Einstein-Cartan-Sciama-Kibble",
+    "ECSK theory",
+    "torsion",
+    "spin density",
+    "Big Bounce",
+    "Nikodem Poplawski",
+    "black hole",
+    "singularity",
+    "repulsive gravity"
+  ],
+  "texte": "But modern physicists realized that they didn’t necessarily need to “throw out” all the hard work that had been done by their predecessors. They just needed to modify it. When Albert Einstein formulated his theory of General Relativity, he assumed that space-time was able to curve, but wasn’t able to twist. Or, in more technical terms, it didn’t possess any “intrinsic torsion.” It meant that a collapsing star was always destined to compress into an infinitely dense point… a singularity. But what if space-time can twist? TheEinstein-Cartan-Sciama-Kibble, or ECSK theory proves that when matter collapses to its extreme lime, the spin density skyrockets, generating an enormous torsional field. It acts like a giant cosmic shock absorber. At that moment, gravity essentially inverts, going from powerfully attractive to fiercely repulsive in an instant. That’s what triggers the resulting “Big Bounce” effect. This theory says that the universe didn’t just explode into existence out of nowhere. Instead, the mass of the universe compressed into a tiny point before violently bouncing back. It was a continuous event happening inside a black hole. Several scientists have explored this idea dating back to the 1970s. But today, it’s Polish theoretical physicist, Dr. Nikodem Poplawski, who is leading the charge. He argues that the Black Hole Universe model removes one of the biggest barriers to human exploration and understanding of the known universe…",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 169,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

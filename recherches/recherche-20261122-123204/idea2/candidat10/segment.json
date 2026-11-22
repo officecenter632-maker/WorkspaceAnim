@@ -1,0 +1,39 @@
+{
+  "rang": 10,
+  "score": 0.6341,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "Einstein's general relativity describes gravity as the curvature of spacetime caused by mass and energy, where massive objects like stars and black holes bend the fabric around them and other objects follow those curved paths."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=3118s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 68,
+  "debut": 3118.5,
+  "fin": 3194.81,
+  "duree_s": 76.31,
+  "temps_estime": true,
+  "titre": "Introduction : un trou noir peut effacer l'univers ; effondrement d'une étoile",
+  "resume": "A new episode explains how black holes will delete the universe, erasing information and eventually vanishing themselves. A star over 20 solar masses runs out of fuel, its core collapses in under a second into a singularity, and space-time is warped like a rubber sheet pierced by a bowling ball.",
+  "mots_cles": [
+    "black hole",
+    "massive star collapse",
+    "singularity",
+    "nuclear fusion",
+    "space-time rubber sheet",
+    "infinite density",
+    "Infographics Show"
+  ],
+  "texte": "Black holes are the most terrifying things in existence, silent monsters that warp time and shatter physics. They don't just swallow stars and planets, they erase information itself. Over trillions of years, they'll consume everything we know and then they'll vanish, too. On today's episode of the Infographic Show, we're explaining how a black hole will delete our entire universe. When a star at least 20 times more massive than our sun runs out of fuel, it faces a crisis. For millions of years, the star has been [music] in perfect balance, nuclear fusion pushing outward from the core, gravity pulling inward. But [music] once that fuel is gone, that balance collapses. Without fusion to hold it up, gravity wins. The star's core collapses in less than a second, compressing matter so dense that a teaspoon would weigh as much as Mount Everest. >> [music] >> But the collapse doesn't stop there or ever, really. The matter keeps compressing until it becomes a singularity, a point of infinite [music] density, where physics breaks down completely. This creates a gravitational field so intense, [music] it warps space-time itself. Imagine space time as a stretched rubber sheet. A bowling ball makes a dip in the sheet. A black hole? Well, that punches a hole straight through it. >> [music] >>",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 153,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

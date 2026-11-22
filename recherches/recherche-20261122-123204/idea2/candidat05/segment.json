@@ -1,0 +1,39 @@
+{
+  "rang": 5,
+  "score": 0.6662,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "Einstein's general relativity describes gravity as the curvature of spacetime caused by mass and energy, where massive objects like stars and black holes bend the fabric around them and other objects follow those curved paths."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=3944s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 85,
+  "debut": 3944.77,
+  "fin": 3998.97,
+  "duree_s": 54.2,
+  "temps_estime": true,
+  "titre": "Recherche de 2023 : tous les objets massifs pourraient s'évaporer",
+  "resume": "In 2023 researchers calculated that gravity might cause all massive objects, not just black holes, to evaporate through Hawking-like quantum effects. Even electrons, photons and neutrinos might be temporary, though the research is preliminary.",
+  "mots_cles": [
+    "2023 research",
+    "Hawking radiation",
+    "evaporation of matter",
+    "massive objects",
+    "elementary particles",
+    "quantum effects",
+    "gravity"
+  ],
+  "texte": "There is one more terrifying future, albeit an abstract one, that we should also explore. In 2023, researchers began exploring whether Hawking radiation might not be limited to black holes. Their calculations suggest that gravity itself might cause all massive objects to eventually evaporate through quantum effects. This means that even after the last black holes evaporate, even after the universe becomes nothing but a cold dark expanse populated by elementary particles, [music] the deletion process might continue. Anything with mass, including the fundamental particles themselves, might emit their own form of Hawking-like radiation and slowly fade away. The research is still preliminary, but the implications are staggering. Every electron, every photon, [music] every neutrino that survives the black hole era might itself be temporary, doomed to evaporate over time scales that make black hole lifetimes look [music] brief.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 108,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

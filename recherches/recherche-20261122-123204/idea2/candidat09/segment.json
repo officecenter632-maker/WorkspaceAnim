@@ -1,0 +1,40 @@
+{
+  "rang": 9,
+  "score": 0.636,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "Einstein's general relativity describes gravity as the curvature of spacetime caused by mass and energy, where massive objects like stars and black holes bend the fabric around them and other objects follow those curved paths."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=8859s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 179,
+  "debut": 8859.69,
+  "fin": 8905.02,
+  "duree_s": 45.33,
+  "temps_estime": true,
+  "titre": "Histoire du concept : John Michell, Einstein et la relativité générale",
+  "resume": "The first person to describe a black hole was John Michell, an English clergyman, in 1783, but his ideas were forgotten until the mathematics existed. In 1915 Einstein's general relativity predicted black holes, the community was divided, but physicists using his equations showed they were theoretically possible.",
+  "mots_cles": [
+    "John Michell",
+    "1783",
+    "Albert Einstein",
+    "general relativity",
+    "1915",
+    "black hole prediction",
+    "history of physics",
+    "theoretical black holes"
+  ],
+  "texte": "The first person to describe a black hole was a religious man in England by the name of John Michell in 1783. Michell was considered a brilliant scientist at the time. However, his ideas eventually fell into obscurity since [music] the math and understanding of physics necessary to explain how a black hole works wouldn't be invented for another century and a half. In 1915, when Albert Einstein came up with his theory of general relativity, he predicted [music] the existence of black holes based on the equations that he invented. At this point, the scientific [music] community was divided on whether such a powerful and terrifying source of gravity could actually exist, [music] but as cosmologists and mathematicians began to investigate the universe using Einstein's equations, it became clear that black holes were indeed [music] theoretically possible.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 91,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}
