@@ -1,0 +1,39 @@
+{
+  "rang": 4,
+  "score": 0.6617,
+  "idee_recherchee": {
+    "numero": 7,
+    "id": 7,
+    "texte": "Quantum entanglement links particles so that measuring one instantly affects the other no matter the distance, and some theorists believe that entanglement is the thread from which spacetime itself is woven."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=890s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 20,
+  "debut": 890.76,
+  "fin": 927.53,
+  "duree_s": 36.77,
+  "temps_estime": true,
+  "titre": "L'holographie explique l'action fantomatique et l'illusion du temps",
+  "resume": "On a flat 2D screen, entangled particles are not really far apart, so spooky action at a distance needs no magical communication. The same logic suggests that time as past, present and future is an illusion produced by our brains misreading quantum data.",
+  "mots_cles": [
+    "holographic principle",
+    "spooky action at a distance",
+    "entanglement",
+    "time illusion",
+    "linear time",
+    "2D plane",
+    "past present future"
+  ],
+  "texte": "The holographic principle actually explains Einstein's spooky action at a distance idea well. If the two particles are entangled on a flat 2D screen, they're not actually communicating with one another in some magical mysterious way across light-years of 3D space. We just perceive them as being far apart, but in reality, they aren't. That same sort of logic can also be applied to time. We experience it in a linear sequential format, past, present, and future, but that too might just be an illusion. It's our brain's desperate attempt to interpret complex quantum data unfolding on a flat plane that we're hardwired to misunderstand.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 74,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

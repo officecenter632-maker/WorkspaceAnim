@@ -1,0 +1,40 @@
+{
+  "rang": 5,
+  "score": 0.6586,
+  "idee_recherchee": {
+    "numero": 7,
+    "id": 7,
+    "texte": "Quantum entanglement links particles so that measuring one instantly affects the other no matter the distance, and some theorists believe that entanglement is the thread from which spacetime itself is woven."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=729s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 17,
+  "debut": 729.73,
+  "fin": 793.69,
+  "duree_s": 63.96,
+  "temps_estime": true,
+  "titre": "De l'espace-temps de Newton et Einstein à un espace-temps qui n'est pas réel",
+  "resume": "Newton saw space as a rigid stage and Einstein wove space and time into a 4D fabric, but both treated it as a backdrop for reality. The cosmic Bell test suggests distance is meaningless for entangled particles, so physical space is not what we think and space-time may not be real.",
+  "mots_cles": [
+    "Isaac Newton",
+    "space-time",
+    "Einstein",
+    "cosmic Bell test",
+    "distance meaningless",
+    "entangled particles",
+    "space-time not real",
+    "backdrop"
+  ],
+  "texte": "Isaac Newton famously saw space as a kind of rigid empty arena or a stage. Einstein took that idea to a new level suggesting that space and time weave around one another into a complex 4D fabric called space-time. But even in Einstein's vision, space-time was still seen as a kind of backdrop to reality. It was a physical layer that dictated where objects were, how quickly they can move, and how cause and effect worked together. The cosmic bell test shattered all of that. By closing that last loophole, the Canary Islands research team forced scientists across the globe to confront a whole new type of reality. A reality in which distance is meaningless. A reality in which particle A on the Earth can impact particle B on Jupiter instantly. If physical distance doesn't matter to entangled particles, then physical [music] space is not what we think it is. Einstein's space-time fabric clashes with quantum mechanics. That suggests something deeply unsettling. Space-time isn't [music] real. We may perceive it as real, but that's just a flaw in human nature.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 128,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "rang": 6,
+  "score": 0.6533,
+  "idee_recherchee": {
+    "numero": 7,
+    "id": 7,
+    "texte": "Quantum entanglement links particles so that measuring one instantly affects the other no matter the distance, and some theorists believe that entanglement is the thread from which spacetime itself is woven."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=120s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 4,
+  "debut": 120.19,
+  "fin": 149.95,
+  "duree_s": 29.76,
+  "temps_estime": true,
+  "titre": "Einstein rejette l'intrication : action fantomatique et variables cachées",
+  "resume": "Einstein mocked quantum theory and called entanglement spooky action at a distance, going to his grave convinced quantum physics was flawed. He believed particles carried a hidden variable set at birth, so they simply followed a script rather than communicating across light-years.",
+  "mots_cles": [
+    "spooky action at a distance",
+    "hidden variable",
+    "Einstein",
+    "entanglement",
+    "script",
+    "local realism",
+    "quantum flawed"
+  ],
+  "texte": "He famously mocked colleagues stating, \"Do you really believe the moon is not there when you're not looking at it?\" He jokingly called quantum entanglement \"spooky [music] action at a distance.\" He went to his grave believing that quantum physics was fundamentally flawed. Einstein believed scientists were missing a secret variable, like some sort of special property that was built into particles at their birth, which dictated their behavior in the future. To him, the particles weren't communicating across light-years, they were just following a script that we couldn't read yet.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 59,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}
