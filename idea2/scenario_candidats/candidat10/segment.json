@@ -1,0 +1,39 @@
+{
+  "rang": 10,
+  "score": 0.5908,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "The middle class is shrinking because a small group of corporations and billionaires now owns most of the wealth, while ordinary workers fall further into debt."
+  },
+  "video_id": "4ye6BMbA3UU",
+  "titre_video": "Ex-Google Executive: AI is Ending Capitalism",
+  "url_video": "https://www.youtube.com/watch?v=4ye6BMbA3UU",
+  "url_au_debut": "https://www.youtube.com/watch?v=4ye6BMbA3UU&t=849s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-4ye6bmba3uu-src",
+  "segment_id": 30,
+  "debut": 849.36,
+  "fin": 872.56,
+  "duree_s": 23.2,
+  "temps_estime": false,
+  "titre": "Conclusion: nobody knows how it ends, the elite protect themselves",
+  "resume": "Cites 300 million jobs globally per Goldman, half of white-collar entry-level positions, and 15 years of hell per Gawdat. Hedge funds are hedging, researchers resigning and the elite moving wealth off the grid, having accepted a world without the middle class.",
+  "mots_cles": [
+    "300 million jobs",
+    "middle class",
+    "corporate elite",
+    "hedge funds",
+    "conclusion",
+    "wealth",
+    "uncertainty"
+  ],
+  "texte": "300 million jobs globally, says Goldman. Half of all white-collar entry-level positions, say the experts. 15 years of hell, says the man who built the machine. Nobody knows how it ends. But the hedge funds are hedging, the researchers are resigning, and the corporate elite are moving their wealth off the grid. They aren’t worrying about the death of the middle class. They’ve already accepted a world without them.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 47,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

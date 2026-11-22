@@ -1,0 +1,40 @@
+{
+  "rang": 2,
+  "score": 0.6168,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "The middle class is shrinking because a small group of corporations and billionaires now owns most of the wealth, while ordinary workers fall further into debt."
+  },
+  "video_id": "OOxp8bShXaQ",
+  "titre_video": "The Collapse of the Dollar (And Why You're Already Poorer)",
+  "url_video": "https://www.youtube.com/watch?v=OOxp8bShXaQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=OOxp8bShXaQ&t=12642s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-ooxp8bshxaq-src",
+  "segment_id": 325,
+  "debut": 12642.32,
+  "fin": 12687.2,
+  "duree_s": 44.88,
+  "temps_estime": false,
+  "titre": "Why wages lag: union decline and corporate concentration",
+  "resume": "Reasons wages don't keep up: the decline of unions and more labor competing for fewer companies, as small businesses are run out and large companies merge into conglomerates. Economists found that since the 1930s the top 1% of companies' share of the US economy rose from 70% to 90%, and the top 0.1% asset share from 47% to 88%, an oligopoly.",
+  "mots_cles": [
+    "decline of unions",
+    "corporate concentration",
+    "oligopoly",
+    "conglomerates",
+    "top 1% of companies 90%",
+    "top 0.1% companies 88%",
+    "small businesses",
+    "wages"
+  ],
+  "texte": "keeping up? Well, the decline of unions, for one, then there's an increasing amount of labor in competition for fewer and fewer companies. Independent [music] and small businesses are increasingly run out of town and large companies grow and merge to form even bigger conglomerates. Prominent [music] economists from several universities calculated that since the 1930s the share of the US economy dominated the top 1% of companies that [music] has increased to 90% up from 70%. Meanwhile, the asset share of the top 0.1% of companies [music] has risen to 88% up from 47%. These companies are now running the market with an iron fist as the competition of just a handful of corporations [music] and oligopoly isn't really much of a competition at all. That is bad news for",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 90,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

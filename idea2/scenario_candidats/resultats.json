@@ -1,0 +1,131 @@
+{
+  "idee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "The middle class is shrinking because a small group of corporations and billionaires now owns most of the wealth, while ordinary workers fall further into debt."
+  },
+  "modele": "BAAI/bge-base-en-v1.5",
+  "nb_candidats": 10,
+  "candidats": [
+    {
+      "rang": 1,
+      "dossier": "candidat01",
+      "score": 0.6669,
+      "video_id": "dbcrn-0gY1w",
+      "titre_video": "You're Witnessing the Death of American Capitalism and More Insane Stories About the Economy",
+      "segment_id": 121,
+      "debut": 6382.76,
+      "fin": 6468.68,
+      "titre": "The shrinking middle class and the top 10 percent's 48 percent of spending",
+      "frames": true
+    },
+    {
+      "rang": 2,
+      "dossier": "candidat02",
+      "score": 0.6168,
+      "video_id": "OOxp8bShXaQ",
+      "titre_video": "The Collapse of the Dollar (And Why You're Already Poorer)",
+      "segment_id": 325,
+      "debut": 12642.32,
+      "fin": 12687.2,
+      "titre": "Why wages lag: union decline and corporate concentration",
+      "frames": true
+    },
+    {
+      "rang": 3,
+      "dossier": "candidat03",
+      "score": 0.6168,
+      "video_id": "YVFA79OhlU0",
+      "titre_video": "The 11% Interest Trap Just Hit Wall Street. Elite Portfolios Are PANICKING Right NOW.",
+      "segment_id": 26,
+      "debut": 827.6,
+      "fin": 862.64,
+      "titre": "Plot twist: the middle class borrows more against gains",
+      "frames": true
+    },
+    {
+      "rang": 4,
+      "dossier": "candidat04",
+      "score": 0.6166,
+      "video_id": "OOxp8bShXaQ",
+      "titre_video": "The Collapse of the Dollar (And Why You're Already Poorer)",
+      "segment_id": 258,
+      "debut": 10692.56,
+      "fin": 10733.04,
+      "titre": "Billionaires: 3,000 people owning a third of the wealth",
+      "frames": true
+    },
+    {
+      "rang": 5,
+      "dossier": "candidat05",
+      "score": 0.6134,
+      "video_id": "dbcrn-0gY1w",
+      "titre_video": "You're Witnessing the Death of American Capitalism and More Insane Stories About the Economy",
+      "segment_id": 37,
+      "debut": 1546.8,
+      "fin": 1623.36,
+      "titre": "Wealth inequality: billionaires and the richest 1 percent",
+      "frames": true
+    },
+    {
+      "rang": 6,
+      "dossier": "candidat06",
+      "score": 0.6098,
+      "video_id": "tehBa2ZjG-I",
+      "titre_video": "Why You Don't Want to Earn $150,000 to $250,000",
+      "segment_id": 16,
+      "debut": 418.38,
+      "fin": 468.34,
+      "titre": "Working class and six-figure earners are in the same boat",
+      "frames": true
+    },
+    {
+      "rang": 7,
+      "dossier": "candidat07",
+      "score": 0.5937,
+      "video_id": "NATQAFAFZ6I",
+      "titre_video": "United States Starts to Crack. Economy and Military Collapse Coming",
+      "segment_id": 270,
+      "debut": 10379.9,
+      "fin": 10402.17,
+      "titre": "The 2008 crash, foreclosures and the power of lobbyists",
+      "frames": true
+    },
+    {
+      "rang": 8,
+      "dossier": "candidat08",
+      "score": 0.593,
+      "video_id": "dbcrn-0gY1w",
+      "titre_video": "You're Witnessing the Death of American Capitalism and More Insane Stories About the Economy",
+      "segment_id": 38,
+      "debut": 1623.36,
+      "fin": 1709.68,
+      "titre": "The Roaring Twenties and the 1929 crash",
+      "frames": true
+    },
+    {
+      "rang": 9,
+      "dossier": "candidat09",
+      "score": 0.5918,
+      "video_id": "f39h7wgh2rQ",
+      "titre_video": "When the AI Bubble Bursts: A Financial Collapse Has Already Begun",
+      "segment_id": 125,
+      "debut": 6602.16,
+      "fin": 6652.72,
+      "titre": "Workers' share of value hits a record low of 52.9%",
+      "frames": true
+    },
+    {
+      "rang": 10,
+      "dossier": "candidat10",
+      "score": 0.5908,
+      "video_id": "4ye6BMbA3UU",
+      "titre_video": "Ex-Google Executive: AI is Ending Capitalism",
+      "segment_id": 30,
+      "debut": 849.36,
+      "fin": 872.56,
+      "titre": "Conclusion: nobody knows how it ends, the elite protect themselves",
+      "frames": true
+    }
+  ]
+}

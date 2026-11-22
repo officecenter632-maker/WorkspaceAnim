@@ -1,0 +1,39 @@
+{
+  "rang": 3,
+  "score": 0.6168,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "The middle class is shrinking because a small group of corporations and billionaires now owns most of the wealth, while ordinary workers fall further into debt."
+  },
+  "video_id": "YVFA79OhlU0",
+  "titre_video": "The 11% Interest Trap Just Hit Wall Street. Elite Portfolios Are PANICKING Right NOW.",
+  "url_video": "https://www.youtube.com/watch?v=YVFA79OhlU0",
+  "url_au_debut": "https://www.youtube.com/watch?v=YVFA79OhlU0&t=827s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-yvfa79ohlu0-src",
+  "segment_id": 26,
+  "debut": 827.6,
+  "fin": 862.64,
+  "duree_s": 35.04,
+  "temps_estime": false,
+  "titre": "Plot twist: the middle class borrows more against gains",
+  "resume": "Borrowing against unrealized gains is more common in the middle class: in 2022 households in the 50th to 90th percentile borrowed against 42% of gains, mostly through homes. The extreme leverage is a smaller group with wealth in one stock, 5-year office loans or credit lines used like checking.",
+  "mots_cles": [
+    "middle class",
+    "unrealized gains",
+    "home equity",
+    "50th-90th percentile",
+    "42%",
+    "concentrated stock",
+    "credit line"
+  ],
+  "texte": "But there was a plot twist. Something completely unexpected. Borrowing against unrealized gains is actually more prevalent among the middle class. In 2022, Americans in the 50th-90th percentile borrowed against 42% of their unrealized gains, primarily through their homes. Regular families were taking out debt against the paper equity of their own homes. It wasn’t the normal practice of the ultra wealthy. It was a more extreme way of life for a smaller group: the people who had almost their entire wealth invested in a single stock, bought office towers with 5-year loans, and or used a credit line like a checking account.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 70,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "rang": 7,
+  "score": 0.5937,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "The middle class is shrinking because a small group of corporations and billionaires now owns most of the wealth, while ordinary workers fall further into debt."
+  },
+  "video_id": "NATQAFAFZ6I",
+  "titre_video": "United States Starts to Crack. Economy and Military Collapse Coming",
+  "url_video": "https://www.youtube.com/watch?v=NATQAFAFZ6I",
+  "url_au_debut": "https://www.youtube.com/watch?v=NATQAFAFZ6I&t=10379s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-natqafafz6i-src",
+  "segment_id": 270,
+  "debut": 10379.9,
+  "fin": 10402.17,
+  "duree_s": 22.27,
+  "temps_estime": false,
+  "titre": "The 2008 crash, foreclosures and the power of lobbyists",
+  "resume": "In 2008 the financial crash plunged the world into recession: 8.7 million US jobs were lost over two years and there were 10 million home foreclosures, while many of the very wealthy saw their net worths increase. Critics also cited the power of lobbyists and campaign donations as weakening democracy and hurting the people.",
+  "mots_cles": [
+    "2008 financial crash",
+    "8.7 million jobs lost",
+    "10 million foreclosures",
+    "wealthy gained",
+    "lobbyists",
+    "campaign donations",
+    "weakening democracy",
+    "recession"
+  ],
+  "texte": "financial crash plunged the world [music] into a recession. 8.7 million jobs were lost in the US over the next two years and there were 10 million home foreclosures, but many of the very wealthy saw their net worths increase. One of the major criticisms of the late 20th century [music] was the power of lobbyists and campaign donations, which critics said were weakening democracy and hurting the people. Mistrust of",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 45,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

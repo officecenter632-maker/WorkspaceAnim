@@ -1,0 +1,40 @@
+{
+  "rang": 1,
+  "score": 0.6669,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "The middle class is shrinking because a small group of corporations and billionaires now owns most of the wealth, while ordinary workers fall further into debt."
+  },
+  "video_id": "dbcrn-0gY1w",
+  "titre_video": "You're Witnessing the Death of American Capitalism and More Insane Stories About the Economy",
+  "url_video": "https://www.youtube.com/watch?v=dbcrn-0gY1w",
+  "url_au_debut": "https://www.youtube.com/watch?v=dbcrn-0gY1w&t=6382s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-dbcrn-0gy1w-src",
+  "segment_id": 121,
+  "debut": 6382.76,
+  "fin": 6468.68,
+  "duree_s": 85.92,
+  "temps_estime": false,
+  "titre": "The shrinking middle class and the top 10 percent's 48 percent of spending",
+  "resume": "The Ludwig Institute says middle and working-class Americans face a growing crisis despite economic growth. The middle spending bracket fell from 37% of consumer spending in 1992 to 28% in 2025, while the top 10% of earners, above $250,000, rose from 35% to 48%, and the working class holds only 9%, a trend Moody's Mark Zandi says will continue.",
+  "mots_cles": [
+    "middle class",
+    "consumer spending share",
+    "top 10 percent 48%",
+    "$250,000 income",
+    "working class 9%",
+    "Mark Zandi",
+    "Moody's Analytics",
+    "K-shaped"
+  ],
+  "texte": "\"Middle and working-class Americans are facing a growing economic crisis, struggling to make ends meet despite recent economic growth. The rising cost of living, stagnant wages, and a shortage of living-wage employment is creating a perfect storm that threatens social and economic stability. But, that's a gamble that the government and the banking industry is more than happy to take. It's your chips on the table, not theirs. This means that the middle class is bleeding spending power like it just nicked a major artery. As of 2025, people in the middle spending bracket make up only 28% of the total US consumer spending market. That same group had 37% in 1992. By contrast, the purchasing power of the folks in the top 10% of earners making over $250,000 a year have filled in the power vacuum. They were 35% of consumer spending back in 1992, and now they're at 48%. [music] Let that sink in. 10% of people in the country are in control of nearly half of all consumer spending in the US. That's more than just an advantage, [music] it's complete domination. And the working class are only getting even worse than the dwindling lower middle class. They make up only 9% of consumer spending power, less than a tenth of the total. According to Mark Zandi, the chief economist at Moody's Analytics, lower income households have seen their share of the economic pie decline, and that's going to continue. The system is picking your pocket right now, trading",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 172,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

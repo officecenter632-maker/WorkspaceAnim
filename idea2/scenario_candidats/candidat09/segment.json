@@ -1,0 +1,40 @@
+{
+  "rang": 9,
+  "score": 0.5918,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "The middle class is shrinking because a small group of corporations and billionaires now owns most of the wealth, while ordinary workers fall further into debt."
+  },
+  "video_id": "f39h7wgh2rQ",
+  "titre_video": "When the AI Bubble Bursts: A Financial Collapse Has Already Begun",
+  "url_video": "https://www.youtube.com/watch?v=f39h7wgh2rQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=f39h7wgh2rQ&t=6602s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-f39h7wgh2rq-src",
+  "segment_id": 125,
+  "debut": 6602.16,
+  "fin": 6652.72,
+  "duree_s": 50.56,
+  "temps_estime": true,
+  "titre": "Workers' share of value hits a record low of 52.9%",
+  "resume": "The Bureau of Labor Statistics' Q2 2026 productivity release shows workers took home only 52.9% of the value they produced, versus 65.8% in 1947 and 62.8% in 2000, a record low. Real hourly compensation fell 3.1% year over year, and shrinking employment makes wealth concentration even worse.",
+  "mots_cles": [
+    "Bureau of Labor Statistics",
+    "labor share 52.9%",
+    "record low",
+    "real hourly compensation -3.1%",
+    "productivity",
+    "1947 comparison",
+    "wealth concentration",
+    "August 2026"
+  ],
+  "texte": "So, where's the month going? In August 2026, the Bureau of Labor Statistics published its productivity release for the second quarter. Buried in it was a number that is arguably the biggest predictor of how global capitalism works. It revealed that workers took home just 52.9% of the value they produced for the business. For scale, in the first quarter of 1947, [music] that figure was 65.8% 8%. At the end of 2000, it was 62.8%. The August 2026 figure was a record low. In the same release, real hourly compensation, what workers actually earn after inflation, fell 3.1% year-over-year. The remaining 47% isn't all profit. It includes depreciation, interest, rent, and taxes. But regardless of that, the portion ending up in the worker's hands has never been smaller. And when you couple this with shrinking employment, the concentration of wealth gets even worse. [music]",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 101,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

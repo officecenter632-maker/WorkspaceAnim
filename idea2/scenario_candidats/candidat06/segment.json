@@ -1,0 +1,40 @@
+{
+  "rang": 6,
+  "score": 0.6098,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "The middle class is shrinking because a small group of corporations and billionaires now owns most of the wealth, while ordinary workers fall further into debt."
+  },
+  "video_id": "tehBa2ZjG-I",
+  "titre_video": "Why You Don't Want to Earn $150,000 to $250,000",
+  "url_video": "https://www.youtube.com/watch?v=tehBa2ZjG-I",
+  "url_au_debut": "https://www.youtube.com/watch?v=tehBa2ZjG-I&t=418s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-tehba2zjg-i-src",
+  "segment_id": 16,
+  "debut": 418.38,
+  "fin": 468.34,
+  "duree_s": 49.96,
+  "temps_estime": false,
+  "titre": "Working class and six-figure earners are in the same boat",
+  "resume": "Lower-income Americans feel resentment at a system leaving them behind; it is aimed mostly at the 1%, but since few know a billionaire it lands on six-figure professionals. The narrator argues the working class and six-figure earners are both far from the 1%, and the dividing line is how you make money, with traditional paychecks making both targets of a changed tax system.",
+  "mots_cles": [
+    "resentment",
+    "working class",
+    "six-figure professional",
+    "the 1%",
+    "trading time for money",
+    "traditional paychecks",
+    "tax system",
+    "same boat"
+  ],
+  "texte": "Among lower-income Americans, a deep resentment and anger at a system they feel is leaving them behind has emerged. While it’s mostly aimed at the 1%, most people don’t know a billionaire. So that frustration gets aimed elsewhere… and the 6 figure professional is often in the crosshairs. People are quick to laugh and scoff that a high level professional could struggle. The working class and the 6 figure earner are stuck in the same boat. Even if they don’t admit it. While one sits in an office and the other works a trade, they’re both lightyears away from the 1%. The dividing line isn’t how much you make, it’s how you make it. Because both groups survive on traditional paychecks, they are targets for a tax system that has subtly changed. And that’s left anyone trading time for money out in the cold. And it all happened without anyone noticing… at least at first.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 100,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

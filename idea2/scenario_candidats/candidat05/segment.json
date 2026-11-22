@@ -1,0 +1,40 @@
+{
+  "rang": 5,
+  "score": 0.6134,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "The middle class is shrinking because a small group of corporations and billionaires now owns most of the wealth, while ordinary workers fall further into debt."
+  },
+  "video_id": "dbcrn-0gY1w",
+  "titre_video": "You're Witnessing the Death of American Capitalism and More Insane Stories About the Economy",
+  "url_video": "https://www.youtube.com/watch?v=dbcrn-0gY1w",
+  "url_au_debut": "https://www.youtube.com/watch?v=dbcrn-0gY1w&t=1546s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-dbcrn-0gy1w-src",
+  "segment_id": 37,
+  "debut": 1546.8,
+  "fin": 1623.36,
+  "duree_s": 76.56,
+  "temps_estime": false,
+  "titre": "Wealth inequality: billionaires and the richest 1 percent",
+  "resume": "2025 census data show average household income stagnating since the pandemic while the richest households gained. US billionaire wealth grew from about $2.9 trillion to $5 trillion between March 2020 and October 2021, the bottom 50% owns just 2.5% of wealth, and the top 1% owns half of stocks and mutual funds, up from 40% in 2002.",
+  "mots_cles": [
+    "wealth inequality",
+    "billionaires",
+    "$2 trillion increase",
+    "bottom 50 percent",
+    "top 1 percent",
+    "Federal Reserve",
+    "stock ownership",
+    "census 2025"
+  ],
+  "texte": "The divide between the haves and the have-nots seems to be getting wider and wider. According to [music] 2025 census data, we have seen the income of the average household stagnate since the pandemic, while the richest households in the country have actually seen a little boost. Normal people were suffering during the worst years of the pandemic lockdown, and the billionaire class was actually getting richer. >> [music] >> The combined wealth of all US billionaires increased by just over $2 trillion between March 18th, 2020 and October 15th, [music] 2021, going from approximately 2.9 trillion to around 5 trillion. The US has over 700 billionaires, the most of any country in the world. But let's look at the five richest people in that period. Bill Gates, [music] Mark Zuckerberg, Larry Page, Elon Musk, and of course, the happily married Jeff Bezos. In that lockdown period, their combined wealth grew 123% in the first [music] financial quarter of 2025, the bottom 50% of earners in the US owned only a combined 2.5% [music] of all the wealth in the US. The richest 1% now own half of all US stocks and mutual funds, up from 40% in 2002, according to the Federal Reserve. So, when the news celebrates a booming stock market, we know who is really cashing in, and it's not us. It's important to",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 153,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

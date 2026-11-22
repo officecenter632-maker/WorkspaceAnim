@@ -1,0 +1,40 @@
+{
+  "rang": 8,
+  "score": 0.593,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "The middle class is shrinking because a small group of corporations and billionaires now owns most of the wealth, while ordinary workers fall further into debt."
+  },
+  "video_id": "dbcrn-0gY1w",
+  "titre_video": "You're Witnessing the Death of American Capitalism and More Insane Stories About the Economy",
+  "url_video": "https://www.youtube.com/watch?v=dbcrn-0gY1w",
+  "url_au_debut": "https://www.youtube.com/watch?v=dbcrn-0gY1w&t=1623s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-dbcrn-0gy1w-src",
+  "segment_id": 38,
+  "debut": 1623.36,
+  "fin": 1709.68,
+  "duree_s": 86.32,
+  "temps_estime": false,
+  "titre": "The Roaring Twenties and the 1929 crash",
+  "resume": "The Roaring Twenties were not roaring for everyone: in 1923 the Supreme Court struck down minimum wage laws and in 1926 Coolidge cut taxes for the rich. By 1929 just 0.1% held 34% of the nation's wealth and 200 companies controlled half of corporate wealth, and with workers lacking purchasing power overproduced goods went unsold, setting the stage for the Great Depression.",
+  "mots_cles": [
+    "Roaring Twenties",
+    "1929 crash",
+    "Coolidge tax cuts",
+    "minimum wage ruling 1923",
+    "wealth concentration",
+    "overproduction",
+    "Great Depression",
+    "deregulation"
+  ],
+  "texte": "[music] remember that we have been here before. The Roaring Twenties weren't exactly roaring for everyone. While the Gatsbys of the world were living it up, average people were having a harder time keeping it together. In 1923, the Supreme Court ruled that the minimum wage laws were unconstitutional. So, if employers wanted to pay chicken feed to their workers, they could. In 1926, President [music] Coolidge cut taxes for the rich to stimulate the economy, and this ended up having the absolute opposite effect. >> [music] >> By 1929, deregulation had concentrated wealth to a staggering degree. Just 0.1% of the population held 34% of the nation's wealth, the same as the bottom 42% combined. [music] Half of all corporate wealth in a country of more than 100 million people was controlled by only 200 companies. Despite corporate profits rising by around 62% over the course of the decade, that success did not trickle down. In October of 1929, the US economy exploded, and even that is putting it [music] mildly. One of the main reasons why the stock market crashed and the US banking system went belly up is a pretty obvious result of shortsightedness and greed. Companies paid their workers terrible money to create a huge amount of industrial output and products, but because everyone [music] was making terrible money, they had no purchasing power. So, there was nobody to buy the products that those companies overproduced. [music] Everyone was sitting on a surplus of overpriced goods, from agriculture to consumer products. And that set the stage for the Great Depression.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 173,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

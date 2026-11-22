@@ -1,0 +1,40 @@
+{
+  "rang": 4,
+  "score": 0.6166,
+  "idee_recherchee": {
+    "numero": 2,
+    "id": 2,
+    "texte": "The middle class is shrinking because a small group of corporations and billionaires now owns most of the wealth, while ordinary workers fall further into debt."
+  },
+  "video_id": "OOxp8bShXaQ",
+  "titre_video": "The Collapse of the Dollar (And Why You're Already Poorer)",
+  "url_video": "https://www.youtube.com/watch?v=OOxp8bShXaQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=OOxp8bShXaQ&t=10692s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-ooxp8bshxaq-src",
+  "segment_id": 258,
+  "debut": 10692.56,
+  "fin": 10733.04,
+  "duree_s": 40.48,
+  "temps_estime": false,
+  "titre": "Billionaires: 3,000 people owning a third of the wealth",
+  "resume": "About 3,000 billionaires own roughly one third of the wealth, and over a third of the world's 50 biggest corporations, worth a combined $13.3 trillion, are run or substantially owned by billionaires. The richest 1% hold more than the bottom 95% combined, and billionaire wealth keeps growing exponentially, giving them massive influence over global economies.",
+  "mots_cles": [
+    "billionaires",
+    "3,000 billionaires",
+    "one third of wealth",
+    "50 biggest corporations",
+    "$13.3 trillion",
+    "richest 1%",
+    "bottom 95%",
+    "wealth concentration"
+  ],
+  "texte": "But even within this elite club, there's a smaller circle still. Those who stand at the very peak of global riches. There might only be 3,000 billionaires in the world, but between them, they own onethird of the wealth. Over a third of the world's 50 biggest corporations [music] worth a combined 13.3 trillion are run by billionaires or have one as a major shareholder. To put that into perspective, the richest 1% [music] of the people hold more wealth than the bottom 95% of the population combined. The wealth of billionaires has continued to increase exponentially, [music] especially over the last few years, and this has enabled them to have massive influence over global economies. At the",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 81,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}
