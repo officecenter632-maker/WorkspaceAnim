@@ -1,0 +1,40 @@
+{
+  "rang": 2,
+  "score": 0.6495,
+  "idee_recherchee": {
+    "numero": 1,
+    "id": 1,
+    "texte": "Millions of American families are now spending more than half of their income on rent, and eviction rates are rising fast as wages fail to keep up with housing costs."
+  },
+  "video_id": "DRP7tRXts0Q",
+  "titre_video": "Renting vs Buying - Follow The Math!",
+  "url_video": "https://www.youtube.com/watch?v=DRP7tRXts0Q",
+  "url_au_debut": "https://www.youtube.com/watch?v=DRP7tRXts0Q&t=125s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-drp7trxts0q-src",
+  "segment_id": 5,
+  "debut": 125.36,
+  "fin": 145.68,
+  "duree_s": 20.32,
+  "temps_estime": false,
+  "titre": "Renting indefinitely: 32.8% of median income",
+  "resume": "Those without a home base rent, often indefinitely, which makes saving almost impossible. The average US rent check takes 32.8% of median household income, and more in major cities where people sublet or get roommates.",
+  "mots_cles": [
+    "rent burden",
+    "32.8% of income",
+    "median household income",
+    "roommates",
+    "subletting",
+    "saving",
+    "major cities",
+    "renting indefinitely"
+  ],
+  "texte": "For those who don’t have a convenient home base, they’re left with no choice but to rent, often indefinitely. That makes it almost impossible to save. The average rent check in the United States today takes up 32.8% of a median household income. But this skyrockets in major cities, where many people are forced to sublet or get roommates just to make rent.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 41,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

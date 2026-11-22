@@ -1,0 +1,40 @@
+{
+  "rang": 8,
+  "score": 0.622,
+  "idee_recherchee": {
+    "numero": 1,
+    "id": 1,
+    "texte": "Millions of American families are now spending more than half of their income on rent, and eviction rates are rising fast as wages fail to keep up with housing costs."
+  },
+  "video_id": "OOxp8bShXaQ",
+  "titre_video": "The Collapse of the Dollar (And Why You're Already Poorer)",
+  "url_video": "https://www.youtube.com/watch?v=OOxp8bShXaQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=OOxp8bShXaQ&t=13230s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-ooxp8bshxaq-src",
+  "segment_id": 341,
+  "debut": 13230.72,
+  "fin": 13296.48,
+  "duree_s": 65.76,
+  "temps_estime": false,
+  "titre": "Home ownership builds wealth, renters fall behind",
+  "resume": "Not being able to buy a house limits how much wealth you and your descendants can build. A National Association of Realtors report found middle-income homeowners accumulated $122,100 in wealth by 2023 with 68% property appreciation since 2012; Lawrence Yun says a mortgage is forced savings giving homeowners about 40 times a renter's net worth. In 2022 renters spent 30% of income on rent and the owner-renter wealth gap grew 70% in three decades (Bremer Bank).",
+  "mots_cles": [
+    "home ownership wealth",
+    "National Association of Realtors",
+    "$122,100 wealth",
+    "68% appreciation",
+    "Lawrence Yun",
+    "renters 30% of income",
+    "Bremer Bank wealth gap",
+    "mortgage forced savings"
+  ],
+  "texte": "People's inability to buy a house and invest in property that's going to appreciate makes a huge impact on how much wealth you can build in your life and [music] how much wealth your children and grandchildren can build. Home ownership itself helps people build wealth by giving them the ability to take out loans [music] against their property that they can use to invest or build up something of their own. A report by the National Association of Realtors found out that [music] by 2023, middleincome homeowners had accumulated $122,100 in wealth due to an average of 68% appreciation in their property value since [music] 2012. N chief economist Lawrence Yun says a monthly mortgage payment is often considered [music] a forced savings account that helps homeowners build a net worth about 40 times higher than that of a renter. In the meantime, [music] the potential of renters to build a path toward home ownership is becoming more and more bleak. In 2022, [music] renters in the US spent an average of 30% of their income on rent, a record high that's only continued to rise. According to Bremer Bank, that's led to a 70% increase [music] in the wealth gap between owners and renters in the last three decades. Now, people born rich",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 131,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

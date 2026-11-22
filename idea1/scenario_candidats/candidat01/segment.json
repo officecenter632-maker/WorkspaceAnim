@@ -1,0 +1,40 @@
+{
+  "rang": 1,
+  "score": 0.676,
+  "idee_recherchee": {
+    "numero": 1,
+    "id": 1,
+    "texte": "Millions of American families are now spending more than half of their income on rent, and eviction rates are rising fast as wages fail to keep up with housing costs."
+  },
+  "video_id": "AvyHU0m8vdE",
+  "titre_video": "How Are Americans Affording $500,000 Homes on Average Salaries?",
+  "url_video": "https://www.youtube.com/watch?v=AvyHU0m8vdE",
+  "url_au_debut": "https://www.youtube.com/watch?v=AvyHU0m8vdE&t=743s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-avyhu0m8vde-src",
+  "segment_id": 22,
+  "debut": 743.76,
+  "fin": 772.32,
+  "duree_s": 28.56,
+  "temps_estime": false,
+  "titre": "Renting versus buying: why renters might come out on top",
+  "resume": "Renting feels bad, but mortgage holders also hand over a large share of income. Rent increases are limited in many big cities, and evicting a renter can be harder than foreclosing on a homeowner. Buying usually takes up to 7 years to beat renting financially because of high initial costs.",
+  "mots_cles": [
+    "renting vs buying",
+    "rent control",
+    "eviction",
+    "foreclosure",
+    "7 years break-even",
+    "initial costs",
+    "landlords",
+    "renters"
+  ],
+  "texte": "So renters might come out on top. Renting doesn’t feel particularly good, because you’re giving over a large percentage of your income to someone else. But technically, mortgage holders are doing the same. And because of regulations in many major cities, landlords are limited in how much they can raise the rent each year. It can actually be harder to evict a renter than it is to foreclose on a home. It usually takes up to 7 years for buying a home to even be a better financial deal over renting, because of the high initial costs.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 57,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

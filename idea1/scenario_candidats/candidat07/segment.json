@@ -1,0 +1,40 @@
+{
+  "rang": 7,
+  "score": 0.63,
+  "idee_recherchee": {
+    "numero": 1,
+    "id": 1,
+    "texte": "Millions of American families are now spending more than half of their income on rent, and eviction rates are rising fast as wages fail to keep up with housing costs."
+  },
+  "video_id": "AvyHU0m8vdE",
+  "titre_video": "How Are Americans Affording $500,000 Homes on Average Salaries?",
+  "url_video": "https://www.youtube.com/watch?v=AvyHU0m8vdE",
+  "url_au_debut": "https://www.youtube.com/watch?v=AvyHU0m8vdE&t=122s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-avyhu0m8vde-src",
+  "segment_id": 4,
+  "debut": 122.56,
+  "fin": 161.92,
+  "duree_s": 39.36,
+  "temps_estime": false,
+  "titre": "Reverse housing crisis: cautious lenders and chronic under-building",
+  "resume": "Advisors recommend spending under a third of gross income on housing, but taxes, insurance and mortgage payments push many toward half. Post-2008 caution shut regular buyers out of lending, while the US has under-built for over a decade and has a deficit of millions of homes. Labor shortages, zoning, land-use rules and land costs paralyzed developers and costs were passed to consumers.",
+  "mots_cles": [
+    "housing shortage",
+    "under-building",
+    "zoning",
+    "land-use regulations",
+    "labor shortage",
+    "lender caution",
+    "gross income",
+    "housing costs"
+  ],
+  "texte": "Financial advisors recommend keeping the percentage of gross income spent on housing under a third. But between property taxes, insurance, and mortgage payments, it’s common for it to creep up towards half of available money. This sparked a bizarre reverse housing crisis. The scars of 2008 made traditional lenders so cautious, they shut regular buyers out of the market. Compounding the disaster, the U.S. has been chronically under-building houses for over a decade. The country now has a deficit of millions of homes. Labor shortages, onerous zoning and land-use regulations, and the cost of land has paralyzed developers. And the cost was passed on to consumers.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 78,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

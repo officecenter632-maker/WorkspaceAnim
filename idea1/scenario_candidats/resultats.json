@@ -1,0 +1,131 @@
+{
+  "idee": {
+    "numero": 1,
+    "id": 1,
+    "texte": "Millions of American families are now spending more than half of their income on rent, and eviction rates are rising fast as wages fail to keep up with housing costs."
+  },
+  "modele": "BAAI/bge-base-en-v1.5",
+  "nb_candidats": 10,
+  "candidats": [
+    {
+      "rang": 1,
+      "dossier": "candidat01",
+      "score": 0.676,
+      "video_id": "AvyHU0m8vdE",
+      "titre_video": "How Are Americans Affording $500,000 Homes on Average Salaries?",
+      "segment_id": 22,
+      "debut": 743.76,
+      "fin": 772.32,
+      "titre": "Renting versus buying: why renters might come out on top",
+      "frames": true
+    },
+    {
+      "rang": 2,
+      "dossier": "candidat02",
+      "score": 0.6495,
+      "video_id": "DRP7tRXts0Q",
+      "titre_video": "Renting vs Buying - Follow The Math!",
+      "segment_id": 5,
+      "debut": 125.36,
+      "fin": 145.68,
+      "titre": "Renting indefinitely: 32.8% of median income",
+      "frames": true
+    },
+    {
+      "rang": 3,
+      "dossier": "candidat03",
+      "score": 0.6461,
+      "video_id": "DRP7tRXts0Q",
+      "titre_video": "Renting vs Buying - Follow The Math!",
+      "segment_id": 1,
+      "debut": 0.16,
+      "fin": 26.72,
+      "titre": "Hook: the American Dream of owning is becoming a nightmare",
+      "frames": true
+    },
+    {
+      "rang": 4,
+      "dossier": "candidat04",
+      "score": 0.6333,
+      "video_id": "dbcrn-0gY1w",
+      "titre_video": "You're Witnessing the Death of American Capitalism and More Insane Stories About the Economy",
+      "segment_id": 34,
+      "debut": 1429.44,
+      "fin": 1476.56,
+      "titre": "Housing affordability and record homelessness",
+      "frames": true
+    },
+    {
+      "rang": 5,
+      "dossier": "candidat05",
+      "score": 0.6317,
+      "video_id": "OOxp8bShXaQ",
+      "titre_video": "The Collapse of the Dollar (And Why You're Already Poorer)",
+      "segment_id": 23,
+      "debut": 953.36,
+      "fin": 1022.48,
+      "titre": "Housing and living costs rose faster than wages",
+      "frames": true
+    },
+    {
+      "rang": 6,
+      "dossier": "candidat06",
+      "score": 0.631,
+      "video_id": "OOxp8bShXaQ",
+      "titre_video": "The Collapse of the Dollar (And Why You're Already Poorer)",
+      "segment_id": 339,
+      "debut": 13164.64,
+      "fin": 13193.2,
+      "titre": "Housing shortage: 3 million homes short and its causes",
+      "frames": true
+    },
+    {
+      "rang": 7,
+      "dossier": "candidat07",
+      "score": 0.63,
+      "video_id": "AvyHU0m8vdE",
+      "titre_video": "How Are Americans Affording $500,000 Homes on Average Salaries?",
+      "segment_id": 4,
+      "debut": 122.56,
+      "fin": 161.92,
+      "titre": "Reverse housing crisis: cautious lenders and chronic under-building",
+      "frames": true
+    },
+    {
+      "rang": 8,
+      "dossier": "candidat08",
+      "score": 0.622,
+      "video_id": "OOxp8bShXaQ",
+      "titre_video": "The Collapse of the Dollar (And Why You're Already Poorer)",
+      "segment_id": 341,
+      "debut": 13230.72,
+      "fin": 13296.48,
+      "titre": "Home ownership builds wealth, renters fall behind",
+      "frames": true
+    },
+    {
+      "rang": 9,
+      "dossier": "candidat09",
+      "score": 0.6218,
+      "video_id": "dbcrn-0gY1w",
+      "titre_video": "You're Witnessing the Death of American Capitalism and More Insane Stories About the Economy",
+      "segment_id": 102,
+      "debut": 5097.84,
+      "fin": 5128.92,
+      "titre": "You're not broke because you aren't working hard enough: the housing ratio",
+      "frames": true
+    },
+    {
+      "rang": 10,
+      "dossier": "candidat10",
+      "score": 0.6217,
+      "video_id": "AvyHU0m8vdE",
+      "titre_video": "How Are Americans Affording $500,000 Homes on Average Salaries?",
+      "segment_id": 1,
+      "debut": 0.16,
+      "fin": 32.24,
+      "titre": "Hook: families spending half their paycheck on housing",
+      "frames": true
+    }
+  ]
+}

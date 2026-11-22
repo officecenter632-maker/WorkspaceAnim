@@ -1,0 +1,40 @@
+{
+  "rang": 4,
+  "score": 0.6333,
+  "idee_recherchee": {
+    "numero": 1,
+    "id": 1,
+    "texte": "Millions of American families are now spending more than half of their income on rent, and eviction rates are rising fast as wages fail to keep up with housing costs."
+  },
+  "video_id": "dbcrn-0gY1w",
+  "titre_video": "You're Witnessing the Death of American Capitalism and More Insane Stories About the Economy",
+  "url_video": "https://www.youtube.com/watch?v=dbcrn-0gY1w",
+  "url_au_debut": "https://www.youtube.com/watch?v=dbcrn-0gY1w&t=1429s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-dbcrn-0gy1w-src",
+  "segment_id": 34,
+  "debut": 1429.44,
+  "fin": 1476.56,
+  "duree_s": 47.12,
+  "temps_estime": false,
+  "titre": "Housing affordability and record homelessness",
+  "resume": "In March 2025 only one in five homes was affordable on a $75,000 salary, and at $50,000 only 8.7% of listings were affordable. Homelessness has risen 18% since 2024 to about 771,000 people, including 150,000 children, the worst numbers HUD has ever recorded.",
+  "mots_cles": [
+    "housing affordability",
+    "$75,000 salary",
+    "8.7% of listings",
+    "homelessness",
+    "771,000 people",
+    "HUD",
+    "150,000 children",
+    "18 percent rise"
+  ],
+  "texte": ">> [music] >> Back in March 2025, only one in five homes was seen as affordable for someone with a $75,000 annual salary. If you are making a little less than that, at 50,000, you can only afford 8.7% of home [music] listings. That's down 9.4% from 2024. And while being forced into the position of the eternal renter is pretty bad, an even [music] worse possibility is becoming increasingly likely. Since 2024, homelessness in the United States has risen a completely depressing 18%. [music] That's around 771,000 people, almost a million Americans sleeping in their cars or on the streets. 150,000 of them are children. The [music] US Department of Housing and Urban Development, who conducted the reports on these matters, have said these are the worst numbers they've ever seen.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 95,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

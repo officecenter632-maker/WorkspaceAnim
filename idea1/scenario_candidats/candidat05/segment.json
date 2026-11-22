@@ -1,0 +1,40 @@
+{
+  "rang": 5,
+  "score": 0.6317,
+  "idee_recherchee": {
+    "numero": 1,
+    "id": 1,
+    "texte": "Millions of American families are now spending more than half of their income on rent, and eviction rates are rising fast as wages fail to keep up with housing costs."
+  },
+  "video_id": "OOxp8bShXaQ",
+  "titre_video": "The Collapse of the Dollar (And Why You're Already Poorer)",
+  "url_video": "https://www.youtube.com/watch?v=OOxp8bShXaQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=OOxp8bShXaQ&t=953s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-ooxp8bshxaq-src",
+  "segment_id": 23,
+  "debut": 953.36,
+  "fin": 1022.48,
+  "duree_s": 69.12,
+  "temps_estime": false,
+  "titre": "Housing and living costs rose faster than wages",
+  "resume": "Gen Z paid 31% more for housing in 2022 than millennials a decade earlier, and almost double what baby boomers paid in the 1970s. The average US home cost $42,600 in 1975 ($244,700 adjusted) but over $512,000 in 2024, car insurance doubled and health insurance rose 46% while inflation-adjusted wages rose only 26%.",
+  "mots_cles": [
+    "housing costs",
+    "home price $512,000",
+    "1975 home price",
+    "car insurance doubled",
+    "health insurance 46%",
+    "wages 26%",
+    "cost of living",
+    "inflation adjusted"
+  ],
+  "texte": "Gen Z is working, so what gives? The answer is the insanely high cost of living and the refusal of wages to match it. In 2022, Gen Z was paying 31% more for housing than millennials were just a decade before them, adjusted for inflation. and millennials were already getting a bad deal. Gen Z and millennials pay on average almost 100% more for their homes than baby boomers in the 1970s. In 1975, the average home in the US cost $42,600 or $244,700 when adjusted with 2024 inflation rates. In 2024, however, the average home cost just over $512,000. And if you're looking in major metro areas where top universities and booming job markets are supposed to offer better opportunities, the prices are even worse. That's not the only cost of living to shoot up over the decades either. From 2012 to 2022, car insurance payments more than doubled. Even accounting for inflation and health insurance spending went up 46%. While wages also went up, they only increased by an inflation adjusted 26%. That doesn't even cover the higher housing prices, never mind everything else. And",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 138,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

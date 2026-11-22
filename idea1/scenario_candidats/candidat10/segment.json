@@ -1,0 +1,40 @@
+{
+  "rang": 10,
+  "score": 0.6217,
+  "idee_recherchee": {
+    "numero": 1,
+    "id": 1,
+    "texte": "Millions of American families are now spending more than half of their income on rent, and eviction rates are rising fast as wages fail to keep up with housing costs."
+  },
+  "video_id": "AvyHU0m8vdE",
+  "titre_video": "How Are Americans Affording $500,000 Homes on Average Salaries?",
+  "url_video": "https://www.youtube.com/watch?v=AvyHU0m8vdE",
+  "url_au_debut": "https://www.youtube.com/watch?v=AvyHU0m8vdE&t=0s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-avyhu0m8vde-src",
+  "segment_id": 1,
+  "debut": 0.16,
+  "fin": 32.24,
+  "duree_s": 32.08,
+  "temps_estime": false,
+  "titre": "Hook: families spending half their paycheck on housing",
+  "resume": "Millions of families are signing over more than 50% of their paycheck to keep a roof over their heads. Corporate housebuilders act as builder, broker and shadow lender and mask the true cost of ownership with artificial teaser rates. The video claims this creates ticking debt bombs in the suburbs.",
+  "mots_cles": [
+    "housing crisis",
+    "50% of paycheck",
+    "teaser rates",
+    "shadow lender",
+    "housebuilders",
+    "debt bombs",
+    "American Dream",
+    "suburbs"
+  ],
+  "texte": "Right now, millions of families are blindly walking into a financial crisis. To chase the American Dream, they’re signing over 50% of their entire paycheck just to keep a roof over their heads. It should be a red flag. A reason for banks to ring the alarm bells. But corporate housebuilders have found a workaround. By acting as the builder, broker and shadow lender, these mega-corporations are masking the real cost of home ownership with artificial teaser rates. They’re luring middle class families into ticking debt bombs. And the suburbs are one rate reset from exploding.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 64,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

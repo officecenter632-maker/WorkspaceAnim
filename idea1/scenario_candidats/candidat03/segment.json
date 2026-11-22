@@ -1,0 +1,40 @@
+{
+  "rang": 3,
+  "score": 0.6461,
+  "idee_recherchee": {
+    "numero": 1,
+    "id": 1,
+    "texte": "Millions of American families are now spending more than half of their income on rent, and eviction rates are rising fast as wages fail to keep up with housing costs."
+  },
+  "video_id": "DRP7tRXts0Q",
+  "titre_video": "Renting vs Buying - Follow The Math!",
+  "url_video": "https://www.youtube.com/watch?v=DRP7tRXts0Q",
+  "url_au_debut": "https://www.youtube.com/watch?v=DRP7tRXts0Q&t=0s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-drp7trxts0q-src",
+  "segment_id": 1,
+  "debut": 0.16,
+  "fin": 26.72,
+  "duree_s": 26.56,
+  "temps_estime": false,
+  "titre": "Hook: the American Dream of owning is becoming a nightmare",
+  "resume": "Owning a home is supposed to be the American Dream, with renting seen as throwing money away. Today homeowners burn thousands each month on soaring mortgage payments, property taxes and maintenance, with the risk of losing everything over a single missed payment, as the rules of property ownership have flipped.",
+  "mots_cles": [
+    "American Dream",
+    "home ownership",
+    "renting vs buying",
+    "mortgage payments",
+    "property taxes",
+    "maintenance costs",
+    "missed payment risk",
+    "hook"
+  ],
+  "texte": "Owning a home is supposed to be the American Dream. If you rent, you’re just throwing money away. But that dream is turning into a nightmare. Today, homeowners are burning through thousands each month. Skyrocketing mortgage payments, soaring property taxes and endless maintenance costs are starting to take their toll. All the while, the risk of losing everything over a single missed payment looms over them constantly. The rules of property ownership have flipped… and the stakes have never been higher.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 53,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

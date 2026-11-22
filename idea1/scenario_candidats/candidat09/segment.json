@@ -1,0 +1,40 @@
+{
+  "rang": 9,
+  "score": 0.6218,
+  "idee_recherchee": {
+    "numero": 1,
+    "id": 1,
+    "texte": "Millions of American families are now spending more than half of their income on rent, and eviction rates are rising fast as wages fail to keep up with housing costs."
+  },
+  "video_id": "dbcrn-0gY1w",
+  "titre_video": "You're Witnessing the Death of American Capitalism and More Insane Stories About the Economy",
+  "url_video": "https://www.youtube.com/watch?v=dbcrn-0gY1w",
+  "url_au_debut": "https://www.youtube.com/watch?v=dbcrn-0gY1w&t=5097s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-dbcrn-0gy1w-src",
+  "segment_id": 102,
+  "debut": 5097.84,
+  "fin": 5128.92,
+  "duree_s": 31.08,
+  "temps_estime": false,
+  "titre": "You're not broke because you aren't working hard enough: the housing ratio",
+  "resume": "In a new section the narrator says that in 1980 the median US home price was about 3.5 times median household income, and in hubs like New York and San Francisco it has ballooned to over 10 times. The American dream went from a reachable hurdle to the height of a 40-story skyscraper, and the system is working exactly as designed.",
+  "mots_cles": [
+    "home price to income ratio",
+    "1980",
+    "3.5 times income",
+    "10 times income",
+    "New York",
+    "San Francisco",
+    "American dream",
+    "productivity"
+  ],
+  "texte": "you're broke because you aren't working hard enough. You're wrong. In 1980, the median US home price was roughly three and a half times the median household income. Today, in major hubs like New York and San Francisco, that has ballooned to over 10 times. The American dream has moved from a reachable hurdle to the height of a 40-story skyscraper. You're producing more value than any generation in history, >> [music] >> but the math in today's economy makes it physically impossible to win. The system isn't failing, it's working exactly as designed. [music]",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 62,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}
