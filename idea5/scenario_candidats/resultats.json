@@ -1,0 +1,131 @@
+{
+  "idee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Dopamine is the brain's reward chemical, and some everyday habits can make dopamine levels drop so low that the brain stops feeling pleasure from normal activities."
+  },
+  "modele": "BAAI/bge-base-en-v1.5",
+  "nb_candidats": 10,
+  "candidats": [
+    {
+      "rang": 1,
+      "dossier": "candidat01",
+      "score": 0.765,
+      "video_id": "_KCvoOhUqHA",
+      "titre_video": "The Man Who Smoked Weed for 10 Years",
+      "segment_id": 8,
+      "debut": 250.8,
+      "fin": 314.12,
+      "titre": "Dopamine, the reward center and the college student study",
+      "frames": true
+    },
+    {
+      "rang": 2,
+      "dossier": "candidat02",
+      "score": 0.6652,
+      "video_id": "Mh3jD3aPojY",
+      "titre_video": "It's not just your appetite that Ozempic changes",
+      "segment_id": 20,
+      "debut": 920.88,
+      "fin": 957.12,
+      "titre": "Food noise and GLP-1 receptors in the reward circuitry",
+      "frames": true
+    },
+    {
+      "rang": 3,
+      "dossier": "candidat03",
+      "score": 0.6638,
+      "video_id": "_KCvoOhUqHA",
+      "titre_video": "The Man Who Smoked Weed for 10 Years",
+      "segment_id": 2,
+      "debut": 37.04,
+      "fin": 84.76,
+      "titre": "Year zero: stress, daily smoking and the reward system downregulation",
+      "frames": true
+    },
+    {
+      "rang": 4,
+      "dossier": "candidat04",
+      "score": 0.6576,
+      "video_id": "Mh3jD3aPojY",
+      "titre_video": "It's not just your appetite that Ozempic changes",
+      "segment_id": 11,
+      "debut": 537.6,
+      "fin": 559.6,
+      "titre": "Three mechanisms together: brain, stomach and reward",
+      "frames": true
+    },
+    {
+      "rang": 5,
+      "dossier": "candidat05",
+      "score": 0.6339,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 65,
+      "debut": 1845.44,
+      "fin": 1879.36,
+      "titre": "Why some pain feels good",
+      "frames": true
+    },
+    {
+      "rang": 6,
+      "dossier": "candidat06",
+      "score": 0.633,
+      "video_id": "H7buemdxULY",
+      "titre_video": "120° Heat - Wear Black Robes!",
+      "segment_id": 6,
+      "debut": 163.76,
+      "fin": 188.16,
+      "titre": "The temptation to strip down",
+      "frames": true
+    },
+    {
+      "rang": 7,
+      "dossier": "candidat07",
+      "score": 0.6305,
+      "video_id": "_KCvoOhUqHA",
+      "titre_video": "The Man Who Smoked Weed for 10 Years",
+      "segment_id": 12,
+      "debut": 437.24,
+      "fin": 515.52,
+      "titre": "CB1 receptor downregulation and grey matter loss",
+      "frames": true
+    },
+    {
+      "rang": 8,
+      "dossier": "candidat08",
+      "score": 0.6276,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 29,
+      "debut": 845.2,
+      "fin": 878.96,
+      "titre": "Why the brain made pain without injury",
+      "frames": true
+    },
+    {
+      "rang": 9,
+      "dossier": "candidat09",
+      "score": 0.6265,
+      "video_id": "Mh3jD3aPojY",
+      "titre_video": "It's not just your appetite that Ozempic changes",
+      "segment_id": 24,
+      "debut": 1052.16,
+      "fin": 1070.88,
+      "titre": "One hormone, five organ systems",
+      "frames": true
+    },
+    {
+      "rang": 10,
+      "dossier": "candidat10",
+      "score": 0.6246,
+      "video_id": "3pggYUPCK_A",
+      "titre_video": "The Tirzepatide Boom Just Hit a Wall",
+      "segment_id": 5,
+      "debut": 123.52,
+      "fin": 158.0,
+      "titre": "The plateau: why one signal hits a ceiling",
+      "frames": true
+    }
+  ]
+}

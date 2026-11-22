@@ -1,0 +1,39 @@
+{
+  "rang": 6,
+  "score": 0.633,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Dopamine is the brain's reward chemical, and some everyday habits can make dopamine levels drop so low that the brain stops feeling pleasure from normal activities."
+  },
+  "video_id": "H7buemdxULY",
+  "titre_video": "120° Heat - Wear Black Robes!",
+  "url_video": "https://www.youtube.com/watch?v=H7buemdxULY",
+  "url_au_debut": "https://www.youtube.com/watch?v=H7buemdxULY&t=163s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-h7buemdxuly-src",
+  "segment_id": 6,
+  "debut": 163.76,
+  "fin": 188.16,
+  "duree_s": 24.4,
+  "temps_estime": false,
+  "titre": "The temptation to strip down",
+  "resume": "The body loses more water than it can replace, like sweating out a water bottle each hour, and the core keeps heating. Extreme discomfort creates an overwhelming urge to take clothes off, which works at home with air conditioning but the brain is wrong in the desert.",
+  "mots_cles": [
+    "stripping down",
+    "overheating",
+    "water loss",
+    "discomfort",
+    "core temperature",
+    "brain wrong",
+    "air conditioning"
+  ],
+  "texte": "The body is losing more water than it can keep up with. At the most extreme levels, it’s like sweating out an entire water bottle every hour just to try to regulate temperature. But it’s not enough. The core keeps getting hotter and hotter. As extreme discomfort starts setting in, the temptation to strip down becomes overwhelming It works at home when the air conditioner can’t get the job done. So the brain says it’ll work here. The brain is wrong.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 49,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

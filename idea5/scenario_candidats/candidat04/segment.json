@@ -1,0 +1,39 @@
+{
+  "rang": 4,
+  "score": 0.6576,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Dopamine is the brain's reward chemical, and some everyday habits can make dopamine levels drop so low that the brain stops feeling pleasure from normal activities."
+  },
+  "video_id": "Mh3jD3aPojY",
+  "titre_video": "It's not just your appetite that Ozempic changes",
+  "url_video": "https://www.youtube.com/watch?v=Mh3jD3aPojY",
+  "url_au_debut": "https://www.youtube.com/watch?v=Mh3jD3aPojY&t=537s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-mh3jd3apojy-src",
+  "segment_id": 11,
+  "debut": 537.6,
+  "fin": 559.6,
+  "duree_s": 22.0,
+  "temps_estime": false,
+  "titre": "Three mechanisms together: brain, stomach and reward",
+  "resume": "Combining the three mechanisms, the brain stops signaling hunger, the stomach empties more slowly and the reward system stops caring, which rewrites the biological conversation that let someone become obese. The narrator calls it an elegant solution but says semaglutide's origins are less elegant.",
+  "mots_cles": [
+    "three mechanisms",
+    "brain",
+    "stomach",
+    "reward system",
+    "obesity biology",
+    "recap",
+    "appetite signal"
+  ],
+  "texte": "When you put all three mechanisms together–the brain stopping to signal hunger, the stomach that stops emptying itself quickly, and a reward system that stops caring, you get a drug that can quietly rewrite the actual biological conversations that enabled someone to become obese in the first place. An elegant solution to be sure, but semaglutide’s origins are less so.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 44,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

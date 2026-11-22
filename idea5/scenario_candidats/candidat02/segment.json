@@ -1,0 +1,39 @@
+{
+  "rang": 2,
+  "score": 0.6652,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Dopamine is the brain's reward chemical, and some everyday habits can make dopamine levels drop so low that the brain stops feeling pleasure from normal activities."
+  },
+  "video_id": "Mh3jD3aPojY",
+  "titre_video": "It's not just your appetite that Ozempic changes",
+  "url_video": "https://www.youtube.com/watch?v=Mh3jD3aPojY",
+  "url_au_debut": "https://www.youtube.com/watch?v=Mh3jD3aPojY&t=920s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-mh3jd3apojy-src",
+  "segment_id": 20,
+  "debut": 920.88,
+  "fin": 957.12,
+  "duree_s": 36.24,
+  "temps_estime": false,
+  "titre": "Food noise and GLP-1 receptors in the reward circuitry",
+  "resume": "Patients reported an unanticipated effect: their food noise, the constant mental static urging them to eat, went quiet. This fits the brain biology, since GLP-1 receptors sit in reward circuitry also involved in cravings for nicotine and alcohol, not just food.",
+  "mots_cles": [
+    "food noise",
+    "cravings",
+    "reward circuitry",
+    "GLP-1 receptors",
+    "nicotine",
+    "alcohol",
+    "brain"
+  ],
+  "texte": "The side-effect nobody anticipated but patients started reporting before researchers had even coined a term for it was that their “food noise” had gone down. The constant low-grade mental static telling you to eat something, wondering what’s in the fridge, doing all this despite you having finished your last meal within the last hour suddenly started to stop being generated in the first place. This tracks with what’s actually happening in the brain; GLP-1 receptors sit in the same reward circuitry, which is the same real estate involved in cravings for nicotine and alcohol, not just food.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 73,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

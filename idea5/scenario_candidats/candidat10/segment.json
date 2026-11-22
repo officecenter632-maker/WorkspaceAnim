@@ -1,0 +1,39 @@
+{
+  "rang": 10,
+  "score": 0.6246,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Dopamine is the brain's reward chemical, and some everyday habits can make dopamine levels drop so low that the brain stops feeling pleasure from normal activities."
+  },
+  "video_id": "3pggYUPCK_A",
+  "titre_video": "The Tirzepatide Boom Just Hit a Wall",
+  "url_video": "https://www.youtube.com/watch?v=3pggYUPCK_A",
+  "url_au_debut": "https://www.youtube.com/watch?v=3pggYUPCK_A&t=123s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-3pggyupck-a-src",
+  "segment_id": 5,
+  "debut": 123.52,
+  "fin": 158.0,
+  "duree_s": 34.48,
+  "temps_estime": false,
+  "titre": "The plateau: why one signal hits a ceiling",
+  "resume": "The body fights back as metabolism slows and hunger signals return, so the scale stops moving despite weekly injections, nausea and cost. Scientists realized they were fighting hunger in mono when they needed stereo, amplifying two signals, which led to tirzepatide.",
+  "mots_cles": [
+    "weight loss plateau",
+    "metabolic slowdown",
+    "hunger signals",
+    "single signal ceiling",
+    "tirzepatide",
+    "mono vs stereo",
+    "side effects"
+  ],
+  "texte": "But like we said, the body fights back. Your metabolism slows and the hunger signals return. Even as you continue the weekly injections, suffer through the nausea, and pay through the nose, the needle on the scale stops cooperating. You’ve hit the ceiling of what a single biological signal can do. When scientists looked more closely at the problem, they realized they were fighting hunger in mono, when the type of signal they needed could only work in stereo. They needed something that could amplify both signals. And they found it in tirzepatide.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 68,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

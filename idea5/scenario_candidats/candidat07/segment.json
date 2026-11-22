@@ -1,0 +1,41 @@
+{
+  "rang": 7,
+  "score": 0.6305,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Dopamine is the brain's reward chemical, and some everyday habits can make dopamine levels drop so low that the brain stops feeling pleasure from normal activities."
+  },
+  "video_id": "_KCvoOhUqHA",
+  "titre_video": "The Man Who Smoked Weed for 10 Years",
+  "url_video": "https://www.youtube.com/watch?v=_KCvoOhUqHA",
+  "url_au_debut": "https://www.youtube.com/watch?v=_KCvoOhUqHA&t=437s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-kcvoohuqha-src",
+  "segment_id": 12,
+  "debut": 437.24,
+  "fin": 515.52,
+  "duree_s": 78.28,
+  "temps_estime": false,
+  "titre": "CB1 receptor downregulation and grey matter loss",
+  "resume": "THC attaches to CB1 receptors, and the brain responds by downregulating their number and availability by up to 20%, especially in regions like the medial temporal cortex, insula and orbitofrontal cortex. Grey matter reduction, mainly in the hippocampus and orbitofrontal cortex, impairs decision making, reward processing, social norms and responses to adversity, and may relate to Alex's lack of motivation.",
+  "mots_cles": [
+    "CB1 receptors",
+    "grey matter",
+    "hippocampus",
+    "orbitofrontal cortex",
+    "downregulation",
+    "decision making",
+    "brain shrinkage",
+    "motivation",
+    "THC"
+  ],
+  "texte": "Because at this point Alex is actively losing grey matter. THC, the main active ingredient in cannabis, attaches to cannabinoid type 1 – CB1 – receptors in the brain. When these receptors are overwhelmed, the brain begins a survival shutdown. It down-regulates the number and availability of active CB1 receptors by up to 20%. CB1 receptors are scattered all throughout the brain; though they congregate in heavy concentrations in critical regions. These include the medial temporal cortex, temporal pole, insula, and orbitofrontal cortex. For the non-neuroscientists among us, these are the areas that deal with motivational, emotional, and affective processing. The reduction in receptors triggers a reduction of grey matter in these regions. While research is still too limited to show how much grey matter decreases, we know the hippocampus and orbitofrontal cortex are the most affected. The hippocampus is responsible for important human survival traits like decision making, processing rewards and reading social norms. It also controls how someone responds to adversity. That probably explains why Alex can’t handle complex tasks at work anymore. As these brain regions shrink, Alex’s ability to weigh options and decide begins to suffer. He can’t predict the potential results of decisions like he used to. His lack of motivation might also be correlated with his hippocampus decreasing in volume.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 157,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

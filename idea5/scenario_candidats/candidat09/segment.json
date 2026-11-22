@@ -1,0 +1,40 @@
+{
+  "rang": 9,
+  "score": 0.6265,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Dopamine is the brain's reward chemical, and some everyday habits can make dopamine levels drop so low that the brain stops feeling pleasure from normal activities."
+  },
+  "video_id": "Mh3jD3aPojY",
+  "titre_video": "It's not just your appetite that Ozempic changes",
+  "url_video": "https://www.youtube.com/watch?v=Mh3jD3aPojY",
+  "url_au_debut": "https://www.youtube.com/watch?v=Mh3jD3aPojY&t=1052s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-mh3jd3apojy-src",
+  "segment_id": 24,
+  "debut": 1052.16,
+  "fin": 1070.88,
+  "duree_s": 18.72,
+  "temps_estime": false,
+  "titre": "One hormone, five organ systems",
+  "resume": "The narrator notes a pattern: a once-weekly diabetes shot has ended up touching the heart, kidneys, joints and the reward pathways behind addiction. Five different organ systems are affected by one hormone few people had heard of a decade earlier.",
+  "mots_cles": [
+    "heart",
+    "kidneys",
+    "joints",
+    "reward pathways",
+    "addiction",
+    "five organ systems",
+    "GLP-1",
+    "diabetes shot"
+  ],
+  "texte": "By this point, a pattern should start to appear. This all started as a once-weekly diabetes shot. It’s ended up touching the heart, the kidneys, the joints, and the reward pathways that drive addiction. Five completely different organ systems affected by one hormone few people had heard of a decade ago.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 37,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "rang": 3,
+  "score": 0.6638,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Dopamine is the brain's reward chemical, and some everyday habits can make dopamine levels drop so low that the brain stops feeling pleasure from normal activities."
+  },
+  "video_id": "_KCvoOhUqHA",
+  "titre_video": "The Man Who Smoked Weed for 10 Years",
+  "url_video": "https://www.youtube.com/watch?v=_KCvoOhUqHA",
+  "url_au_debut": "https://www.youtube.com/watch?v=_KCvoOhUqHA&t=37s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-kcvoohuqha-src",
+  "segment_id": 2,
+  "debut": 37.04,
+  "fin": 84.76,
+  "duree_s": 47.72,
+  "temps_estime": false,
+  "titre": "Year zero: stress, daily smoking and the reward system downregulation",
+  "resume": "Alex, 22, lands a high-pressure corporate job and starts smoking weed daily to take the edge off, relax, calm his racing mind and sleep. His brain begins to retreat from the constant THC overstimulation by downregulating its reward system, compared to a city turning off parts of its power grid to prevent a surge.",
+  "mots_cles": [
+    "corporate stress",
+    "daily smoking",
+    "reward system",
+    "downregulation",
+    "THC overstimulation",
+    "brain baseline",
+    "power grid metaphor",
+    "self-medicating"
+  ],
+  "texte": "22 year old Alex has just stepped into the corporate world. He’s a high achiever, landing an intense, high pressure position straight out of college. But the long hours and relentless workload start to stress him out pretty quickly. He used to smoke weed once in a while, but now he starts smoking daily to take the edge off. It relaxes him, stops his mind from racing and helps him sleep. It’s win win… or so he thinks. But beneath the surface, the neuro-hijack has begun. To protect itself from constant overstimulation, his brain starts retreating. His reward system is slowly downregulated, something his brain deems necessary to survive the tsunami of THC bombarding it every day. Like a city turning off sections of its power grid to prevent a massive surge, Alex’s brain is altering its own baseline just to keep the lights on. How much of that grid is about to go dark… forever?",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 95,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

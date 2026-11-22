@@ -1,0 +1,39 @@
+{
+  "rang": 8,
+  "score": 0.6276,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Dopamine is the brain's reward chemical, and some everyday habits can make dopamine levels drop so low that the brain stops feeling pleasure from normal activities."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=845s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 29,
+  "debut": 845.2,
+  "fin": 878.96,
+  "duree_s": 33.76,
+  "temps_estime": false,
+  "titre": "Why the brain made pain without injury",
+  "resume": "Fact 44: researchers explain the case: thoughts, beliefs and emotions such as panic and fear set off biological and neurochemical processes, and the brain synthesized the information, decided he was in danger and produced pain to protect him. He believed there was pain so he felt pain.",
+  "mots_cles": [
+    "pain perception",
+    "beliefs",
+    "fear",
+    "panic",
+    "neurochemical processes",
+    "brain protects",
+    "placebo"
+  ],
+  "texte": "of pain on this list. Number [music] 44. There's a scientific explanation for the man's case. Researchers have pointed out that like in many other cases, the man's senses believed that that nail had gone through his foot. As one of them put it, thoughts, beliefs, and emotions, including panic and fear, set off a cascade of biological and neurochemical [music] processes. His brain, synthesizing the sum total of this information, decided that he was in danger. So, it [music] made pain to protect him. He believed there was pain, so he felt pain. As weird as that might sound to you, as you'll see later in the show, maybe we can help ourselves when it comes to pain. This story is equally",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 67,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "rang": 1,
+  "score": 0.765,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Dopamine is the brain's reward chemical, and some everyday habits can make dopamine levels drop so low that the brain stops feeling pleasure from normal activities."
+  },
+  "video_id": "_KCvoOhUqHA",
+  "titre_video": "The Man Who Smoked Weed for 10 Years",
+  "url_video": "https://www.youtube.com/watch?v=_KCvoOhUqHA",
+  "url_au_debut": "https://www.youtube.com/watch?v=_KCvoOhUqHA&t=250s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-kcvoohuqha-src",
+  "segment_id": 8,
+  "debut": 250.8,
+  "fin": 314.12,
+  "duree_s": 63.32,
+  "temps_estime": false,
+  "titre": "Dopamine, the reward center and the college student study",
+  "resume": "THC causes a dopamine surge and rewards the brain without real-world effort, hardwiring it to abandon non-weed sources of fulfillment. A 4-year study of college students doing tasks for money showed the heaviest weed users had decreased reward-center activity when anticipating rewards, and over time weed blunts dopamine production so hobbies, social life and work give less reward.",
+  "mots_cles": [
+    "dopamine",
+    "reward center",
+    "college students study",
+    "4 year study",
+    "brain imaging",
+    "anticipating reward",
+    "blunted dopamine",
+    "motivation"
+  ],
+  "texte": "When THC enters Alex’s system, it causes a surge of dopamine. It hijacks his brain and gives him the feeling of contentment. By using weed daily, Alex is rewarding his brain repeatedly without expending an ounce of real world effort. He’s hardwiring his brain to abandon any non-weed sources of fulfillment. To confirm this, scientists ran a 4 year study on college students. They forced subjects to perform a series of simple tasks for financial reward. Meanwhile, researchers were imaging their brains in real time to see the fallout. Students who were using weed the most had decreased activity in their reward center when anticipating their money at the end of the task set. Scientists concluded, “as cannabis alters the brain’s reward center, regular users begin to anticipate less reward from non-cannabis sources.” That’s why Alex’s desire to put in effort for any other tasks that can cause a dopamine surge – like achieving a personal goal - has gone out the window. Over time, weed blunts the brain’s dopamine production. Even if Alex got back into his hobbies or social life, he would receive less dopamine as a reward. It’s part of the reason Alex isn’t that interested in leaving his house or why he just doesn’t care about his job.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 127,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

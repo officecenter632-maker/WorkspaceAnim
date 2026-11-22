@@ -1,0 +1,39 @@
+{
+  "rang": 5,
+  "score": 0.6339,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Dopamine is the brain's reward chemical, and some everyday habits can make dopamine levels drop so low that the brain stops feeling pleasure from normal activities."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=1845s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 65,
+  "debut": 1845.44,
+  "fin": 1879.36,
+  "duree_s": 33.92,
+  "temps_estime": false,
+  "titre": "Why some pain feels good",
+  "resume": "Fact 3: people enjoy pulling scabs or plucking nasal hairs because pain milder than expected can be pleasurable, and extreme exercise or masochism makes the body release endorphins that block pain and give a rush similar to morphine or heroin.",
+  "mots_cles": [
+    "pain pleasure",
+    "scabs",
+    "endorphins",
+    "masochism",
+    "post-pain rush",
+    "morphine",
+    "extreme exercise"
+  ],
+  "texte": "three, we know some of you enjoy pulling off scabs, even though it hurts a little bit. [music] Or perhaps some savages out there are partial to ripping your nasal hairs out. It can feel kind of nice in a bad way. Some scientists [music] have said that when pain is not as bad as we expected it to be, we can actually enjoy the pain. But many people put themselves through pain all the time. Whether it involves extreme exercise or someone whipping them across their leatherclad face. In these circumstances, we can produce our very own brand of narcotics, [music] what scientists call endorphins, which not only block pain, but in some cases give us a post-p pain rush similar to the high of [music] morphine or heroin.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 68,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}
