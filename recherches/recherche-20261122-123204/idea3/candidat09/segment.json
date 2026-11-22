@@ -1,0 +1,40 @@
+{
+  "rang": 9,
+  "score": 0.6734,
+  "idee_recherchee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "At the centre of a black hole, the equations of general relativity break down into a singularity of infinite density, which shows that our current theories cannot fully describe what happens at extreme gravity."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=9715s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 199,
+  "debut": 9715.42,
+  "fin": 9774.2,
+  "duree_s": 58.78,
+  "temps_estime": true,
+  "titre": "Étirement du corps : marée gravitationnelle et mort en spaghetti humain",
+  "resume": "Approaching the singularity, gravity becomes more intense so quickly that your feet are pulled toward the black hole faster than your head, and your body stretches into a thin noodle. From your own perspective you survive until part of your body nears the event horizon and then die within seconds as you stretch into human spaghetti.",
+  "mots_cles": [
+    "spaghettification",
+    "tidal forces",
+    "gravity gradient",
+    "stretching body",
+    "event horizon",
+    "human spaghetti",
+    "singularity",
+    "falling observer"
+  ],
+  "texte": "Imagine you were floating toward a black hole. You're feeling just fine until you start closing in on the event horizon, where gravity is so intense that nothing, not even light, can escape. As you get closer to the singularity at the center of a black hole, the gravity becomes [music] more and more intense. The problem is that this is happening extremely quickly. There are massive differences [music] on how gravity acts across every centimeter of your body. For a few seconds, your feet are being pulled toward the center [music] of the black hole quicker than the top of your head. Your body would begin to stretch. This might feel [music] good for a split second. It would straighten out your spine and stretch your muscles. However, as you approach the event horizon, the gravitational pull becomes so intense that it would literally stretch your body out into a thin noodle shape. This is where the aptly named term spaghettification comes from. So, from your perspective, you would survive until part of your body approached the event horizon of the black hole and then a few seconds later you would be dead as your body stretched into human spaghetti. [music]",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 118,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

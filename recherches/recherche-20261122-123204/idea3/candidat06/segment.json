@@ -1,0 +1,41 @@
+{
+  "rang": 6,
+  "score": 0.7019,
+  "idee_recherchee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "At the centre of a black hole, the equations of general relativity break down into a singularity of infinite density, which shows that our current theories cannot fully describe what happens at extreme gravity."
+  },
+  "video_id": "eOZblHcqkvo",
+  "titre_video": "The Big Bang Theory Is Wrong, This New Theory Is Even Stranger",
+  "url_video": "https://www.youtube.com/watch?v=eOZblHcqkvo",
+  "url_au_debut": "https://www.youtube.com/watch?v=eOZblHcqkvo&t=29s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-eozblhcqkvo-src",
+  "segment_id": 2,
+  "debut": 29.03,
+  "fin": 89.52,
+  "duree_s": 60.49,
+  "temps_estime": true,
+  "titre": "Why the singularity at Time Zero breaks physics",
+  "resume": "Einstein's General Relativity traces the universe back to a tiny dense point at Time Zero, but compressing space-time to zero volume makes the fabric fall apart and requires quantum physics, which relativity ignores. Dividing by zero is a mathematical impossibility, so the textbook idea of birth from nothing is not established fact.",
+  "mots_cles": [
+    "General Relativity",
+    "Albert Einstein",
+    "Time Zero",
+    "singularity",
+    "space-time",
+    "quantum mechanics",
+    "divide by zero",
+    "birth from nothing",
+    "Big Bang theory"
+  ],
+  "texte": "For generations, Albert Einstein’s General Theory of Relativity, told us that the history of the universe could be traced back in a simple straight line. The further back you go, the closer the stars and galaxies and atoms get, until, eventually everything is condensed into a tiny and dense point. Time Zero. There’s just one problem. At Time Zero the laws of physics and time die. Einstein proved that space and time aren’t separate. They form a 4 dimensional fabric called space-time. Mass bends it and gravity shapes it. But when you compress it all into a single location, the idea of a continuous fabric falls apart. There’s no logical way to explain it. At that point, quantum physics takes over. But General Relativity ignores quantum mechanics. Condensing classical gravity all the way to zero volume forces the universe’s ultimation to divide by zero… a mathematical impossibility. The textbook explanation of how the universe formed, the idea of a “birth from nothing”, isn’t an established fact.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 121,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

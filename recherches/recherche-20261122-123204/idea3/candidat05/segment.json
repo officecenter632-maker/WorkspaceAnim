@@ -1,0 +1,40 @@
+{
+  "rang": 5,
+  "score": 0.7059,
+  "idee_recherchee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "At the centre of a black hole, the equations of general relativity break down into a singularity of infinite density, which shows that our current theories cannot fully describe what happens at extreme gravity."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=8787s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 178,
+  "debut": 8787.33,
+  "fin": 8859.69,
+  "duree_s": 72.36,
+  "temps_estime": true,
+  "titre": "Définition d'un trou noir : singularité et horizon des événements",
+  "resume": "A black hole is a region where matter is packed so tightly that gravity exceeds every other force, so even light cannot escape and everything is drawn to the singularity, where matter is compressed into an infinitely small point and known physics breaks down. The event horizon is the boundary beyond which the escape velocity exceeds the speed of light.",
+  "mots_cles": [
+    "black hole definition",
+    "gravitational force",
+    "singularity",
+    "event horizon",
+    "escape velocity",
+    "speed of light",
+    "infinitely dense point",
+    "light cannot escape"
+  ],
+  "texte": "Before diving into the science behind black need to discuss what a black hole is and how they form. [music] This will provide the foundation for understanding what happens to matter and energy that fall into a black hole. Simply [music] put, a black hole is a region of space where matter is packed so tightly together that its gravitational force becomes stronger than any other force in that part of the universe. This means that if anything, including light, gets close enough to a black hole, there [music] is no escaping its gravitational pull and it will be drawn toward the center, or what's known as the singularity. This is where the gravity of a black hole is most intense. We'll go more in-depth into the different parts and aspects of black holes, but for now it's important to know that the singularity is where matter is compressed into an infinitely tiny point and [music] everything we know about time, space, and reality breaks down. The second part of the black hole we need to define is [music] the event horizon. This is the boundary around the black hole where it becomes impossible to escape the gravitational pull produced by the singularity as the velocity needed to break free exceeds the speed of light and since the laws of physics tell us that nothing can move faster than [music] the speed of light, there's no hoping to exit the black hole once an object gets past this point.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 145,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "idee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "At the centre of a black hole, the equations of general relativity break down into a singularity of infinite density, which shows that our current theories cannot fully describe what happens at extreme gravity."
+  },
+  "modele": "BAAI/bge-base-en-v1.5",
+  "nb_candidats": 10,
+  "candidats": [
+    {
+      "rang": 1,
+      "dossier": "candidat01",
+      "score": 0.7709,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 207,
+      "debut": 10089.28,
+      "fin": 10129.87,
+      "titre": "La singularité : où la physique cesse de fonctionner",
+      "frames": true
+    },
+    {
+      "rang": 2,
+      "dossier": "candidat02",
+      "score": 0.7323,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 60,
+      "debut": 2603.0,
+      "fin": 2687.92,
+      "titre": "Le mystère de l'intérieur des trous noirs et du paradoxe de l'information",
+      "frames": true
+    },
+    {
+      "rang": 3,
+      "dossier": "candidat03",
+      "score": 0.7252,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 212,
+      "debut": 10331.66,
+      "fin": 10396.9,
+      "titre": "Que contient un trou noir ? Théories et perte d'information",
+      "frames": true
+    },
+    {
+      "rang": 4,
+      "dossier": "candidat04",
+      "score": 0.7116,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 68,
+      "debut": 3118.5,
+      "fin": 3194.81,
+      "titre": "Introduction : un trou noir peut effacer l'univers ; effondrement d'une étoile",
+      "frames": true
+    },
+    {
+      "rang": 5,
+      "dossier": "candidat05",
+      "score": 0.7059,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 178,
+      "debut": 8787.33,
+      "fin": 8859.69,
+      "titre": "Définition d'un trou noir : singularité et horizon des événements",
+      "frames": true
+    },
+    {
+      "rang": 6,
+      "dossier": "candidat06",
+      "score": 0.7019,
+      "video_id": "eOZblHcqkvo",
+      "titre_video": "The Big Bang Theory Is Wrong, This New Theory Is Even Stranger",
+      "segment_id": 2,
+      "debut": 29.03,
+      "fin": 89.52,
+      "titre": "Why the singularity at Time Zero breaks physics",
+      "frames": true
+    },
+    {
+      "rang": 7,
+      "dossier": "candidat07",
+      "score": 0.6984,
+      "video_id": "eOZblHcqkvo",
+      "titre_video": "The Big Bang Theory Is Wrong, This New Theory Is Even Stranger",
+      "segment_id": 11,
+      "debut": 576.08,
+      "fin": 660.88,
+      "titre": "Einstein-Cartan-Sciama-Kibble theory: torsion and the black hole bounce",
+      "frames": true
+    },
+    {
+      "rang": 8,
+      "dossier": "candidat08",
+      "score": 0.6835,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 183,
+      "debut": 9045.15,
+      "fin": 9112.85,
+      "titre": "Trous noirs d'origine mystérieuse et le tri des idées reçues",
+      "frames": true
+    },
+    {
+      "rang": 9,
+      "dossier": "candidat09",
+      "score": 0.6734,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 199,
+      "debut": 9715.42,
+      "fin": 9774.2,
+      "titre": "Étirement du corps : marée gravitationnelle et mort en spaghetti humain",
+      "frames": true
+    },
+    {
+      "rang": 10,
+      "dossier": "candidat10",
+      "score": 0.668,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 84,
+      "debut": 3891.12,
+      "fin": 3944.77,
+      "titre": "L'isolement des derniers trous noirs dans un univers en expansion",
+      "frames": true
+    }
+  ]
+}
