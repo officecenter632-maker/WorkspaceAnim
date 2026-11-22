@@ -1,0 +1,38 @@
+{
+  "rang": 6,
+  "score": 0.6759,
+  "idee_recherchee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "Phantom limb pain happens when the brain keeps sending signals to a missing arm or leg, so the person still feels pain in a body part that no longer exists."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=1101s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 38,
+  "debut": 1101.2,
+  "fin": 1119.68,
+  "duree_s": 18.48,
+  "temps_estime": false,
+  "titre": "The brain itself feels no pain",
+  "resume": "Facts 35 and 34: the brain does not feel pain, nerves send signals to it, and the brain has no nerves inside it, so a surgeon could cut it with a scalpel and the patient would feel nothing.",
+  "mots_cles": [
+    "brain",
+    "no pain nerves",
+    "scalpel",
+    "surgery",
+    "nerves",
+    "pain signals"
+  ],
+  "texte": "35. [music] The brain doesn't actually feel pain. It's the nerves that send the signals back to the brain so the brain can react. Number 34. But also the [music] brain itself doesn't have nerves. It's surrounded by nerves, but there are none inside it. That's why a surgeon could wield a scalpel in there and the patient wouldn't feel any pain at all. Number",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 37,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

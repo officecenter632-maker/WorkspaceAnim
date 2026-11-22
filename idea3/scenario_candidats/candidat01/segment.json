@@ -1,0 +1,38 @@
+{
+  "rang": 1,
+  "score": 0.8221,
+  "idee_recherchee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "Phantom limb pain happens when the brain keeps sending signals to a missing arm or leg, so the person still feels pain in a body part that no longer exists."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=1777s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 63,
+  "debut": 1777.92,
+  "fin": 1801.12,
+  "duree_s": 23.2,
+  "temps_estime": false,
+  "titre": "Phantom pain is real",
+  "resume": "Fact 5: phantom pain is serious pain felt in a body part that is no longer there, such as a lost arm; doctors once thought it psychological but now believe it results from mixed-up nervous system signals.",
+  "mots_cles": [
+    "phantom pain",
+    "missing arm",
+    "nervous system",
+    "psychological",
+    "excruciating pain",
+    "amputation"
+  ],
+  "texte": "now we need to talk about [music] ghosts. There is something you might not have heard of called phantom pain. It can be seriously painful. The strange thing is [music] the pain is coming from a part of the body that isn't there. So a person might have lost an arm, but every day they feel excruciating pain where the arm was. In the past, doctors thought the pain was purely psychological, but now they believe phantom [music] pain is the result of nervous system signals getting mixed up.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 47,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

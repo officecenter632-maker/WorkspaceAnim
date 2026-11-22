@@ -1,0 +1,39 @@
+{
+  "rang": 4,
+  "score": 0.6845,
+  "idee_recherchee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "Phantom limb pain happens when the brain keeps sending signals to a missing arm or leg, so the person still feels pain in a body part that no longer exists."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=8220s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 203,
+  "debut": 8220.4,
+  "fin": 8261.92,
+  "duree_s": 41.52,
+  "temps_estime": false,
+  "titre": "Bone cancer patient accounts",
+  "resume": "Cancer forums show different experiences: one person's pain went from a dull ache to nearly unbearable and constant, while another had sudden dime-sized massive pain in the lower leg that came and went for weeks. The video salutes cancer sufferers for enduring it.",
+  "mots_cles": [
+    "bone cancer forums",
+    "dull ache",
+    "sudden leg pain",
+    "patient accounts",
+    "unpredictable pain",
+    "cancer sufferers",
+    "chronic pain"
+  ],
+  "texte": "all bone cancers are really painful. We looked at cancer forums where it seems everyone is different regarding how they feel. One person said his bone cancer went from occasional and more of a dull ache to constant and sometimes almost unbearable, though it will reduce back down to a dull ache, but now it's always there. Another person said, \"I was just walking fine and all of a sudden at the snap of your fingers, I suddenly have massive pain about the size of a dime in my lower left leg. I could hardly make it back home. This continued off and on for weeks. So that coming and going, not knowing when you'll get hit must be awful, especially if you're one of the people that gets the super intense version of the pain. We take our hats off to cancer sufferers. You are tough cookies if you can get through that.\"",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 83,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

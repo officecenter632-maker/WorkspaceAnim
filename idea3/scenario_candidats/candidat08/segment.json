@@ -1,0 +1,40 @@
+{
+  "rang": 8,
+  "score": 0.6655,
+  "idee_recherchee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "Phantom limb pain happens when the brain keeps sending signals to a missing arm or leg, so the person still feels pain in a body part that no longer exists."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=9384s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 224,
+  "debut": 9384.08,
+  "fin": 9489.52,
+  "duree_s": 105.44,
+  "temps_estime": false,
+  "titre": "Number 3: complex regional pain syndrome (CRPS)",
+  "resume": "CRPS usually starts with a minor injury such as a sprained ankle or small fracture, then erupts into unceasing burning pain that spreads through the limb. The skin becomes hypersensitive, changes color, hair and nails grow abnormally fast, and spasms can lock the limb; doctors do not fully know the cause and for most people pain eases within a year.",
+  "mots_cles": [
+    "complex regional pain syndrome",
+    "CRPS",
+    "burning pain",
+    "allodynia",
+    "sprained ankle",
+    "skin color change",
+    "spasms",
+    "Australian girl"
+  ],
+  "texte": "reached the top three in our list, which brings us to a whole new level of pain and misery. Number three, complex regional pain syndrome. Complex regional pain syndrome or CRPS sounds like it could be just another uncomfortable condition. But for those who suffer from it, it's anything but simple. Like many of the diseases on our list, CRPS starts with an injury. Often something minor like a sprained ankle or a small fracture. But instead of healing, the affected area erupts into a world of unceasing burning pain that only gets worse with time. And the pain isn't limited to the sight of the injury. It radiates outward, spreading through your limb like a wildfire. The skin becomes so sensitive that the touch of a feather can feel like a blowtorrch against your skin. Your joints stiffen, your muscles weaken, and soon you're left with a limb that feels like it's being crushed and burned from the inside out. Over time, the symptoms get worse. The skin around your injury changes color, becoming red or purple, and your hair and nails start to grow abnormally fast. Eventually, the affected limb can become almost useless, twisted and locked into place by excruciating spasms. And the pain can spread to other parts of the body, seemingly attacking at random and making everyday life torture. Recently, a young Australian girl's infected blister led to a serious case of CRPS. It turned into agonizing leg pain. She couldn't walk. She couldn't even wear clothes over the infected leg. Doctors aren't entirely sure why CRPS happens, and treatments are often only partially effective, leaving many sufferers trapped in a cycle of pain that never seems to end. The good news is, for most people, the pain is significantly reduced within a year. It'll just be the worst year of your entire life. But if",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 211,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

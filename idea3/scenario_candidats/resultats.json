@@ -1,0 +1,131 @@
+{
+  "idee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "Phantom limb pain happens when the brain keeps sending signals to a missing arm or leg, so the person still feels pain in a body part that no longer exists."
+  },
+  "modele": "BAAI/bge-base-en-v1.5",
+  "nb_candidats": 10,
+  "candidats": [
+    {
+      "rang": 1,
+      "dossier": "candidat01",
+      "score": 0.8221,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 63,
+      "debut": 1777.92,
+      "fin": 1801.12,
+      "titre": "Phantom pain is real",
+      "frames": true
+    },
+    {
+      "rang": 2,
+      "dossier": "candidat02",
+      "score": 0.8178,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 8,
+      "debut": 286.72,
+      "fin": 321.12,
+      "titre": "Phantom limb pain after amputation",
+      "frames": true
+    },
+    {
+      "rang": 3,
+      "dossier": "candidat03",
+      "score": 0.7102,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 78,
+      "debut": 2435.36,
+      "fin": 2478.16,
+      "titre": "TBI headaches and neurological pain",
+      "frames": true
+    },
+    {
+      "rang": 4,
+      "dossier": "candidat04",
+      "score": 0.6845,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 203,
+      "debut": 8220.4,
+      "fin": 8261.92,
+      "titre": "Bone cancer patient accounts",
+      "frames": true
+    },
+    {
+      "rang": 5,
+      "dossier": "candidat05",
+      "score": 0.6777,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 109,
+      "debut": 3771.6,
+      "fin": 3823.28,
+      "titre": "Peripheral neuropathy",
+      "frames": true
+    },
+    {
+      "rang": 6,
+      "dossier": "candidat06",
+      "score": 0.6759,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 38,
+      "debut": 1101.2,
+      "fin": 1119.68,
+      "titre": "The brain itself feels no pain",
+      "frames": true
+    },
+    {
+      "rang": 7,
+      "dossier": "candidat07",
+      "score": 0.6715,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 307,
+      "debut": 13546.96,
+      "fin": 13583.36,
+      "titre": "Number 3: CRPS pain that migrates",
+      "frames": true
+    },
+    {
+      "rang": 8,
+      "dossier": "candidat08",
+      "score": 0.6655,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 224,
+      "debut": 9384.08,
+      "fin": 9489.52,
+      "titre": "Number 3: complex regional pain syndrome (CRPS)",
+      "frames": true
+    },
+    {
+      "rang": 9,
+      "dossier": "candidat09",
+      "score": 0.6567,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 2,
+      "debut": 46.08,
+      "fin": 80.16,
+      "titre": "Chronic pain lasts months and comes from the nervous system",
+      "frames": true
+    },
+    {
+      "rang": 10,
+      "dossier": "candidat10",
+      "score": 0.6503,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 220,
+      "debut": 9073.82,
+      "fin": 9144.32,
+      "titre": "Number 7: osteosarcoma bone cancer",
+      "frames": true
+    }
+  ]
+}

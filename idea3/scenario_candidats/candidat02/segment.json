@@ -1,0 +1,38 @@
+{
+  "rang": 2,
+  "score": 0.8178,
+  "idee_recherchee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "Phantom limb pain happens when the brain keeps sending signals to a missing arm or leg, so the person still feels pain in a body part that no longer exists."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=286s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 8,
+  "debut": 286.72,
+  "fin": 321.12,
+  "duree_s": 34.4,
+  "temps_estime": false,
+  "titre": "Phantom limb pain after amputation",
+  "resume": "Fact 14: more than 80% of amputees feel sensations or pain in a missing limb, a common response to unusual nerve stimulus that resolves as the body adjusts its nerve reactions.",
+  "mots_cles": [
+    "phantom limb",
+    "amputation",
+    "amputees",
+    "prosthetic",
+    "nerve stimulus",
+    "missing limb pain"
+  ],
+  "texte": "isn't there at all? Number 14. Ooh, ghosts. Spooky. When someone has an amputation, be it due to chronic issues or a sudden injury, at least [music] they don't have to worry about pain there anymore. They can get a prosthetic and move on with their life, right? Not always. Many amputes [music] find themselves experiencing serious pain in their limb, even though the limb isn't there anymore. Over 80% of amputation patients report feeling some strange sensation in their missing limb, which indicates it's a common response to an unusual nerve stimulus, and the body has to adjust its nerve reactions before this bizarre response resolves [music] itself. It's not the only case where",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 69,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

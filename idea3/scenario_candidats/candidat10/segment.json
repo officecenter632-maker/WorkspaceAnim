@@ -1,0 +1,40 @@
+{
+  "rang": 10,
+  "score": 0.6503,
+  "idee_recherchee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "Phantom limb pain happens when the brain keeps sending signals to a missing arm or leg, so the person still feels pain in a body part that no longer exists."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=9073s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 220,
+  "debut": 9073.82,
+  "fin": 9144.32,
+  "duree_s": 70.5,
+  "temps_estime": false,
+  "titre": "Number 7: osteosarcoma bone cancer",
+  "resume": "Osteosarcoma, bone cancer, is rare but starts as a deep dull ache in arms and legs and grows to feel like bones are being crushed from the inside, with no position bringing relief. The tumor presses on nerves and muscles and can spike like a hot steak through the limb, with surgery, radiation and chemotherapy often the only options.",
+  "mots_cles": [
+    "osteosarcoma",
+    "bone cancer",
+    "tumor pain",
+    "crushing bone pain",
+    "chemotherapy",
+    "surgery",
+    "radiation",
+    "cancer pain"
+  ],
+  "texte": "end in sight. Number seven, osteocaroma. [music] The good news about osteocaroma, better known as bone cancer, is that it's rare. The bad news, when it hits, the pain can be beyond description and it is relentless. Osteocaroma often targets the arms and legs. It starts as a deep dull ache. But as the tumor grows, so does the pain. Eventually, it feels like your bones are being crushed from the inside out. Movement makes it worse, but even sitting still doesn't bring relief. And unlike with other types of pain, there is no position that makes it better. Osteocaroma pain is caused by the tumor pressing on the nerves and muscles, breaking down the very structure of the bone. It's [music] often described as a constant throbbing ache. But it can spike suddenly, like someone driving a hot steak right through your limb. For those unlucky enough to have it spread to multiple areas, it's a 247 pain apocalypse. Doctors can try to manage it with painkillers, [music] but there is no easy fix. Surgery, radiation, and chemotherapy are often the only options, and even then, the pain is persistent. Osteocaroma is a reminder that cancer doesn't just kill. It can make every moment a living hell. Number six, stiff",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 141,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

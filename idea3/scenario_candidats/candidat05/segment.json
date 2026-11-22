@@ -1,0 +1,39 @@
+{
+  "rang": 5,
+  "score": 0.6777,
+  "idee_recherchee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "Phantom limb pain happens when the brain keeps sending signals to a missing arm or leg, so the person still feels pain in a body part that no longer exists."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=3771s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 109,
+  "debut": 3771.6,
+  "fin": 3823.28,
+  "duree_s": 51.68,
+  "temps_estime": false,
+  "titre": "Peripheral neuropathy",
+  "resume": "Number 14: peripheral neuropathy, damage to nerves carrying messages to the brain, can feel like walking on razor blades and cause muscle weakness, paralysis and severe pain; some patients are prescribed morphine patches and lose functions like picking things up.",
+  "mots_cles": [
+    "peripheral neuropathy",
+    "nerve damage",
+    "razor blades",
+    "morphine patches",
+    "paralysis",
+    "cramping",
+    "forum"
+  ],
+  "texte": "[music] Number 14. Okay, this one is short but not so sweet. It's called peripheral neuropathy, and [music] a doctor that treats people with it said it can feel like walking on razor blades. It's the result of damaged nerves that carry [music] messages to the brain. When this happens, muscles might not work. A person might even experience paralysis, and of course, there could be lots and lots of severe pain. Like many conditions, it's complex, so its effects can differ, and the level of pain can too. But when it hurts, it hurts bad. One person on forum said, \"I have talked to two young women who are prescribed morphine patches. I had no idea that neuropathy pain was so severe. It's also been called unrelenting and severe, but all the pain is made worse from the constant cramping and loss of some bodily functions, such as simply not being able to pick stuff up. We'll now endeavor to talk about something much more gory. Hold on tight. This is petrifying.\"",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 103,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

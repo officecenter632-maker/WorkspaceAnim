@@ -1,0 +1,39 @@
+{
+  "rang": 9,
+  "score": 0.6567,
+  "idee_recherchee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "Phantom limb pain happens when the brain keeps sending signals to a missing arm or leg, so the person still feels pain in a body part that no longer exists."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=46s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 2,
+  "debut": 46.08,
+  "fin": 80.16,
+  "duree_s": 34.08,
+  "temps_estime": false,
+  "titre": "Chronic pain lasts months and comes from the nervous system",
+  "resume": "Fact 19: chronic pain lingers more than 3 to 6 months even when nothing on the surface causes it, most often because of nervous system damage where the brain or spinal cord sends false alarm signals. Finding the right therapy or medication is tricky, and sufferers visit many doctors.",
+  "mots_cles": [
+    "chronic pain",
+    "nervous system",
+    "spinal cord",
+    "3 to 6 months",
+    "medication",
+    "therapy",
+    "doctors"
+  ],
+  "texte": "[music] purpose. Number 19. What the hurt? There's another kind of pain that just seems to linger even when there's nothing on the surface causing it. This is called chronic pain, and it lasts more than 3 to 6 months. It can be caused by problems in the body's various systems, but it's most often caused by the nervous system. Something gets damaged, and the brain or spinal [music] cord sends signals to a part of the body that indicates something's wrong here. Solving or relieving chronic pain can be tricky, and sufferers [music] often spend a lot of time visiting doctors to try to find the right combo of therapy or medication to make their pain finally go away. But there's another cause for chronic pain, and it comes for all of",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 68,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

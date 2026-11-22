@@ -1,0 +1,38 @@
+{
+  "rang": 7,
+  "score": 0.6715,
+  "idee_recherchee": {
+    "numero": 3,
+    "id": 3,
+    "texte": "Phantom limb pain happens when the brain keeps sending signals to a missing arm or leg, so the person still feels pain in a body part that no longer exists."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=13546s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 307,
+  "debut": 13546.96,
+  "fin": 13583.36,
+  "duree_s": 36.4,
+  "temps_estime": false,
+  "titre": "Number 3: CRPS pain that migrates",
+  "resume": "In about half of CRPS cases pain started in one limb and moved to another, with about half of those reporting it jumped to the opposite side of the body and about 30 percent up or down the same side. This bizarre behavior led many doctors to assume it was a mental health issue.",
+  "mots_cles": [
+    "CRPS migrating pain",
+    "spreading to other limb",
+    "opposite side of body",
+    "mental health misdiagnosis",
+    "30 percent",
+    "chronic pain"
+  ],
+  "texte": "migrates. Number three, a traveling disorder. Chronic pain is a common issue after an injury, but it can be easy to [music] assume it's simply the result of an unresolved injury in the affected area. But that doesn't make sense when it starts in one limb and then starts causing intense pain in another one. Roughly half of CRPS sufferers report that the pain started in one limb but eventually moved to another. How it migrates varies, but about half cases reported that it moved to the opposite side of the body, while about 30% said it moved up or down the same side of the body. And this bizarre behavior led to many doctors assuming it was a mental health issue. But it was anything but.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 73,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}
