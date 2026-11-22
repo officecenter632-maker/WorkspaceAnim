@@ -1,0 +1,40 @@
+{
+  "rang": 9,
+  "score": 0.6151,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "Doctors say some medical conditions cause pain so extreme that patients describe it as worse than death, and even strong painkillers barely help."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=7065s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 180,
+  "debut": 7065.52,
+  "fin": 7085.22,
+  "duree_s": 19.7,
+  "temps_estime": false,
+  "titre": "Painful strokes and the conclusion on stroke",
+  "resume": "For some people a stroke is very painful: Mari Meninhal said it felt like an explosion in her brain, and she was left with fairly serious disabilities. The narrator concludes a person could die from a stroke without feeling much pain, with life over before there is time to think about it.",
+  "mots_cles": [
+    "painful stroke",
+    "Mari Meninhal",
+    "explosion in brain",
+    "stroke disabilities",
+    "stroke pain",
+    "dying from stroke",
+    "conclusion",
+    "brain"
+  ],
+  "texte": "But for others, it can indeed be very painful. A woman named Mari Meninhal said the pain was so intense it felt like an explosion in her brain. She, like many stroke victims, had some fairly serious disabilities to deal with after. In conclusion, you could die from a stroke and not feel that much pain. Your sweet life could be over before you had much time to think about pain. Now,",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 39,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

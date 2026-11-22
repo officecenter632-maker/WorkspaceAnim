@@ -1,0 +1,38 @@
+{
+  "rang": 4,
+  "score": 0.6246,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "Doctors say some medical conditions cause pain so extreme that patients describe it as worse than death, and even strong painkillers barely help."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=914s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 31,
+  "debut": 914.16,
+  "fin": 930.8,
+  "duree_s": 16.64,
+  "temps_estime": false,
+  "titre": "Pain is like a good cop",
+  "resume": "Fact 42: a pain-free life would cause trouble because pain means nerves are telling the brain something is wrong so you can fix it, and like a good cop it tries to keep you alive.",
+  "mots_cles": [
+    "pain purpose",
+    "nerves",
+    "brain",
+    "good cop",
+    "keep you alive",
+    "pain-free life"
+  ],
+  "texte": "something you ought to know. Number 42. Some of you would likely vote for having a pain-free life. But if you felt no pain, you'd be in trouble. You feel pain because the nerves in your body are telling your brain there is something [music] wrong. You can then fix whatever is wrong. So pain, just like a good cop, is trying its best to keep you alive.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 33,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

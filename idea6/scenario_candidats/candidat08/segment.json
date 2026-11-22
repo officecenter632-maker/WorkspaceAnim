@@ -1,0 +1,40 @@
+{
+  "rang": 8,
+  "score": 0.6158,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "Doctors say some medical conditions cause pain so extreme that patients describe it as worse than death, and even strong painkillers barely help."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=9295s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 223,
+  "debut": 9295.36,
+  "fin": 9384.08,
+  "duree_s": 88.72,
+  "temps_estime": false,
+  "titre": "Number 4: end-stage pancreatic cancer",
+  "resume": "In end-stage pancreatic cancer the growing tumor presses on nerves, muscles and organs, causing constant grinding, stabbing pain through the abdomen and back. Tumors block critical pathways causing nausea and vomiting, painkillers only dull the agony, and the mental toll is heavy.",
+  "mots_cles": [
+    "pancreatic cancer",
+    "end-stage cancer",
+    "tumor pain",
+    "abdominal pain",
+    "terminal illness",
+    "nausea",
+    "painkillers",
+    "cancer pain"
+  ],
+  "texte": "But even with all that, the next condition on our list might make arachnoiditis feel like a walk in the park. Number four, endstage pancreatic cancer. Pancreatic cancer is already one of the worst cancer diagnoses you can get, but endstage pancreatic cancer takes suffering to almost unimaginable depths. This isn't just about a terminal illness. It's about pain that digs deep, gnawing at you from the inside out as the cancer spreads and takes over. As the tumor grows, it presses on your nerves, muscles, and surrounding organs, sending waves of searing, stabbing pain throughout your abdomen and into your back. It's not the kind of pain that es and flows. It's a [music] constant grinding ache that feels like a clamp squeezing your insides. You can't sit, you can't lie down, and even breathing can be excruciating. Worse yet, this pain isn't [music] something you can easily medicate away. The tumors often block critical pathways, causing nausea, vomiting, and intense discomfort every time you try to eat. As your body starts breaking down, the pain only intensifies, spreading and radiating in ways that make it feel like there is no escape. If the physical pain wasn't bad enough, there's also the huge mental toll. Every day brings more suffering and less relief. Painkillers can dull the agony, but they never truly make it go away. Endstage pancreatic cancer doesn't just rob you of time, [music] it strips away every comfort, making each moment a harrowing countdown. If you think that sounds unbearable, we're only scratching the surface. [music] We've",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 178,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

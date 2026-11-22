@@ -1,0 +1,40 @@
+{
+  "rang": 3,
+  "score": 0.626,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "Doctors say some medical conditions cause pain so extreme that patients describe it as worse than death, and even strong painkillers barely help."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=7231s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 184,
+  "debut": 7231.84,
+  "fin": 7279.12,
+  "duree_s": 47.28,
+  "temps_estime": false,
+  "titre": "Severe trauma in crashes: head injury, bleeding and shock",
+  "resume": "Burning in a car crash is one of the leading causes of accidental death, but the main reason people die in a collision is severe trauma, especially to the head. A severe traumatic brain injury can kill without pain, while internal bleeding causes severe pain then shock, broken bones make victims scream for mercy, motorcycle accidents often involve amputation, and shock leaves only a 20 to 50% chance of survival even at the emergency room.",
+  "mots_cles": [
+    "severe trauma",
+    "traumatic brain injury",
+    "internal bleeding",
+    "broken bones",
+    "amputation",
+    "motorcycle accidents",
+    "shock",
+    "20 to 50% survival"
+  ],
+  "texte": "know about burning to death, which is one of the leading causes of accidental death in the world. And that can happen in a car crash. But the main reason you [music] might die in a traffic collision is the fact that you suffer severe trauma to a part of your body, especially the head. With a severe traumatic brain injury, you could be dead and not feel a thing. Although, if you die from internal bleeding, there can be severe pain and then shock. This severe trauma [music] can affect any part of the body. And if you've ever seen someone in the hospital after they've been smashed up and broken many bones, well, often they're screaming out for mercy. Sometimes that person could have a complete amputation of a body part, which happens more often with motorcycle accidents. If they're not unconscious, they'll likely be very confused and dizzy. The next stage could be shock, and if that happens, even if the person gets to the emergency room, there's only around a 20 to 50% chance",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 95,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

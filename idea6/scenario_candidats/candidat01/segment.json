@@ -1,0 +1,39 @@
+{
+  "rang": 1,
+  "score": 0.698,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "Doctors say some medical conditions cause pain so extreme that patients describe it as worse than death, and even strong painkillers barely help."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=8580s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 210,
+  "debut": 8580.24,
+  "fin": 8614.08,
+  "duree_s": 33.84,
+  "temps_estime": false,
+  "titre": "Number 2: unbearable pain that medications do not touch",
+  "resume": "Pain has driven people to despair, and it is worse when medications do not work and the pain is chronic. A wasp sting, a toothache or a shattered kneecap are bad, but at least you know the pain will end.",
+  "mots_cles": [
+    "unbearable pain",
+    "chronic pain",
+    "pain medication failure",
+    "despair",
+    "suicidal pain",
+    "pain will end",
+    "pain list"
+  ],
+  "texte": "The [music] next two pains on the list do. Number two, just about everything we talked about today is so bad it'll make you wish you were unconscious. It's a sad fact that pain has literally driven people to the edge of despair and sometimes over the edge. The internet is full of folks who say their pain was literally not figuratively unbearable. The situation is always worse when the pain medications don't touch the pain and when the pain is chronic. Sure, a wasp can make you howl. A toothache will make you cry and a shattered kneecap will make you wish you were dead, but at least in the back of your mind, you know the pain will end. This brings [music]",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 68,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

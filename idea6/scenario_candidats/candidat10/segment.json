@@ -1,0 +1,39 @@
+{
+  "rang": 10,
+  "score": 0.6141,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "Doctors say some medical conditions cause pain so extreme that patients describe it as worse than death, and even strong painkillers barely help."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=8167s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 202,
+  "debut": 8167.36,
+  "fin": 8220.4,
+  "duree_s": 53.04,
+  "temps_estime": false,
+  "titre": "Bone cancer pain: intermittent bursts of extreme pain",
+  "resume": "Bone cancer is less common than breast, prostate, skin, colon and lung cancer but can cause intermittent bursts of serious pain several times a day, lasting seconds or minutes. A National Institutes of Health paper describes this, and the video compares it to torture, noting physicians often cannot remove the pain.",
+  "mots_cles": [
+    "bone cancer",
+    "intermittent pain",
+    "breakthrough pain",
+    "National Institutes of Health",
+    "torture comparison",
+    "chronic pain",
+    "cancer pain management"
+  ],
+  "texte": "But the one people seem to hate the most in terms of physical agony is bone cancer. Thankfully, it's not that common compared to breast, prostate, skin, colon, and lung cancer. But if you do get it, you might find you have intermittent bursts of serious pain that happen a few times a day every day. Sure, the pain isn't as bad as having a platypus stick as mean spurs into your face. But that constant, unrelenting throbbing can drive you half crazy. A paper in the National Institutes of Health described it as an intermittent episode of extreme pain that can last seconds or [music] minutes and can hit a person many times in one day. It sounds like the old school torture technique of just putting a bag over a person's head as they're sitting tied to a chair. But every so often as the person is feeling comfortable coming up to them and smacking them in the chops, physicians often say the bone cancer is really really hard to deal with as sometimes they just can't seem to take the pain away for their patients. But again, not",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 106,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

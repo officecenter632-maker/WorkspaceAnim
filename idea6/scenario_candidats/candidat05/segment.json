@@ -1,0 +1,38 @@
+{
+  "rang": 5,
+  "score": 0.6211,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "Doctors say some medical conditions cause pain so extreme that patients describe it as worse than death, and even strong painkillers barely help."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=321s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 9,
+  "debut": 321.12,
+  "fin": 350.0,
+  "duree_s": 28.88,
+  "temps_estime": false,
+  "titre": "Stress and fear heighten pain",
+  "resume": "Fact 13: pain has a mental element, causing stress, frustration and fear, especially in chronic pain, and stress in turn heightens the pain response and makes it harder to focus and solve the problem.",
+  "mots_cles": [
+    "stress",
+    "pain response",
+    "fear",
+    "chronic pain",
+    "psychological pain",
+    "frustration"
+  ],
+  "texte": "pain involves psychological stimuli. Number 13, calm down already. Pain is [music] largely a physical response to your body either sending or receiving messages, but it has a mental element, too. It causes you stress, which leads to frustration and [music] fear. This is especially common with chronic pain, where it's not clear what's actually causing the pain or how to stop it. [music] The problem is, stress can actually heighten the body's pain response and make it more difficult to focus and solve the problem. If you doubt this, try solving a math problem while getting shocked with a joy buzzer repeatedly. One of the best ways to cut",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 57,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

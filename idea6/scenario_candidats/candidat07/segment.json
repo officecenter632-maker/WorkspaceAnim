@@ -1,0 +1,39 @@
+{
+  "rang": 7,
+  "score": 0.6165,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "Doctors say some medical conditions cause pain so extreme that patients describe it as worse than death, and even strong painkillers barely help."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=2406s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 77,
+  "debut": 2406.16,
+  "fin": 2435.36,
+  "duree_s": 29.2,
+  "temps_estime": false,
+  "titre": "Traumatic brain injury and chronic pain",
+  "resume": "Every year 1.4 million Americans suffer traumatic brain injuries and most experience chronic pain lasting months. Chronic pain is persistent and hard to treat, and acute-pain medicines work poorly and risk addiction or kidney and liver damage.",
+  "mots_cles": [
+    "traumatic brain injury",
+    "TBI",
+    "1.4 million",
+    "chronic pain",
+    "acute pain",
+    "kidney damage",
+    "medication risks"
+  ],
+  "texte": "Traumatic brain injury. Every year, 1.4 4 million Americans suffer traumatic brain injuries. Most sufferers of traumatic brain injury will experience chronic pain that can last for months. Unlike acute pain, such as what you might feel when you break a bone, chronic pain is persistent and can be very difficult to treat or manage. Medicines typically used for acute pain, don't work very well at treating chronic pain, and their long-term use can either be habit forming or risk serious kidney and liver damage. People with TBI usually suffer from several different",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 58,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

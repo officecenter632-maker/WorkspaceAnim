@@ -1,0 +1,40 @@
+{
+  "rang": 2,
+  "score": 0.676,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "Doctors say some medical conditions cause pain so extreme that patients describe it as worse than death, and even strong painkillers barely help."
+  },
+  "video_id": "zeVq8Pt2JCc",
+  "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+  "url_video": "https://www.youtube.com/watch?v=zeVq8Pt2JCc",
+  "url_au_debut": "https://www.youtube.com/watch?v=zeVq8Pt2JCc&t=6639s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+  "segment_id": 171,
+  "debut": 6639.12,
+  "fin": 6664.32,
+  "duree_s": 25.2,
+  "temps_estime": false,
+  "titre": "Opioid painkillers and cancer as a likely cause of death",
+  "resume": "Opioid overdoses do not only kill drug abusers: people taking drugs for pain can also slip over the edge, and one condition treated with pain relief drugs is cancer. Cancer happens when the body produces too many abnormal cells that the immune system cannot stop, and when it overwhelms vital organs it ends life, with statistically a high chance that people die this way.",
+  "mots_cles": [
+    "opioid painkillers",
+    "pain relief drugs",
+    "cancer",
+    "abnormal cells",
+    "immune system",
+    "vital organs",
+    "cause of death statistics",
+    "overdose"
+  ],
+  "texte": "it's not [music] only a drug abusers who die from opioid overdoses. Sometimes people taking the drugs for certain kinds of pain can one day slip over the edge. One of the pains associated with pain relief drugs is cancer. something that happens when your body [music] produces too much abnormal cells and your immune system can't stop reproduction. When the cancer overwhelms vital organs, it can spell the end of your life. You need to know how it might feel dying from it since statistically [music] there's a high chance you'll go this",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 50,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

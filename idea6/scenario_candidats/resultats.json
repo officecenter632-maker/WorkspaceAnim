@@ -1,0 +1,131 @@
+{
+  "idee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "Doctors say some medical conditions cause pain so extreme that patients describe it as worse than death, and even strong painkillers barely help."
+  },
+  "modele": "BAAI/bge-base-en-v1.5",
+  "nb_candidats": 10,
+  "candidats": [
+    {
+      "rang": 1,
+      "dossier": "candidat01",
+      "score": 0.698,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 210,
+      "debut": 8580.24,
+      "fin": 8614.08,
+      "titre": "Number 2: unbearable pain that medications do not touch",
+      "frames": true
+    },
+    {
+      "rang": 2,
+      "dossier": "candidat02",
+      "score": 0.676,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 171,
+      "debut": 6639.12,
+      "fin": 6664.32,
+      "titre": "Opioid painkillers and cancer as a likely cause of death",
+      "frames": true
+    },
+    {
+      "rang": 3,
+      "dossier": "candidat03",
+      "score": 0.626,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 184,
+      "debut": 7231.84,
+      "fin": 7279.12,
+      "titre": "Severe trauma in crashes: head injury, bleeding and shock",
+      "frames": true
+    },
+    {
+      "rang": 4,
+      "dossier": "candidat04",
+      "score": 0.6246,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 31,
+      "debut": 914.16,
+      "fin": 930.8,
+      "titre": "Pain is like a good cop",
+      "frames": true
+    },
+    {
+      "rang": 5,
+      "dossier": "candidat05",
+      "score": 0.6211,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 9,
+      "debut": 321.12,
+      "fin": 350.0,
+      "titre": "Stress and fear heighten pain",
+      "frames": true
+    },
+    {
+      "rang": 6,
+      "dossier": "candidat06",
+      "score": 0.6175,
+      "video_id": "dt5ocYfjths",
+      "titre_video": "An Ozempic Overdose Hour by Hour: The Biology of a 7-Day Gastric Freeze",
+      "segment_id": 21,
+      "debut": 647.76,
+      "fin": 675.12,
+      "titre": "9 PM: new severe abdominal pain",
+      "frames": true
+    },
+    {
+      "rang": 7,
+      "dossier": "candidat07",
+      "score": 0.6165,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 77,
+      "debut": 2406.16,
+      "fin": 2435.36,
+      "titre": "Traumatic brain injury and chronic pain",
+      "frames": true
+    },
+    {
+      "rang": 8,
+      "dossier": "candidat08",
+      "score": 0.6158,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 223,
+      "debut": 9295.36,
+      "fin": 9384.08,
+      "titre": "Number 4: end-stage pancreatic cancer",
+      "frames": true
+    },
+    {
+      "rang": 9,
+      "dossier": "candidat09",
+      "score": 0.6151,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 180,
+      "debut": 7065.52,
+      "fin": 7085.22,
+      "titre": "Painful strokes and the conclusion on stroke",
+      "frames": true
+    },
+    {
+      "rang": 10,
+      "dossier": "candidat10",
+      "score": 0.6141,
+      "video_id": "zeVq8Pt2JCc",
+      "titre_video": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "segment_id": 202,
+      "debut": 8167.36,
+      "fin": 8220.4,
+      "titre": "Bone cancer pain: intermittent bursts of extreme pain",
+      "frames": true
+    }
+  ]
+}

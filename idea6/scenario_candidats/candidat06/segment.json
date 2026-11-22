@@ -1,0 +1,38 @@
+{
+  "rang": 6,
+  "score": 0.6175,
+  "idee_recherchee": {
+    "numero": 6,
+    "id": 6,
+    "texte": "Doctors say some medical conditions cause pain so extreme that patients describe it as worse than death, and even strong painkillers barely help."
+  },
+  "video_id": "dt5ocYfjths",
+  "titre_video": "An Ozempic Overdose Hour by Hour: The Biology of a 7-Day Gastric Freeze",
+  "url_video": "https://www.youtube.com/watch?v=dt5ocYfjths",
+  "url_au_debut": "https://www.youtube.com/watch?v=dt5ocYfjths&t=647s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-dt5ocyfjths-src",
+  "segment_id": 21,
+  "debut": 647.76,
+  "fin": 675.12,
+  "duree_s": 27.36,
+  "temps_estime": false,
+  "titre": "9 PM: new severe abdominal pain",
+  "resume": "A new, worsening pain rises in the stomach and the patient presses the nurse call button, doubled over and gasping. The nurse gives heavy pain medication through the IV, and the doctor says this pain is different and may complicate things.",
+  "mots_cles": [
+    "abdominal pain",
+    "nurse call button",
+    "IV pain medication",
+    "new symptom",
+    "9 PM",
+    "complication"
+  ],
+  "texte": "9 PM You suddenly feel a pain ebbing up in your stomach. You’ve been cramping already because of the hyperemesis and empty stomach. But this pain is new. And getting worse. You frantically smash the nurse call button. When help arrives, you’re doubled over in pain, gasping for breath. The nurse immediately pumps heavy pain medication into your IV line. When the doctor sees you, his face is etched with concern. This new abdominal pain is different. It might complicate things. But first they have some questions.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 55,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}
