@@ -1,0 +1,39 @@
+{
+  "rang": 7,
+  "score": 0.6068,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Time passes more slowly for an astronaut orbiting Earth or for a clock near a massive object than for someone far from gravity, an effect called time dilation that has been measured with atomic clocks and must be corrected in GPS satellites."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=2754s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 62,
+  "debut": 2754.08,
+  "fin": 2810.96,
+  "duree_s": 56.88,
+  "temps_estime": false,
+  "titre": "La flèche du temps et l'entropie",
+  "resume": "Time only moves in one direction, which scientists link to entropy, the drift from order to disorder that cannot be undone. Time travel to the past may be theoretically possible, but paradoxes could end the universe.",
+  "mots_cles": [
+    "arrow of time",
+    "entropy",
+    "time travel",
+    "paradoxes",
+    "order to disorder",
+    "one direction of time",
+    "unsolved physics"
+  ],
+  "texte": "You might not realize it, but time is weird. Why does it only move one direction? Is traveling backward in time possible? These questions are currently being worked on by scientists, but for right now, there are very few answers. Scientists think that time moves forward because of a property known as entropy. At a basic level, entropy is the idea that everything in the universe is moving from a state of [music] order to a state of disorder. Once a system undergoes entropy and becomes more disordered, there is no going back. This is similar to how time works. Once you go forward in time, you can't go back in time. But why is this the case? It may just be the ignorance of humans and our inability to perceive the movement of time in different [music] ways, but as far as we can tell, time only moves in one direction. This is further reinforced by the numerous paradoxes that can occur when we discuss [music] traveling back in time. Theoretically, traveling to the past might be possible, but it can also end the universe as we know it. Time travel and the movement of time in one direction are conundrums that scientists are currently trying to solve, but time will tell how long before we can make sense of it all.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 113,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "rang": 8,
+  "score": 0.5928,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Time passes more slowly for an astronaut orbiting Earth or for a clock near a massive object than for someone far from gravity, an effect called time dilation that has been measured with atomic clocks and must be corrected in GPS satellites."
+  },
+  "video_id": "eOZblHcqkvo",
+  "titre_video": "The Big Bang Theory Is Wrong, This New Theory Is Even Stranger",
+  "url_video": "https://www.youtube.com/watch?v=eOZblHcqkvo",
+  "url_au_debut": "https://www.youtube.com/watch?v=eOZblHcqkvo&t=660s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-eozblhcqkvo-src",
+  "segment_id": 12,
+  "debut": 660.88,
+  "fin": 726.64,
+  "duree_s": 65.76,
+  "temps_estime": false,
+  "titre": "The illusion of Time Zero: time before the Big Bang",
+  "resume": "The classic Big Bang forced the idea of Time Zero, making questions about before it moot, as when Stephen Hawking compared them to asking what is north of the North Pole. Replacing the singularity with a quantum bounce means time flowed continuously before the bounce, restoring cause and effect according to Poplawski.",
+  "mots_cles": [
+    "Time Zero",
+    "Stephen Hawking",
+    "north of the North Pole",
+    "before the Big Bang",
+    "quantum bounce",
+    "Nikodem Poplawski",
+    "cause and effect",
+    "singularity"
+  ],
+  "texte": "The illusion of Time Zero. For decades, the classic Big Bang model forced that on us. It claimed that space and time exploded out of nothingness at the point when “time equals zero,” rendering any discussion of what might have happened before that point moot. Stephen Hawking once said that even asking the question “What happened before the Big Bang?” was pointless, like asking “What is north of the North Pole?” And it was this dogmatic viewpoint that protected a broken equation for so many years. The word “singularity” did all of the heavy-lifting, but was completely mysterious, defying so many of the laws of classical physics. Replacing that singularity with a quantum “bounce” changes everything. It means that time no longer started at “Time Zero”. Instead, it flowed continuously before the bounce, roared through it, and carried its momentum and energy into the creation of our universe. According to Poplawski, the singularity wasn’t the start of reality. It was just the wall that previous generations of physicists couldn’t get past. They didn’t have the tools, knowledge, and data they needed to break through Now, they do. And the rule of cause and effect has been restored.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 132,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

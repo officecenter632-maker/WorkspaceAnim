@@ -1,0 +1,131 @@
+{
+  "idee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Time passes more slowly for an astronaut orbiting Earth or for a clock near a massive object than for someone far from gravity, an effect called time dilation that has been measured with atomic clocks and must be corrected in GPS satellites."
+  },
+  "modele": "BAAI/bge-base-en-v1.5",
+  "nb_candidats": 10,
+  "candidats": [
+    {
+      "rang": 1,
+      "dossier": "candidat01",
+      "score": 0.7193,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 200,
+      "debut": 9774.2,
+      "fin": 9842.31,
+      "titre": "Dilatation du temps : ce que voit un observateur extérieur",
+      "frames": true
+    },
+    {
+      "rang": 2,
+      "dossier": "candidat02",
+      "score": 0.6212,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 1,
+      "debut": 0.0,
+      "fin": 28.55,
+      "titre": "Accroche : espace et temps illusoires ou vie écrite d'avance",
+      "frames": true
+    },
+    {
+      "rang": 3,
+      "dossier": "candidat03",
+      "score": 0.6163,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 202,
+      "debut": 9910.42,
+      "fin": 9942.35,
+      "titre": "Comment les astronomes localisent l'horizon des événements",
+      "frames": true
+    },
+    {
+      "rang": 4,
+      "dossier": "candidat04",
+      "score": 0.6091,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 73,
+      "debut": 3349.66,
+      "fin": 3395.92,
+      "titre": "Des trous noirs qui grossissent et dilatation du temps à l'horizon",
+      "frames": true
+    },
+    {
+      "rang": 5,
+      "dossier": "candidat05",
+      "score": 0.609,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 17,
+      "debut": 729.73,
+      "fin": 793.69,
+      "titre": "De l'espace-temps de Newton et Einstein à un espace-temps qui n'est pas réel",
+      "frames": true
+    },
+    {
+      "rang": 6,
+      "dossier": "candidat06",
+      "score": 0.6085,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 20,
+      "debut": 890.76,
+      "fin": 927.53,
+      "titre": "L'holographie explique l'action fantomatique et l'illusion du temps",
+      "frames": true
+    },
+    {
+      "rang": 7,
+      "dossier": "candidat07",
+      "score": 0.6068,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 62,
+      "debut": 2754.08,
+      "fin": 2810.96,
+      "titre": "La flèche du temps et l'entropie",
+      "frames": true
+    },
+    {
+      "rang": 8,
+      "dossier": "candidat08",
+      "score": 0.5928,
+      "video_id": "eOZblHcqkvo",
+      "titre_video": "The Big Bang Theory Is Wrong, This New Theory Is Even Stranger",
+      "segment_id": 12,
+      "debut": 660.88,
+      "fin": 726.64,
+      "titre": "The illusion of Time Zero: time before the Big Bang",
+      "frames": true
+    },
+    {
+      "rang": 9,
+      "dossier": "candidat09",
+      "score": 0.5901,
+      "video_id": "c8dlJJuqcOQ",
+      "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "segment_id": 138,
+      "debut": 6825.86,
+      "fin": 6857.01,
+      "titre": "Un objet au repos par rapport aux étoiles voisines",
+      "frames": true
+    },
+    {
+      "rang": 10,
+      "dossier": "candidat10",
+      "score": 0.5871,
+      "video_id": "0oV87yfN59g",
+      "titre_video": "The End of the World Scenarios. Humanity is FINISHED.",
+      "segment_id": 5,
+      "debut": 242.69,
+      "fin": 338.09,
+      "titre": "NASA on asteroid size and why impact is a low worry",
+      "frames": true
+    }
+  ]
+}

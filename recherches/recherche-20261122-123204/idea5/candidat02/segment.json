@@ -1,0 +1,39 @@
+{
+  "rang": 2,
+  "score": 0.6212,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Time passes more slowly for an astronaut orbiting Earth or for a clock near a massive object than for someone far from gravity, an effect called time dilation that has been measured with atomic clocks and must be corrected in GPS satellites."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=0s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 1,
+  "debut": 0.0,
+  "fin": 28.55,
+  "duree_s": 28.55,
+  "temps_estime": true,
+  "titre": "Accroche : espace et temps illusoires ou vie écrite d'avance",
+  "resume": "The narrator opens by claiming that Einstein was wrong about free will. Physicists tested reality with giant telescopes aimed 7.8 billion light-years away, and the result forces a choice: either space and time are illusions or every choice you make was decided before Earth existed.",
+  "mots_cles": [
+    "Einstein",
+    "free will",
+    "illusion",
+    "space and time",
+    "quantum physics",
+    "telescopes",
+    "predetermined"
+  ],
+  "texte": "You chose to click on this video. You thought it was your own free will. Even Albert Einstein would have agreed with you. Einstein was dead wrong. Quantum physicists pointed giant telescopes 7.8 billion light years into the deep cosmos to test the fabric of reality. What they found changes [music] everything. Either space and time are complete illusions or your entire life is scripted. Every thought you've ever had and every choice you'll make was already decided long before Earth even existed.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 58,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

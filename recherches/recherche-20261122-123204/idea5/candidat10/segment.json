@@ -1,0 +1,39 @@
+{
+  "rang": 10,
+  "score": 0.5871,
+  "idee_recherchee": {
+    "numero": 5,
+    "id": 5,
+    "texte": "Time passes more slowly for an astronaut orbiting Earth or for a clock near a massive object than for someone far from gravity, an effect called time dilation that has been measured with atomic clocks and must be corrected in GPS satellites."
+  },
+  "video_id": "0oV87yfN59g",
+  "titre_video": "The End of the World Scenarios. Humanity is FINISHED.",
+  "url_video": "https://www.youtube.com/watch?v=0oV87yfN59g",
+  "url_au_debut": "https://www.youtube.com/watch?v=0oV87yfN59g&t=242s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-0ov87yfn59g-src",
+  "segment_id": 5,
+  "debut": 242.69,
+  "fin": 338.09,
+  "duree_s": 95.4,
+  "temps_estime": false,
+  "titre": "NASA on asteroid size and why impact is a low worry",
+  "resume": "NASA says an asteroid of about 1 km or more is needed for massive damage and sees no such object likely to hit in several hundred years. Some scientists note a life-ending impact every 60 million years or so, and the 2019 OK asteroid passed within 40,000 miles unseen, but asteroid impact ranks at the bottom of the worry list.",
+  "mots_cles": [
+    "NASA",
+    "1 km asteroid",
+    "2019 OK",
+    "near miss",
+    "60 million years",
+    "impact probability",
+    "hierarchy of worries"
+  ],
+  "texte": "people. According to NASA, to create massive damage, you need an asteroid to hit that was 1 km in diameter or bigger. The one that wrecked that Siberian forest was only around 66 ft wide. But just to let you know, over the many millions of years the earth has been around, it's been hit by many asteroids that make a 1 km rock look like a pea next to a basketball. The good news [music] is that NASA says there is nothing in space right now of that size that looks like it could impact Earth. [music] The agency added, as best we can tell, no large object is likely to strike the earth anytime in the next several hundred years. Phew. But if you take into account the law of averages and past events, well, you'd have to say that one day the earth will get a major whacking again. [music] In fact, some scientists say earth is hit by such a life-ending piece of rock every 60 million years or so, and that could mean [music] we are due for another bashing. Still, in cosmic terms, say 20,000 or 50,000 years is nothing. Don't go building your bunker just yet. But to finish this off, we think we should [music] inform you that in 2019 an asteroid the size of a football pitch came within 40,000 miles of Earth. That's close in space terms, [music] and NASA admitted that this rock named 2019 OK did sneak up on us. If something that size would have hit, it would have the potential to destroy a city and its suburbs. Okay, so that is scary, but it's very, very, very unlikely to happen anytime soon. [music] In terms of your hierarchy of worries, you can shove asteroid impact to the bottom of the pile. There are actually analysts who studied the likelihood of the end of the world within the next 100 [music] years, and where a space rock isn't a major concern of theirs, this next one is.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 191,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}
