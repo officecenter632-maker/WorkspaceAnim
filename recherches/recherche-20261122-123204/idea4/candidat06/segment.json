@@ -1,0 +1,39 @@
+{
+  "rang": 6,
+  "score": 0.6415,
+  "idee_recherchee": {
+    "numero": 4,
+    "id": 4,
+    "texte": "Quantum mechanics and general relativity are fundamentally incompatible, and the search for a theory of quantum gravity, such as string theory or loop quantum gravity, tries to unify the physics of the very small with the physics of the very large."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=71s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 3,
+  "debut": 71.96,
+  "fin": 120.19,
+  "duree_s": 48.23,
+  "temps_estime": true,
+  "titre": "La physique quantique et l'intrication contre le réalisme local",
+  "resume": "Quantum physics found that unobserved particles dissolve into mathematical probabilities rather than sitting in one place. Quantum entanglement links particles across any distance so that spinning one instantly affects the other, which broke Einstein's rule that nothing travels faster than light.",
+  "mots_cles": [
+    "quantum physics",
+    "entanglement",
+    "superposition",
+    "probabilities",
+    "faster than light",
+    "unobserved particles",
+    "North Pole and moon"
+  ],
+  "texte": "Then quantum physics completely shattered what Einstein believed in. When scientists started looking at reality on a subatomic level, they made discoveries that turned the entire concept of local realism on its head. They found that instead of existing in a specific location, unobserved particles dissolved into a ghostly mathematical probabilities. And it gets weirder. Digging deeper, they developed the theory of quantum entanglement. Essentially, it means that two or more tiny particles can become linked even if they're in completely different places. Like putting one at the North Pole and the other on the moon, they still mirror one another. >> [music] >> Spin one and the other will spin. This happens instantly without delay. For Einstein, that was ridiculous. It broke his rule that nothing could travel faster than light.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 97,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}

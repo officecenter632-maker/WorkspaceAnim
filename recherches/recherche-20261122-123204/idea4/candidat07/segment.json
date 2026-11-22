@@ -1,0 +1,39 @@
+{
+  "rang": 7,
+  "score": 0.6373,
+  "idee_recherchee": {
+    "numero": 4,
+    "id": 4,
+    "texte": "Quantum mechanics and general relativity are fundamentally incompatible, and the search for a theory of quantum gravity, such as string theory or loop quantum gravity, tries to unify the physics of the very small with the physics of the very large."
+  },
+  "video_id": "c8dlJJuqcOQ",
+  "titre_video": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+  "url_video": "https://www.youtube.com/watch?v=c8dlJJuqcOQ",
+  "url_au_debut": "https://www.youtube.com/watch?v=c8dlJJuqcOQ&t=216s",
+  "dataset_kaggle": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+  "segment_id": 7,
+  "debut": 216.87,
+  "fin": 269.32,
+  "duree_s": 52.45,
+  "temps_estime": true,
+  "titre": "Les failles de détection et de localité",
+  "resume": "Einstein's defenders argued the experiments had loopholes. The detection loophole claimed equipment missed particles and scientists cherry-picked pairs, while the locality loophole claimed particles could exchange a fast hidden signal before measurement. Faster electronics and more efficient detectors gradually closed both.",
+  "mots_cles": [
+    "loopholes",
+    "detection loophole",
+    "fair sampling",
+    "locality loophole",
+    "hidden signal",
+    "Bell test",
+    "detectors"
+  ],
+  "texte": "But Einstein's acolytes refused to back down. [music] They claimed the experiments were rigged or pointed out massive loopholes in the logic. First, there was the detection or fair sampling loophole. Skeptics argued that existing scientific equipment simply wasn't accurate and reliable enough to capture every particle. They accused scientists of inadvertently cherry-picking the pairs that lined up with their hypothesis. And then there was the locality loophole. This argued that the particles were communicating just like [music] Einstein thought, just using a hidden signal that moved incredibly fast. If the particles had a microsecond to send messages before being captured, then the whole test was invalid. >> [music] >> As the years went by and technology improved, scientists found ways to shut down these loopholes. They built ultra-fast electronic systems to counter the locality loophole argument, and they made detectors more efficient to collect [music] broader and more reliable measurements.",
+  "frames": {
+    "archive": "frames.axz",
+    "nb": 105,
+    "format": "webp",
+    "pas_s": 0.5,
+    "resolution": "originale",
+    "nommage": "tNNNNNNNNN.webp : NNNNNNNNN = millisecondes depuis le début de la vidéo"
+  }
+}
