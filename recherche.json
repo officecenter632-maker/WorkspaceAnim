@@ -1,0 +1,492 @@
+{
+  "version": 1,
+  "nom": "recherche-20261122-184148",
+  "date": "2026-11-22 18:05:50",
+  "nb_idees": 6,
+  "top": 10,
+  "modele": "BAAI/bge-base-en-v1.5",
+  "videos_indexees": [
+    {
+      "video_id": "r8mu868qqBA",
+      "titre": "Why Ancient Human Drug Use Was 10x More Lethal Than Today",
+      "dataset": "futuradevdevelopers/lexiax-r8mu868qqba-src",
+      "nb_idees": 25
+    },
+    {
+      "video_id": "j16_OPRTT4g",
+      "titre": "Why Phone Scammers Wait Exactly 3 Seconds Before Speaking",
+      "dataset": "futuradevdevelopers/lexiax-j16-oprtt4g-src",
+      "nb_idees": 31
+    },
+    {
+      "video_id": "6A5dqQdGK6Q",
+      "titre": "The Solar Storm That Could Shut Down the AI Economy",
+      "dataset": "futuradevdevelopers/lexiax-6a5dqqdgk6q-src",
+      "nb_idees": 23
+    },
+    {
+      "video_id": "dfELHX3VuJc",
+      "titre": "You NEED to STOP Using Windows 11 Right Now. Microsoft is OVER",
+      "dataset": "futuradevdevelopers/lexiax-dfelhx3vujc-src",
+      "nb_idees": 212
+    },
+    {
+      "video_id": "f39h7wgh2rQ",
+      "titre": "When the AI Bubble Bursts: A Financial Collapse Has Already Begun",
+      "dataset": "futuradevdevelopers/lexiax-f39h7wgh2rq-src",
+      "nb_idees": 239
+    },
+    {
+      "video_id": "baO2fIL4coI",
+      "titre": "The US Dollar Collapse in Real Time (Day by Day)",
+      "dataset": "futuradevdevelopers/lexiax-bao2fil4coi-src",
+      "nb_idees": 41
+    },
+    {
+      "video_id": "QHjI2Hb2xEw",
+      "titre": "Why is the UK telling people to stockpile?",
+      "dataset": "futuradevdevelopers/lexiax-qhji2hb2xew-src",
+      "nb_idees": 29
+    },
+    {
+      "video_id": "Ou_ZjQLUPoo",
+      "titre": "Everything You Need to Know About the Coming US-China War",
+      "dataset": "futuradevdevelopers/lexiax-ou-zjqlupoo-src",
+      "nb_idees": 272
+    },
+    {
+      "video_id": "_huy9jU9UAA",
+      "titre": "The Internet JUST Went Dark. The COLLAPSE Is Happening.",
+      "dataset": "futuradevdevelopers/lexiax-huy9ju9uaa-src",
+      "nb_idees": 54
+    },
+    {
+      "video_id": "gKF7NMxZ754",
+      "titre": "Why is War in Ukraine Still Happening?",
+      "dataset": "futuradevdevelopers/lexiax-gkf7nmxz754-src",
+      "nb_idees": 37
+    },
+    {
+      "video_id": "Df0v8WoVscI",
+      "titre": "We Have Lost the Control of AI...",
+      "dataset": "futuradevdevelopers/lexiax-df0v8wovsci-src",
+      "nb_idees": 23
+    },
+    {
+      "video_id": "eOZblHcqkvo",
+      "titre": "The Big Bang Theory Is Wrong, This New Theory Is Even Stranger",
+      "dataset": "futuradevdevelopers/lexiax-eozblhcqkvo-src",
+      "nb_idees": 17
+    },
+    {
+      "video_id": "L-gAoGQrvp0",
+      "titre": "California Ran Out of Water, So They Re-Engineered the Entire State",
+      "dataset": "futuradevdevelopers/lexiax-l-gaogqrvp0-src",
+      "nb_idees": 28
+    },
+    {
+      "video_id": "of8B3F59iFs",
+      "titre": "Bond markets are falling apart now...",
+      "dataset": "futuradevdevelopers/lexiax-of8b3f59ifs-src",
+      "nb_idees": 32
+    },
+    {
+      "video_id": "Y2JYWeB2w50",
+      "titre": "Military Conspiracies That Sound 100% Fake but Were True",
+      "dataset": "futuradevdevelopers/lexiax-y2jyweb2w50-src",
+      "nb_idees": 32
+    },
+    {
+      "video_id": "nniss6cDLAE",
+      "titre": "70 Cents of Every Dollar Is Over: The Collapse of American Defense Dominance",
+      "dataset": "futuradevdevelopers/lexiax-nniss6cdlae-src",
+      "nb_idees": 27
+    },
+    {
+      "video_id": "NATQAFAFZ6I",
+      "titre": "United States Starts to Crack. Economy and Military Collapse Coming",
+      "dataset": "futuradevdevelopers/lexiax-natqafafz6i-src",
+      "nb_idees": 276
+    },
+    {
+      "video_id": "L4Bobswuv8k",
+      "titre": "The Fat-Cure Hype Faces COLLAPSE. Tesamorelin Peptide Has a Cancer Warning.",
+      "dataset": "futuradevdevelopers/lexiax-l4bobswuv8k-src",
+      "nb_idees": 22
+    },
+    {
+      "video_id": "Jq-aPTb4gb4",
+      "titre": "Windows users are freaking out now...",
+      "dataset": "futuradevdevelopers/lexiax-jq-aptb4gb4-src",
+      "nb_idees": 26
+    },
+    {
+      "video_id": "0DYYdcGrbMM",
+      "titre": "History Is Repeating. This Is Where It Goes Wrong.",
+      "dataset": "futuradevdevelopers/lexiax-0dyydcgrbmm-src",
+      "nb_idees": 19
+    },
+    {
+      "video_id": "_KCvoOhUqHA",
+      "titre": "The Man Who Smoked Weed for 10 Years",
+      "dataset": "futuradevdevelopers/lexiax-kcvoohuqha-src",
+      "nb_idees": 23
+    },
+    {
+      "video_id": "OOxp8bShXaQ",
+      "titre": "The Collapse of the Dollar (And Why You're Already Poorer)",
+      "dataset": "futuradevdevelopers/lexiax-ooxp8bshxaq-src",
+      "nb_idees": 355
+    },
+    {
+      "video_id": "f1MGkmM28wA",
+      "titre": "Foreign Nations JUST Left the US Bond Market. Wall Street Panics RIGHT NOW.",
+      "dataset": "futuradevdevelopers/lexiax-f1mgkmm28wa-src",
+      "nb_idees": 22
+    },
+    {
+      "video_id": "rMMejoeZYQ0",
+      "titre": "Wall Street Is Hiding Something...",
+      "dataset": "futuradevdevelopers/lexiax-rmmejoezyq0-src",
+      "nb_idees": 21
+    },
+    {
+      "video_id": "mEP1xCHdfyI",
+      "titre": "China's Robot Army Situation is Terrifying",
+      "dataset": "futuradevdevelopers/lexiax-mep1xchdfyi-src",
+      "nb_idees": 34
+    },
+    {
+      "video_id": "SSVG6rJM8Cw",
+      "titre": "Why the 2022 Car Bubble is Bursting Now",
+      "dataset": "futuradevdevelopers/lexiax-ssvg6rjm8cw-src",
+      "nb_idees": 25
+    },
+    {
+      "video_id": "tehBa2ZjG-I",
+      "titre": "Why You Don't Want to Earn $150,000 to $250,000",
+      "dataset": "futuradevdevelopers/lexiax-tehba2zjg-i-src",
+      "nb_idees": 30
+    },
+    {
+      "video_id": "0oV87yfN59g",
+      "titre": "The End of the World Scenarios. Humanity is FINISHED.",
+      "dataset": "futuradevdevelopers/lexiax-0ov87yfn59g-src",
+      "nb_idees": 253
+    },
+    {
+      "video_id": "TPiiTEK8OPE",
+      "titre": "Holy f***ing sh*t your gym routine is useless...",
+      "dataset": "futuradevdevelopers/lexiax-tpiitek8ope-src",
+      "nb_idees": 29
+    },
+    {
+      "video_id": "c8dlJJuqcOQ",
+      "titre": "Scientists Are Freaking Out Over Space Time (It's Not Real)",
+      "dataset": "futuradevdevelopers/lexiax-c8dljjuqcoq-src",
+      "nb_idees": 213
+    },
+    {
+      "video_id": "Awf9D7vIgvE",
+      "titre": "VLC Took 33 Seconds To Load, So Developers Investigated Windows",
+      "dataset": "futuradevdevelopers/lexiax-awf9d7vigve-src",
+      "nb_idees": 29
+    },
+    {
+      "video_id": "dnmdZOEGXe8",
+      "titre": "Russia Closing 5 Hospital Due to PLAGUE OUTBREAK",
+      "dataset": "futuradevdevelopers/lexiax-dnmdzoegxe8-src",
+      "nb_idees": 20
+    },
+    {
+      "video_id": "JhuL2Yr-tvs",
+      "titre": "UNPLUG Your Smart TV NOW!",
+      "dataset": "futuradevdevelopers/lexiax-jhul2yr-tvs-src",
+      "nb_idees": 34
+    },
+    {
+      "video_id": "W8Dl-TS9H2c",
+      "titre": "MIT looked at what AI actually killed and holy sh*t...",
+      "dataset": "futuradevdevelopers/lexiax-w8dl-ts9h2c-src",
+      "nb_idees": 24
+    },
+    {
+      "video_id": "4ye6BMbA3UU",
+      "titre": "Ex-Google Executive: AI is Ending Capitalism",
+      "dataset": "futuradevdevelopers/lexiax-4ye6bmba3uu-src",
+      "nb_idees": 31
+    },
+    {
+      "video_id": "AvyHU0m8vdE",
+      "titre": "How Are Americans Affording $500,000 Homes on Average Salaries?",
+      "dataset": "futuradevdevelopers/lexiax-avyhu0m8vde-src",
+      "nb_idees": 27
+    },
+    {
+      "video_id": "HTYIKPcPRRQ",
+      "titre": "Holy sh*t spacetime is fake...",
+      "dataset": "futuradevdevelopers/lexiax-htyikpcprrq-src",
+      "nb_idees": 20
+    },
+    {
+      "video_id": "M3hvIUwAL7c",
+      "titre": "Wall Street is freaking out over OpenAI now...",
+      "dataset": "futuradevdevelopers/lexiax-m3hviuwal7c-src",
+      "nb_idees": 29
+    },
+    {
+      "video_id": "Qi5iRWzsQdc",
+      "titre": "CHINA IS OVER",
+      "dataset": "futuradevdevelopers/lexiax-qi5irwzsqdc-src",
+      "nb_idees": 24
+    },
+    {
+      "video_id": "SOYJ41syEUA",
+      "titre": "The AI Economy Is DEAD. Big Tech is TRAPPED Right NOW",
+      "dataset": "futuradevdevelopers/lexiax-soyj41syeua-src",
+      "nb_idees": 236
+    },
+    {
+      "video_id": "fDzCHPWkou4",
+      "titre": "World War 3 Protocol. Why Global Nuclear Annihilation Is Inevitable.",
+      "dataset": "futuradevdevelopers/lexiax-fdzchpwkou4-src",
+      "nb_idees": 246
+    },
+    {
+      "video_id": "ojxd4XN0m2o",
+      "titre": "The Nuclear Football is BROKEN. It's JUST 4 Minutes to WW3",
+      "dataset": "futuradevdevelopers/lexiax-ojxd4xn0m2o-src",
+      "nb_idees": 16
+    },
+    {
+      "video_id": "pTMzflqBw8g",
+      "titre": "Top 10 Insane Dark Web Conspiracies That Were Actually True All Along",
+      "dataset": "futuradevdevelopers/lexiax-ptmzflqbw8g-src",
+      "nb_idees": 43
+    },
+    {
+      "video_id": "3pggYUPCK_A",
+      "titre": "The Tirzepatide Boom Just Hit a Wall",
+      "dataset": "futuradevdevelopers/lexiax-3pggyupck-a-src",
+      "nb_idees": 24
+    },
+    {
+      "video_id": "YVFA79OhlU0",
+      "titre": "The 11% Interest Trap Just Hit Wall Street. Elite Portfolios Are PANICKING Right NOW.",
+      "dataset": "futuradevdevelopers/lexiax-yvfa79ohlu0-src",
+      "nb_idees": 30
+    },
+    {
+      "video_id": "IpheDQ5v6oQ",
+      "titre": "Karma Just Hit Roblox. Hard.",
+      "dataset": "futuradevdevelopers/lexiax-iphedq5v6oq-src",
+      "nb_idees": 26
+    },
+    {
+      "video_id": "WSAOK-saNAU",
+      "titre": "Holy s**t.. 30-year-olds are getting stage 4 cancer...",
+      "dataset": "futuradevdevelopers/lexiax-wsaok-sanau-src",
+      "nb_idees": 30
+    },
+    {
+      "video_id": "azsA-qGnZ2E",
+      "titre": "The OPENAI Cyberattack on Hugging Face Was WAY BIGGER Than We Thought",
+      "dataset": "futuradevdevelopers/lexiax-azsa-qgnz2e-src",
+      "nb_idees": 39
+    },
+    {
+      "video_id": "5153vDFmwBs",
+      "titre": "You Need to stop Using INCOGNITO Mode Right Now",
+      "dataset": "futuradevdevelopers/lexiax-5153vdfmwbs-src",
+      "nb_idees": 21
+    },
+    {
+      "video_id": "Mh3jD3aPojY",
+      "titre": "It's not just your appetite that Ozempic changes",
+      "dataset": "futuradevdevelopers/lexiax-mh3jd3apojy-src",
+      "nb_idees": 35
+    },
+    {
+      "video_id": "dg6bbyhFjhc",
+      "titre": "YOU vs Horror Movie Killers || Could You Defeat and Survive These Horror Villains",
+      "dataset": "futuradevdevelopers/lexiax-dg6bbyhfjhc-src",
+      "nb_idees": 142
+    },
+    {
+      "video_id": "Tms3kCQiwQo",
+      "titre": "How a 25-Year-Old AI Boy Genius Lost $35 BILLION in 72 Hours",
+      "dataset": "futuradevdevelopers/lexiax-tms3kcqiwqo-src",
+      "nb_idees": 33
+    },
+    {
+      "video_id": "8FgyNgIgVjw",
+      "titre": "The Kessler Syndrome (When Humanity Gets Trapped on Earth Forever) - Year by Year",
+      "dataset": "futuradevdevelopers/lexiax-8fgyngigvjw-src",
+      "nb_idees": 22
+    },
+    {
+      "video_id": "JbJSWEJmI7A",
+      "titre": "The Steam Review Crisis",
+      "dataset": "futuradevdevelopers/lexiax-jbjswejmi7a-src",
+      "nb_idees": 36
+    },
+    {
+      "video_id": "ZV6pUX8kJwg",
+      "titre": "The US Treasury Is Trapped. A $1 Trillion Interest Collapse Begins NOW",
+      "dataset": "futuradevdevelopers/lexiax-zv6pux8kjwg-src",
+      "nb_idees": 26
+    },
+    {
+      "video_id": "qERTeNo8kNI",
+      "titre": "World War 3 - Hour by Hour at 35,000 Feet",
+      "dataset": "futuradevdevelopers/lexiax-qerteno8kni-src",
+      "nb_idees": 36
+    },
+    {
+      "video_id": "Bo4BEvbn1Z8",
+      "titre": "Retatrutide GLP-1 Isn't Approved. MILLIONS Are Already Using It RIGHT NOW.",
+      "dataset": "futuradevdevelopers/lexiax-bo4bevbn1z8-src",
+      "nb_idees": 30
+    },
+    {
+      "video_id": "jC9SVUBk6Fw",
+      "titre": "1 Astronaut. 1 Lunar Lava Tube. A Survival Simulation.",
+      "dataset": "futuradevdevelopers/lexiax-jc9svubk6fw-src",
+      "nb_idees": 37
+    },
+    {
+      "video_id": "jbNtXEPs7a4",
+      "titre": "How Nazi Regime Finally Collapsed",
+      "dataset": "futuradevdevelopers/lexiax-jbntxeps7a4-src",
+      "nb_idees": 60
+    },
+    {
+      "video_id": "DRP7tRXts0Q",
+      "titre": "Renting vs Buying - Follow The Math!",
+      "dataset": "futuradevdevelopers/lexiax-drp7trxts0q-src",
+      "nb_idees": 23
+    },
+    {
+      "video_id": "dt5ocYfjths",
+      "titre": "An Ozempic Overdose Hour by Hour: The Biology of a 7-Day Gastric Freeze",
+      "dataset": "futuradevdevelopers/lexiax-dt5ocyfjths-src",
+      "nb_idees": 36
+    },
+    {
+      "video_id": "bD8ta7nsA8A",
+      "titre": "Meta's AI Layoff Gamble Backfired as Engineering Problems Mounted",
+      "dataset": "futuradevdevelopers/lexiax-bd8ta7nsa8a-src",
+      "nb_idees": 33
+    },
+    {
+      "video_id": "yv-xKJVXrLE",
+      "titre": "How Are Americans Buying $80,000 Trucks on a $70,000 Salary?",
+      "dataset": "futuradevdevelopers/lexiax-yv-xkjvxrle-src",
+      "nb_idees": 27
+    },
+    {
+      "video_id": "UtYSfCAPVqI",
+      "titre": "Is THIS the Real Fountain of Youth (Sermorelin Peptide Explained)",
+      "dataset": "futuradevdevelopers/lexiax-utysfcapvqi-src",
+      "nb_idees": 23
+    },
+    {
+      "video_id": "AVOt4CCwAB4",
+      "titre": "How AI quietly rewrote daily life in under 3 years",
+      "dataset": "futuradevdevelopers/lexiax-avot4ccwab4-src",
+      "nb_idees": 294
+    },
+    {
+      "video_id": "zeVq8Pt2JCc",
+      "titre": "Insane Pain Facts, From Phantom Limbs to Brain Freeze",
+      "dataset": "futuradevdevelopers/lexiax-zevq8pt2jcc-src",
+      "nb_idees": 310
+    },
+    {
+      "video_id": "eNzaPa9f0Ks",
+      "titre": "$40 Trillion Debt Passed. The American ECONOMY Is Collapsing",
+      "dataset": "futuradevdevelopers/lexiax-enzapa9f0ks-src",
+      "nb_idees": 28
+    },
+    {
+      "video_id": "sKfaPvntZuA",
+      "titre": "Most Terrifying Financial Shift in the World Right Now",
+      "dataset": "futuradevdevelopers/lexiax-skfapvntzua-src",
+      "nb_idees": 24
+    },
+    {
+      "video_id": "NrL10B3ZXDg",
+      "titre": "The AI slop situation is a mess",
+      "dataset": "futuradevdevelopers/lexiax-nrl10b3zxdg-src",
+      "nb_idees": 14
+    },
+    {
+      "video_id": "8M8U9Tj15bI",
+      "titre": "Why Paying Off US Debt Would Crash the World Economy",
+      "dataset": "futuradevdevelopers/lexiax-8m8u9tj15bi-src",
+      "nb_idees": 21
+    },
+    {
+      "video_id": "MgngwkPAuqQ",
+      "titre": "The AI bubble is about to pop...",
+      "dataset": "futuradevdevelopers/lexiax-mgngwkpauqq-src",
+      "nb_idees": 37
+    },
+    {
+      "video_id": "Ua_Q5VY0tDo",
+      "titre": "50 Geography Facts That Are Fake (But You Believed Them)",
+      "dataset": "futuradevdevelopers/lexiax-ua-q5vy0tdo-src",
+      "nb_idees": 54
+    },
+    {
+      "video_id": "H7buemdxULY",
+      "titre": "120° Heat - Wear Black Robes!",
+      "dataset": "futuradevdevelopers/lexiax-h7buemdxuly-src",
+      "nb_idees": 27
+    },
+    {
+      "video_id": "8BcFZKbTgTg",
+      "titre": "OpenAI's Agents Went ROGUE.",
+      "dataset": "futuradevdevelopers/lexiax-8bcfzkbtgtg-src",
+      "nb_idees": 25
+    },
+    {
+      "video_id": "p5KvyYwaj4s",
+      "titre": "65-Mile Strip Where World War 3 Begins",
+      "dataset": "futuradevdevelopers/lexiax-p5kvyywaj4s-src",
+      "nb_idees": 37
+    },
+    {
+      "video_id": "Dd4GWmPSRAk",
+      "titre": "The Day The National Debt Actually Becomes a Problem",
+      "dataset": "futuradevdevelopers/lexiax-dd4gwmpsrak-src",
+      "nb_idees": 32
+    },
+    {
+      "video_id": "KXHYz5W0sW0",
+      "titre": "Most Terrifying Financial Chart in the World Right Now",
+      "dataset": "futuradevdevelopers/lexiax-kxhyz5w0sw0-src",
+      "nb_idees": 22
+    },
+    {
+      "video_id": "wcZ7q219JS8",
+      "titre": "50 Horrifying Auschwitz Facts You Were Never Taught",
+      "dataset": "futuradevdevelopers/lexiax-wcz7q219js8-src",
+      "nb_idees": 54
+    },
+    {
+      "video_id": "dbcrn-0gY1w",
+      "titre": "You're Witnessing the Death of American Capitalism and More Insane Stories About the Economy",
+      "dataset": "futuradevdevelopers/lexiax-dbcrn-0gy1w-src",
+      "nb_idees": 198
+    },
+    {
+      "video_id": "DO_2lNje_bs",
+      "titre": "Why Its Illegal To Cut Off Mattress Tags and Other Insane Laws",
+      "dataset": "futuradevdevelopers/lexiax-do-2lnje-bs-src",
+      "nb_idees": 224
+    }
+  ],
+  "datasets_ignores": [],
+  "avertissements": []
+}

@@ -1,19 +1,20 @@
-# Recherche « recherche-20261122-123204 »
+# Recherche « recherche-20261122-184148 »
 
-Généré par Lexiax le 2026-11-22 11:42:49. 8 idée(s) cherchée(s), 10 candidats par idée, parmi 30 vidéo(s) et 2470 idées indexées.
+Généré par Lexiax le 2026-11-22 18:05:50. 6 idée(s) cherchée(s), 10 candidats par idée, parmi 80 vidéo(s) et 5419 idées indexées.
 
 ## Organisation
 
 ```
-recherches/recherche-20261122-123204/
+(racine du dépôt)
   recherche.json          paramètres de la recherche (modèle, date, vidéos indexées, avertissements)
   LISEZ-MOI.md            ce fichier
-  idea1/ ... idea8/    un dossier par idée du JSON d'origine, dans l'ordre
-    idea.json             l'idée d'origine : {"id": ..., "texte": "..."}
-    resultats.json        les candidats classés (rang, score, vidéo, titre, temps), sans le détail
-    candidat01/ ... candidat10/    du plus proche (01) au moins proche
-      segment.json        TOUT sur le candidat : score, vidéo, temps, titre, résumé, mots-clés, texte exact du speech
-      frames.axz          les frames de ce passage (archive zip sans compression : l'ouvrir comme un .zip)
+  idea1/ ... idea6/    un dossier par idée du JSON d'origine, dans l'ordre
+    scenario_candidats/
+      idea.json           l'idée d'origine : {"id": ..., "texte": "..."}
+      resultats.json      les candidats classés (rang, score, vidéo, titre, temps), sans le détail
+      candidat01/ ... candidat10/    du plus proche (01) au moins proche
+        segment.json      TOUT sur le candidat : score, vidéo, temps, titre, résumé, mots-clés, texte exact du speech
+        frames.axz        les frames de ce passage (archive zip sans compression : l'ouvrir comme un .zip)
 ```
 
 ## Les frames
