@@ -710,9 +710,34 @@ ideaN/animation/etape3_animation/
 - [ ] Aucun vide visible aux articulations quand on pense à la rotation (recouvrements notés).
 - [ ] Le commit est poussé sur `main` (« Détourage : {asset} »).
 
-### 3.2 et suivantes : à définir
+### 3.1 bis Assets à une seule pièce (décors, objets)
 
-Assemblage des scènes par beat, voix, rendu final : à définir après le détourage.
+`python3 outils/detourer.py ideaN <asset> --entier` : un décor ou un objet sans pièces est copié dans `decors/<id>.svg` (ou `assets/<asset>/<asset>.svg`). Le script retire le fond uni quand il existe, y compris les petits morceaux de fond tracés comme formes séparées (même couleur exacte que le fond).
+
+### 3.2 Monter les personnages
+
+Beaucoup d'images sont des **planches** : les pièces d'un personnage sont déjà séparées et loin les unes des autres (mère, travailleur de bureau). Avant d'animer, l'agent écrit un `montage.json` par asset : pour chaque pièce, le décalage `{dx, dy}` (en coordonnées du `viewBox`) qui la remet à sa place dans le personnage assemblé. Il vérifie en ouvrant l'assemblage. Les pivots de `pivots.json` sont donnés dans les coordonnées de la planche : le moteur les décale avec la pièce.
+
+### 3.3 L'animation : une page HTML vectorielle
+
+**Le livrable est la page HTML animée, en vectoriel. Aucun rendu vidéo (pas de MP4, pas d'enregistrement), aucun audio à cette étape.** L'agent ne produit pas de vidéo.
+
+```
+ideaN/animation/etape3_animation/
+  index.html            la page : une scène de 1672 x 941 mise à l'échelle de la fenêtre, avec lecture / pause / curseur de temps
+  moteur/               le code commun (horloge, chargement des pièces, gestes, éléments en code), sans bibliothèque externe
+  scenes/beat1.js ...   un fichier par beat : ce qui est placé, quand, et les gestes
+```
+
+- **Que des chemins.** Chaque pièce est une balise `<img src="assets/...svg">`. Aucun SVG brut dans la page, aucun serveur, aucune bibliothèque téléchargée : la page s'ouvre par double-clic.
+- **Une seule horloge**, en secondes, calée sur les instants du speech (`speech_adapte.md`). Chaque scène lit cette horloge.
+- **Les données viennent de l'étape 2** : placements par beat (`Liste_assets.md`, « Mise en place par beat »), gestes (`pieces.json`), éléments en code (`elements_code.json`). L'agent n'invente ni position ni geste qui y figure déjà. Les durées des gestes, que l'étape 2 ne fixe pas, sont calculées à partir des instants des mots.
+- **Un beat à la fois, poussé dès qu'il fonctionne** (« Animation : beat N »). On ouvre la page, on regarde, on passe au suivant.
+- **Éléments en code** (cartes, compteurs, flèches, étiquettes) : dessinés en HTML/CSS ou SVG dans le moteur, jamais en images.
+
+### 3.4 et suivantes : à définir
+
+Voix, enchaînement des beats, transitions.
 
 ---
 
