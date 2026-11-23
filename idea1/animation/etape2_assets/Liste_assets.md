@@ -51,7 +51,7 @@ Niveau = niveau de recherche de la référence de style (2.2 bis). Frames dans `
 | etiquette_paies | 5 | étiquette | « PAYCHECKS » | N1 · c05 · t001019500 | idem etiquette_revenus | apparaît à « Paychecks » | à côté de l'escalier |
 | etiquette_logement | 5 | étiquette | « HOUSING » | N1 · c05 · t001019500 | idem | apparaît à « Housing » | à côté de l'ascenseur |
 
-**Animation de chaque asset : voir le bloc `animation` de `pieces.json`** (entrée, vie continue, mouvements décrits, sortie). **Les durées ne sont écrites nulle part : l'animateur les calcule** ; les instants ci-dessous sont les mots-clés du speech auxquels les gestes se déclenchent.
+**Animation des éléments en code : voir `elements_code.json`** (entrée, vie continue, mouvements décrits, sortie ; la colonne « animation » ci-dessus n'est qu'un résumé). **Animation des autres assets : voir le bloc `animation` de `pieces.json`** (entrée, vie continue, mouvements décrits, sortie). **Les durées ne sont écrites nulle part : l'animateur les calcule** ; les instants ci-dessous sont les mots-clés du speech auxquels les gestes se déclenchent.
 
 ## Mise en place par beat (2.5 bis)
 Mesures faites sur les frames (grille de 10 %), précision ±5 %. x et y en % de l'écran ; la **taille** est la hauteur en % de l'écran ; **couche** : 0 fond, puis 1, 2, 3 vers l'avant, 5 éléments en code. Instants = début du beat + rang du mot × durée par mot (durée du beat ÷ nombre de mots). **Taille minimale d'un texte : 2,5 % de la hauteur de l'écran** (27 px en 1080). Zones libres : quand les personnages sont en pied, **les 20 % du haut** sont réservés aux éléments en code.
@@ -67,7 +67,7 @@ Mesures faites sur les frames (grille de 10 %), précision ±5 %. x et y en % de
 | icones_menages | 1,99 (« households ») | haut droite : x 55–97 %, y 4–16 % | 12 % | 5 | 7 pictos en cascade |
 
 ### Beat 2 · 5,3–10,0 s · 14 mots · 0,336 s par mot
-Sortie du beat 1 : compteur et icônes s'effacent à 5,3 (0,2 s).
+Sortie du beat 1 : compteur et icônes s'effacent à 5,3.
 | quoi | instant (s) | x, y | taille | couche | note |
 |---|---|---|---|---|---|
 | carte_donut | 5,3 (« nearly half ») ; titre à 8,33 (« thirty percent ») | x 71–98 %, y 10–56 % | carte 46 % | 5 | la fille est à x ≤ 70 % : aucun visage couvert |
@@ -101,7 +101,7 @@ Transition d'entrée : **T3_4**. Poussée de caméra lente du groupe décor + po
 | etiquette_austin | 24,1 (« Around ») ; « 30% » à 24,75 (« thirty ») | x 62–97 %, y 8–18 % | 10 % | 5 | |
 
 ### Beat 5 · 26,1–28,7 s · 8 mots · 0,325 s par mot
-À 26,1 : la porte, l'avis, la famille et les éléments du beat 4 s'effacent (0,2 s) ; decor_quartier reste. Pas de transition (même décor). **Beat très court (2,6 s) : l'animateur règle les durées pour que tout tienne dans la fenêtre.**
+À 26,1 : la porte, l'avis, la famille et les éléments du beat 4 s'effacent ; decor_quartier reste. Pas de transition (même décor). **Beat très court (2,6 s) : l'animateur règle les durées pour que tout tienne dans la fenêtre.**
 | quoi | instant (s) | x, y | taille | couche | note |
 |---|---|---|---|---|---|
 | escalier_ascenseur | 26,1 | marches x 12–46 %, y 40–90 % ; cage x 56–88 %, y 15–90 % | 75 % | 1 | aplats `#314074` et `#C84E2E` |

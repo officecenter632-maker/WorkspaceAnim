@@ -1,0 +1,227 @@
+{
+ "_convention": "Éléments faits en code (aucune génération). Même structure que pieces.json : entree, vie, mouvements, sortie. Aucune durée écrite (l'animateur les calcule). Gauche et droite = côtés de l'image. Les éléments en code ne zooment pas avec le décor : ils restent à leur taille et à leur place. Les amplitudes sont des valeurs de départ, à ajuster à l'étape 3.",
+ "compteur_menages": {
+  "entree": "La carte blanche glisse depuis le bord gauche de l'écran jusqu'à sa place (haut gauche) et se pose avec un très léger rebond. Elle arrive au mot « 12.1 » (0,66 s).",
+  "vie": "Une fois posée, la carte flotte : montée et descente verticale d'environ 0,5 % de la hauteur de l'écran, en continu, lente. L'ombre suit.",
+  "mouvements": [
+   {
+    "id": "compte_12_1",
+    "declencheur": "beat 1, « 12.1 » (0,66 s)",
+    "description": "Le nombre défile de 0 jusqu'à 12.1 : les chiffres changent en continu, vite au début, de plus en plus lentement vers la fin, et s'arrêtent net sur 12.1. « MILLION » et « RENTER HOUSEHOLDS » sont déjà affichés sous le nombre."
+   },
+   {
+    "id": "ligne_plus_de_la_moitie",
+    "declencheur": "beat 1, « more than half » (2,65 s)",
+    "description": "La troisième ligne « MORE THAN HALF OF INCOME ON RENT » apparaît en se dépliant vers le bas depuis le bas de la carte (la carte s'allonge pour la contenir), le texte apparaît de gauche à droite."
+   }
+  ],
+  "sortie": "Au changement de beat (5,3 s), la carte et ses lignes s'effacent en glissant vers la gauche."
+ },
+ "icones_menages": {
+  "entree": "Les 7 pictogrammes maison apparaissent l'un après l'autre de gauche à droite, chacun poussé du bas avec un petit rebond. Premier picto au mot « households » (1,99 s).",
+  "vie": "Chaque picto se balance indépendamment de ±3° autour de sa base, à des rythmes un peu différents, en continu. Les pictos rouges battent de très légères pulsations d'échelle (environ 2 %).",
+  "mouvements": [
+   {
+    "id": "cascade",
+    "declencheur": "beat 1, « households » (1,99 s)",
+    "description": "Les 7 pictos entrent en cascade, un à la suite de l'autre, la cascade se déroulant de gauche à droite."
+   }
+  ],
+  "sortie": "Au changement de beat (5,3 s), ils s'effacent ensemble en se réduisant vers leur centre."
+ },
+ "carte_donut": {
+  "entree": "La carte blanche glisse depuis le bord droit jusqu'à sa place (droite) et se pose avec un petit rebond, au mot « nearly » (5,3 s).",
+  "vie": "La carte flotte très légèrement : montée et descente d'environ 0,5 % de la hauteur de l'écran, en continu. Le donut ne tourne pas.",
+  "mouvements": [
+   {
+    "id": "dessine_part_rouge",
+    "declencheur": "beat 2, « nearly half » (5,3 s)",
+    "description": "L'anneau bleu est déjà tracé. La part rouge se dessine par-dessus en suivant le cercle, dans le sens des aiguilles d'une montre, à partir du haut, jusqu'à couvrir 49 % de l'anneau, puis s'arrête. Au centre apparaît « NEARLY HALF » (fondu avec une légère montée d'échelle de 90 % à 100 %)."
+   },
+   {
+    "id": "titre",
+    "declencheur": "beat 2, « thirty percent » (8,33 s)",
+    "description": "Le titre « PAST THE 30% LINE » apparaît lettre par lettre de gauche à droite, au-dessus du donut."
+   }
+  ],
+  "sortie": "À 10,0 s la carte est recouverte par la transition T2_3 ; rien d'autre."
+ },
+ "etiquette_record": {
+  "entree": "L'étiquette glisse depuis le bord droit sous la carte du donut et se pose avec un petit rebond, au mot « record » (9,67 s).",
+  "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu.",
+  "mouvements": [
+   {
+    "id": "fleche_monte",
+    "declencheur": "beat 2, « record » (9,67 s)",
+    "description": "La flèche rouge montante se dessine de sa base vers sa pointe, puis la pointe donne une petite pulsation d'échelle (environ 8 %) une fois."
+   }
+  ],
+  "sortie": "Recouverte par T2_3 à 10,0 s."
+ },
+ "carte_date_2001": {
+  "entree": "La carte blanche glisse depuis le bord gauche vers le haut gauche du panneau maison et se pose avec un petit rebond, au mot « 2001 » (12,0 s).",
+  "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu. L'icône de calendrier se balance de ±2° autour de son point d'attache.",
+  "mouvements": [
+   {
+    "id": "date_apparait",
+    "declencheur": "beat 3, « 2001 » (12,0 s)",
+    "description": "« DATE: » est déjà lisible ; « SINCE 2001 » apparaît lettre par lettre, de gauche à droite, avec l'icône de calendrier qui fait un petit rebond d'échelle (environ 10 %) à l'arrivée du « 2001 »."
+   }
+  ],
+  "sortie": "Recouverte par T3_4 à 16,0 s."
+ },
+ "cercle_loyers": {
+  "entree": "Le cercle rouge apparaît sur la maison en grossissant de 0 à sa taille avec un petit dépassement puis un retour, au mot « rents » (13,0 s). Le mot « RENTS » apparaît en blanc dans le cercle en même temps.",
+  "vie": "Le cercle pulse doucement : variation d'échelle d'environ 3 %, en continu, comme un battement. La flèche, une fois dessinée, vibre à peine (déplacement de 0,3 % de la largeur de l'écran).",
+  "mouvements": [
+   {
+    "id": "fleche_zigzag",
+    "declencheur": "beat 3, « 30 » (14,0 s)",
+    "description": "La flèche en zigzag se dessine d'un seul tracé, du bas vers le haut, du pied de la flèche jusqu'à sa pointe, en suivant ses coudes dans l'ordre. L'étiquette « 30% » apparaît le long de la flèche à la fin du tracé, avec un petit rebond d'échelle."
+   }
+  ],
+  "sortie": "Recouvert par T3_4 à 16,0 s."
+ },
+ "etiquette_revenus": {
+  "entree": "L'étiquette glisse depuis le bord droit et se pose en bas du panneau bureau avec un petit rebond, aux mots « renter incomes » (14,67 s). Sa flèche, plus courte que celle des loyers, se dessine après l'arrivée de l'étiquette.",
+  "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu.",
+  "mouvements": [
+   {
+    "id": "neuf_pourcent",
+    "declencheur": "beat 3, « 9 » (15,67 s)",
+    "description": "Le nombre « 9% » apparaît à côté de la flèche, avec un petit rebond d'échelle (environ 10 %) au moment où le mot est dit. La flèche pointe vers le haut ; elle ne monte pas plus haut que la flèche des loyers."
+   }
+  ],
+  "sortie": "Recouverte par T3_4 à 16,0 s."
+ },
+ "texte_panneau": {
+  "entree": "Le texte « FOR RENT » est inscrit sur le panneau de la maison dès l'arrivée de la maison (10,0 s), sans effet propre.",
+  "vie": "Il suit exactement la maison : sa pulsation lente et son glissement d'entrée. Il ne bouge pas par rapport au panneau.",
+  "mouvements": [
+   {
+    "id": "suit_maison",
+    "declencheur": "beat 3, dès 10,0 s",
+    "description": "Le texte est attaché au panneau de maison_a_louer (parent : le panneau) : il suit sa position, son échelle et sa rotation. Aucun mouvement propre."
+   }
+  ],
+  "sortie": "Disparaît avec la maison, recouvert par T3_4 à 16,0 s. Absent au beat 5."
+ },
+ "compteur_dossiers": {
+  "entree": "La carte blanche glisse depuis le bord gauche vers le haut gauche et se pose avec un petit rebond, au mot « 1.23 » (20,4 s).",
+  "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu.",
+  "mouvements": [
+   {
+    "id": "compte_1_23",
+    "declencheur": "beat 4, « 1.23 » (20,4 s)",
+    "description": "Le nombre défile de 0 à 1.23 : les chiffres changent en continu, vite au début, de plus en plus lentement vers la fin, et s'arrêtent net sur 1.23. « MILLION » et « EVICTION CASES » sont déjà affichés sous le nombre."
+   }
+  ],
+  "sortie": "À 26,1 s, la carte s'efface en glissant vers la gauche."
+ },
+ "etiquette_source": {
+  "entree": "La petite étiquette glisse depuis le bord gauche sous le compteur et se pose avec un petit rebond, au mot « Princeton's » (22,7 s).",
+  "vie": "Elle suit la flottaison du compteur (même mouvement, même sens, en même temps) : elle est attachée à lui.",
+  "mouvements": [
+   {
+    "id": "suit_compteur",
+    "declencheur": "beat 4, dès 22,7 s",
+    "description": "Une fois posée, elle bouge avec compteur_dossiers (parent : le compteur) : même flottaison. Aucun mouvement propre."
+   }
+  ],
+  "sortie": "S'efface avec le compteur à 26,1 s."
+ },
+ "etiquette_austin": {
+  "entree": "L'étiquette glisse depuis le bord droit vers le haut droit et se pose avec un petit rebond, au mot « Around » (24,1 s).",
+  "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu.",
+  "mouvements": [
+   {
+    "id": "trente_pourcent",
+    "declencheur": "beat 4, « thirty » (24,75 s)",
+    "description": "« 30% » apparaît dans l'étiquette, avec un petit rebond d'échelle (environ 10 %) au moment où le mot est dit. « AUSTIN: » est déjà affiché."
+   }
+  ],
+  "sortie": "S'efface en glissant vers la droite à 26,1 s."
+ },
+ "texte_avis": {
+  "entree": "Le texte est imprimé sur l'objet dès l'apparition de l'objet : « EVICTION NOTICE » sur la bande rouge de l'avis (18,7 s), « PAYCHECK » sur la bande bleue de la fiche de paie (26,1 s).",
+  "vie": "Il suit son objet exactement (position, rotation, échelle). Aucun mouvement propre.",
+  "mouvements": [
+   {
+    "id": "suit_avis",
+    "declencheur": "beat 4, dès 18,7 s",
+    "description": "« EVICTION NOTICE » est attaché à l'avis, qui est attaché au battant de porte_avis : il tremble avec la porte (±3° deux fois) et reste lisible."
+   },
+   {
+    "id": "suit_fiche_de_paie",
+    "declencheur": "beat 5, dès 26,1 s",
+    "description": "« PAYCHECK » est attaché à la fiche de paie : il monte l'escalier avec elle."
+   }
+  ],
+  "sortie": "Disparaît avec l'objet : l'avis à 26,1 s, la fiche de paie à la fin du beat 5."
+ },
+ "escalier_ascenseur": {
+  "entree": "Les marches (gauche) et la cage d'ascenseur (droite) apparaissent à 26,1 s : les marches se construisent de bas en haut, chacune apparaissant l'une après l'autre ; la cage se déplie vers le haut depuis le sol.",
+  "vie": "Les aplats ne bougent pas, mais leur teinte pulse très légèrement (environ 3 % de luminosité) en continu. Un fin trait de lumière descend la cage de haut en bas, en boucle, comme un câble.",
+  "mouvements": [
+   {
+    "id": "marches",
+    "declencheur": "beat 5, dès 26,1 s",
+    "description": "Les marches servent de chemin à la fiche de paie : elle les suit une à une, en montant lentement, avec un petit tressautement à chaque marche."
+   },
+   {
+    "id": "cage",
+    "declencheur": "beat 5, « Housing » (27,4 s)",
+    "description": "Le trait de lumière de la cage accélère pendant la montée de la maison dans la cage, puis revient à son rythme."
+   }
+  ],
+  "sortie": "Reste en place jusqu'à la fin (28,7 s)."
+ },
+ "etiquette_paies": {
+  "entree": "L'étiquette glisse depuis le bord gauche près de l'escalier et se pose avec un petit rebond, au mot « Paychecks » (26,1 s).",
+  "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu.",
+  "mouvements": [
+   {
+    "id": "fleche",
+    "declencheur": "beat 5, « Paychecks » (26,1 s)",
+    "description": "Une petite flèche se dessine de l'étiquette vers l'escalier, de sa base vers sa pointe."
+   }
+  ],
+  "sortie": "Reste jusqu'à la fin (28,7 s)."
+ },
+ "etiquette_logement": {
+  "entree": "L'étiquette glisse depuis le bord droit près de la cage et se pose avec un petit rebond, au mot « Housing » (27,4 s).",
+  "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu.",
+  "mouvements": [
+   {
+    "id": "fleche",
+    "declencheur": "beat 5, « Housing » (27,4 s)",
+    "description": "Une petite flèche se dessine de l'étiquette vers la cage, de sa base vers sa pointe, puis elle pulse une fois (environ 8 % d'échelle) quand la maison arrive en haut."
+   }
+  ],
+  "sortie": "Reste jusqu'à la fin (28,7 s)."
+ },
+ "transition_T2_3": {
+  "entree": "Aucune entrée propre : elle commence à 10,0 s, à la fin du beat 2.",
+  "vie": "Pendant qu'elle couvre l'écran, l'éclaboussure ondule : ses bords se déforment en continu.",
+  "mouvements": [
+   {
+    "id": "eclaboussure",
+    "declencheur": "beat 2 → 3, 10,0 s",
+    "description": "L'éclaboussure olive part d'un point près du centre-bas et s'étale en projections vers les bords jusqu'à recouvrir tout l'écran ; le beat 3 est installé dessous pendant qu'elle couvre l'écran ; elle s'écoule ensuite vers le bas et laisse voir le beat 3. Ni texte ni drapeau."
+   }
+  ],
+  "sortie": "Elle s'écoule vers le bas et disparaît, laissant le beat 3 en place."
+ },
+ "transition_T3_4": {
+  "entree": "Aucune entrée propre : elle commence à 16,0 s, à la fin du beat 3.",
+  "vie": "Pendant qu'il couvre l'écran, le tourbillon tourne en continu dans le même sens.",
+  "mouvements": [
+   {
+    "id": "tourbillon",
+    "declencheur": "beat 3 → 4, 16,0 s",
+    "description": "Le tourbillon bleu part du centre : un disque grandit en spirale qui tourne en s'élargissant jusqu'à recouvrir tout l'écran ; le beat 4 est installé dessous ; le tourbillon se resserre ensuite en tournant dans l'autre sens jusqu'au centre et disparaît. Ni texte ni panneaux."
+   }
+  ],
+  "sortie": "Se resserre vers le centre et disparaît, laissant le beat 4 en place."
+ }
+}

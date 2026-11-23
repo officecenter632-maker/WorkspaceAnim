@@ -261,7 +261,7 @@ Pour chaque beat, `Liste_assets.md` note **où et quand** chaque asset et chaque
 
 **Chaque asset a une consigne d'animation écrite, sans exception.** Sans elle, l'étape 3 oublie ou invente le mouvement. Il n'existe pas d'asset « fixe » : un décor, un objet, un personnage qui ne fait rien pendant le beat reçoivent quand même un mouvement de vie, écrit.
 
-Elle est écrite dans `pieces.json`, dans un bloc `animation` par asset :
+Elle est écrite dans `pieces.json`, dans un bloc `animation` par asset généré, et dans `elements_code.json` pour **chaque élément fait en code** (compteurs, étiquettes, flèches, cercles, donuts, textes sur objets, formes) **et chaque transition**, avec la même structure. Un élément en code sans bloc d'animation est une erreur, comme un asset sans bloc :
 - **`entree`** : comment il arrive (présent dès la première image, glisse, tombe, fondu, après quelle transition).
 - **`vie`** : le mouvement **continu** tant qu'il est à l'écran (respiration, balancement, pulsation, poussée de caméra lente, défilement derrière un autre élément). Jamais « immobile ».
 - **`mouvements`** : un par geste voulu par le speech, avec `id`, les `pieces` concernées (ids de `pieces.json`), le `declencheur` (beat et mot-clé du speech, avec l'instant de 2.5 bis) et la `description` exacte du geste : quelle pièce, autour de quelle articulation, vers où (gauche et droite = côtés de l'image), de combien (angle ou fraction de l'écran), ce qui bouge avec elle (la tête suit, l'objet attaché suit), ce qui se passe après (tenu, retour à la pose neutre, rebond).
@@ -275,7 +275,8 @@ Règles :
 3. Un objet attaché à une pièce mobile le dit (« l'avis suit le battant »).
 4. Un asset qui apparaît dans plusieurs beats a une consigne par beat.
 5. Le geste correspond au sens du mot du speech (un « record » ne se mime pas en souriant).
-6. Quand le mouvement est visible dans les frames des candidats, l'amplitude est mesurée dessus ; sinon une valeur de départ est écrite et notée « à ajuster à l'étape 3 » dans `Liste_assets.md`.
+6. Un élément en code est animé aussi : arrivée (glisse, se dessine, compte, apparaît lettre par lettre), vie continue (flottaison, pulsation), changement de valeur au mot du speech, sortie. Il est décrit par ce qui bouge (le nombre défile de 0 à X, la part se dessine dans le sens des aiguilles d'une montre depuis le haut), jamais par « il apparaît » seul. Un texte posé sur un objet est attaché à lui (parent).
+7. Quand le mouvement est visible dans les frames des candidats, l'amplitude est mesurée dessus ; sinon une valeur de départ est écrite et notée « à ajuster à l'étape 3 » dans `Liste_assets.md`.
 
 ### 2.6 Choisir l'image de référence et le fond
 
@@ -306,6 +307,7 @@ etape2_assets/
   assets.json          les générations, au format du projet imgen d'IngXAi
   Liste_assets.md      la liste en tableau lisible, un récapitulatif par beat (décor, assets, éléments en code), la mise en place par beat (2.5 bis), les fiches des éléments en code, les décisions
   pieces.json          pour **chaque** asset : pièces, parents, articulations et bloc `animation` (2.5 ter)
+  elements_code.json   pour **chaque** élément en code et chaque transition : bloc `animation` (2.5 ter)
   references/          les frames de référence choisies, copiées (png, jpg ou webp)
   references_code/    les frames qui servent de référence de style pour les éléments faits en code
   registre_verification.json   le registre des deux passes de vérification (2.10), créé avec les deux passes à false
