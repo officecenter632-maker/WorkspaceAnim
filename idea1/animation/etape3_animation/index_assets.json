@@ -51,5 +51,16 @@
       "cadre_porte": "assets/porte_avis/cadre_porte.svg",
       "battant": "assets/porte_avis/battant.svg"
     }
+  },
+  "papiers": {
+    "etat": "fait",
+    "ordre": [
+      "fiche_de_paie",
+      "avis_expulsion"
+    ],
+    "pieces": {
+      "fiche_de_paie": "assets/papiers/fiche_de_paie.svg",
+      "avis_expulsion": "assets/papiers/avis_expulsion.svg"
+    }
   }
 }

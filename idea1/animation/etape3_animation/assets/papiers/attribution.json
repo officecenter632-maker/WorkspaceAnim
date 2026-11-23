@@ -1,0 +1,16 @@
+{
+  "asset": "papiers",
+  "ordre": ["fiche_de_paie", "avis_expulsion"],
+  "pieces": {
+    "avis_expulsion": [1, 3, 5, 8, 10, 12, 14, 16, 18, 19],
+    "fiche_de_paie": [2, 4, 6, 7, 9, 11, 13, 15, 17, 20, 21]
+  },
+  "pivots": {
+    "avis_expulsion": [519, 462],
+    "fiche_de_paie": [1216, 462]
+  },
+  "notes": [
+    "planche de deux papiers : a gauche l'avis d'expulsion (bandeau rouge, sceau rouge), a droite la fiche de paie (bandeau bleu, sceau jaune).",
+    "pivot au centre de chaque feuille ; l'avis doit etre ensuite rattache au battant de porte_avis (etape 3.2)."
+  ]
+}
