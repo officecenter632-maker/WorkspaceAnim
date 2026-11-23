@@ -96,7 +96,7 @@ Transition d'entrée : **T3_4**. **Aucune** animation de zoom (même raison qu'a
 | avis_expulsion (papiers, image 1) | 18,7 (« court ») | x 50 %, y 62 % (sur la porte) | 12 % | 2 | parent : battant ; la porte tremble de ±3° deux fois |
 | compteur_dossiers | 20,4 (« 1.23 ») | x 3–31 %, y 4–19 % | 15 % | 5 | compte de 0 à 1.23 en 1,1 s |
 | etiquette_source | 22,7 (« Princeton's ») | x 3–31 %, y 20–25 % | 5 % | 5 | |
-| etiquette_austin | 24,4 (« Around Austin ») ; « 30% » à 24,75 | x 62–97 %, y 8–18 % | 10 % | 5 | |
+| etiquette_austin | 24,1 (« Around ») ; « 30% » à 24,75 (« thirty ») | x 62–97 %, y 8–18 % | 10 % | 5 | |
 
 ### Beat 5 · 26,1–28,7 s · 8 mots · 0,325 s par mot
 À 26,1 : la porte, l'avis, la famille et les éléments du beat 4 s'effacent (0,2 s) ; decor_quartier reste. Pas de transition (même décor). **Durée très courte : aucune animation de moins de 0,9 s.**

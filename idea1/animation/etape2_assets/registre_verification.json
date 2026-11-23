@@ -80,11 +80,84 @@
     ]
   },
   "passe_2": {
-    "faite": false,
+    "faite": true,
     "angle": "simulation beat par beat",
-    "date": null,
-    "mises_a_jour": [],
-    "non_verifie": []
+    "date": "2026-11-23",
+    "mises_a_jour": [
+      {
+        "fichier": "assets.json, references/",
+        "changement": "decor_maison_rose passe sur la frame t009000 (plan large) ; ref_decor_maison_rose.webp supprimée, ref_famille_pied.webp ajoutée",
+        "raison": "le décor venait d'un plan zoomé, les personnages en pied d'un plan large : échelles différentes"
+      },
+      {
+        "fichier": "assets.json",
+        "changement": "deuxième référence en pied (t009000) pour père, mère, enfants ; chaussures père #E08818, mère #908070, enfants #C8A820 ; short du garçon #101830, chaussettes #C83030",
+        "raison": "la frame t006500 coupe les personnages à la taille, les jambes auraient été inventées"
+      },
+      {
+        "fichier": "assets.json",
+        "changement": "jean de la mère #4E9CA2 remplacé par #23868F",
+        "raison": "mesure refaite sur le plan large (médiane des pixels du jean)"
+      },
+      {
+        "fichier": "assets.json, pieces.json",
+        "changement": "convention gauche/droite = côtés de l'image",
+        "raison": "ambiguïté côté personnage ou côté image"
+      },
+      {
+        "fichier": "assets.json",
+        "changement": "decor_bureau sans fauteuil orange, centre calme ; travailleur : ignorer les panneaux voiture et pharmacie, cuisses complètes malgré le bandeau",
+        "raison": "deux chaises, références à trois panneaux, bandeau qui cache les cuisses"
+      },
+      {
+        "fichier": "pieces.json",
+        "changement": "ordre des couches du travailleur ; objet attaché avis_expulsion → battant ; mouvement de la porte lié à « court »",
+        "raison": "l'étape 3 aurait dû deviner"
+      },
+      {
+        "fichier": "Liste_assets.md",
+        "changement": "mise en place par beat (instants calculés, positions, tailles, couches, cadrage des panneaux), transitions T2_3 et T3_4, éléments à séparer, objets attachés",
+        "raison": "2.5 bis : l'étape 3 ne doit rien deviner"
+      },
+      {
+        "fichier": "Liste_assets.md",
+        "changement": "donut dans une carte blanche à droite ; icônes et étiquette Austin en haut ; plus d'assombrissement",
+        "raison": "éléments en code qui couvraient des visages, des pieds ou des jambes"
+      },
+      {
+        "fichier": "Liste_assets.md",
+        "changement": "« OVER 50% » → « MORE THAN HALF » ; « 49% » → « NEARLY HALF » (part du donut à 49 %, chiffre non écrit)",
+        "raison": "le texte affiché doit suivre les mots du speech"
+      },
+      {
+        "fichier": "Liste_assets.md",
+        "changement": "famille réutilisée au beat 4 (à confirmer)",
+        "raison": "l'avis d'expulsion sur une porte vide n'avait pas de sujet"
+      },
+      {
+        "fichier": "Liste_assets.md",
+        "changement": "instant d'« Around Austin » corrigé de 24,4 à 24,1 s",
+        "raison": "écart trouvé par le script de calcul des instants"
+      },
+      {
+        "fichier": "references_code/",
+        "changement": "deux frames de transition ajoutées",
+        "raison": "transitions sans référence"
+      },
+      {
+        "fichier": "procedure_animation.md",
+        "changement": "pièges 21 à 29 et quatre points de checklist 2.9",
+        "raison": "leçons de la passe 2, pour les autres idées"
+      }
+    ],
+    "non_verifie": [
+      "rendu des images : aucune image générée",
+      "familles : la frame t009000 coupe encore les pieds des enfants au bord bas ; chaussures à vérifier à la génération",
+      "limite de longueur des prompts dans IngXAi inconnue (le plus long fait 1966 caractères)",
+      "les frames des candidats 04 et 09 (cartons de texte) n'ont pas été rouvertes en passe 2",
+      "décisions à confirmer par toi : famille au beat 4 ; coupe franche à l'ouverture et à la fermeture ; fond vert pour la mère malgré le jean teal",
+      "checklist 2.9 déroulée en entier à la main : à refaire en passe 3, avec relecture mot à mot des prompts"
+    ]
   },
   "passe_3": {
     "faite": false,

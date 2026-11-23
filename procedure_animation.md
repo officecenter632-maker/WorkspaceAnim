@@ -353,6 +353,10 @@ Cette checklist est déroulée **en entier à chaque passe** de 2.10 (trois fois
 - [ ] Un asset coupé dans sa frame de référence a une deuxième référence en pied.
 - [ ] Gauche et droite sont définis (côtés de l'image) dans les prompts et dans `pieces.json`.
 - [ ] Les transitions entre beats ont une fiche.
+- [ ] **Les instants** de la mise en place sont recalculés par script et concordent avec le speech.
+- [ ] **Aucun recouvrement involontaire** : chaque élément en code est placé hors des visages et des pieds ; décor et personnages viennent du même plan de caméra.
+- [ ] **Taille minimale d'un texte** : 2,5 % de la hauteur de l'écran ; aucune animation de moins de 0,9 s.
+- [ ] Un asset réutilisé dans un autre beat est noté (réutilisation, aucune génération de plus).
 - [ ] Chaque élément fait en code a une fiche complète (type, données, référence de style, style repris, animation, emplacement).
 - [ ] Chaque référence de style est une frame réellement regardée, copiée dans `references_code/`, avec son niveau (1 à 3). Un style décidé par l'agent (niveau 4) n'est accepté que si les niveaux 1 à 3 ont été cherchés et sont cités dans la fiche.
 - [ ] Les couleurs et formes des fiches viennent des frames, pas d'une invention ; les chiffres viennent du speech.
@@ -414,6 +418,15 @@ Une fois les fichiers de 2.8 produits, l'agent **ne passe pas à l'étape 3**. I
 18. **Gauche et droite ambigus** : côté du personnage ou côté de l'image.
 19. **Deux objets dans une même image** sans noter qu'il faudra les séparer à l'étape 3.
 20. **Une transition oubliée** entre deux beats.
+21. **Décor et personnages tirés de plans de caméra différents** (un plan zoomé et un plan large) : les échelles ne s'accordent pas. Même plan pour le décor et les personnages en pied.
+22. **Une couleur mesurée sur une frame zoomée ou sur une zone mélangée au décor** (un jean « teal » mesuré clair alors qu'il est saturé) : mesurer sur le plan large, par médiane des pixels de la pièce.
+23. **Un élément en code posé sur des personnages en pied** (icônes en bas, étiquette sur les jambes) : réserver le haut de l'écran (20 %) aux éléments en code quand les personnages sont en pied, et placer chaque élément en vérifiant les visages et les pieds.
+24. **Un décor ou une référence qui contient un objet que l'asset refait** (fauteuil dans le décor et chaise dans l'asset) : deux objets pour un seul, retirer l'un des deux.
+25. **Une référence qui montre d'autres éléments que celui à redessiner** (une frame à trois panneaux) : le prompt dit lesquels ignorer.
+26. **Un beat très court** (moins de 3 s) : aucune animation de moins de 0,9 s ; le noter dans la mise en place.
+27. **Un asset qui doit revenir dans un autre beat sans être listé** : le noter dans le récapitulatif par beat (réutilisation, aucune génération de plus).
+28. **Un instant noté à l'œil** : calculer chaque instant par script (début du beat + rang du mot × durée par mot) et comparer.
+29. **Un texte d'accessoire (« FOR RENT » sur un panneau) pris pour une donnée** : le noter comme texte d'accessoire, présent seulement là où il est lisible.
 
 ---
 
