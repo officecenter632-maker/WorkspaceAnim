@@ -1,0 +1,23 @@
+{
+  "pere_locataire": {
+    "etat": "fait",
+    "ordre": [
+      "pere_jambes",
+      "pere_bras_g_haut",
+      "pere_bras_g_bas",
+      "pere_bras_d_haut",
+      "pere_bras_d_bas",
+      "pere_torse",
+      "pere_tete"
+    ],
+    "pieces": {
+      "pere_jambes": "assets/pere_locataire/pere_jambes.svg",
+      "pere_bras_g_haut": "assets/pere_locataire/pere_bras_g_haut.svg",
+      "pere_bras_g_bas": "assets/pere_locataire/pere_bras_g_bas.svg",
+      "pere_bras_d_haut": "assets/pere_locataire/pere_bras_d_haut.svg",
+      "pere_bras_d_bas": "assets/pere_locataire/pere_bras_d_bas.svg",
+      "pere_torse": "assets/pere_locataire/pere_torse.svg",
+      "pere_tete": "assets/pere_locataire/pere_tete.svg"
+    }
+  }
+}

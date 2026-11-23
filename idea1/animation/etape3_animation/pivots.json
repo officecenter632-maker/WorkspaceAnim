@@ -1,0 +1,32 @@
+{
+  "pere_locataire": {
+    "pere_torse": {
+      "x": 840,
+      "y": 500
+    },
+    "pere_tete": {
+      "x": 840,
+      "y": 228
+    },
+    "pere_bras_g_haut": {
+      "x": 685,
+      "y": 290
+    },
+    "pere_bras_g_bas": {
+      "x": 590,
+      "y": 378
+    },
+    "pere_bras_d_haut": {
+      "x": 995,
+      "y": 290
+    },
+    "pere_bras_d_bas": {
+      "x": 1092,
+      "y": 378
+    },
+    "pere_jambes": {
+      "x": 840,
+      "y": 500
+    }
+  }
+}
