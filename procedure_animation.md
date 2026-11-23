@@ -739,6 +739,11 @@ ideaN/animation/etape3_animation/
 
 **État du moteur (idée 1, beat 1 fait).** `moteur/moteur.js` (horloge, échelle de la scène, lecture / pause / curseur, flèches ← → pour avancer de 0,1 s), `moteur/personnage.js` (personnage articulé : jambes, haut du corps autour de la taille, bras haut > bras bas imbriqués, tête ; respiration, poids, balancement des bras ; `creerBloc` pour une image entière), `moteur/elements.js` (compteur, pictogrammes). Tout est fonction du temps `t` : on peut glisser le curseur n'importe où. La sortie des éléments en code se fait à l'instant du changement de beat : la scène du beat 1 dure donc 5,7 s (5,3 + 0,4). Les pictogrammes de `icones_menages` : 7 maisons dont 4 rouges (choix de l'agent, l'étape 2 ne précise pas le nombre).
 
+**Deux versions de la page : l'agent travaille sur l'une, l'utilisateur regarde l'autre.**
+- **Version de travail** : `etape3_animation/index.html`, qui n'appelle que des chemins (aucun SVG brut). C'est la seule que l'agent lit, modifie et commite. Elle reste légère en jetons.
+- **Version à regarder** : une page unique avec scripts et SVG embarqués en base64, faite pour que l'utilisateur voie l'animation et dise les modifications à faire. Elle se fabrique par script : `python3 outils/embarquer.py ideaN <fichier_sortie.html>`. L'agent écrit le fichier **hors du dépôt** (dossier temporaire de la session), le **publie en artifact** pour que l'utilisateur la regarde, **ne la lit jamais** (elle est longue : la relire coûterait des jetons pour rien) et **ne la commite pas**. Seuls les assets cités par les scènes y sont embarqués.
+- **Quand la fabriquer** : à la fin de chaque beat qui fonctionne (en même temps que le push « Animation : beat N »), et chaque fois que l'utilisateur demande à voir. Après une modification demandée, on corrige la version de travail, on relance `generer_donnees.py` si besoin, puis on regénère et on republie la version à regarder (même artifact).
+
 ### 3.4 et suivantes : à définir
 
 Voix, enchaînement des beats, transitions.
