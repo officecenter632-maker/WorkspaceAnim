@@ -62,5 +62,16 @@
       "fiche_de_paie": "assets/papiers/fiche_de_paie.svg",
       "avis_expulsion": "assets/papiers/avis_expulsion.svg"
     }
+  },
+  "enfants_locataires": {
+    "etat": "fait",
+    "ordre": [
+      "garcon",
+      "fille"
+    ],
+    "pieces": {
+      "garcon": "assets/enfants_locataires/garcon.svg",
+      "fille": "assets/enfants_locataires/fille.svg"
+    }
   }
 }
