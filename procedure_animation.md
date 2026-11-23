@@ -166,8 +166,113 @@ Mots maximum : NNN | Mots obtenus : NNN | Durée du speech : XX s
 
 ---
 
+## Étape 2 : lister les assets et écrire leurs prompts
+
+**But :** à partir du speech et des frames des candidats, obtenir la liste des images à générer (les assets), chacune avec son image de référence, son fond et son **prompt complet**. Aucune validation humaine : l'agent fait tout et livre les fichiers.
+
+**Principes**
+- **Les assets sont des images fixes.** Il n'y a ni GIF ni vidéo. Le mouvement (déplacements, apparitions, zooms, animations) est fait en code à l'étape suivante.
+- **Rien d'inventé.** Un asset existe seulement si un beat du speech (étape 1) en a besoin et s'il correspond à un élément visible dans les frames d'un candidat retenu. On n'emprunte rien à un candidat non retenu.
+- **Même idée, mêmes références.** Les images de référence viennent uniquement des frames des candidats listés dans `plan_scenario.md`.
+
+Entrées : `speech_adapte.md` (beats), `plan_scenario.md` (candidats retenus), et pour chaque candidat retenu `segment.json` et `frames.axz`.
+
+### 2.1 Regarder les frames
+
+Pour chaque candidat retenu : extraire `frames.axz` (zip de WebP, `tNNNNNNNNN.webp` = instant en millisecondes), faire une planche-contact pour situer les passages, puis ouvrir en pleine taille les frames correspondant à chaque beat (instant du beat dans le candidat). Une frame qu'on n'a pas regardée ne peut pas être citée.
+
+### 2.2 Décider ce qui est un asset
+
+Pour chaque élément visible dans les frames d'un beat :
+- **Est un asset** : un décor, un personnage, un objet ou une icône qui doit exister comme fichier image.
+- **N'est jamais un asset** (fait en code ou au montage) : les textes et chiffres, les cartons et badges, le logo de la chaîne, les bandeaux de narrateur, et tout ce qui est géométrique ou graphique (barres, courbes, flèches, jauges, compteurs, traits, formes simples).
+
+Ces éléments en code sont quand même notés dans une section « Éléments faits en code » de `Liste_assets.md`, sans prompt, pour que l'étape suivante sache les dessiner.
+
+### 2.3 Une ligne par asset
+
+Un asset qui revient d'un beat à l'autre n'est listé qu'une fois, avec la même forme partout. Chaque ligne contient :
+- **id** : nom court, lettres, chiffres, `_`, `.` et `-` seulement (c'est aussi le nom du fichier généré) ;
+- **beats** : les numéros de beats où il apparaît ;
+- **remplace** : l'élément de la frame de référence qu'il remplace ;
+- **nature** : *structurel conservé* (même rôle, même place, même taille) ou *thématique remplacé* (nouveau contenu du sujet, même forme visuelle) ;
+- **états** : les poses ou états nécessaires aux beats (de face, écran allumé…) ;
+- **image de référence** : le candidat et la frame choisie (nom du fichier) ;
+- **zone utile** et **à ne pas reprendre** (logo, badge, texte) ;
+- **fond** (voir 2.5).
+
+### 2.4 Élément clé, petit élément, planche
+
+- **Élément clé** (grand, important ou récurrent) : une génération à lui.
+- **Petits éléments** : regroupés en planche de 4 à 6 éléments de même famille, avec une image de référence par élément et un seul fond pour toute la planche.
+- **Poses d'un même personnage** : une planche de poses (même personnage, même tenue, même fond).
+
+### 2.5 Choisir l'image de référence et le fond
+
+- **Référence** : parmi les frames du candidat concerné, celle où l'élément est le plus entier, le plus net et le moins caché. Si aucune frame ne montre l'élément, prendre la frame du même candidat la plus proche par sa nature (décor, objet, matière) comme **référence de style**. Il y a toujours une référence.
+- **Fond détourable** : vert pur `#00FF00` par défaut ; magenta `#FF00FF` si l'asset contient du vert ou du turquoise ; bleu `#0000FF` s'il contient les deux. La couleur n'apparaît nulle part dans l'asset. Une seule couleur par élément, la même pour toutes ses poses.
+- **Plein cadre** (décor qui remplit tout le cadre, contenu d'écran) : aucun fond uni, le fond est « aucun (plein cadre) ».
+
+### 2.6 Écrire le prompt de chaque génération
+
+Le prompt demande à l'IA de transformer l'image de référence en l'asset voulu. Il contient, dans cet ordre :
+1. **le fond** : « fond uni #00FF00, aplat parfait, aucun dégradé, aucune ombre, aucun sol, asset entier avec de la marge » (pour un plein cadre : « image pleine de bord à bord, sans fond uni ») ;
+2. **ce qui est conservé** de la référence (cadrage, forme, proportions, style) et **ce qui est remplacé** (tenue, icône, contenu) ;
+3. **la description de l'asset** (forme, taille, détails) ;
+4. **les couleurs** en hexadécimal ;
+5. **le style** (aplats, sans ombre portée) ;
+6. **la pose**, immobile, sans flou de mouvement ;
+7. **les interdits** : ne pas reprendre le logo de la chaîne, les badges, les bandeaux ni le texte de la référence ; aucun logo réel ; aucune ressemblance avec une personne réelle ; aucun texte lisible sauf un texte imposé par le speech, donné mot pour mot.
+
+Pour une planche : une seule image qui réunit tous les éléments, avec pour chacun sa référence et sa description, la consigne de transformer chaque élément à partir de **sa propre** référence, de bien les séparer et de les garder entiers.
+
+### 2.7 Produire les fichiers de sortie
+
+Dans `ideaN/animation/etape2_assets/` :
+
+```
+etape2_assets/
+  assets.json          les générations, au format du projet imgen d'IngXAi
+  Liste_assets.md      la même liste en tableau lisible + éléments faits en code
+  references/          les frames de référence choisies, copiées (png, jpg ou webp)
+```
+
+`assets.json` est un seul objet JSON valide :
+
+```json
+{
+  "type": "imgen",
+  "projet": "Idée N : assets",
+  "dossier": "ideaN/animation/etape2_assets/generes",
+  "taches": [
+    {
+      "id": "<id de l'asset ou de la planche>",
+      "titre": "<nom lisible>",
+      "prompt": "<prompt complet de 2.6>",
+      "references": ["ideaN/animation/etape2_assets/references/<fichier>"],
+      "depend_de": [],
+      "desactive": false
+    }
+  ]
+}
+```
+
+Une tâche = une génération (un élément clé, une planche ou une planche de poses). Chaque tâche a au moins une référence. Les images générées prennent le nom de l'`id`. Les chemins sont relatifs au dépôt ; ils sont remplacés par les chemins absolus au moment d'utiliser le projet dans IngXAi.
+
+### 2.8 Vérifications avant de passer à l'étape 3
+
+- [ ] Toutes les frames citées ont été regardées.
+- [ ] Chaque asset renvoie à au moins un beat et à un élément d'une frame d'un candidat retenu.
+- [ ] Chaque objet, personnage ou décor visible dans les beats est dans la liste, dans une planche ou dans « Éléments faits en code ».
+- [ ] Aucun asset n'est un texte, un badge, un logo ou une forme géométrique.
+- [ ] Aucun GIF ni animation n'est demandé dans les prompts : images fixes uniquement.
+- [ ] Le JSON est valide, les `id` sont uniques et valides, chaque tâche a au moins une référence existante.
+- [ ] Le fond du prompt est celui de la liste et n'apparaît pas dans les couleurs de l'asset ; toutes les poses d'un même élément ont le même fond.
+- [ ] Chaque prompt contient les interdits (logo, badges, bandeaux, texte).
+
+---
+
 ## Étapes suivantes (à définir)
 
-- Étape 2 :
 - Étape 3 :
 - Étape 4 :
