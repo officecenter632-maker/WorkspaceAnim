@@ -548,13 +548,38 @@ ideaN/animation/etape2_assets/projet_images.json         le même projet, pour u
 
 **Si IngXAi ne lit pas `dossier_depot`, `nommage` et `message_commit` au niveau de la tâche**, le projet global enverrait toutes les images au même endroit : ne pas l'utiliser. Utiliser à la place les `projet_images.json` de chaque idée, un projet par idée : ils n'emploient que des champs au niveau du projet, déjà reconnus par IngXAi (c'est le format du projet de l'idée 1).
 
+**Projet d'une seule idée** (`ideaN/animation/etape2_assets/projet_svg.json`). Ici il n'y a pas de `chemin_sauvegarde` par ligne : `nom` est l'`id` seul et `dossier_sortie` donne le dossier des SVG (le SVG est poussé dans `dossier_sortie/<nom>.svg`) :
+
+```json
+{
+  "projet": "Idée 2 : SVG des assets",
+  "depot_references": "officecenter632-maker/WorkspaceAnim",
+  "branche_references": "main",
+  "branche_sortie": "main",
+  "dossier_sortie": "idea2/animation/etape2_assets/svg",
+  "images": [
+    { "nom": "pere_locataire", "source": "idea2/animation/etape2_assets/generes/pere_locataire.webp" }
+  ]
+}
+```
+
+**Écrire le JSON à la main** (si le script est indisponible, ou pour ajouter une seule ligne avec le bouton « + ») : reprendre exactement les champs ci-dessus.
+- Projet global : chaque ligne a `nom` (`ideaN__<id>`), `source` (chemin réel, extension comprise) et `chemin_sauvegarde` (`ideaN/animation/etape2_assets/svg/<id>.svg`).
+- Projet d'une idée : chaque ligne a `nom` (l'`id`) et `source` ; le dossier vient de `dossier_sortie`.
+- Toujours `depot_references` et `branche_references` / `branche_sortie` = `main`, jamais de chemin local.
+- Vérifier d'abord que le SVG n'existe pas déjà dans `svg/` (un SVG déjà fait n'est jamais redemandé) et que `nom` est unique.
+
+**Fond uni à retirer (avant l'étape 3).** vectorizer.ai garde le fond uni de l'image : la première forme du SVG est un rectangle plein (vert proche de `#00FF00`, ou magenta pour `maison_a_louer`). Constaté sur 7 SVG sur 11 : `pere_locataire`, `enfants_locataires`, `mere_locataire`, `papiers`, `porte_avis`, `travailleur_bureau`, `maison_a_louer`. Les décors n'en ont pas. Ce rectangle doit être supprimé avant d'animer les personnages et les objets.
+
+**Projets déjà créés.** Un projet sans `dossier_sortie` (ni `branche_sortie`) créé avant ce changement reste en mode PC. Il faut repartir d'un projet neuf, produit par `projet_svg.py`.
+
 **Vérifications avant de livrer** (l'agent les fait, sans demander) :
 - [ ] Le script s'est terminé sans erreur, et le total d'images affiché est égal à la somme des images manquantes de chaque idée.
 - [ ] Les JSON sont valides, aucune image déjà présente dans `generes/` n'y figure.
 - [ ] Le résultat est commité et poussé sur `main` (« Projet de génération des images : N images »).
 - [ ] Le registre de chaque idée n'est pas modifié : cette section ne rouvre pas les passes de 2.10.
 
-### 2.13 Vectoriser les images générées : le projet GenSVG
+### 2.13 Vectoriser les images générées : le projet ImageVectorizer
 
 **Quand.** Dès qu'il y a des images dans `ideaN/animation/etape2_assets/generes/`. On n'attend ni que toutes les images d'une idée soient générées, ni que toutes les idées aient fini : la vectorisation **part toujours de l'étape 2**, parce que les assets sont encore en préparation. Le script est incrémental, on le relance à chaque nouvelle série d'images. L'agent ne demande rien : il lance le script, vérifie son résultat et livre le JSON.
 
@@ -579,7 +604,7 @@ ideaN/animation/etape2_assets/projet_svg.json            le même projet pour un
 ideaN/animation/etape2_assets/svg/<id>.svg               les SVG, poussés par le bot (jamais écrits à la main)
 ```
 
-`projet_svg_global.json` est le JSON à coller dans GenSVG (bouton « + », nouveau projet) :
+`projet_svg_global.json` est le JSON à coller dans ImageVectorizer (bouton « + », nouveau projet) :
 
 ```json
 {
@@ -597,10 +622,35 @@ ideaN/animation/etape2_assets/svg/<id>.svg               les SVG, poussés par l
 }
 ```
 
-- **`nom`** : `ideaN__<id de l'asset>`, unique dans le projet. Dans `projet_svg.json` (une seule idée), `nom` est l'`id` seul et `dossier_sortie` donne le dossier des SVG.
-- **`source`** : le chemin **réel** de l'image dans le dépôt, extension comprise (lue dans `generes/`, jamais déduite de l'`id`). C'est une référence git : GenSVG refuse tout chemin local.
+- **`nom`** : `ideaN__<id de l'asset>`, unique dans le projet. Dans `projet_svg.json` (une seule idée), `nom` est l'`id` seul et `dossier_sortie` donne le dossier des SVG (voir l'exemple ci-dessous).
+- **`source`** : le chemin **réel** de l'image dans le dépôt, extension comprise (lue dans `generes/`, jamais déduite de l'`id`). C'est une référence git : ImageVectorizer refuse tout chemin local.
 - **`chemin_sauvegarde`** : où le SVG est poussé dans le dépôt, toujours dans `svg/` de l'idée, sur la branche `main`.
-- **Rien n'est écrit sur le PC.** Dès qu'un SVG est généré, le notebook `ImageVectorizer.py` (sAutoniax) le pousse sur `main` en un commit « SVG vectorisé : {nom} ». GenSVG ne garde que l'état de chaque ligne (générée, en cours, échec) et un clic sur une ligne générée ouvre le SVG sur GitHub.
+- **Rien n'est écrit sur le PC.** Dès qu'un SVG est généré, le notebook `ImageVectorizer.py` (sAutoniax) le pousse sur `main` en un commit « SVG vectorisé : {nom} ». ImageVectorizer ne garde que l'état de chaque ligne (générée, en cours, échec) et un clic sur une ligne générée ouvre le SVG sur GitHub.
+
+**Projet d'une seule idée** (`ideaN/animation/etape2_assets/projet_svg.json`). Ici il n'y a pas de `chemin_sauvegarde` par ligne : `nom` est l'`id` seul et `dossier_sortie` donne le dossier des SVG (le SVG est poussé dans `dossier_sortie/<nom>.svg`) :
+
+```json
+{
+  "projet": "Idée 2 : SVG des assets",
+  "depot_references": "officecenter632-maker/WorkspaceAnim",
+  "branche_references": "main",
+  "branche_sortie": "main",
+  "dossier_sortie": "idea2/animation/etape2_assets/svg",
+  "images": [
+    { "nom": "pere_locataire", "source": "idea2/animation/etape2_assets/generes/pere_locataire.webp" }
+  ]
+}
+```
+
+**Écrire le JSON à la main** (si le script est indisponible, ou pour ajouter une seule ligne avec le bouton « + ») : reprendre exactement les champs ci-dessus.
+- Projet global : chaque ligne a `nom` (`ideaN__<id>`), `source` (chemin réel, extension comprise) et `chemin_sauvegarde` (`ideaN/animation/etape2_assets/svg/<id>.svg`).
+- Projet d'une idée : chaque ligne a `nom` (l'`id`) et `source` ; le dossier vient de `dossier_sortie`.
+- Toujours `depot_references` et `branche_references` / `branche_sortie` = `main`, jamais de chemin local.
+- Vérifier d'abord que le SVG n'existe pas déjà dans `svg/` (un SVG déjà fait n'est jamais redemandé) et que `nom` est unique.
+
+**Fond uni à retirer (avant l'étape 3).** vectorizer.ai garde le fond uni de l'image : la première forme du SVG est un rectangle plein (vert proche de `#00FF00`, ou magenta pour `maison_a_louer`). Constaté sur 7 SVG sur 11 : `pere_locataire`, `enfants_locataires`, `mere_locataire`, `papiers`, `porte_avis`, `travailleur_bureau`, `maison_a_louer`. Les décors n'en ont pas. Ce rectangle doit être supprimé avant d'animer les personnages et les objets.
+
+**Projets déjà créés.** Un projet sans `dossier_sortie` (ni `branche_sortie`) créé avant ce changement reste en mode PC. Il faut repartir d'un projet neuf, produit par `projet_svg.py`.
 
 **Vérifications avant de livrer** (l'agent les fait, sans demander) :
 - [ ] Le script s'est terminé sans erreur, et le total affiché est égal à la somme des SVG à générer de chaque idée.
@@ -613,6 +663,6 @@ ideaN/animation/etape2_assets/svg/<id>.svg               les SVG, poussés par l
 ## Étapes suivantes (à définir)
 
 - Génération des images : quand toutes les idées ont fini l'étape 2, `python3 outils/projet_images.py` produit le projet de génération (2.12).
-- Vectorisation : dès que des images sont dans `generes/`, `python3 outils/projet_svg.py` produit le projet GenSVG des SVG (2.13), toujours à partir de l'étape 2.
+- Vectorisation : dès que des images sont dans `generes/`, `python3 outils/projet_svg.py` produit le projet ImageVectorizer des SVG (2.13), toujours à partir de l'étape 2.
 - Étape 3 : commence seulement quand `registre_verification.json` a ses deux passes à `true` et que les images de l'idée sont dans `generes/`.
 - Étape 4 :
