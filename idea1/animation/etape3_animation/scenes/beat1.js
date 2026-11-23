@@ -12,7 +12,7 @@
       decor.src = 'decors/decor_maison_rose.svg'; decor.draggable = false;
       /* couche 1 : père (x 26 %, pieds à y 99 %, 78 % de l'écran) et mère (x 54 %, pieds à y 97 %, 72 %) */
       pere = A.creerPersonnage(monde, { asset: 'pere_locataire', prefixe: 'pere_', ancre: { x: 838, y: 876 }, hauteurSource: 858,
-        place: { x: 0.26, y: 0.99, h: 0.78 }, repos: { bras_g: 0, bras_d: 0 }, phase: 0 });
+        place: { x: 0.26, y: 0.99, h: 0.78 }, repos: { bras_g: -37, bras_d: 37 }, phase: 0 });
       mere = A.creerPersonnage(monde, { asset: 'mere_locataire', prefixe: 'mere_', ancre: { x: 664, y: 1205 }, hauteurSource: 1187,
         place: { x: 0.54, y: 0.97, h: 0.72 }, repos: { bras_g: -25, bras_d: 25, coude_d: -20 }, phase: 2.1 });
       /* couche 2 : les enfants, devant la mère (garçon x 60 %, fille x 66 %, pieds à y 100 %) */

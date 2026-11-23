@@ -718,8 +718,6 @@ ideaN/animation/etape3_animation/
 
 Beaucoup d'images sont des **planches** : les pièces d'un personnage sont déjà séparées et loin les unes des autres (mère, travailleur de bureau). Avant d'animer, l'agent écrit un `montage.json` par asset : pour chaque pièce, le décalage `{dx, dy}` (en coordonnées du `viewBox`) qui la remet à sa place dans le personnage assemblé. Il vérifie en ouvrant l'assemblage. Les pivots de `pivots.json` sont donnés dans les coordonnées de la planche : le moteur les décale avec la pièce.
 
-**Pièces à reconstruire (décision de l'utilisateur).** Les pièces détourées de l'image générée ne sont pas sacrées : quand elles sont défectueuses (vides, manches en double, marches), l'agent les **reconstruit** en vectoriel par un script (`outils/`), avec les mêmes couleurs, en gardant les ids, les pivots et la hiérarchie. Règle des articulations : le coude (ou tout pli) est un cercle commun aux deux pièces, donc sans vide à toute rotation. Exemple : `outils/construire_bras_pere.py` (bras du père pendants, manche = celle du torse). Les angles de repos de la scène sont remis à 0 quand la pièce est déjà dans la bonne pose.
-
 **Fichiers du montage.** `assets/<asset>/montage.json` (décalages `{dx, dy}` par pièce). Contrôle visuel obligatoire : on regarde l'assemblage et on corrige les **vides** (cou, taille, coudes, épaules) en décalant la pièce, jamais en redessinant. Comme la page ne peut pas lire de JSON en double-clic, `python3 outils/generer_donnees.py ideaN` regroupe `index_assets.json`, `pivots.json` et les `montage.json` dans `etape3_animation/donnees.js` : **à relancer après chaque modification de ces fichiers.**
 
 ### 3.3 L'animation : une page HTML vectorielle
