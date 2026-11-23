@@ -1,0 +1,96 @@
+{
+  "idee": 1,
+  "passe_1": {
+    "faite": true,
+    "angle": "contenu : listing face au speech et aux frames",
+    "date": "2026-11-23",
+    "mises_a_jour": [
+      {
+        "fichier": "assets.json, Liste_assets.md",
+        "changement": "ajout de decor_champ et decor_bureau",
+        "raison": "le beat 3 n'avait aucun décor"
+      },
+      {
+        "fichier": "Liste_assets.md",
+        "changement": "retrait de « un pour treize » et « Atlanta » des éléments en code",
+        "raison": "données présentes dans recherches.md mais pas dans le speech"
+      },
+      {
+        "fichier": "assets.json",
+        "changement": "hex corrigés (haut du garçon #C63636, pantalon du père #3C2A18, haut de la mère #8A2478, jean #4E9CA2, robe de la fille #546CDE)",
+        "raison": "hex faux ou absents, mesure sur la frame c10 t000006500"
+      },
+      {
+        "fichier": "assets.json, pieces.json",
+        "changement": "fond de la famille passé de #FF00FF à #00FF00",
+        "raison": "le haut de la mère est quasi magenta"
+      },
+      {
+        "fichier": "assets.json, pieces.json",
+        "changement": "famille en 14 pièces coupée en pere_locataire (7), mere_locataire (7) et enfants_locataires",
+        "raison": "trop de pièces pour une seule génération"
+      },
+      {
+        "fichier": "assets.json, pieces.json",
+        "changement": "bras de la mère en deux segments",
+        "raison": "croiser les bras est impossible avec un bras d'un seul bloc"
+      },
+      {
+        "fichier": "assets.json, pieces.json",
+        "changement": "travailleur_bureau : jambes assises, chaise et bureau en pièces séparées (10 pièces)",
+        "raison": "contradiction « assis » et « pose debout »"
+      },
+      {
+        "fichier": "assets.json",
+        "changement": "mains vides demandées pour le père",
+        "raison": "la référence montre des papiers dans ses mains"
+      },
+      {
+        "fichier": "assets.json, Liste_assets.md",
+        "changement": "texte retiré des prompts (FOR RENT, EVICTION NOTICE, PAYCHECK), ajouté en code",
+        "raison": "les modèles d'image orthographient mal"
+      },
+      {
+        "fichier": "assets.json",
+        "changement": "papiers : une seule référence, documents distingués par la bande rouge ou bleue",
+        "raison": "deux références identiques"
+      },
+      {
+        "fichier": "assets.json",
+        "changement": "format 16:9 ajouté à tous les prompts",
+        "raison": "aucun format précisé"
+      },
+      {
+        "fichier": "Liste_assets.md",
+        "changement": "fiches des éléments en code avec référence de style (niveaux 1 à 4) et dossier references_code/",
+        "raison": "les infographies n'avaient ni type ni style"
+      },
+      {
+        "fichier": "Liste_assets.md",
+        "changement": "logo de la chaîne : celui du projet, pas celui des frames",
+        "raison": "le logo des frames est une autre marque"
+      }
+    ],
+    "non_verifie": [
+      "les images ne sont pas générées : rendu des prompts non testé",
+      "checklist 2.9 déroulée en partie par script, pas ligne par ligne : à refaire en passe 2",
+      "simulation beat par beat (durées, recouvrements à l'écran) non faite",
+      "relecture technique mot à mot des prompts non faite",
+      "niveau 3 des références de style cherché par transcription, pas par image"
+    ]
+  },
+  "passe_2": {
+    "faite": false,
+    "angle": "simulation beat par beat",
+    "date": null,
+    "mises_a_jour": [],
+    "non_verifie": []
+  },
+  "passe_3": {
+    "faite": false,
+    "angle": "technique et cohérence des fichiers",
+    "date": null,
+    "mises_a_jour": [],
+    "non_verifie": []
+  }
+}
