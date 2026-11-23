@@ -206,7 +206,8 @@ Chaque élément fait en code (compteur, barre, jauge, courbe, flèche, icône, 
    La frame choisie est copiée dans `references_code/`, avec son niveau noté dans la fiche.
 2. **Décrire ce qui est repris** de cette référence : palette (hex mesurée sur la frame), forme (barre pleine ou contour, coins droits ou arrondis), épaisseur des traits, police ou allure des chiffres, position à l'écran, ombre ou non, façon d'apparaître et de bouger.
 3. **Choisir le type** adapté à la donnée : compteur pour un total, jauge ou barre pour une part, barres côte à côte pour comparer deux valeurs, courbe pour une évolution, icônes répétées pour une proportion (« un sur treize »). Le type doit pouvoir se lire en quelques secondes.
-4. **Donner les données exactes** de `speech_adapte.md` (chiffres, unités, étiquettes), **sans en ajouter** : un chiffre qui est dans `recherches.md` mais pas dans le speech n'est pas affiché. Les textes affichés (titres, étiquettes) sont écrits en toutes lettres dans la fiche.
+4. **Donner les données exactes** de `speech_adapte.md` (chiffres, unités, étiquettes), **sans en ajouter** : un chiffre qui est dans `recherches.md` mais pas dans le speech n'est pas affiché. Les textes affichés (titres, étiquettes) sont écrits en toutes lettres dans la fiche. Quand le speech dit un mot (« nearly half »), l'écran affiche ce mot ; le dessin (la part d'un donut) peut suivre le chiffre exact de `recherches.md`, mais le chiffre exact n'est pas écrit.
+7. **Les transitions entre beats** (volet, glissement, fondu) vues dans les frames sont aussi des éléments en code, avec leur fiche (frame de référence, durée).
 5. **Dire l'animation** : ce qui entre, comment (compte, grandit, se dessine), à quel beat, pour quelle durée.
 6. **Ne pas reprendre** le logo, les badges, les textes et les chiffres de la frame de référence : seul le style est repris.
 
@@ -227,7 +228,8 @@ Les fiches sont écrites dans `Liste_assets.md`, section « Éléments faits en 
 
 Pour un asset à parties mobiles :
 1. **Découper selon les mouvements voulus, pas plus.** Mais un mouvement qui **plie** un membre (croiser les bras, se prendre la tête, taper au clavier, se gratter) exige **deux segments** (bras et avant-bras, avec la main) : un bras en un seul bloc ne sait que pivoter droit. Un personnage qui ne fait que lever le bras n'a pas besoin de jambes en deux segments. Exemple complet : tête, torse, bassin, bras en deux segments, mains, jambes en deux segments, pieds. Ajouter des variantes (bouche ouverte, yeux fermés…) seulement si les beats les demandent.
-2. **Pour chaque pièce, noter** : son id, sa **pièce parent** (l'avant-bras a pour parent le haut du bras) et son **articulation** (le coude, l'épaule…). Les coordonnées exactes du pivot sont mesurées à l'étape 3, après découpage.
+2. **Gauche et droite = côtés gauche et droit de l'image** (pas ceux du personnage). Cette convention est écrite dans le prompt et dans `pieces.json`.
+   **Pour chaque pièce, noter** : son id, sa **pièce parent** (l'avant-bras a pour parent le haut du bras) et son **articulation** (le coude, l'épaule…). Les coordonnées exactes du pivot sont mesurées à l'étape 3, après découpage.
 3. **Une seule génération par asset**, qui contient toutes ses pièces. **Un personnage = un asset** : un groupe (une famille, une équipe) est découpé par personnage, une génération chacun, et les personnages qui ne bougent pas par membre (des enfants immobiles) sont regroupés entiers dans une même image. **Maximum 10 pièces par génération** : au-delà, les modèles d'image mélangent ou oublient des pièces. Elles sont **séparées les unes des autres** dans l'image, **à la même échelle**, vues dans une **pose neutre** (debout, bras écartés, pièces posées à plat), avec un **même style et un même fond**.
 4. **Chaque pièce dépasse un peu sur l'articulation suivante** (le haut du bras se prolonge sous l'épaule, l'avant-bras sous le coude), pour qu'aucun trou n'apparaisse quand la pièce pivote. Les pièces restent séparées dans l'image, mais chacune porte sa partie de recouvrement.
 5. **Les petits éléments qui ne bougent pas** (petits objets, icônes) sont regroupés dans une même image de 4 à 6 éléments, séparés, avec une référence par élément et un fond commun.
@@ -244,9 +246,19 @@ Un asset qui revient d'un beat à l'autre n'est listé qu'une fois, avec la mêm
 - **zone utile** et **à ne pas reprendre** (logo, badge, texte) ;
 - **détourage** : oui ou non, et le **fond** (2.6).
 
+### 2.5 bis Mise en place par beat
+
+Pour chaque beat, `Liste_assets.md` note **où et quand** chaque asset et chaque élément en code apparaît, pour que l'étape 3 n'ait rien à deviner :
+- **instant d'apparition**, en secondes : début du beat + rang du mot-clé × durée par mot (durée du beat divisée par son nombre de mots) ;
+- **position** (x et y en % de l'écran, à ±5 %), **taille** (hauteur en % de l'écran) et **couche** (derrière ou devant), **mesurées sur la frame de référence** du même beat, pas devinées ;
+- **cadrage** : si l'écran est partagé en panneaux plus étroits que l'image (deux panneaux côte à côte), dire quelle partie de l'image reste visible, et placer les assets dans cette partie ;
+- **objet parent** : un avis posé sur une porte suit la rotation du battant ;
+- **éléments à séparer après génération** (deux objets dans une même image, plusieurs personnages entiers) : listés pour l'étape 3 ;
+- aucun élément n'en cache un autre sans que ce soit voulu (un compteur ne cache pas un visage).
+
 ### 2.6 Choisir l'image de référence et le fond
 
-- **Référence** : parmi les frames du candidat concerné, celle où l'élément est le plus entier, le plus net et le moins caché. Si aucune frame ne montre l'élément, prendre la frame du même candidat la plus proche par sa nature (décor, objet, matière) comme **référence de style**. Il y a toujours une référence.
+- **Référence** : parmi les frames du candidat concerné, celle où l'élément est le plus entier, le plus net et le moins caché. Si aucune frame ne montre l'élément, prendre la frame du même candidat la plus proche par sa nature (décor, objet, matière) comme **référence de style**. Il y a toujours une référence. **Si l'élément est coupé dans la frame** (personnage en plan serré dont on ne voit pas les jambes ni les chaussures), ajouter une **deuxième référence** : une frame du même candidat où il est en pied. Le prompt dit à quoi sert chaque référence (« la première pour le visage et les vêtements, la deuxième pour les jambes et les chaussures »), et les couleurs de ce qui n'est visible que dans la deuxième sont mesurées sur elle.
 - **Le fond dépend de l'image, il est décidé pour chaque génération :**
   - **Image à détourer** (personnage ou pièces détachées, objet, icône, décor qui sera posé sur un autre fond) : un **fond uni détourable**, dont la couleur est **écrite explicitement en hexadécimal dans le prompt**. **La couleur se choisit sur des mesures, pas à l'œil** : mesurer les couleurs dominantes de la référence (médiane sur de petites zones, ou couleur la plus fréquente de chaque vêtement ou partie), les écrire en hexadécimal, puis choisir parmi vert `#00FF00`, magenta `#FF00FF` et bleu `#0000FF` celle dont la teinte est la plus éloignée de toutes les couleurs de l'asset (vert par défaut). Un violet-magenta ou un rose vif exclut le magenta ; un vert, un jaune-vert ou un turquoise très saturé exclut le vert ; un bleu vif exclut le bleu. Un bleu-teal désaturé (jean) n'exclut pas le vert. La couleur n'apparaît nulle part dans l'asset, même approchée. Une seule couleur pour toutes les pièces d'un même élément. On note en une demi-ligne pourquoi cette couleur.
   - **Image qui n'a pas besoin d'être détourée** (décor plein cadre, fond de scène, contenu d'écran rectangulaire) : **aucun fond uni**. Le prompt ne mentionne aucune couleur de fond et demande une image complète de bord à bord, et la liste note « détourage : non, fond : aucun (plein cadre) ».
@@ -271,7 +283,7 @@ Dans `ideaN/animation/etape2_assets/` :
 ```
 etape2_assets/
   assets.json          les générations, au format du projet imgen d'IngXAi
-  Liste_assets.md      la liste en tableau lisible, un récapitulatif par beat (décor, assets, éléments en code), les fiches des éléments en code, les décisions
+  Liste_assets.md      la liste en tableau lisible, un récapitulatif par beat (décor, assets, éléments en code), la mise en place par beat (2.5 bis), les fiches des éléments en code, les décisions
   pieces.json          pour chaque asset décomposé : pièces, parents, articulations, mouvements
   references/          les frames de référence choisies, copiées (png, jpg ou webp)
   references_code/    les frames qui servent de référence de style pour les éléments faits en code
@@ -337,6 +349,10 @@ Cette checklist est déroulée **en entier à chaque passe** de 2.10 (trois fois
 - [ ] Les hex des prompts sont mesurés sur la frame ; la couleur de fond est choisie sur ces mesures (2.6).
 - [ ] Aucune contradiction dans un prompt (assis/debout, entier/partiel, avec/sans fond) ; au plus 10 pièces par génération ; les mouvements qui plient un membre ont deux segments.
 - [ ] Les références identiques (même frame pour plusieurs assets) sont voulues ; une génération n'a pas deux fois la même référence.
+- [ ] **Mise en place** : chaque beat a, pour chaque asset et chaque élément en code, un instant, une position, une taille, une couche (2.5 bis) ; les parents, les panneaux et les éléments à séparer sont notés.
+- [ ] Un asset coupé dans sa frame de référence a une deuxième référence en pied.
+- [ ] Gauche et droite sont définis (côtés de l'image) dans les prompts et dans `pieces.json`.
+- [ ] Les transitions entre beats ont une fiche.
 - [ ] Chaque élément fait en code a une fiche complète (type, données, référence de style, style repris, animation, emplacement).
 - [ ] Chaque référence de style est une frame réellement regardée, copiée dans `references_code/`, avec son niveau (1 à 3). Un style décidé par l'agent (niveau 4) n'est accepté que si les niveaux 1 à 3 ont été cherchés et sont cités dans la fiche.
 - [ ] Les couleurs et formes des fiches viennent des frames, pas d'une invention ; les chiffres viennent du speech.
@@ -350,7 +366,7 @@ Une fois les fichiers de 2.8 produits, l'agent **ne passe pas à l'étape 3**. I
 - **Complète.** Chaque passe déroule toute la checklist 2.9 sur tous les fichiers, relit `speech_adapte.md` beat par beat et rouvre les frames de référence. Une passe faite de mémoire ne compte pas.
 - **Chaque passe a son angle**, en plus de la checklist :
   - **Passe 1, contenu** : le listing face au speech et aux frames. Chaque beat, chaque élément visible, chaque asset et élément en code, chaque donnée, chaque référence, chaque couleur mesurée.
-  - **Passe 2, simulation** : pour chaque beat, dérouler l'animation seconde par seconde en pensée. Ce qu'il faut pour la construire existe-t-il ? Décor, pièces pour chaque mouvement, éléments en code avec leur fiche, texte et chiffres à l'écran, accord de style entre assets et éléments en code, éléments qui se recouvrent à l'écran. Tout ce qui manque est ajouté.
+  - **Passe 2, simulation** : pour chaque beat, dérouler l'animation seconde par seconde en pensée, avec l'instant de chaque mot-clé du speech. Vérifier que l'étape 3 pourra construire l'écran **sans rien deviner** : le décor ; la position, la taille et la couche de chaque asset (2.5 bis) ; les pièces de chaque mouvement ; chaque élément en code avec sa fiche et son instant d'apparition ; les textes et chiffres affichés (tous dans le speech) ; l'accord de style entre assets et éléments en code ; ce qui se recouvre à l'écran ; les objets attachés à une pièce mobile ; les éléments à séparer après génération ; les transitions entre beats. Tout ce qui manque est ajouté.
   - **Passe 3, technique** : les fichiers eux-mêmes. JSON valides, `id` uniques, chemins existants, cohérence entre `Liste_assets.md`, `assets.json`, `pieces.json` et `references/`. Relecture mot à mot de chaque prompt (2.7) et des pièges de 2.11 un par un : contradictions, format, hex, couleur de fond, texte dans l'image. Et tout ce que les deux passes précédentes ont noté dans `non_verifie`.
 - **Chaque passe corrige tout de suite** ce qu'elle trouve, dans les fichiers, et **note chaque mise à jour dans le registre** (fichier, changement, raison). Une passe qui ne trouve rien l'écrit (« aucune mise à jour ») : ce n'est pas une raison de la bâcler.
 - **Ordre strict.** La passe 2 commence seulement quand la passe 1 est à `true`, la passe 3 quand la passe 2 est à `true`. Une passe passe à `true` seulement quand toutes ses corrections sont faites et sauvegardées. Une correction faite pendant la passe 3 est revérifiée aussitôt (relire la partie modifiée et les fichiers liés) et notée.
@@ -390,6 +406,14 @@ Une fois les fichiers de 2.8 produits, l'agent **ne passe pas à l'étape 3**. I
 10. **Le logo ou les badges de la chaîne des frames** repris dans l'image ou dans le code.
 11. **Les chemins relatifs** du JSON à remplacer par des chemins absolus dans IngXAi ; les références doivent exister.
 12. **Aucun format** précisé : l'image sort carrée ; toujours écrire le format.
+13. **Des jambes ou des chaussures inventées** parce que la frame de référence est en plan serré : deuxième référence en pied.
+14. **Un chiffre exact affiché alors que le speech dit un mot** (« nearly half » écrit « 49 % »).
+15. **Un panneau plus étroit que l'image** : l'asset est placé hors du champ visible.
+16. **Un objet posé sur une pièce mobile qui ne la suit pas** (l'avis reste en l'air quand la porte tourne).
+17. **Un élément en code qui cache un visage** ou un asset.
+18. **Gauche et droite ambigus** : côté du personnage ou côté de l'image.
+19. **Deux objets dans une même image** sans noter qu'il faudra les séparer à l'étape 3.
+20. **Une transition oubliée** entre deux beats.
 
 ---
 
