@@ -422,6 +422,12 @@ Une fois les fichiers de 2.8 produits, l'agent **ne passe pas à l'étape 3**. I
 }
 ```
 
+### 2.10 bis Décisions fermées
+
+Quand un choix reste ouvert (réutiliser un asset dans un autre beat, type d'ouverture ou de fermeture, couleur de fond d'un détourage), Claude le tranche seul, l'inscrit dans le registre sous « décisions fermées » avec sa raison, et ne repose jamais la question à l'utilisateur. L'utilisateur corrige s'il n'est pas d'accord.
+
+Idée 1 : (D1) la famille revient au beat 4 devant la porte avec les assets du beat 1, sans génération de plus ; (D2) ouverture et fermeture en coupe franche ; (D3) fond vert pour la mère malgré son jean teal #23868F, tolérance de détourage réglée à l'étape 3.
+
 ### 2.11 Pièges à anticiper (erreurs de dernière minute)
 
 1. **Un beat sans décor** : les éléments détourés flottent dans le vide. Vérifier le décor de chaque beat.
