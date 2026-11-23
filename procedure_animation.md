@@ -683,15 +683,32 @@ ideaN/animation/etape3_animation/
 
 **Progressif.** Comme la vectorisation (2.13), le détourage est incrémental : il traite les assets dont le SVG existe et qui ne sont pas encore détourés, puis **pousse chaque asset sur `main` dès qu'il est fini** (un commit par asset, « Détourage : {asset} »), sans attendre les autres. Un asset déjà détouré n'est jamais refait, sauf si son SVG d'étape 2 a changé.
 
-**L'agent ne demande rien** : il détoure, vérifie, pousse.
+**L'agent détoure lui-même, et c'est lui qui nomme.** L'utilisateur n'intervient pas : l'agent décide quelle forme appartient à quelle pièce, nomme chaque fichier, vérifie, pousse. Il ne demande rien.
 
-**Vérifications avant de pousser un asset**
+**Comment l'agent détoure un asset.** Le SVG de vectorizer.ai est une liste de formes (`<path>`) à plat, sans groupes ni noms : il n'y a rien à « retrouver », tout est à décider.
+1. **Regarder** l'image d'origine (`generes/<asset>.png`) et le SVG rendu, pour voir où est chaque pièce.
+2. **Inventorier les formes** du SVG (script) : numéro, couleur, trait ou remplissage, boîte englobante. L'agent lit cet inventaire, **jamais le SVG brut** (trop long).
+3. **Attribuer chaque forme à une seule pièce** de `pieces.json`, d'après sa position, sa couleur et ce qu'elle représente (zone de la tête, de la manche, de la main…). Aucune forme ne reste sans pièce, aucune n'est dans deux pièces. Une forme qui ne correspond à rien (ombre, liseré) va à la pièce la plus proche, et l'agent le note. Le résultat est écrit dans `attribution.json` (numéro de forme → id de pièce).
+4. **Générer les fichiers par script** à partir de `attribution.json` : un SVG par pièce, même `viewBox`, avec un groupe racine `<g id="<id de la pièce>">`. Le fichier porte le nom de la pièce (`pere_bras_g_haut.svg`). L'agent n'écrit jamais un SVG à la main.
+5. **Contrôler en images** : un rendu où chaque pièce a une couleur vive distincte, et un rendu des pièces empilées comparé à l'original. L'agent regarde les deux. Si une forme est mal attribuée, il corrige `attribution.json` et regénère. Il ne pousse que quand l'empilement redonne l'original.
+6. **Articulations.** Là où deux pièces se rejoignent (épaule, coude, cou, taille), la pièce qui tourne ne doit pas laisser de vide visible. Si la coupe en laisse un, l'agent ajoute un recouvrement de la même couleur (une petite forme à l'extrémité de la pièce) et le note. Les parties cachées derrière une autre pièce n'existent pas dans l'image : on ne les invente pas.
+7. **Pivots.** L'agent place le pivot de chaque pièce (à l'articulation décrite dans `pieces.json`) dans `pivots.json`, en coordonnées du `viewBox`.
+
+**Fichiers de détourage d'un asset**
+
+```
+ideaN/animation/etape3_animation/
+  assets/<asset>/<piece>.svg          une pièce par fichier
+  assets/<asset>/attribution.json     forme → pièce (sert à refaire le détourage sans tout relire)
+  decors/<id>.svg                     décor, sans découpe
+```
+
+**Vérifications avant de pousser un asset** (l'agent les fait, sans demander)
 - [ ] Le fond uni a disparu.
-- [ ] Toutes les pièces de `pieces.json` ont leur fichier, au bon chemin, et sont déclarées dans `index_assets.json`.
-- [ ] Les pièces empilées reproduisent l'image d'origine (comparaison visuelle sur un rendu).
-- [ ] Aucun SVG brut n'est copié ailleurs que dans son fichier.
-
-**À préciser avant d'écrire le script** (point de discussion avec l'utilisateur) : comment retrouver les formes de chaque pièce dans un SVG de vectorizer.ai, qui n'a pas de groupes nommés.
+- [ ] Chaque forme du SVG est dans une seule pièce (rien d'oublié, rien en double), et toutes les pièces de `pieces.json` ont leur fichier, déclaré dans `index_assets.json`.
+- [ ] Le rendu des pièces empilées reproduit l'image d'origine.
+- [ ] Aucun vide visible aux articulations quand on pense à la rotation (recouvrements notés).
+- [ ] Le commit est poussé sur `main` (« Détourage : {asset} »).
 
 ### 3.2 et suivantes : à définir
 
