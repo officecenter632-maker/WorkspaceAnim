@@ -228,12 +228,13 @@ Les fiches sont écrites dans `Liste_assets.md`, section « Éléments faits en 
 ### 2.4 Décomposer en pièces détachées
 
 Pour un asset à parties mobiles :
-1. **Découper selon les mouvements voulus, pas plus.** Mais un mouvement qui **plie** un membre (croiser les bras, se prendre la tête, taper au clavier, se gratter) exige **deux segments** (bras et avant-bras, avec la main) : un bras en un seul bloc ne sait que pivoter droit. Un personnage qui ne fait que lever le bras n'a pas besoin de jambes en deux segments. Exemple complet : tête, torse, bassin, bras en deux segments, mains, jambes en deux segments, pieds. Ajouter des variantes (bouche ouverte, yeux fermés…) seulement si les beats les demandent.
+1. **Découper selon les mouvements voulus, pas plus.** Mais un mouvement qui **plie** un membre (croiser les bras, se prendre la tête, taper au clavier, se gratter) exige **deux segments** (le bras, de l'épaule au coude, et l'avant-bras, du coude au bout des doigts) : un bras en un seul bloc ne sait que pivoter droit. **Un bras = 2 pièces, jamais 3** : la main fait partie de l'avant-bras, elle n'est pas une pièce à part (sauf si un beat anime vraiment les doigts ou le poignet). Même règle pour la jambe : cuisse + jambe basse avec le pied, et seulement si elle est animée. **On ne découpe une pièce que si elle sera utilisée par un mouvement des beats** : un personnage qui ne fait que lever le bras n'a pas besoin de jambes en deux segments, et un personnage immobile reste entier. Exemple complet (le maximum, jamais le minimum) : tête, torse, bras en deux segments × 2, jambes en deux segments × 2 si elles marchent. Ajouter des variantes (bouche ouverte, yeux fermés…) seulement si les beats les demandent.
 2. **Gauche et droite = côtés gauche et droit de l'image** (pas ceux du personnage). Cette convention est écrite dans le prompt et dans `pieces.json`.
    **Pour chaque pièce, noter** : son id, sa **pièce parent** (l'avant-bras a pour parent le haut du bras) et son **articulation** (le coude, l'épaule…). Les coordonnées exactes du pivot sont mesurées à l'étape 3, après découpage.
 3. **Une seule génération par asset**, qui contient toutes ses pièces. **Un personnage = un asset** : un groupe (une famille, une équipe) est découpé par personnage, une génération chacun, et les personnages qui ne bougent pas par membre (des enfants immobiles) sont regroupés entiers dans une même image. **Maximum 10 pièces par génération** : au-delà, les modèles d'image mélangent ou oublient des pièces. Elles sont **séparées les unes des autres** dans l'image, **à la même échelle**, vues dans une **pose neutre** (debout, bras écartés, pièces posées à plat), avec un **même style et un même fond**.
 4. **Chaque pièce dépasse un peu sur l'articulation suivante** (le haut du bras se prolonge sous l'épaule, l'avant-bras sous le coude), pour qu'aucun trou n'apparaisse quand la pièce pivote. Les pièces restent séparées dans l'image, mais chacune porte sa partie de recouvrement.
 5. **Les petits éléments qui ne bougent pas** (petits objets, icônes) sont regroupés dans une même image de 4 à 6 éléments, séparés, avec une référence par élément et un fond commun.
+6. **Le torse est généré sans manches (épaule nue, emmanchure).** La manche appartient à la pièce du haut du bras, jamais au torse. Un torse qui garde un bout de manche (T-shirt dessiné avec ses manches courtes) laisse ce bout visible et immobile quand le bras pivote : la manche apparaît en double et l'épaule se décroche. Le torse s'arrête donc à l'emmanchure, sans tissu qui dépasse. Le haut du bras, avec sa manche arrondie à l'épaule, **passe devant le torse** et recouvre l'emmanchure ; il se prolonge sous elle pour qu'aucun trou n'apparaisse quand il tourne. Même principe à la hanche : le bas du torse ne porte aucune partie de la cuisse. Un vêtement qui dépasse d'une articulation est coupé sur la pièce qui reste fixe, et dessiné sur la pièce qui tourne.
 
 ### 2.5 Une ligne par asset
 
@@ -295,7 +296,7 @@ Le prompt demande à l'IA de transformer l'image de référence en l'asset voulu
 5. **le style** (aplats, sans ombre portée) ;
 6. **la pose** : immobile, sans flou de mouvement ; pour des pièces détachées, la pose neutre de 2.4, **cohérente avec l'asset** (un personnage assis garde ses jambes en position assise, avec la chaise et le bureau en pièces séparées ; ne pas écrire « assis » et « debout » dans le même prompt) ; mains vides : ne pas reprendre les objets tenus dans la référence ;
 6 bis. **le format** : « 16:9 paysage (1920x1080) » pour un décor plein cadre ; « grande image 16:9 » pour une planche de pièces ou de petits éléments ;
-7. **les pièces**, quand l'asset est décomposé : la liste exacte des pièces, leur séparation (aucune pièce ne touche une autre), la même échelle, et le recouvrement aux articulations (2.4, point 4) ;
+7. **les pièces**, quand l'asset est décomposé : la liste exacte des pièces, leur séparation (aucune pièce ne touche une autre), la même échelle, et le recouvrement aux articulations (2.4, point 4) ; **le torse est demandé sans manches ni bras, épaules nues et coupées net à l'emmanchure, la manche étant dessinée sur le haut du bras** (2.4, point 6) ; la main est dessinée au bout de l'avant-bras, pas comme pièce à part ;
 8. **les interdits** : ne pas reprendre le logo de la chaîne, les badges, les bandeaux ni le texte de la référence ; aucun logo réel ; aucune ressemblance avec une personne réelle ; **aucun texte, lettre ni chiffre dans l'image** (les modèles d'image les orthographient mal) : les panneaux, documents et étiquettes sont dessinés **vides** (panneau blanc, bande unie, lignes grises) et leur texte est ajouté en code, noté dans les fiches de 2.2 bis. Les objets qui doivent être reconnus sans texte (un avis d'expulsion, une fiche de paie) se distinguent par la forme et la couleur (bande rouge ou bleue, sceau, pièce).
 
 ### 2.8 Produire les fichiers de sortie
@@ -392,6 +393,8 @@ Cette checklist est déroulée **en entier à chaque passe** de 2.10 (deux fois)
 - [ ] Aucun GIF ni animation n'est demandé dans les prompts : images fixes uniquement.
 - [ ] Chaque asset à parties mobiles est décomposé en pièces, avec parent et articulation pour chaque pièce, et seulement les pièces utiles aux mouvements des beats.
 - [ ] Les prompts de pièces demandent des pièces séparées, à la même échelle, avec recouvrement aux articulations.
+- [ ] **Bras = 2 pièces** (bras + avant-bras avec la main), jamais 3 ; aucune pièce n'est découpée si aucun beat ne l'anime.
+- [ ] **Le torse est demandé sans manches** (emmanchure nue) et la manche est sur le haut du bras (2.4, point 6).
 - [ ] Chaque génération a un « détourage » oui ou non. S'il est oui, le prompt donne une couleur de fond en hexadécimal, identique pour toutes les pièces d'un élément, qui n'apparaît pas dans l'asset. S'il est non, le prompt ne mentionne aucune couleur de fond.
 - [ ] Le JSON est valide, les `id` sont uniques et valides, chaque tâche a au moins une référence existante.
 - [ ] Chaque prompt contient les interdits (logo, badges, bandeaux, texte).
@@ -490,6 +493,10 @@ Idée 1 : (D1) la famille revient au beat 4 devant la porte avec les assets du b
 30. **Un asset sans consigne d'animation**, ou un asset marqué « fixe » : l'étape 3 l'oublie ou l'invente. Tous ont un bloc `animation` (2.5 ter).
 31. **Une durée écrite à la place du geste** : l'agent décrit le mouvement, l'animateur calcule les durées.
 32. **Un décor qui zoome seul** alors que des personnages sont posés dessus : ils glissent dans le décor ; zoomer le groupe.
+
+33. **Un torse généré avec ses manches** : le bout de manche reste immobile quand le bras pivote et dépasse de l'épaule. Demander le torse sans manches, la manche sur le haut du bras (2.4, point 6).
+34. **Une main découpée à part** : un bras en trois pièces (bras, avant-bras, main) multiplie les jointures à caler pour rien. La main fait partie de l'avant-bras.
+35. **Une pièce découpée sans être animée** : chaque pièce en plus est une jointure en plus à caler. On ne découpe que ce qui bouge.
 
 ### 2.12 Quand toutes les idées ont fini l'étape 2 : le projet de génération des images
 
@@ -691,7 +698,7 @@ ideaN/animation/etape3_animation/
 3. **Attribuer chaque forme à une seule pièce** de `pieces.json`, d'après sa position, sa couleur et ce qu'elle représente (zone de la tête, de la manche, de la main…). Aucune forme ne reste sans pièce, aucune n'est dans deux pièces. Une forme qui ne correspond à rien (ombre, liseré) va à la pièce la plus proche, et l'agent le note. Le résultat est écrit dans `attribution.json` (numéro de forme → id de pièce).
 4. **Générer les fichiers par script** à partir de `attribution.json` : un SVG par pièce, même `viewBox`, avec un groupe racine `<g id="<id de la pièce>">`. Le fichier porte le nom de la pièce (`pere_bras_g_haut.svg`). L'agent n'écrit jamais un SVG à la main.
 5. **Contrôler en images** : un rendu où chaque pièce a une couleur vive distincte, et un rendu des pièces empilées comparé à l'original. L'agent regarde les deux. Si une forme est mal attribuée, il corrige `attribution.json` et regénère. Il ne pousse que quand l'empilement redonne l'original.
-6. **Articulations.** Là où deux pièces se rejoignent (épaule, coude, cou, taille), la pièce qui tourne ne doit pas laisser de vide visible. Si la coupe en laisse un, l'agent ajoute un recouvrement de la même couleur (une petite forme à l'extrémité de la pièce) et le note. Les parties cachées derrière une autre pièce n'existent pas dans l'image : on ne les invente pas.
+6. **Articulations.** Là où deux pièces se rejoignent (épaule, coude, cou, taille), la pièce qui tourne ne doit pas laisser de vide visible. Si la coupe en laisse un, l'agent ajoute un recouvrement de la même couleur (une petite forme à l'extrémité de la pièce) et le note. Les parties cachées derrière une autre pièce n'existent pas dans l'image : on ne les invente pas. **Contrôler l'épaule en particulier** : si le torse détouré garde un bout de manche (ou si la manche est coupée entre le torse et le haut du bras), ce bout reste visible quand le bras pivote. On l'attribue alors au haut du bras, pas au torse ; si l'image ne le permet pas, la pièce est à regénérer avec un torse sans manches (2.4, point 6).
 7. **Pivots.** L'agent place le pivot de chaque pièce (à l'articulation décrite dans `pieces.json`) dans `pivots.json`, en coordonnées du `viewBox`.
 
 **Fichiers de détourage d'un asset**
