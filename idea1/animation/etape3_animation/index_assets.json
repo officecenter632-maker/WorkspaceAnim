@@ -73,5 +73,32 @@
       "garcon": "assets/enfants_locataires/garcon.svg",
       "fille": "assets/enfants_locataires/fille.svg"
     }
+  },
+  "travailleur_bureau": {
+    "etat": "fait",
+    "ordre": [
+      "bureau",
+      "ordinateur",
+      "chaise",
+      "bassin_jambes",
+      "bras_g_haut",
+      "bras_g_bas",
+      "bras_d_haut",
+      "bras_d_bas",
+      "torse",
+      "tete"
+    ],
+    "pieces": {
+      "bureau": "assets/travailleur_bureau/bureau.svg",
+      "ordinateur": "assets/travailleur_bureau/ordinateur.svg",
+      "chaise": "assets/travailleur_bureau/chaise.svg",
+      "bassin_jambes": "assets/travailleur_bureau/bassin_jambes.svg",
+      "bras_g_haut": "assets/travailleur_bureau/bras_g_haut.svg",
+      "bras_g_bas": "assets/travailleur_bureau/bras_g_bas.svg",
+      "bras_d_haut": "assets/travailleur_bureau/bras_d_haut.svg",
+      "bras_d_bas": "assets/travailleur_bureau/bras_d_bas.svg",
+      "torse": "assets/travailleur_bureau/torse.svg",
+      "tete": "assets/travailleur_bureau/tete.svg"
+    }
   }
 }
