@@ -1,0 +1,78 @@
+{
+  "type": "imgen",
+  "projet": "Idée 1 : assets",
+  "dossier": "idea1/animation/etape2_assets/generes",
+  "taches": [
+    {
+      "id": "decor_maison_rose",
+      "titre": "Décor : façade de maison rose",
+      "prompt": "Background: none to remove. The image is a complete full-frame picture, edge to edge, with no solid cut-out color. Transform the reference image into an empty full-frame background: keep the pink suburban house with its porch, windows, steps, lawn and the small red mailbox, same framing and flat style. Remove every character and the speech bubble. Flat vector infographic illustration in the same style as the reference image: flat color fills, simple clean shapes, very light shading, no drop shadows, no outlines added. Palette: house walls #DCB5B7 and #D9968C, windows #2B393B, lawn #8FBD75, sky and trim #E3D6D3. Pose: nothing moves. Do not reproduce the channel logo, any badge, banner, narrator caption or any text from the reference. No real brand logo, no resemblance to a real person, no readable text. Static image, no motion blur.",
+      "references": [
+        "idea1/animation/etape2_assets/references/ref_decor_maison_rose.webp"
+      ],
+      "depend_de": [],
+      "desactive": false
+    },
+    {
+      "id": "famille_locataire",
+      "titre": "Famille locataire en pièces détachées",
+      "prompt": "Background: a flat solid #FF00FF color, perfectly uniform, no gradient, no shadow, no floor, no glow. Every element is complete with a margin around it. The color #FF00FF appears nowhere inside the elements. Use the reference to redraw only the family of four (bearded father, mother, boy, girl) as separate cut-out pieces, same flat style, same clothes and proportions, with worried faces. Keep the cream shirt, brown trousers of the father (#E4E2DA, #4E3A47), the purple top and blue-teal jeans of the mother (#7A567A, #547F97), the red top of the boy (#D9968C) and the blue dress of the girl. Remove the speech bubble, the mailbox, the house and everything else. Pieces: FATHER = head, torso, left upper arm, left forearm with hand, right upper arm, right forearm with hand, hips and legs in one piece. MOTHER = head, torso, left arm, right arm, hips and legs in one piece. BOY = one complete piece. GIRL = one complete piece. Each piece extends slightly beyond its joint (upper arm continues under the shoulder, forearm under the elbow, neck under the head) so no gap shows when a piece rotates. Pieces are separate and do not touch each other, all at the same scale, laid out on one image in a neutral standing pose with arms spread away from the body. Flat vector infographic illustration in the same style as the reference image: flat color fills, simple clean shapes, very light shading, no drop shadows, no outlines added. Do not reproduce the channel logo, any badge, banner, narrator caption or any text from the reference. No real brand logo, no resemblance to a real person, no readable text. Static image, no motion blur.",
+      "references": [
+        "idea1/animation/etape2_assets/references/ref_famille_locataire.webp"
+      ],
+      "depend_de": [],
+      "desactive": false
+    },
+    {
+      "id": "decor_quartier",
+      "titre": "Décor : quartier résidentiel",
+      "prompt": "Background: none to remove. The image is a complete full-frame picture, edge to edge, with no solid cut-out color. Transform the reference image into an empty full-frame neighborhood background: keep the blue sky, the silhouettes of houses, the green hedge with pink flowers, the wooden fence and the grass strip, same framing and flat style. Remove the giant bomb, the fuse, the door, the family and the speech bubble. Flat vector infographic illustration in the same style as the reference image: flat color fills, simple clean shapes, very light shading, no drop shadows, no outlines added. Palette: sky #56A9C3, hills and houses #587183, grass #91AC36, hedge #8FBD75, fence #987C64. Pose: nothing moves. Do not reproduce the channel logo, any badge, banner, narrator caption or any text from the reference. No real brand logo, no resemblance to a real person, no readable text. Static image, no motion blur.",
+      "references": [
+        "idea1/animation/etape2_assets/references/ref_decor_quartier.webp"
+      ],
+      "depend_de": [],
+      "desactive": false
+    },
+    {
+      "id": "maison_a_louer",
+      "titre": "Maison avec panneau À LOUER",
+      "prompt": "Background: a flat solid #FF00FF color, perfectly uniform, no gradient, no shadow, no floor, no glow. Every element is complete with a margin around it. The color #FF00FF appears nowhere inside the elements. Isolate and redraw only the house with its two pine trees, bushes and the standing sign from the reference, as one complete element. Remove both men, the DATE card, the landscape, the sky and the road. Keep the white house with teal roof and shutters (#E9EDE4, #3894A4), pines (#546040), and the sign post. The sign reads exactly: FOR RENT. Flat vector infographic illustration in the same style as the reference image: flat color fills, simple clean shapes, very light shading, no drop shadows, no outlines added. Do not reproduce the channel logo, any badge, banner, narrator caption or any text from the reference. No real brand logo, no resemblance to a real person, no readable text, except the two words FOR RENT on the sign. Static image, no motion blur.",
+      "references": [
+        "idea1/animation/etape2_assets/references/ref_maison_a_louer.webp"
+      ],
+      "depend_de": [],
+      "desactive": false
+    },
+    {
+      "id": "travailleur_bureau",
+      "titre": "Travailleur au bureau en pièces détachées",
+      "prompt": "Background: a flat solid #00FF00 color, perfectly uniform, no gradient, no shadow, no floor, no glow. Every element is complete with a margin around it. The color #00FF00 appears nowhere inside the elements. Use the reference (right panel: the seated man with headphones typing on a laptop) to redraw this worker as separate cut-out pieces, same flat style, same clothes (blue-grey sweater #506E91, dark trousers #4C4967, headphones). Show him seated, entire, with legs complete. Remove the room, the chair background, the curtains, the label and the arrow. Pieces: head with headphones, torso, left upper arm, left forearm with hand, right upper arm, right forearm with hand, hips and legs in one piece, laptop, and a simple chair. Each piece extends slightly beyond its joint (upper arm continues under the shoulder, forearm under the elbow, neck under the head) so no gap shows when a piece rotates. Pieces are separate and do not touch each other, all at the same scale, laid out on one image in a neutral standing pose with arms spread away from the body. Flat vector infographic illustration in the same style as the reference image: flat color fills, simple clean shapes, very light shading, no drop shadows, no outlines added. Do not reproduce the channel logo, any badge, banner, narrator caption or any text from the reference. No real brand logo, no resemblance to a real person, no readable text. Static image, no motion blur.",
+      "references": [
+        "idea1/animation/etape2_assets/references/ref_travailleur_bureau.webp"
+      ],
+      "depend_de": [],
+      "desactive": false
+    },
+    {
+      "id": "porte_avis",
+      "titre": "Porte d'entrée en pièces détachées",
+      "prompt": "Background: a flat solid #00FF00 color, perfectly uniform, no gradient, no shadow, no floor, no glow. Every element is complete with a margin around it. The color #00FF00 appears nowhere inside the elements. Redraw only the front door from the reference as two separate pieces: the door frame (with the wall edge around it) and the door leaf with its handle, in brown wood (#A2714B, #8D6345). The leaf is drawn flat and entire, slightly larger than the opening on the hinge side so it can swing without a gap. Remove the bomb, the family, the man, the speech bubble and the background. Flat vector infographic illustration in the same style as the reference image: flat color fills, simple clean shapes, very light shading, no drop shadows, no outlines added. Pieces are separate and do not touch each other, same scale. Do not reproduce the channel logo, any badge, banner, narrator caption or any text from the reference. No real brand logo, no resemblance to a real person, no readable text. Static image, no motion blur.",
+      "references": [
+        "idea1/animation/etape2_assets/references/ref_porte_avis.webp"
+      ],
+      "depend_de": [],
+      "desactive": false
+    },
+    {
+      "id": "papiers",
+      "titre": "Petits objets : avis d'expulsion et fiche de paie",
+      "prompt": "Background: a flat solid #00FF00 color, perfectly uniform, no gradient, no shadow, no floor, no glow. Every element is complete with a margin around it. The color #00FF00 appears nowhere inside the elements. Two separate paper documents on one image, redrawn from the style of the document on the right of the reference (beige sheet #C6C2B3 with a folded corner, grey text lines, gold seal). ELEMENT 1 (reference 1): an eviction notice, with the title exactly: EVICTION NOTICE, grey lines, a red seal instead of the gold one. ELEMENT 2 (reference 2): a pay stub, with the title exactly: PAYCHECK, grey lines and a small gold circle. Each element is transformed from its own reference, never mixed, entire, well separated from the other. Remove the builder, the banker, the chart and the other panels. Flat vector infographic illustration in the same style as the reference image: flat color fills, simple clean shapes, very light shading, no drop shadows, no outlines added. Do not reproduce the channel logo, any badge, banner, narrator caption or any text from the reference. No real brand logo, no resemblance to a real person, no readable text, except the two titles EVICTION NOTICE and PAYCHECK. Static image, no motion blur.",
+      "references": [
+        "idea1/animation/etape2_assets/references/ref_papiers_01_avis_expulsion.webp",
+        "idea1/animation/etape2_assets/references/ref_papiers_02_fiche_de_paie.webp"
+      ],
+      "depend_de": [],
+      "desactive": false
+    }
+  ]
+}

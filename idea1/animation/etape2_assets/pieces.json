@@ -1,0 +1,153 @@
+{
+  "famille_locataire": {
+    "fond": "#FF00FF",
+    "mouvements": [
+      "le père se prend la tête et lève les bras",
+      "la mère hoche la tête et croise les bras"
+    ],
+    "pieces": [
+      {
+        "id": "pere_torse",
+        "parent": null,
+        "articulation": null
+      },
+      {
+        "id": "pere_tete",
+        "parent": "pere_torse",
+        "articulation": "cou"
+      },
+      {
+        "id": "pere_bras_g_haut",
+        "parent": "pere_torse",
+        "articulation": "épaule gauche"
+      },
+      {
+        "id": "pere_bras_g_bas",
+        "parent": "pere_bras_g_haut",
+        "articulation": "coude gauche"
+      },
+      {
+        "id": "pere_bras_d_haut",
+        "parent": "pere_torse",
+        "articulation": "épaule droite"
+      },
+      {
+        "id": "pere_bras_d_bas",
+        "parent": "pere_bras_d_haut",
+        "articulation": "coude droit"
+      },
+      {
+        "id": "pere_jambes",
+        "parent": "pere_torse",
+        "articulation": "taille"
+      },
+      {
+        "id": "mere_torse",
+        "parent": null,
+        "articulation": null
+      },
+      {
+        "id": "mere_tete",
+        "parent": "mere_torse",
+        "articulation": "cou"
+      },
+      {
+        "id": "mere_bras_g",
+        "parent": "mere_torse",
+        "articulation": "épaule gauche"
+      },
+      {
+        "id": "mere_bras_d",
+        "parent": "mere_torse",
+        "articulation": "épaule droite"
+      },
+      {
+        "id": "mere_jambes",
+        "parent": "mere_torse",
+        "articulation": "taille"
+      },
+      {
+        "id": "garcon",
+        "parent": null,
+        "articulation": null
+      },
+      {
+        "id": "fille",
+        "parent": null,
+        "articulation": null
+      }
+    ]
+  },
+  "travailleur_bureau": {
+    "fond": "#00FF00",
+    "mouvements": [
+      "tape au clavier",
+      "tourne légèrement la tête"
+    ],
+    "pieces": [
+      {
+        "id": "torse",
+        "parent": null,
+        "articulation": null
+      },
+      {
+        "id": "tete_casque",
+        "parent": "torse",
+        "articulation": "cou"
+      },
+      {
+        "id": "bras_g_haut",
+        "parent": "torse",
+        "articulation": "épaule gauche"
+      },
+      {
+        "id": "bras_g_bas",
+        "parent": "bras_g_haut",
+        "articulation": "coude gauche"
+      },
+      {
+        "id": "bras_d_haut",
+        "parent": "torse",
+        "articulation": "épaule droite"
+      },
+      {
+        "id": "bras_d_bas",
+        "parent": "bras_d_haut",
+        "articulation": "coude droit"
+      },
+      {
+        "id": "bassin_jambes",
+        "parent": "torse",
+        "articulation": "taille"
+      },
+      {
+        "id": "ordinateur",
+        "parent": null,
+        "articulation": null
+      },
+      {
+        "id": "chaise",
+        "parent": null,
+        "articulation": null
+      }
+    ]
+  },
+  "porte_avis": {
+    "fond": "#00FF00",
+    "mouvements": [
+      "le battant s'ouvre et se ferme autour de la charnière"
+    ],
+    "pieces": [
+      {
+        "id": "cadre_porte",
+        "parent": null,
+        "articulation": null
+      },
+      {
+        "id": "battant",
+        "parent": "cadre_porte",
+        "articulation": "charnière"
+      }
+    ]
+  }
+}
