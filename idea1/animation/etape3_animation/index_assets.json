@@ -100,5 +100,40 @@
       "torse": "assets/travailleur_bureau/torse.svg",
       "tete": "assets/travailleur_bureau/tete.svg"
     }
+  },
+  "maison_a_louer": {
+    "etat": "fait",
+    "fond_retire": true,
+    "pieces": {
+      "maison_a_louer": "assets/maison_a_louer/maison_a_louer.svg"
+    }
+  },
+  "decor_bureau": {
+    "etat": "fait",
+    "fond_retire": false,
+    "pieces": {
+      "decor_bureau": "decors/decor_bureau.svg"
+    }
+  },
+  "decor_champ": {
+    "etat": "fait",
+    "fond_retire": false,
+    "pieces": {
+      "decor_champ": "decors/decor_champ.svg"
+    }
+  },
+  "decor_maison_rose": {
+    "etat": "fait",
+    "fond_retire": false,
+    "pieces": {
+      "decor_maison_rose": "decors/decor_maison_rose.svg"
+    }
+  },
+  "decor_quartier": {
+    "etat": "fait",
+    "fond_retire": false,
+    "pieces": {
+      "decor_quartier": "decors/decor_quartier.svg"
+    }
   }
 }

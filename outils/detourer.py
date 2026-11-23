@@ -15,6 +15,27 @@ defs = re.sub(r'<clipPath.*?</clipPath>', '', defs, flags=re.S)
 g = re.search(r'<g id="c"([^>]*)>', s).group(1)
 g = re.sub(r'\s*clip-path="[^"]*"', '', g)
 paths = re.findall(r'<path\b[^>]*?/>', s)
+if "--entier" in sys.argv:
+    # asset a une seule piece (decor ou objet) : on retire le fond uni s'il existe, sans decouper
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    m = re.search(r'viewBox="0 0 (\d+) (\d+)"', head); W, H = int(m.group(1)), int(m.group(2))
+    nums = [float(x) for x in re.findall(r'-?\d+\.?\d*', re.search(r' d="([^"]+)"', paths[0]).group(1))]
+    fond = (min(nums[0::2]) <= 0 and max(nums[0::2]) >= W and min(nums[1::2]) <= 0 and max(nums[1::2]) >= H and 'fill="none"' not in paths[0])
+    if fond:  # retire aussi les morceaux de fond traces comme formes separees (meme couleur exacte que le fond)
+        cf = re.search(r'fill="([^"]+)"', paths[0]).group(1)
+        garde = [q for q in paths[1:] if re.search(r'fill="([^"]+)"', q).group(1) != cf]
+    else:
+        garde = paths
+    decor = asset.startswith("decor_")
+    out = f"{base}/etape3_animation/" + (f"decors/{asset}.svg" if decor else f"assets/{asset}/{asset}.svg")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    open(out, "w", encoding="utf-8").write(f'{head}\n{defs}\n<g id="{asset}"{g}>\n' + "\n".join(garde) + "\n</g>\n</svg>\n")
+    racine = f"{base}/etape3_animation"; f = f"{racine}/index_assets.json"
+    d = json.load(open(f, encoding="utf-8")) if os.path.exists(f) else {}
+    d[asset] = {"etat": "fait", "fond_retire": fond, "pieces": {asset: out.replace(racine + "/", "")}}
+    json.dump(d, open(f, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    print(asset, ":", "fond uni retire" if fond else "pas de fond uni", "->", out, f"({len(garde)} formes)")
+    sys.exit(0)
 att = json.load(open(f"{dst}/attribution.json", encoding="utf-8"))
 vus = [i for l in att["pieces"].values() for i in l]
 assert len(vus) == len(set(vus)), "forme dans deux pieces : " + str(sorted({i for i in vus if vus.count(i) > 1}))
