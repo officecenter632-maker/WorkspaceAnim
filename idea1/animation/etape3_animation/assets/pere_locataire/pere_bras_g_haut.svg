@@ -1,8 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941" width="1672" height="941">
-<defs><style>path{vector-effect:non-scaling-stroke}</style></defs>
-<g id="pere_bras_g_haut" stroke-width="2" stroke-linejoin="bevel">
-<path fill="none" stroke="#ebbca0" d="M637.92 346.35L610.36 317.23"/>
-<path fill="#e7dcc5" stroke="none" d="M637.92 346.35L610.36 317.23Q608.98 316.17 608.37 314.88C626.95 298.26 644.5 282.1 664.3 267.57C674.72 278.11 683.96 288.47 692.19 298.77Q664.27 322.74 638.84 346.38Q638.14 346.62 637.92 346.35Z"/>
-<path fill="#ef9b7a" stroke="none" d="M610.36 317.23L637.92 346.35L635.57 347.7A5.33 5.2 -84.07 0 0 634.2 348.84L611.19 376.02L576.34 352.18Q592.59 334.16 610.36 317.23Z"/>
-</g>
+<g id="pere_bras_g_haut"><g transform="translate(752.0 312.0) rotate(3)"><path fill="#ef9b7a" d="M-23 0A23 23 0 0 1 23 0L22 128A22 22 0 0 1 -22 128Z"/></g></g>
 </svg>
