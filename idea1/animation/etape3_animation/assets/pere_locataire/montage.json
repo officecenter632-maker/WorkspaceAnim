@@ -1,31 +1,31 @@
 {
-  "_note": "Père déjà assemblé sur son image. Corrections de montage : épaules rapprochées du torse, coudes refermés, tête descendue sur le torse (vide au cou), jambes remontées sous le torse (vide à la taille de 47 px).",
+  "_note": "Père déjà assemblé sur son image. Raccords : bras coupés avec un trou au coude (avant-bras rapproché de 37 px pour recouvrir le haut du bras), épaules rapprochées du torse, tête descendue sur le torse, jambes remontées sous le torse (le torse recouvre la taille). Contrôle : outils/controler_raccords.py",
   "pere_torse": {
     "dx": 0,
     "dy": 0
   },
   "pere_tete": {
     "dx": 0,
-    "dy": 22
+    "dy": 26
   },
   "pere_bras_g_haut": {
     "dx": 40,
     "dy": 0
   },
   "pere_bras_g_bas": {
-    "dx": 50,
-    "dy": -18
+    "dx": 73,
+    "dy": -25
   },
   "pere_bras_d_haut": {
     "dx": -36,
     "dy": 0
   },
   "pere_bras_d_bas": {
-    "dx": -46,
-    "dy": -18
+    "dx": -69,
+    "dy": -25
   },
   "pere_jambes": {
     "dx": 0,
-    "dy": -44
+    "dy": -54
   }
 }
