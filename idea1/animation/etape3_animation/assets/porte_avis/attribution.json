@@ -1,0 +1,17 @@
+{
+  "asset": "porte_avis",
+  "ordre": ["cadre_porte", "battant"],
+  "pieces": {
+    "cadre_porte": [1, 2, 4],
+    "battant": [3, 5, 6, 7, 8, 9]
+  },
+  "pivots": {
+    "cadre_porte": [664, 798],
+    "battant": [957, 450]
+  },
+  "notes": [
+    "l'image d'origine est une planche : cadre (x 434-895) et battant (x 957-1309) sont deja separes. L'assemblage se fait a l'etape 3.2.",
+    "pivot du battant = charniere, sur son bord gauche (x=957), a mi-hauteur ; a deplacer vers le bord droit si la porte doit s'ouvrir de l'autre cote.",
+    "la poignee (forme 7) est rattachee au battant. L'avis d'expulsion (objet attache au battant) vient de l'asset papiers."
+  ]
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941" width="1672" height="941">
+<defs><style>path{vector-effect:non-scaling-stroke}</style></defs>
+<g id="cadre_porte" stroke-width="2" stroke-linejoin="bevel">
+<path fill="none" stroke="#95613a" d="M853.85 798.38L853.84 126.46L475.06 126.46L475.1 798.44"/>
+<path fill="#ac7443" stroke="none" d="M853.85 798.38L853.84 126.46L475.06 126.46L475.1 798.44L433.63 798.38Q433.61 451.43 433.58 104.5Q433.58 96.12 433.72 89.25Q433.77 86.72 434.5 85.43L894.72 85.43L894.72 798.51L853.85 798.38Z"/>
+<path fill="#7e4e30" stroke="none" d="M853.85 798.38L829.34 798.37Q828.97 792.8 828.95 787.75Q828.86 763.51 828.85 739.25Q828.8 430.86 828.9 146.91L500.4 146.91L500.4 798.26L475.1 798.44L475.06 126.46L853.84 126.46L853.85 798.38Z"/>
+</g>
+</svg>

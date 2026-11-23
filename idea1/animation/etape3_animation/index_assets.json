@@ -40,5 +40,16 @@
       "mere_tete": "assets/mere_locataire/mere_tete.svg",
       "mere_torse": "assets/mere_locataire/mere_torse.svg"
     }
+  },
+  "porte_avis": {
+    "etat": "fait",
+    "ordre": [
+      "cadre_porte",
+      "battant"
+    ],
+    "pieces": {
+      "cadre_porte": "assets/porte_avis/cadre_porte.svg",
+      "battant": "assets/porte_avis/battant.svg"
+    }
   }
 }
