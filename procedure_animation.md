@@ -168,13 +168,13 @@ Mots maximum : NNN | Mots obtenus : NNN | Durée du speech : XX s
 
 ## Étape 2 : lister les assets et écrire leurs prompts
 
-**But :** à partir du speech et des frames des candidats, obtenir la liste des images à générer (les assets), chacune avec son image de référence, son fond (ou l'absence de fond) et son **prompt complet**. Tout ce qui doit bouger est généré **en pièces détachées**, pour que l'animation en code soit fluide. Aucune validation humaine : l'agent fait tout et livre les fichiers, après **trois passes de vérification complètes** notées dans un registre (2.10).
+**But :** à partir du speech et des frames des candidats, obtenir la liste des images à générer (les assets), chacune avec son image de référence, son fond (ou l'absence de fond) et son **prompt complet**. Tout ce qui doit bouger est généré **en pièces détachées**, pour que l'animation en code soit fluide. Aucune validation humaine : l'agent fait tout et livre les fichiers, après **deux passes de vérification complètes** notées dans un registre (2.10).
 
 **Principes**
 - **Les assets sont des images fixes.** Il n'y a ni GIF ni vidéo. Le mouvement est fait en code à l'étape suivante, en déplaçant et en faisant pivoter des pièces.
 - **Ce qui bouge est généré en pièces détachées**, dans une seule image par élément (un personnage, une porte, un ventilateur, une balance…). On ne génère ni planches de poses ni élément entier à plusieurs poses : la pose se calcule en code.
 - **Rien d'inventé.** Un asset existe seulement si un beat du speech en a besoin et s'il correspond à un élément visible dans les frames d'un candidat retenu. On n'emprunte rien à un candidat non retenu.
-- **Trois passes de vérification.** Une fois les fichiers produits, l'agent les vérifie en entier trois fois de suite (contenu, simulation, technique) et note à chaque passe ce qu'il a mis à jour. Les agents oublient des détails : une seule relecture ne suffit pas. L'étape 3 ne commence que si les trois passes sont faites.
+- **Deux passes de vérification.** Une fois les fichiers produits, l'agent les vérifie en entier deux fois de suite (contenu, puis simulation et technique) et note à chaque passe ce qu'il a mis à jour. Les agents oublient des détails : une seule relecture ne suffit pas. L'étape 3 ne commence que si les trois passes sont faites.
 - **Commit et push au fur et à mesure.** Après chaque bloc terminé (fichiers de 2.8, puis chaque passe), l'agent fait un commit et pousse sur `main`, sans attendre la fin de l'étape, pour que rien ne soit perdu si le travail s'interrompt.
 - **Mêmes références.** Les images de référence viennent uniquement des frames des candidats listés dans `plan_scenario.md`.
 
@@ -287,7 +287,7 @@ etape2_assets/
   pieces.json          pour chaque asset décomposé : pièces, parents, articulations, mouvements
   references/          les frames de référence choisies, copiées (png, jpg ou webp)
   references_code/    les frames qui servent de référence de style pour les éléments faits en code
-  registre_verification.json   le registre des trois passes de vérification (2.10), créé avec les trois passes à false
+  registre_verification.json   le registre des deux passes de vérification (2.10), créé avec les deux passes à false
 ```
 
 `assets.json` est un seul objet JSON valide :
@@ -330,8 +330,7 @@ Une tâche d'`assets.json` = une génération (un asset avec toutes ses pièces,
 
 ### 2.9 Checklist de vérification
 
-Cette checklist est déroulée **en entier à chaque passe** de 2.10 (trois fois), pas une seule fois. Une case n'est cochée que si l'agent a rouvert les fichiers et les frames pour la vérifier.
-
+Cette checklist est déroulée **en entier à chaque passe** de 2.10 (deux fois), pas une seule fois. Une case n'est cochée que si l'agent a rouvert les fichiers et les frames pour la vérifier.
 
 - [ ] Toutes les frames citées ont été regardées.
 - [ ] Chaque asset renvoie à au moins un beat et à un élément d'une frame d'un candidat retenu.
@@ -362,22 +361,22 @@ Cette checklist est déroulée **en entier à chaque passe** de 2.10 (trois fois
 - [ ] Les couleurs et formes des fiches viennent des frames, pas d'une invention ; les chiffres viennent du speech.
 - [ ] Le style des éléments en code est cohérent avec celui des assets générés (mêmes aplats, mêmes couleurs).
 
-### 2.10 Trois passes de vérification et registre
+### 2.10 Deux passes de vérification et registre
 
-Une fois les fichiers de 2.8 produits, l'agent **ne passe pas à l'étape 3**. Il fait **trois passes de vérification complètes, l'une après l'autre**, et note chacune dans `registre_verification.json`. La première passe trouve des oublis, la deuxième trouve ce que la première a manqué, la troisième confirme que les fichiers sont cohérents et prêts.
+Une fois les fichiers de 2.8 produits, l'agent **ne passe pas à l'étape 3**. Il fait **deux passes de vérification complètes, l'une après l'autre**, et note chacune dans `registre_verification.json`. La première passe trouve des oublis ; la deuxième trouve ce que la première a manqué et confirme que les fichiers sont cohérents et prêts.
 
-**Règles communes aux trois passes**
+**Règles communes aux deux passes**
 - **Complète.** Chaque passe déroule toute la checklist 2.9 sur tous les fichiers, relit `speech_adapte.md` beat par beat et rouvre les frames de référence. Une passe faite de mémoire ne compte pas.
 - **Chaque passe a son angle**, en plus de la checklist :
   - **Passe 1, contenu** : le listing face au speech et aux frames. Chaque beat, chaque élément visible, chaque asset et élément en code, chaque donnée, chaque référence, chaque couleur mesurée.
-  - **Passe 2, simulation** : pour chaque beat, dérouler l'animation seconde par seconde en pensée, avec l'instant de chaque mot-clé du speech. Vérifier que l'étape 3 pourra construire l'écran **sans rien deviner** : le décor ; la position, la taille et la couche de chaque asset (2.5 bis) ; les pièces de chaque mouvement ; chaque élément en code avec sa fiche et son instant d'apparition ; les textes et chiffres affichés (tous dans le speech) ; l'accord de style entre assets et éléments en code ; ce qui se recouvre à l'écran ; les objets attachés à une pièce mobile ; les éléments à séparer après génération ; les transitions entre beats. Tout ce qui manque est ajouté.
-  - **Passe 3, technique** : les fichiers eux-mêmes. JSON valides, `id` uniques, chemins existants, cohérence entre `Liste_assets.md`, `assets.json`, `pieces.json` et `references/`. Relecture mot à mot de chaque prompt (2.7) et des pièges de 2.11 un par un : contradictions, format, hex, couleur de fond, texte dans l'image. Et tout ce que les deux passes précédentes ont noté dans `non_verifie`.
-- **Chaque passe corrige tout de suite** ce qu'elle trouve, dans les fichiers, et **note chaque mise à jour dans le registre** (fichier, changement, raison). Une passe qui ne trouve rien l'écrit (« aucune mise à jour ») : ce n'est pas une raison de la bâcler.
-- **Ordre strict.** La passe 2 commence seulement quand la passe 1 est à `true`, la passe 3 quand la passe 2 est à `true`. Une passe passe à `true` seulement quand toutes ses corrections sont faites et sauvegardées. Une correction faite pendant la passe 3 est revérifiée aussitôt (relire la partie modifiée et les fichiers liés) et notée.
-- **Commit et push après chaque passe**, avec le message « Idée N : vérification passe X ».
-- **L'étape 3 ne commence que si `passe_1`, `passe_2` et `passe_3` sont à `true`.**
+  - **Passe 2, simulation et technique** : pour chaque beat, dérouler l'animation seconde par seconde en pensée, avec l'instant de chaque mot-clé du speech. Vérifier que l'étape 3 pourra construire l'écran **sans rien deviner** : le décor ; la position, la taille et la couche de chaque asset (2.5 bis) ; les pièces de chaque mouvement ; chaque élément en code avec sa fiche et son instant d'apparition ; les textes et chiffres affichés (tous dans le speech) ; l'accord de style entre assets et éléments en code ; ce qui se recouvre à l'écran ; les objets attachés à une pièce mobile ; les éléments à séparer après génération ; les transitions entre beats. Tout ce qui manque est ajouté. **Puis la partie technique** : JSON valides, `id` uniques, chemins existants, cohérence entre `Liste_assets.md`, `assets.json`, `pieces.json` et `references/`, relecture mot à mot de chaque prompt (2.7) et des pièges de 2.11 un par un (contradictions, format, hex, couleur de fond, texte dans l'image), et tout ce que la passe 1 a noté dans `non_verifie`.
 
-**Format de `registre_verification.json`.** Il est créé en 2.8, avec les trois passes à `false`. L'agent met `faite` à `true` à la fin de chaque passe, renseigne la date, liste les mises à jour et ce qui n'a pas pu être vérifié (par exemple le rendu des images, qui n'existent pas encore) :
+- **Chaque passe corrige tout de suite** ce qu'elle trouve, dans les fichiers, et **note chaque mise à jour dans le registre** (fichier, changement, raison). Une passe qui ne trouve rien l'écrit (« aucune mise à jour ») : ce n'est pas une raison de la bâcler.
+- **Ordre strict.** La passe 2 commence seulement quand la passe 1 est à `true`. Une passe passe à `true` seulement quand toutes ses corrections sont faites et sauvegardées. Une correction faite pendant la passe 2 est revérifiée aussitôt (relire la partie modifiée et les fichiers liés) et notée.
+- **Commit et push après chaque passe**, avec le message « Idée N : vérification passe X ».
+- **L'étape 3 ne commence que si `passe_1` et `passe_2` sont à `true`.**
+
+**Format de `registre_verification.json`.** Il est créé en 2.8, avec les deux passes à `false`. L'agent met `faite` à `true` à la fin de chaque passe, renseigne la date, liste les mises à jour et ce qui n'a pas pu être vérifié (par exemple le rendu des images, qui n'existent pas encore) :
 
 ```json
 {
@@ -391,8 +390,7 @@ Une fois les fichiers de 2.8 produits, l'agent **ne passe pas à l'étape 3**. I
     ],
     "non_verifie": []
   },
-  "passe_2": {"faite": false, "angle": "simulation beat par beat", "date": null, "mises_a_jour": [], "non_verifie": []},
-  "passe_3": {"faite": false, "angle": "technique et cohérence des fichiers", "date": null, "mises_a_jour": [], "non_verifie": []}
+  "passe_2": {"faite": false, "angle": "simulation beat par beat et technique", "date": null, "mises_a_jour": [], "non_verifie": []}
 }
 ```
 
@@ -432,5 +430,5 @@ Une fois les fichiers de 2.8 produits, l'agent **ne passe pas à l'étape 3**. I
 
 ## Étapes suivantes (à définir)
 
-- Étape 3 : commence seulement quand `registre_verification.json` a ses trois passes à `true`.
+- Étape 3 : commence seulement quand `registre_verification.json` a ses deux passes à `true`.
 - Étape 4 :

@@ -81,7 +81,7 @@
   },
   "passe_2": {
     "faite": true,
-    "angle": "simulation beat par beat",
+    "angle": "simulation beat par beat et technique",
     "date": "2026-11-23",
     "mises_a_jour": [
       {
@@ -148,6 +148,11 @@
         "fichier": "procedure_animation.md",
         "changement": "pièges 21 à 29 et quatre points de checklist 2.9",
         "raison": "leçons de la passe 2, pour les autres idées"
+      },
+      {
+        "fichier": "registre_verification.json, procedure_animation.md",
+        "changement": "passage de trois passes à deux : la partie technique (JSON valides, ids uniques, chemins, cohérence des fichiers) est fusionnée dans la passe 2",
+        "raison": "décision de l'utilisateur ; contrôle technique par script refait : 11 ids uniques, toutes les références existent, 16:9 et « no text » dans chaque prompt, pièces ≤ 10, chaque asset présent dans Liste_assets.md"
       }
     ],
     "non_verifie": [
@@ -156,14 +161,7 @@
       "limite de longueur des prompts dans IngXAi inconnue (le plus long fait 1966 caractères)",
       "les frames des candidats 04 et 09 (cartons de texte) n'ont pas été rouvertes en passe 2",
       "décisions à confirmer par toi : famille au beat 4 ; coupe franche à l'ouverture et à la fermeture ; fond vert pour la mère malgré le jean teal",
-      "checklist 2.9 déroulée en entier à la main : à refaire en passe 3, avec relecture mot à mot des prompts"
+      "relecture mot à mot des prompts faite par script et à la lecture des changements, pas une relecture humaine : à regarder à la première génération"
     ]
-  },
-  "passe_3": {
-    "faite": false,
-    "angle": "technique et cohérence des fichiers",
-    "date": null,
-    "mises_a_jour": [],
-    "non_verifie": []
   }
 }
