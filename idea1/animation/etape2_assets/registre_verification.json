@@ -168,6 +168,11 @@
         "fichier": "elements_code.json, Liste_assets.md, procedure_animation.md",
         "changement": "bloc animation (entrée, vie, mouvements, sortie) pour les 15 éléments en code et les 2 transitions ; procédure 2.5 ter étendue aux éléments en code ; durées (0,2 s) retirées de Liste_assets.md",
         "raison": "les animations des infographies n'étaient qu'un résumé d'une ligne dans Liste_assets.md, sans vie continue ni sortie"
+      },
+      {
+        "fichier": "pieces.json, elements_code.json (aucun changement)",
+        "changement": "revérification technique des animations par script : 11 assets de assets.json présents dans pieces.json, 17 entrées de elements_code.json avec les 5 champs, pièces citées existantes, fichiers de reference_style existants, aucune durée, aucun « fixe » ni « ou » ; 43 instants « mot (T s) » recalculés sur le speech, tous concordants (arrondis de 0,03 s près)",
+        "raison": "ces fichiers ont été ajoutés après les passes 1 et 2 (règle 2.10 : un fichier ajouté après une passe doit être revérifié)"
       }
     ],
     "non_verifie": [
@@ -177,7 +182,8 @@
       "les frames des candidats 04 et 09 (cartons de texte) n'ont pas été rouvertes en passe 2",
       "relecture mot à mot des prompts faite par script et à la lecture des changements, pas une relecture humaine : à regarder à la première génération",
       "fiches d'animation ajoutées après la passe 2 : amplitudes (angles) estimées, non mesurées sur les frames, à ajuster à l'étape 3",
-      "animations des éléments en code : valeurs de départ écrites à la main, rendu non testé, à ajuster à l'étape 3"
+      "animations des éléments en code : valeurs de départ écrites à la main, rendu non testé, à ajuster à l'étape 3",
+      "animations (pieces.json, elements_code.json) : angle contenu (sens de chaque geste face au mot du speech, exactitude de a_reprendre / a_ne_pas_reprendre sur chaque frame rouverte) et simulation (visages couverts pendant les arrivées, enchaînement des gestes d'un même personnage, beat 5) non refaits à la main ; seul le contrôle par script a été fait"
     ]
   }
 }
