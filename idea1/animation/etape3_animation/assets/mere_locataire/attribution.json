@@ -1,0 +1,99 @@
+{
+  "asset": "mere_locataire",
+  "ordre": [
+    "mere_jambes",
+    "mere_bras_g_haut",
+    "mere_bras_g_bas",
+    "mere_bras_d_haut",
+    "mere_bras_d_bas",
+    "mere_tete",
+    "mere_torse"
+  ],
+  "pieces": {
+    "mere_tete": [
+      1,
+      2,
+      3,
+      4,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "mere_torse": [
+      22
+    ],
+    "mere_bras_g_haut": [
+      12,
+      24,
+      26
+    ],
+    "mere_bras_g_bas": [
+      27
+    ],
+    "mere_bras_d_haut": [
+      11,
+      23,
+      25
+    ],
+    "mere_bras_d_bas": [
+      28
+    ],
+    "mere_jambes": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      21,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ]
+  },
+  "pivots": {
+    "mere_torse": [
+      680,
+      580
+    ],
+    "mere_tete": [
+      688,
+      315
+    ],
+    "mere_bras_g_haut": [
+      470,
+      370
+    ],
+    "mere_bras_g_bas": [
+      335,
+      550
+    ],
+    "mere_bras_d_haut": [
+      930,
+      370
+    ],
+    "mere_bras_d_bas": [
+      1078,
+      550
+    ],
+    "mere_jambes": [
+      1350,
+      290
+    ]
+  },
+  "notes": [
+    "gauche/droite = cotes de l'image (gauche = x faible).",
+    "l'image d'origine est une planche : torse, bras et jambes sont deja separes et loin les uns des autres. L'assemblage (positions relatives) se fait a l'etape 3.2, pas ici.",
+    "le visage, le cou et la peau du col forment une seule forme (14) : rattaches a la tete. La tete est placee derriere le torse pour que le bas du cou passe sous le t-shirt.",
+    "mèches, oreilles, yeux, dents rattaches a la tete. Chaussures, semelles et chevilles rattachees aux jambes.",
+    "le contour du col (forme 4) est rattache a la tete : dans l'original il est sous la peau du cou et sous le t-shirt ; le rattacher au torse le faisait passer au-dessus de la peau."
+  ]
+}

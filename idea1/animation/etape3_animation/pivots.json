@@ -28,5 +28,35 @@
       "x": 840,
       "y": 500
     }
+  },
+  "mere_locataire": {
+    "mere_torse": {
+      "x": 680,
+      "y": 580
+    },
+    "mere_tete": {
+      "x": 688,
+      "y": 315
+    },
+    "mere_bras_g_haut": {
+      "x": 470,
+      "y": 370
+    },
+    "mere_bras_g_bas": {
+      "x": 335,
+      "y": 550
+    },
+    "mere_bras_d_haut": {
+      "x": 930,
+      "y": 370
+    },
+    "mere_bras_d_bas": {
+      "x": 1078,
+      "y": 550
+    },
+    "mere_jambes": {
+      "x": 1350,
+      "y": 290
+    }
   }
 }
