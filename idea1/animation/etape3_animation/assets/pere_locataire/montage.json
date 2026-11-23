@@ -1,0 +1,31 @@
+{
+  "_note": "Père déjà assemblé sur son image. Corrections de montage : épaules rapprochées du torse, coudes refermés, tête descendue sur le torse (vide au cou), jambes remontées sous le torse (vide à la taille de 47 px).",
+  "pere_torse": {
+    "dx": 0,
+    "dy": 0
+  },
+  "pere_tete": {
+    "dx": 0,
+    "dy": 22
+  },
+  "pere_bras_g_haut": {
+    "dx": 40,
+    "dy": 0
+  },
+  "pere_bras_g_bas": {
+    "dx": 50,
+    "dy": -18
+  },
+  "pere_bras_d_haut": {
+    "dx": -36,
+    "dy": 0
+  },
+  "pere_bras_d_bas": {
+    "dx": -46,
+    "dy": -18
+  },
+  "pere_jambes": {
+    "dx": 0,
+    "dy": -44
+  }
+}

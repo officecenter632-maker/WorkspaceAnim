@@ -718,6 +718,8 @@ ideaN/animation/etape3_animation/
 
 Beaucoup d'images sont des **planches** : les pièces d'un personnage sont déjà séparées et loin les unes des autres (mère, travailleur de bureau). Avant d'animer, l'agent écrit un `montage.json` par asset : pour chaque pièce, le décalage `{dx, dy}` (en coordonnées du `viewBox`) qui la remet à sa place dans le personnage assemblé. Il vérifie en ouvrant l'assemblage. Les pivots de `pivots.json` sont donnés dans les coordonnées de la planche : le moteur les décale avec la pièce.
 
+**Fichiers du montage.** `assets/<asset>/montage.json` (décalages `{dx, dy}` par pièce). Contrôle visuel obligatoire : on regarde l'assemblage et on corrige les **vides** (cou, taille, coudes, épaules) en décalant la pièce, jamais en redessinant. Comme la page ne peut pas lire de JSON en double-clic, `python3 outils/generer_donnees.py ideaN` regroupe `index_assets.json`, `pivots.json` et les `montage.json` dans `etape3_animation/donnees.js` : **à relancer après chaque modification de ces fichiers.**
+
 ### 3.3 L'animation : une page HTML vectorielle
 
 **Le livrable est la page HTML animée, en vectoriel. Aucun rendu vidéo (pas de MP4, pas d'enregistrement), aucun audio à cette étape.** L'agent ne produit pas de vidéo.
@@ -734,6 +736,8 @@ ideaN/animation/etape3_animation/
 - **Les données viennent de l'étape 2** : placements par beat (`Liste_assets.md`, « Mise en place par beat »), gestes (`pieces.json`), éléments en code (`elements_code.json`). L'agent n'invente ni position ni geste qui y figure déjà. Les durées des gestes, que l'étape 2 ne fixe pas, sont calculées à partir des instants des mots.
 - **Un beat à la fois, poussé dès qu'il fonctionne** (« Animation : beat N »). On ouvre la page, on regarde, on passe au suivant.
 - **Éléments en code** (cartes, compteurs, flèches, étiquettes) : dessinés en HTML/CSS ou SVG dans le moteur, jamais en images.
+
+**État du moteur (idée 1, beat 1 fait).** `moteur/moteur.js` (horloge, échelle de la scène, lecture / pause / curseur, flèches ← → pour avancer de 0,1 s), `moteur/personnage.js` (personnage articulé : jambes, haut du corps autour de la taille, bras haut > bras bas imbriqués, tête ; respiration, poids, balancement des bras ; `creerBloc` pour une image entière), `moteur/elements.js` (compteur, pictogrammes). Tout est fonction du temps `t` : on peut glisser le curseur n'importe où. La sortie des éléments en code se fait à l'instant du changement de beat : la scène du beat 1 dure donc 5,7 s (5,3 + 0,4). Les pictogrammes de `icones_menages` : 7 maisons dont 4 rouges (choix de l'agent, l'étape 2 ne précise pas le nombre).
 
 ### 3.4 et suivantes : à définir
 

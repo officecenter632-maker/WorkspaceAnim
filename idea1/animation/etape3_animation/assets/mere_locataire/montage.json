@@ -1,0 +1,10 @@
+{
+  "_note": "Planche -> personnage assemblé. Décalage {dx,dy} en coordonnées du viewBox 1672x941. Valeurs à affiner en regardant l'assemblage.",
+  "mere_torse": {"dx": 0, "dy": 0},
+  "mere_tete": {"dx": 0, "dy": 0},
+  "mere_jambes": {"dx": -668, "dy": 282},
+  "mere_bras_g_haut": {"dx": 125, "dy": -15},
+  "mere_bras_g_bas": {"dx": 145, "dy": -63},
+  "mere_bras_d_haut": {"dx": -125, "dy": -15},
+  "mere_bras_d_bas": {"dx": -152, "dy": -50}
+}
