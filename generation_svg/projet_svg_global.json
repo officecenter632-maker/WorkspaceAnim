@@ -1,0 +1,63 @@
+{
+  "projet": "Toutes les idées : SVG des assets",
+  "depot_references": "officecenter632-maker/WorkspaceAnim",
+  "branche_references": "main",
+  "branche_sortie": "main",
+  "images": [
+    {
+      "nom": "idea1__decor_maison_rose",
+      "source": "idea1/animation/etape2_assets/generes/decor_maison_rose.png",
+      "chemin_sauvegarde": "idea1/animation/etape2_assets/svg/decor_maison_rose.svg"
+    },
+    {
+      "nom": "idea1__pere_locataire",
+      "source": "idea1/animation/etape2_assets/generes/pere_locataire.png",
+      "chemin_sauvegarde": "idea1/animation/etape2_assets/svg/pere_locataire.svg"
+    },
+    {
+      "nom": "idea1__mere_locataire",
+      "source": "idea1/animation/etape2_assets/generes/mere_locataire.png",
+      "chemin_sauvegarde": "idea1/animation/etape2_assets/svg/mere_locataire.svg"
+    },
+    {
+      "nom": "idea1__enfants_locataires",
+      "source": "idea1/animation/etape2_assets/generes/enfants_locataires.png",
+      "chemin_sauvegarde": "idea1/animation/etape2_assets/svg/enfants_locataires.svg"
+    },
+    {
+      "nom": "idea1__decor_quartier",
+      "source": "idea1/animation/etape2_assets/generes/decor_quartier.png",
+      "chemin_sauvegarde": "idea1/animation/etape2_assets/svg/decor_quartier.svg"
+    },
+    {
+      "nom": "idea1__decor_champ",
+      "source": "idea1/animation/etape2_assets/generes/decor_champ.png",
+      "chemin_sauvegarde": "idea1/animation/etape2_assets/svg/decor_champ.svg"
+    },
+    {
+      "nom": "idea1__decor_bureau",
+      "source": "idea1/animation/etape2_assets/generes/decor_bureau.png",
+      "chemin_sauvegarde": "idea1/animation/etape2_assets/svg/decor_bureau.svg"
+    },
+    {
+      "nom": "idea1__maison_a_louer",
+      "source": "idea1/animation/etape2_assets/generes/maison_a_louer.png",
+      "chemin_sauvegarde": "idea1/animation/etape2_assets/svg/maison_a_louer.svg"
+    },
+    {
+      "nom": "idea1__travailleur_bureau",
+      "source": "idea1/animation/etape2_assets/generes/travailleur_bureau.png",
+      "chemin_sauvegarde": "idea1/animation/etape2_assets/svg/travailleur_bureau.svg"
+    },
+    {
+      "nom": "idea1__porte_avis",
+      "source": "idea1/animation/etape2_assets/generes/porte_avis.png",
+      "chemin_sauvegarde": "idea1/animation/etape2_assets/svg/porte_avis.svg"
+    },
+    {
+      "nom": "idea1__papiers",
+      "source": "idea1/animation/etape2_assets/generes/papiers.png",
+      "chemin_sauvegarde": "idea1/animation/etape2_assets/svg/papiers.svg"
+    }
+  ]
+}

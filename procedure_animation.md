@@ -554,10 +554,65 @@ ideaN/animation/etape2_assets/projet_images.json         le même projet, pour u
 - [ ] Le résultat est commité et poussé sur `main` (« Projet de génération des images : N images »).
 - [ ] Le registre de chaque idée n'est pas modifié : cette section ne rouvre pas les passes de 2.10.
 
+### 2.13 Vectoriser les images générées : le projet GenSVG
+
+**Quand.** Dès qu'il y a des images dans `ideaN/animation/etape2_assets/generes/`. On n'attend ni que toutes les images d'une idée soient générées, ni que toutes les idées aient fini : la vectorisation **part toujours de l'étape 2**, parce que les assets sont encore en préparation. Le script est incrémental, on le relance à chaque nouvelle série d'images. L'agent ne demande rien : il lance le script, vérifie son résultat et livre le JSON.
+
+**Comment.** Depuis la racine du dépôt :
+
+```
+python3 outils/projet_svg.py
+```
+
+Le script assemble le projet sans erreur de copie. Il :
+1. **ignore une idée** dont les étapes 1 et 2 ne sont pas finies (speech, `assets.json`, deux passes à `true`) et affiche pourquoi ; les autres idées sont traitées ;
+2. **ne garde que les assets** non désactivés dont l'image **est déjà** dans `generes/` (un fichier a pour nom l'`id` de l'asset, quelle que soit l'extension) et dont le **SVG n'est pas déjà** dans `svg/`. Une image pas encore générée est comptée « pas encore générée » et sera prise au passage suivant ; un SVG déjà fait n'est jamais redemandé ;
+3. si un même asset a deux fichiers (`decor_champ.png` et `decor_champ.webp`, par exemple après une régénération), **retient le plus récemment commité** et le signale ;
+4. **refuse d'écrire quoi que ce soit** si un `id` n'est pas utilisable comme nom de fichier, si un nom est en double, ou si le fichier de l'image n'est pas une image (png, jpg, jpeg, webp, gif, bmp) ;
+5. écrit les fichiers ci-dessous (et ne les écrit pas du tout s'il n'y a rien à vectoriser).
+
+**Fichiers produits**
+
+```
+generation_svg/projet_svg_global.json                    toutes les idées, tous les SVG restants, un seul projet
+ideaN/animation/etape2_assets/projet_svg.json            le même projet pour une seule idée (écrit seulement s'il a des lignes)
+ideaN/animation/etape2_assets/svg/<id>.svg               les SVG, poussés par le bot (jamais écrits à la main)
+```
+
+`projet_svg_global.json` est le JSON à coller dans GenSVG (bouton « + », nouveau projet) :
+
+```json
+{
+  "projet": "Toutes les idées : SVG des assets",
+  "depot_references": "officecenter632-maker/WorkspaceAnim",
+  "branche_references": "main",
+  "branche_sortie": "main",
+  "images": [
+    {
+      "nom": "idea2__pere_locataire",
+      "source": "idea2/animation/etape2_assets/generes/pere_locataire.webp",
+      "chemin_sauvegarde": "idea2/animation/etape2_assets/svg/pere_locataire.svg"
+    }
+  ]
+}
+```
+
+- **`nom`** : `ideaN__<id de l'asset>`, unique dans le projet. Dans `projet_svg.json` (une seule idée), `nom` est l'`id` seul et `dossier_sortie` donne le dossier des SVG.
+- **`source`** : le chemin **réel** de l'image dans le dépôt, extension comprise (lue dans `generes/`, jamais déduite de l'`id`). C'est une référence git : GenSVG refuse tout chemin local.
+- **`chemin_sauvegarde`** : où le SVG est poussé dans le dépôt, toujours dans `svg/` de l'idée, sur la branche `main`.
+- **Rien n'est écrit sur le PC.** Dès qu'un SVG est généré, le notebook `ImageVectorizer.py` (sAutoniax) le pousse sur `main` en un commit « SVG vectorisé : {nom} ». GenSVG ne garde que l'état de chaque ligne (générée, en cours, échec) et un clic sur une ligne générée ouvre le SVG sur GitHub.
+
+**Vérifications avant de livrer** (l'agent les fait, sans demander) :
+- [ ] Le script s'est terminé sans erreur, et le total affiché est égal à la somme des SVG à générer de chaque idée.
+- [ ] Les JSON sont valides, et aucune ligne ne correspond à un SVG déjà présent dans `svg/`.
+- [ ] Le résultat est commité et poussé sur `main` (« Projet de vectorisation : N SVG »).
+- [ ] Le registre de chaque idée n'est pas modifié : cette section ne rouvre pas les passes de 2.10.
+
 ---
 
 ## Étapes suivantes (à définir)
 
 - Génération des images : quand toutes les idées ont fini l'étape 2, `python3 outils/projet_images.py` produit le projet de génération (2.12).
+- Vectorisation : dès que des images sont dans `generes/`, `python3 outils/projet_svg.py` produit le projet GenSVG des SVG (2.13), toujours à partir de l'étape 2.
 - Étape 3 : commence seulement quand `registre_verification.json` a ses deux passes à `true` et que les images de l'idée sont dans `generes/`.
 - Étape 4 :
