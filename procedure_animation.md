@@ -356,6 +356,29 @@ etape2_assets/
 }
 ```
 
+`elements_code.json` donne, pour **chaque élément fait en code et chaque transition** (même liste que les fiches de `Liste_assets.md`), la référence de style et la consigne d'animation. C'est un objet JSON valide, une clé par élément (`_convention` en tête) :
+
+```json
+{
+  "compteur_menages": {
+    "reference_style": {
+      "fichier": "references_code/rc_n1_c05_t000988000_pilules_prix.webp",
+      "niveau": "N1",
+      "a_reprendre": "carte blanche à coins arrondis, grand chiffre sombre en gras",
+      "a_ne_pas_reprendre": "le logo de la chaîne et tout texte ou donnée de la frame"
+    },
+    "entree": "comment l'élément arrive, avec le mot du speech",
+    "vie": "mouvement continu tant qu'il est à l'écran",
+    "mouvements": [
+      { "id": "...", "declencheur": "beat, « mot » (instant)", "description": "ce qui bouge, comment, dans quel sens" }
+    ],
+    "sortie": "comment il disparaît"
+  }
+}
+```
+
+Le fichier est produit pendant l'étape 2, au même moment que `pieces.json`, et vérifié dans les deux passes. Il n'y a aucune durée dans ses blocs.
+
 Une tâche d'`assets.json` = une génération (un asset avec toutes ses pièces, ou une image de petits éléments). Chaque tâche a au moins une référence. Les images générées prennent le nom de l'`id`. Les chemins sont relatifs au dépôt ; ils sont remplacés par les chemins absolus au moment d'utiliser le projet dans IngXAi.
 
 ### 2.9 Checklist de vérification
@@ -388,6 +411,7 @@ Cette checklist est déroulée **en entier à chaque passe** de 2.10 (deux fois)
 - [ ] Un asset réutilisé dans un autre beat est noté (réutilisation, aucune génération de plus).
 - [ ] **Animation (2.5 ter)** : chaque asset a un bloc `animation` dans `pieces.json` avec `entree`, `vie`, `mouvements` et `sortie` ; aucun asset « fixe » ; chaque geste du speech a sa description exacte (pièce, articulation, sens, amplitude, déclencheur) ; aucune durée écrite.
 - [ ] Chaque élément fait en code a une fiche complète (type, données, référence de style, style repris, animation, emplacement).
+- [ ] **`elements_code.json` (2.5 ter)** : chaque élément en code et chaque transition de `Liste_assets.md` y a une entrée avec `reference_style` (le fichier existe dans `references_code/`), `entree`, `vie`, `mouvements` et `sortie` ; aucune durée, aucun « fixe », aucun « ou » (choix tranché).
 - [ ] Chaque référence de style est une frame réellement regardée, copiée dans `references_code/`, avec son niveau (1 à 3). Un style décidé par l'agent (niveau 4) n'est accepté que si les niveaux 1 à 3 ont été cherchés et sont cités dans la fiche.
 - [ ] Les couleurs et formes des fiches viennent des frames, pas d'une invention ; les chiffres viennent du speech.
 - [ ] Le style des éléments en code est cohérent avec celui des assets générés (mêmes aplats, mêmes couleurs).
