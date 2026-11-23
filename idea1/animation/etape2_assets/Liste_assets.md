@@ -35,12 +35,12 @@ Niveau = niveau de recherche de la référence de style (2.2 bis). Frames dans `
 
 | élément | beat | type | données (texte exact) | référence de style | style repris | animation | emplacement |
 |---|---|---|---|---|---|---|---|
-| compteur_menages | 1 | compteur (carte blanche) | « 12.1 MILLION » + « RENTER HOUSEHOLDS » + « MORE THAN HALF OF INCOME ON RENT » (le speech dit « more than half », pas « 50% ») | N1 · c05 · t000988000 (pilules de prix) | carte `#F9FCF8`, chiffre grand `#282828`, coins arrondis | la carte glisse depuis la gauche, le nombre compte de 0 à 12.1 en ~1,2 s | haut gauche |
+| compteur_menages | 1 | compteur (carte blanche) | « 12.1 MILLION » + « RENTER HOUSEHOLDS » + « MORE THAN HALF OF INCOME ON RENT » (le speech dit « more than half », pas « 50% ») | N1 · c05 · t000988000 (pilules de prix) | carte `#F9FCF8`, chiffre grand `#282828`, coins arrondis | la carte glisse depuis la gauche, le nombre compte de 0 à 12.1 | haut gauche |
 | icones_menages | 1 | rangée de pictogrammes maison | aucune donnée chiffrée | N1 · c05 · t000966000 (icône de calendrier plate) | pictos plats `#F8A000`, un sur deux en `#F80000` | apparition en cascade | **haut droite** (le bas est pris par la famille en pied) |
-| carte_donut | 2 | donut dans une carte blanche | « NEARLY HALF » au centre (le speech dit « nearly half » ; la part rouge est dessinée à 49 % d'après `recherches.md`, le chiffre n'est pas écrit) ; titre « PAST THE 30% LINE » | N2 · c02 · t000136500 (donut) | anneau bleu `#005090`, part rouge `#B8322E` ; carte blanche `#F9FCF8`, texte `#282828` (le fond blanc remplace le fond sombre du c02 pour ne pas assombrir la famille) | la part rouge se dessine en ~1,1 s, « NEARLY HALF » s'affiche, le titre apparaît lettre par lettre | **droite** (la carte ne couvre aucun visage) |
+| carte_donut | 2 | donut dans une carte blanche | « NEARLY HALF » au centre (le speech dit « nearly half » ; la part rouge est dessinée à 49 % d'après `recherches.md`, le chiffre n'est pas écrit) ; titre « PAST THE 30% LINE » | N2 · c02 · t000136500 (donut) | anneau bleu `#005090`, part rouge `#B8322E` ; carte blanche `#F9FCF8`, texte `#282828` (le fond blanc remplace le fond sombre du c02 pour ne pas assombrir la famille) | la part rouge se dessine, « NEARLY HALF » s'affiche, le titre apparaît lettre par lettre | **droite** (la carte ne couvre aucun visage) |
 | etiquette_record | 2 | étiquette à flèche | « RECORD » | N1 · c05 · t001019500 (« 26% WAGES ») | carte blanche, flèche montante `#F80000`, texte `#282828` | glisse après le donut | droite, sous la carte |
 | carte_date_2001 | 3 | carte DATE | « DATE: / SINCE 2001 » | N1 · c05 · t000966000 | carte blanche, icône calendrier `#F8A000`, « DATE: » petit, texte grand | glisse depuis la gauche | haut gauche du panneau maison |
-| cercle_loyers | 3 | cercle rouge + flèche en zigzag | « RENTS » dans le cercle, « 30% » sur la flèche | N1 · c05 · t000966000 (« HOUSING COST INCREASE », 31%) | cercle `#F80000`, texte blanc gras, flèche en zigzag `#F80000` | le cercle apparaît, la flèche se dessine de bas en haut en ~0,8 s | sur la maison |
+| cercle_loyers | 3 | cercle rouge + flèche en zigzag | « RENTS » dans le cercle, « 30% » sur la flèche | N1 · c05 · t000966000 (« HOUSING COST INCREASE », 31%) | cercle `#F80000`, texte blanc gras, flèche en zigzag `#F80000` | le cercle apparaît, la flèche se dessine de bas en haut | sur la maison |
 | etiquette_revenus | 3 | étiquette à flèche courte | « RENTER INCOMES » puis « 9% » (le nombre arrive avec le mot « 9 ») | N1 · c05 · t001019500 (« 26% WAGES ») | carte blanche, flèche `#F80000` plus courte que celle des loyers | entre après la flèche des loyers | bas gauche du panneau bureau |
 | texte_panneau | 3 | texte sur panneau (**texte d'accessoire, pas une donnée** : « rent » est dans le speech ; affiché au beat 3 seulement, pas au beat 5 où la maison est trop petite pour qu'il soit lisible) | « FOR RENT » | N1 · c05 · t000960500 (panneau) | capitales blanches sur le panneau vide de maison_a_louer | apparaît avec la maison | sur le panneau |
 | compteur_dossiers | 4 | compteur (carte blanche) | « 1.23 MILLION » + « EVICTION CASES » | N1 · c05 · t000988000 | idem compteur_menages | compte de 0 à 1.23 | haut gauche |
@@ -51,18 +51,20 @@ Niveau = niveau de recherche de la référence de style (2.2 bis). Frames dans `
 | etiquette_paies | 5 | étiquette | « PAYCHECKS » | N1 · c05 · t001019500 | idem etiquette_revenus | apparaît à « Paychecks » | à côté de l'escalier |
 | etiquette_logement | 5 | étiquette | « HOUSING » | N1 · c05 · t001019500 | idem | apparaît à « Housing » | à côté de l'ascenseur |
 
+**Animation de chaque asset : voir le bloc `animation` de `pieces.json`** (entrée, vie continue, mouvements décrits, sortie). **Les durées ne sont écrites nulle part : l'animateur les calcule** ; les instants ci-dessous sont les mots-clés du speech auxquels les gestes se déclenchent.
+
 ## Mise en place par beat (2.5 bis)
 Mesures faites sur les frames (grille de 10 %), précision ±5 %. x et y en % de l'écran ; la **taille** est la hauteur en % de l'écran ; **couche** : 0 fond, puis 1, 2, 3 vers l'avant, 5 éléments en code. Instants = début du beat + rang du mot × durée par mot (durée du beat ÷ nombre de mots). **Taille minimale d'un texte : 2,5 % de la hauteur de l'écran** (27 px en 1080). Zones libres : quand les personnages sont en pied, **les 20 % du haut** sont réservés aux éléments en code.
 
 ### Beat 1 · 0,0–5,3 s · 16 mots · 0,331 s par mot
 | quoi | instant (s) | x, y | taille | couche | note |
 |---|---|---|---|---|---|
-| decor_maison_rose | 0,0 | plein cadre | 100 % | 0 | pas de zoom (le zoom décalerait les personnages) |
+| decor_maison_rose | 0,0 | plein cadre | 100 % | 0 | poussée de caméra lente du **groupe** décor + personnages (voir `pieces.json`) |
 | pere_locataire | 0,0 | x 26 %, pieds à y 99 % | 78 % | 1 | ses mouvements au beat 2 |
 | mere_locataire | 0,0 | x 54 %, pieds à y 97 % | 72 % | 1 | |
 | enfants_locataires (garçon / fille) | 0,0 | garçon x 60 %, fille x 66 %, pieds à y 100 % | 53 % / 56 % | 2 | devant la mère |
-| compteur_menages | 0,66 (« 12.1 ») ; 3e ligne à 2,65 (« more than half ») | haut gauche : x 3–33 %, y 4–19 % | carte 15 % | 5 | compte 12.1 de 0,66 à 1,9 s |
-| icones_menages | 1,99 (« households ») | haut droite : x 55–97 %, y 4–16 % | 12 % | 5 | 7 pictos, cascade de 0,1 s |
+| compteur_menages | 0,66 (« 12.1 ») ; 3e ligne à 2,65 (« more than half ») | haut gauche : x 3–33 %, y 4–19 % | carte 15 % | 5 | compte de 0 à 12.1 |
+| icones_menages | 1,99 (« households ») | haut droite : x 55–97 %, y 4–16 % | 12 % | 5 | 7 pictos en cascade |
 
 ### Beat 2 · 5,3–10,0 s · 14 mots · 0,336 s par mot
 Sortie du beat 1 : compteur et icônes s'effacent à 5,3 (0,2 s).
@@ -83,29 +85,29 @@ Sortie du beat 1 : compteur et icônes s'effacent à 5,3 (0,2 s).
 | travailleur_bureau | 10,0 | x 74 %, bas à y 92 % | 62 % | 1 à 4 (ordre dans `pieces.json`) | tape au clavier dès 10,0 |
 | carte_date_2001 | 12,0 (« 2001 ») | x 0–21 %, y 6–19 % | 13 % | 5 | |
 | cercle_loyers | 13,0 (« rents ») | centre x 12 %, y 58 % ; diamètre 16 % de la largeur | 28 % | 5 | |
-| flèche « 30% » | 14,0 (« 30 ») | de (19 %, 50 %) à (36 %, 24 %) ; « 30% » x 26–34 %, y 28–34 % | | 5 | se dessine de bas en haut en 0,8 s |
+| flèche « 30% » | 14,0 (« 30 ») | de (19 %, 50 %) à (36 %, 24 %) ; « 30% » x 26–34 %, y 28–34 % | | 5 | se dessine de bas en haut |
 | etiquette_revenus | 14,67 (« renter incomes ») ; « 9% » à 15,67 | x 55–82 %, y 68–78 % | 10 % | 5 | cache les cuisses du travailleur comme dans le c05, jamais son visage (y 30–42 %) |
 
 ### Beat 4 · 16,0–26,1 s · 30 mots · 0,337 s par mot
-Transition d'entrée : **T3_4**. **Aucune** animation de zoom (même raison qu'au beat 1). Sortie du beat 3 : tout s'efface derrière la transition.
+Transition d'entrée : **T3_4**. Poussée de caméra lente du groupe décor + porte + famille (voir `pieces.json`). Sortie du beat 3 : tout s'efface derrière la transition.
 | quoi | instant (s) | x, y | taille | couche | note |
 |---|---|---|---|---|---|
 | decor_quartier | 16,0 | plein cadre | 100 % | 0 | |
 | porte_avis | 16,0 | x 50 %, pieds à y 96 % | 48 % | 1 | |
 | famille : père / mère / garçon / fille (mêmes assets qu'au beat 1) | 16,0 | père x 36 %, mère x 66 %, garçon x 62 %, fille x 66 % ; pieds à y 96 % | 50 % / 46 % / 31 % / 33 % | 1 / 1 / 2 / 2 | **décision à confirmer** : sans la famille l'avis d'expulsion n'a pas de sujet |
 | avis_expulsion (papiers, image 1) | 18,7 (« court ») | x 50 %, y 62 % (sur la porte) | 12 % | 2 | parent : battant ; la porte tremble de ±3° deux fois |
-| compteur_dossiers | 20,4 (« 1.23 ») | x 3–31 %, y 4–19 % | 15 % | 5 | compte de 0 à 1.23 en 1,1 s |
+| compteur_dossiers | 20,4 (« 1.23 ») | x 3–31 %, y 4–19 % | 15 % | 5 | compte de 0 à 1.23 |
 | etiquette_source | 22,7 (« Princeton's ») | x 3–31 %, y 20–25 % | 5 % | 5 | |
 | etiquette_austin | 24,1 (« Around ») ; « 30% » à 24,75 (« thirty ») | x 62–97 %, y 8–18 % | 10 % | 5 | |
 
 ### Beat 5 · 26,1–28,7 s · 8 mots · 0,325 s par mot
-À 26,1 : la porte, l'avis, la famille et les éléments du beat 4 s'effacent (0,2 s) ; decor_quartier reste. Pas de transition (même décor). **Durée très courte : aucune animation de moins de 0,9 s.**
+À 26,1 : la porte, l'avis, la famille et les éléments du beat 4 s'effacent (0,2 s) ; decor_quartier reste. Pas de transition (même décor). **Beat très court (2,6 s) : l'animateur règle les durées pour que tout tienne dans la fenêtre.**
 | quoi | instant (s) | x, y | taille | couche | note |
 |---|---|---|---|---|---|
 | escalier_ascenseur | 26,1 | marches x 12–46 %, y 40–90 % ; cage x 56–88 %, y 15–90 % | 75 % | 1 | aplats `#314074` et `#C84E2E` |
-| fiche de paie (papiers, image 2) | 26,1 | part de (14 %, 88 %) pour arriver à (40 %, 52 %) à 28,7 | 9 % | 2 | monte lentement : 2,6 s |
+| fiche de paie (papiers, image 2) | 26,1 | part de (14 %, 88 %) pour arriver à (40 %, 52 %) à 28,7 | 9 % | 2 | monte lentement |
 | etiquette_paies | 26,1 (« Paychecks ») | x 14–38 %, y 28–36 % | 8 % | 5 | |
-| maison_a_louer (dans la cage) | 27,4 (« Housing ») | x 72 %, monte de y 88 % à y 20 % entre 27,4 et 28,4 | 18 % | 2 | monte vite : 1,0 s ; sans le texte « FOR RENT » |
+| maison_a_louer (dans la cage) | 27,4 (« Housing ») | x 72 %, monte de y 88 % à y 20 % entre 27,4 et 28,4 | 18 % | 2 | monte plus vite que la fiche de paie ; sans le texte « FOR RENT » |
 | etiquette_logement | 27,4 (« Housing ») | x 62–86 %, y 6–14 % | 8 % | 5 | le haut de la maison s'arrête à y 20 % : pas de recouvrement |
 
 ## Transitions entre beats (fiches)
@@ -143,6 +145,7 @@ Non utilisés : les cartons de texte des candidats 04 et 09 (la chute est dite p
 12. **Logo de la chaîne** : la liste précédente mettait « le logo de la chaîne » dans le code ; c'est celui du projet, pas celui des frames (« THE INFOGRAPHICS SHOW »).
 
 ## Corrections de la passe 2
+0. **Animation** : tous les assets ont maintenant une consigne d'animation complète dans `pieces.json` (aucun asset fixe, aucune durée écrite) ; les durées qui figuraient dans les fiches ont été retirées.
 1. **Décor et personnages à des échelles différentes** : le décor venait de la frame zoomée t006500, les personnages en pied de t009000. Le décor vient maintenant de t009000.
 2. **Jambes et chaussures inventées** : la frame t006500 coupe les personnages à la taille. Deuxième référence en pied (t009000) pour le père, la mère et les enfants ; chaussures mesurées (père orange `#E08818`, mère `#908070`, enfants jaunes `#C8A820`), short du garçon `#101830` et chaussettes `#C83030`.
 3. **Hex du jean faux** (`#4E9CA2` mesuré sur la frame zoomée) : `#23868F` mesuré sur le plan large ; risque de bord vert noté.

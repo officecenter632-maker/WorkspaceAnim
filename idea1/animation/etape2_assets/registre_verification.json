@@ -153,6 +153,11 @@
         "fichier": "registre_verification.json, procedure_animation.md",
         "changement": "passage de trois passes à deux : la partie technique (JSON valides, ids uniques, chemins, cohérence des fichiers) est fusionnée dans la passe 2",
         "raison": "décision de l'utilisateur ; contrôle technique par script refait : 11 ids uniques, toutes les références existent, 16:9 et « no text » dans chaque prompt, pièces ≤ 10, chaque asset présent dans Liste_assets.md"
+      },
+      {
+        "fichier": "pieces.json, procedure_animation.md, Liste_assets.md",
+        "changement": "bloc animation obligatoire pour les 11 assets (entrée, vie continue, mouvements décrits, sortie), procédure 2.5 ter, pièges 30 à 32, checklist ; durées retirées des fiches",
+        "raison": "demande de l'utilisateur : aucun asset fixe, mouvement décrit exactement, durées laissées à l'animateur"
       }
     ],
     "non_verifie": [
@@ -161,7 +166,8 @@
       "limite de longueur des prompts dans IngXAi inconnue (le plus long fait 1966 caractères)",
       "les frames des candidats 04 et 09 (cartons de texte) n'ont pas été rouvertes en passe 2",
       "décisions à confirmer par toi : famille au beat 4 ; coupe franche à l'ouverture et à la fermeture ; fond vert pour la mère malgré le jean teal",
-      "relecture mot à mot des prompts faite par script et à la lecture des changements, pas une relecture humaine : à regarder à la première génération"
+      "relecture mot à mot des prompts faite par script et à la lecture des changements, pas une relecture humaine : à regarder à la première génération",
+      "fiches d'animation ajoutées après la passe 2 : amplitudes (angles) estimées, non mesurées sur les frames, à ajuster à l'étape 3"
     ]
   }
 }

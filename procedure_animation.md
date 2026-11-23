@@ -256,6 +256,26 @@ Pour chaque beat, `Liste_assets.md` note **où et quand** chaque asset et chaque
 - **éléments à séparer après génération** (deux objets dans une même image, plusieurs personnages entiers) : listés pour l'étape 3 ;
 - aucun élément n'en cache un autre sans que ce soit voulu (un compteur ne cache pas un visage).
 
+### 2.5 ter Animation de chaque asset (obligatoire)
+
+**Chaque asset a une consigne d'animation écrite, sans exception.** Sans elle, l'étape 3 oublie ou invente le mouvement. Il n'existe pas d'asset « fixe » : un décor, un objet, un personnage qui ne fait rien pendant le beat reçoivent quand même un mouvement de vie, écrit.
+
+Elle est écrite dans `pieces.json`, dans un bloc `animation` par asset :
+- **`entree`** : comment il arrive (présent dès la première image, glisse, tombe, fondu, après quelle transition).
+- **`vie`** : le mouvement **continu** tant qu'il est à l'écran (respiration, balancement, pulsation, poussée de caméra lente, défilement derrière un autre élément). Jamais « immobile ».
+- **`mouvements`** : un par geste voulu par le speech, avec `id`, les `pieces` concernées (ids de `pieces.json`), le `declencheur` (beat et mot-clé du speech, avec l'instant de 2.5 bis) et la `description` exacte du geste : quelle pièce, autour de quelle articulation, vers où (gauche et droite = côtés de l'image), de combien (angle ou fraction de l'écran), ce qui bouge avec elle (la tête suit, l'objet attaché suit), ce qui se passe après (tenu, retour à la pose neutre, rebond).
+- **`sortie`** : comment il disparaît ou ce qui le recouvre.
+
+**Les durées ne sont pas écrites.** L'animateur (étape 3) les calcule à partir des instants du speech. L'agent décrit le geste, pas sa durée.
+
+Règles :
+1. Un mouvement qui plie un membre est décrit avec ses deux segments (2.4).
+2. Un décor ou un groupe qui zoome zoome **en bloc** avec ce qui est posé dessus, jamais seul ; les éléments en code ne zooment pas.
+3. Un objet attaché à une pièce mobile le dit (« l'avis suit le battant »).
+4. Un asset qui apparaît dans plusieurs beats a une consigne par beat.
+5. Le geste correspond au sens du mot du speech (un « record » ne se mime pas en souriant).
+6. Quand le mouvement est visible dans les frames des candidats, l'amplitude est mesurée dessus ; sinon une valeur de départ est écrite et notée « à ajuster à l'étape 3 » dans `Liste_assets.md`.
+
 ### 2.6 Choisir l'image de référence et le fond
 
 - **Référence** : parmi les frames du candidat concerné, celle où l'élément est le plus entier, le plus net et le moins caché. Si aucune frame ne montre l'élément, prendre la frame du même candidat la plus proche par sa nature (décor, objet, matière) comme **référence de style**. Il y a toujours une référence. **Si l'élément est coupé dans la frame** (personnage en plan serré dont on ne voit pas les jambes ni les chaussures), ajouter une **deuxième référence** : une frame du même candidat où il est en pied. Le prompt dit à quoi sert chaque référence (« la première pour le visage et les vêtements, la deuxième pour les jambes et les chaussures »), et les couleurs de ce qui n'est visible que dans la deuxième sont mesurées sur elle.
@@ -284,7 +304,7 @@ Dans `ideaN/animation/etape2_assets/` :
 etape2_assets/
   assets.json          les générations, au format du projet imgen d'IngXAi
   Liste_assets.md      la liste en tableau lisible, un récapitulatif par beat (décor, assets, éléments en code), la mise en place par beat (2.5 bis), les fiches des éléments en code, les décisions
-  pieces.json          pour chaque asset décomposé : pièces, parents, articulations, mouvements
+  pieces.json          pour **chaque** asset : pièces, parents, articulations et bloc `animation` (2.5 ter)
   references/          les frames de référence choisies, copiées (png, jpg ou webp)
   references_code/    les frames qui servent de référence de style pour les éléments faits en code
   registre_verification.json   le registre des deux passes de vérification (2.10), créé avec les deux passes à false
@@ -310,18 +330,25 @@ etape2_assets/
 }
 ```
 
-`pieces.json` donne, pour chaque asset décomposé, la liste des pièces :
+`pieces.json` donne, pour **chaque asset** (un décor ou un objet entier compte comme une seule pièce), la liste des pièces et sa consigne d'animation :
 
 ```json
 {
   "<id de l'asset>": {
     "fond": "#00FF00",
-    "mouvements": ["lève le bras droit", "hoche la tête"],
     "pieces": [
       {"id": "torse", "parent": null, "articulation": null},
       {"id": "bras_droit_haut", "parent": "torse", "articulation": "épaule droite"},
       {"id": "bras_droit_bas", "parent": "bras_droit_haut", "articulation": "coude droit"}
-    ]
+    ],
+    "animation": {
+      "entree": "présent dès la première image",
+      "vie": "respiration en continu : torse +1 %, tête qui suit",
+      "mouvements": [
+        {"id": "leve_le_bras", "pieces": ["bras_droit_haut", "bras_droit_bas"], "declencheur": "beat 2, « record » (9,67 s)", "description": "le bras monte autour de l'épaule d'environ 80° vers l'extérieur de l'image, l'avant-bras se déplie, tenu puis retombée avec rebond"}
+      ],
+      "sortie": "s'efface avec le reste du beat"
+    }
   }
 }
 ```
@@ -354,8 +381,9 @@ Cette checklist est déroulée **en entier à chaque passe** de 2.10 (deux fois)
 - [ ] Les transitions entre beats ont une fiche.
 - [ ] **Les instants** de la mise en place sont recalculés par script et concordent avec le speech.
 - [ ] **Aucun recouvrement involontaire** : chaque élément en code est placé hors des visages et des pieds ; décor et personnages viennent du même plan de caméra.
-- [ ] **Taille minimale d'un texte** : 2,5 % de la hauteur de l'écran ; aucune animation de moins de 0,9 s.
+- [ ] **Taille minimale d'un texte** : 2,5 % de la hauteur de l'écran.
 - [ ] Un asset réutilisé dans un autre beat est noté (réutilisation, aucune génération de plus).
+- [ ] **Animation (2.5 ter)** : chaque asset a un bloc `animation` dans `pieces.json` avec `entree`, `vie`, `mouvements` et `sortie` ; aucun asset « fixe » ; chaque geste du speech a sa description exacte (pièce, articulation, sens, amplitude, déclencheur) ; aucune durée écrite.
 - [ ] Chaque élément fait en code a une fiche complète (type, données, référence de style, style repris, animation, emplacement).
 - [ ] Chaque référence de style est une frame réellement regardée, copiée dans `references_code/`, avec son niveau (1 à 3). Un style décidé par l'agent (niveau 4) n'est accepté que si les niveaux 1 à 3 ont été cherchés et sont cités dans la fiche.
 - [ ] Les couleurs et formes des fiches viennent des frames, pas d'une invention ; les chiffres viennent du speech.
@@ -421,10 +449,13 @@ Une fois les fichiers de 2.8 produits, l'agent **ne passe pas à l'étape 3**. I
 23. **Un élément en code posé sur des personnages en pied** (icônes en bas, étiquette sur les jambes) : réserver le haut de l'écran (20 %) aux éléments en code quand les personnages sont en pied, et placer chaque élément en vérifiant les visages et les pieds.
 24. **Un décor ou une référence qui contient un objet que l'asset refait** (fauteuil dans le décor et chaise dans l'asset) : deux objets pour un seul, retirer l'un des deux.
 25. **Une référence qui montre d'autres éléments que celui à redessiner** (une frame à trois panneaux) : le prompt dit lesquels ignorer.
-26. **Un beat très court** (moins de 3 s) : aucune animation de moins de 0,9 s ; le noter dans la mise en place.
+26. **Un beat très court** (moins de 3 s) : le noter dans la mise en place ; l'animateur règle les durées pour tenir dans la fenêtre.
 27. **Un asset qui doit revenir dans un autre beat sans être listé** : le noter dans le récapitulatif par beat (réutilisation, aucune génération de plus).
 28. **Un instant noté à l'œil** : calculer chaque instant par script (début du beat + rang du mot × durée par mot) et comparer.
 29. **Un texte d'accessoire (« FOR RENT » sur un panneau) pris pour une donnée** : le noter comme texte d'accessoire, présent seulement là où il est lisible.
+30. **Un asset sans consigne d'animation**, ou un asset marqué « fixe » : l'étape 3 l'oublie ou l'invente. Tous ont un bloc `animation` (2.5 ter).
+31. **Une durée écrite à la place du geste** : l'agent décrit le mouvement, l'animateur calcule les durées.
+32. **Un décor qui zoome seul** alors que des personnages sont posés dessus : ils glissent dans le décor ; zoomer le groupe.
 
 ---
 
