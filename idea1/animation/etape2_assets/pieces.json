@@ -1,10 +1,6 @@
 {
   "pere_locataire": {
     "fond": "#00FF00",
-    "mouvements": [
-      "se prend la tête (main sur le front)",
-      "lève les bras"
-    ],
     "pieces": [
       {
         "id": "pere_torse",
@@ -42,14 +38,54 @@
         "articulation": "taille"
       }
     ],
-    "ordre_des_couches": "un personnage : bras derrière le torse sauf quand il croise les bras ou se prend la tête (bras devant)"
+    "ordre_des_couches": "un personnage : bras derrière le torse sauf quand il croise les bras ou se prend la tête (bras devant)",
+    "animation": {
+      "entree": "Présent dès la première image du beat 1 (coupe franche). Au beat 4 : arrive avec le décor après la transition, sans autre effet.",
+      "vie": "Respiration en continu : le torse monte et descend très légèrement (étirement vertical d'environ 1 %, pieds fixes), la tête suit avec un léger retard ; le poids se déplace d'un pied à l'autre (tout le personnage pivote de ±1° autour des pieds) ; les bras relâchés balancent par inertie (±2° à l'épaule, ±3° au coude).",
+      "mouvements": [
+        {
+          "id": "se_prend_la_tete",
+          "pieces": [
+            "pere_bras_g_haut",
+            "pere_bras_g_bas",
+            "pere_bras_d_haut",
+            "pere_bras_d_bas",
+            "pere_tete",
+            "pere_torse"
+          ],
+          "declencheur": "beat 2, « stretched » (7,3 s)",
+          "description": "Les deux bras montent : chaque bras_haut pivote vers l'avant et le haut autour de l'épaule (environ 70°), chaque avant-bras se plie au coude (environ 100°) pour amener les mains sur le front et les tempes. La tête s'incline vers l'avant (environ 6°), le torse se penche un peu en avant (environ 4°). Le geste est tenu, puis les bras reviennent à la pose neutre."
+        },
+        {
+          "id": "leve_les_bras",
+          "pieces": [
+            "pere_bras_g_haut",
+            "pere_bras_g_bas",
+            "pere_bras_d_haut",
+            "pere_bras_d_bas",
+            "pere_torse",
+            "pere_tete"
+          ],
+          "declencheur": "beat 2, « record » (9,67 s)",
+          "description": "Geste d'exaspération : les deux bras s'écartent vers l'extérieur et le haut (bras_haut d'environ 80° vers l'extérieur, avant-bras dépliés, paumes ouvertes vers le ciel), le torse se renverse légèrement en arrière (environ 4°), la tête se relève (environ 4°). Tenu, puis retombée des bras avec rebond."
+        },
+        {
+          "id": "abattement_beat4",
+          "pieces": [
+            "pere_torse",
+            "pere_tete",
+            "pere_bras_g_haut",
+            "pere_bras_d_haut"
+          ],
+          "declencheur": "beat 4, « court » (18,7 s)",
+          "description": "La tête se tourne vers la porte (environ 8°, vers la droite de l'image), les épaules s'affaissent (torse penché en avant d'environ 5°), les bras pendent plus bas et plus mous."
+        }
+      ],
+      "sortie": "Beat 4 → 5 : s'efface avec le reste du beat."
+    }
   },
   "mere_locataire": {
     "fond": "#00FF00",
-    "mouvements": [
-      "hoche la tête",
-      "croise les bras (deux segments par bras)"
-    ],
     "pieces": [
       {
         "id": "mere_torse",
@@ -87,14 +123,45 @@
         "articulation": "taille"
       }
     ],
-    "ordre_des_couches": "un personnage : bras derrière le torse sauf quand il croise les bras ou se prend la tête (bras devant)"
+    "ordre_des_couches": "un personnage : bras derrière le torse sauf quand il croise les bras ou se prend la tête (bras devant)",
+    "animation": {
+      "entree": "Présente dès la première image du beat 1 (coupe franche). Au beat 4 : arrive avec le décor après la transition.",
+      "vie": "Respiration en continu : le torse monte et descend très légèrement (étirement vertical d'environ 1 %, pieds fixes), la tête suit avec un léger retard ; le poids se déplace d'un pied à l'autre (tout le personnage pivote de ±1° autour des pieds) ; les bras relâchés balancent par inertie (±2° à l'épaule, ±3° au coude).",
+      "mouvements": [
+        {
+          "id": "hoche_la_tete",
+          "pieces": [
+            "mere_tete"
+          ],
+          "declencheur": "beat 2, « Nearly » (5,3 s) à « stretched »",
+          "description": "La tête pivote autour du cou : un signe de tête vers le bas puis retour, deux fois (environ 8° de chaque côté de l'axe), comme quelqu'un qui approuve tristement."
+        },
+        {
+          "id": "croise_les_bras",
+          "pieces": [
+            "mere_bras_g_haut",
+            "mere_bras_g_bas",
+            "mere_bras_d_haut",
+            "mere_bras_d_bas"
+          ],
+          "declencheur": "beat 2, « thirty » (8,3 s)",
+          "description": "Chaque bras_haut revient le long du torse puis pivote vers l'avant autour de l'épaule ; chaque avant-bras se plie au coude (environ 90°) pour passer devant le torse, les mains se posant sous le bras opposé. Les bras passent devant le torse dans l'ordre des couches. Posture tenue jusqu'à la fin du beat 2."
+        },
+        {
+          "id": "abattement_beat4",
+          "pieces": [
+            "mere_tete",
+            "mere_torse"
+          ],
+          "declencheur": "beat 4, « court » (18,7 s)",
+          "description": "Bras toujours croisés ; la tête s'abaisse (environ 6°) et le torse s'affaisse légèrement (environ 3°)."
+        }
+      ],
+      "sortie": "Beat 4 → 5 : s'efface avec le reste du beat."
+    }
   },
   "travailleur_bureau": {
     "fond": "#00FF00",
-    "mouvements": [
-      "tape au clavier",
-      "tourne légèrement la tête"
-    ],
     "pieces": [
       {
         "id": "torse",
@@ -159,14 +226,45 @@
       "bras_d_bas",
       "ordinateur"
     ],
-    "note_couches": "ordre de départ, à ajuster à l'étape 3 selon l'image générée"
+    "note_couches": "ordre de départ, à ajuster à l'étape 3 selon l'image générée",
+    "animation": {
+      "entree": "Arrive avec le panneau droit, après T2_3. Il tape déjà au clavier à l'arrivée.",
+      "vie": "Respiration en continu : torse qui monte et descend (environ 1 %). La tête hoche très légèrement au rythme de la frappe (environ 2°), le casque suit la tête. L'ordinateur, la chaise et le bureau ne bougent pas ; seule la chaise subit un très léger basculement (environ 0,5°) quand il se redresse.",
+      "mouvements": [
+        {
+          "id": "tape_au_clavier",
+          "pieces": [
+            "bras_g_bas",
+            "bras_d_bas",
+            "bras_g_haut",
+            "bras_d_haut"
+          ],
+          "declencheur": "en continu dès 10,0 s jusqu'à la fin du beat 3",
+          "description": "Les avant-bras pivotent autour des coudes en alternance irrégulière (environ 6° vers le bas puis retour), les mains martèlent le clavier ; les bras_haut ne bougent presque pas (environ 2° à l'épaule) ; le rythme est irrégulier, avec une pause de temps en temps."
+        },
+        {
+          "id": "tourne_la_tete",
+          "pieces": [
+            "tete"
+          ],
+          "declencheur": "beat 3, « keeping » (11,0 s)",
+          "description": "La tête pivote autour du cou d'environ 10° vers l'extérieur du panneau, comme s'il regardait vers la maison, tient, puis revient vers l'écran de l'ordinateur."
+        },
+        {
+          "id": "s_affaisse",
+          "pieces": [
+            "torse",
+            "tete"
+          ],
+          "declencheur": "beat 3, « just 9 » (15,67 s)",
+          "description": "Le torse se penche en avant d'environ 5° et la tête baisse d'environ 6° : il se tasse devant l'ordinateur. Les mains continuent de taper, plus lentement."
+        }
+      ],
+      "sortie": "Recouvert par T3_4."
+    }
   },
   "porte_avis": {
     "fond": "#00FF00",
-    "mouvements": [
-      "le battant tremble de ±3° deux fois quand l'avis se colle (« court », 18,7 s)",
-      "le battant s'ouvre et se ferme autour de la charnière (réservé si une suite l'exige)"
-    ],
     "pieces": [
       {
         "id": "cadre_porte",
@@ -185,7 +283,182 @@
         "parent": "battant",
         "source": "papiers (image 1 sur 2, à séparer)"
       }
-    ]
+    ],
+    "animation": {
+      "entree": "Arrive avec le décor après T3_4 (beat 4), déjà fermée.",
+      "vie": "Frémissement continu : le battant oscille très légèrement autour de la charnière (environ ±1°) et le cadre ne bouge pas.",
+      "mouvements": [
+        {
+          "id": "tremble_sous_l_avis",
+          "pieces": [
+            "battant"
+          ],
+          "declencheur": "beat 4, « court » (18,7 s)",
+          "description": "Au moment où l'avis se colle, le battant tremble autour de la charnière : deux oscillations de ±3°, la seconde plus faible que la première. L'avis_expulsion, attaché au battant, tremble avec lui."
+        }
+      ],
+      "sortie": "Beat 4 → 5 : s'efface avec le reste du beat."
+    }
   },
-  "_convention": "gauche et droite = côtés gauche et droit de l'image (pas ceux du personnage)"
+  "_convention": "gauche et droite = côtés gauche et droit de l'image (pas ceux du personnage)",
+  "enfants_locataires": {
+    "fond": "#00FF00",
+    "pieces": [
+      {
+        "id": "garcon",
+        "parent": null,
+        "articulation": null
+      },
+      {
+        "id": "fille",
+        "parent": null,
+        "articulation": null
+      }
+    ],
+    "animation": {
+      "entree": "Présents dès la première image du beat 1 ; au beat 4 arrivent avec le décor. Deux images entières (garçon, fille) : chacune se déplace comme un seul bloc, sans pièces.",
+      "vie": "Respiration en continu : chaque enfant s'étire verticalement d'environ 1 % (pieds fixes) ; balancement latéral de ±1,5° autour des pieds, les deux enfants décalés l'un par rapport à l'autre pour ne pas bouger en même temps.",
+      "mouvements": [
+        {
+          "id": "se_serrent",
+          "pieces": [
+            "garcon",
+            "fille"
+          ],
+          "declencheur": "beat 2, « record » (9,67 s)",
+          "description": "Les deux enfants se penchent l'un vers l'autre (rotation d'environ 3° autour des pieds, le garçon vers la droite de l'image, la fille vers la gauche), comme pour se serrer, puis reviennent à leur balancement."
+        },
+        {
+          "id": "abattement_beat4",
+          "pieces": [
+            "garcon",
+            "fille"
+          ],
+          "declencheur": "beat 4, « court » (18,7 s)",
+          "description": "Chaque enfant s'incline légèrement vers l'avant (environ 3°) et baisse d'environ 1 % de hauteur, comme s'il se tassait."
+        }
+      ],
+      "sortie": "Beat 4 → 5 : s'effacent avec le reste du beat."
+    }
+  },
+  "decor_maison_rose": {
+    "fond": null,
+    "pieces": [
+      {
+        "id": "decor_maison_rose",
+        "parent": null,
+        "articulation": null
+      }
+    ],
+    "animation": {
+      "entree": "Présent dès la première image du beat 1.",
+      "vie": "Poussée de caméra lente et continue : le décor et les trois personnages (père, mère, enfants) grossissent ensemble d'environ 4 % (échelle de 100 % à 104 %), centrée sur la famille. Le zoom s'applique au **groupe** décor + personnages, jamais au décor seul (sinon les personnages glisseraient dans le décor). Les éléments en code ne zooment pas : ils sont placés sur l'écran.",
+      "mouvements": [],
+      "sortie": "Beat 2 → 3 : recouvert par la transition T2_3."
+    }
+  },
+  "decor_champ": {
+    "fond": null,
+    "pieces": [
+      {
+        "id": "decor_champ",
+        "parent": null,
+        "articulation": null
+      }
+    ],
+    "animation": {
+      "entree": "Arrive avec le panneau gauche, après la transition T2_3.",
+      "vie": "Défilement lent et continu vers la gauche d'environ 2 % de la largeur du décor, **derrière** la maison qui reste en place dans le panneau : effet de profondeur (parallaxe).",
+      "mouvements": [],
+      "sortie": "Beat 3 → 4 : recouvert par la transition T3_4."
+    }
+  },
+  "decor_bureau": {
+    "fond": null,
+    "pieces": [
+      {
+        "id": "decor_bureau",
+        "parent": null,
+        "articulation": null
+      }
+    ],
+    "animation": {
+      "entree": "Arrive avec le panneau droit, après la transition T2_3.",
+      "vie": "Défilement lent et continu vers la droite d'environ 2 % de la largeur du décor, **derrière** le travailleur (sens opposé à decor_champ).",
+      "mouvements": [],
+      "sortie": "Beat 3 → 4 : recouvert par la transition T3_4."
+    }
+  },
+  "decor_quartier": {
+    "fond": null,
+    "pieces": [
+      {
+        "id": "decor_quartier",
+        "parent": null,
+        "articulation": null
+      }
+    ],
+    "animation": {
+      "entree": "Arrive après la transition T3_4 (beat 4).",
+      "vie": "Beat 4 : poussée de caméra lente et continue d'environ 4 % appliquée au **groupe** décor + porte + famille. Beat 5 : le décor seul glisse lentement vers la gauche d'environ 2 % de sa largeur ; l'escalier et la cage d'ascenseur sont placés sur l'écran et ne bougent pas avec lui.",
+      "mouvements": [],
+      "sortie": "Fin de la vidéo : dernière image tenue jusqu'à 28,7 s."
+    }
+  },
+  "maison_a_louer": {
+    "fond": "#FF00FF",
+    "pieces": [
+      {
+        "id": "maison_a_louer",
+        "parent": null,
+        "articulation": null
+      }
+    ],
+    "animation": {
+      "entree": "Beat 3 : arrive avec le panneau gauche en glissant depuis le bas, avec un petit rebond à l'arrivée. Beat 5 : entre dans la cage d'ascenseur au mot « Housing » (27,4 s).",
+      "vie": "Beat 3 : pulsation lente et continue d'environ 1 % de l'échelle, ancrée au pied de la maison. Beat 5 : voir le mouvement de la montée.",
+      "mouvements": [
+        {
+          "id": "monte_ascenseur",
+          "pieces": [
+            "maison_a_louer"
+          ],
+          "declencheur": "beat 5, « Housing » (27,4 s) à « elevator » (28,4 s)",
+          "description": "Monte verticalement dans la cage, d'un seul trait, du bas vers le haut : départ doux, vitesse franche, arrêt net en haut avec un petit rebond élastique. Pendant la montée, tremblement horizontal très léger (environ 0,5 % de la largeur) comme une cabine. Elle monte beaucoup plus vite que la fiche de paie."
+        }
+      ],
+      "sortie": "Beat 3 : recouverte par T3_4. Beat 5 : reste en haut de la cage jusqu'à la fin."
+    }
+  },
+  "papiers": {
+    "fond": "#00FF00",
+    "pieces": [
+      {
+        "id": "avis_expulsion",
+        "parent": "battant",
+        "articulation": "suit le battant de porte_avis"
+      },
+      {
+        "id": "fiche_de_paie",
+        "parent": null,
+        "articulation": null
+      }
+    ],
+    "animation": {
+      "entree": "avis_expulsion : arrive du haut de l'écran au mot « court » (18,7 s), tourne d'environ 10° en tombant et se colle à plat sur le battant de la porte avec un petit rebond (échelle 115 % puis 100 %). fiche_de_paie : arrive au pied de l'escalier au mot « Paychecks » (26,1 s), par un fondu avec un léger saut.",
+      "vie": "avis_expulsion : le coin supérieur droit frémit (environ ±1,5° autour du coin opposé), le reste suit le battant. fiche_de_paie : légère oscillation continue (environ ±2°) comme une feuille qui se balance.",
+      "mouvements": [
+        {
+          "id": "monte_l_escalier",
+          "pieces": [
+            "fiche_de_paie"
+          ],
+          "declencheur": "beat 5, « Paychecks » (26,1 s) à la fin du beat",
+          "description": "Monte l'escalier marche par marche, de la gauche vers le haut à droite : à chaque marche, petit saut vers le haut puis vers l'avant, avec une rotation alternée d'environ ±5° et un léger écrasement à l'arrivée. Elle monte lentement : elle n'arrive qu'à la troisième marche de la fin."
+        }
+      ],
+      "sortie": "avis_expulsion : s'efface avec la porte à 26,1 s. fiche_de_paie : reste sur la marche jusqu'à la fin."
+    }
+  },
+  "_regle_animation": "chaque asset a un bloc « animation » : entrée, vie (mouvement continu, jamais « fixe »), mouvements (pièce, déclencheur, description exacte du geste, sens, amplitude) et sortie. Les durées ne sont pas écrites : l'animateur les calcule."
 }
