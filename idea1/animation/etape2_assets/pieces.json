@@ -1,9 +1,9 @@
 {
-  "famille_locataire": {
-    "fond": "#FF00FF",
+  "pere_locataire": {
+    "fond": "#00FF00",
     "mouvements": [
-      "le père se prend la tête et lève les bras",
-      "la mère hoche la tête et croise les bras"
+      "se prend la tête (main sur le front)",
+      "lève les bras"
     ],
     "pieces": [
       {
@@ -34,13 +34,22 @@
       {
         "id": "pere_bras_d_bas",
         "parent": "pere_bras_d_haut",
-        "articulation": "coude droit"
+        "articulation": "coude droite"
       },
       {
         "id": "pere_jambes",
         "parent": "pere_torse",
         "articulation": "taille"
-      },
+      }
+    ]
+  },
+  "mere_locataire": {
+    "fond": "#00FF00",
+    "mouvements": [
+      "hoche la tête",
+      "croise les bras (deux segments par bras)"
+    ],
+    "pieces": [
       {
         "id": "mere_torse",
         "parent": null,
@@ -52,29 +61,29 @@
         "articulation": "cou"
       },
       {
-        "id": "mere_bras_g",
+        "id": "mere_bras_g_haut",
         "parent": "mere_torse",
         "articulation": "épaule gauche"
       },
       {
-        "id": "mere_bras_d",
+        "id": "mere_bras_g_bas",
+        "parent": "mere_bras_g_haut",
+        "articulation": "coude gauche"
+      },
+      {
+        "id": "mere_bras_d_haut",
         "parent": "mere_torse",
         "articulation": "épaule droite"
+      },
+      {
+        "id": "mere_bras_d_bas",
+        "parent": "mere_bras_d_haut",
+        "articulation": "coude droite"
       },
       {
         "id": "mere_jambes",
         "parent": "mere_torse",
         "articulation": "taille"
-      },
-      {
-        "id": "garcon",
-        "parent": null,
-        "articulation": null
-      },
-      {
-        "id": "fille",
-        "parent": null,
-        "articulation": null
       }
     ]
   },
@@ -91,7 +100,7 @@
         "articulation": null
       },
       {
-        "id": "tete_casque",
+        "id": "tete",
         "parent": "torse",
         "articulation": "cou"
       },
@@ -113,7 +122,7 @@
       {
         "id": "bras_d_bas",
         "parent": "bras_d_haut",
-        "articulation": "coude droit"
+        "articulation": "coude droite"
       },
       {
         "id": "bassin_jambes",
@@ -127,6 +136,11 @@
       },
       {
         "id": "chaise",
+        "parent": null,
+        "articulation": null
+      },
+      {
+        "id": "bureau",
         "parent": null,
         "articulation": null
       }

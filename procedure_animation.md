@@ -182,13 +182,37 @@ Entrées : `speech_adapte.md` (beats), `plan_scenario.md` (candidats retenus), e
 
 Pour chaque candidat retenu : extraire `frames.axz` (zip de WebP, `tNNNNNNNNN.webp` = instant en millisecondes), faire une planche-contact pour situer les passages, puis ouvrir en pleine taille les frames correspondant à chaque beat (instant du beat dans le candidat). Une frame qu'on n'a pas regardée ne peut pas être citée.
 
+**En regardant les frames, relever aussi les éléments graphiques** (compteurs, chiffres animés, barres, courbes, flèches, jauges, cadres, bandeaux, formes, icônes simples, transitions visibles). Ils ne sont pas des assets, mais ils servent de **références de style** pour les infographies faites en code (2.2 bis). On ne part jamais de zéro : un graphique du speech est dessiné en s'inspirant d'un élément réellement vu dans les frames d'un candidat retenu.
+
 ### 2.2 Décider ce qui est un asset
 
 Pour chaque élément visible dans les frames d'un beat :
 - **Est un asset** : un décor, un personnage, un objet ou une icône qui doit exister comme fichier image.
-- **N'est jamais un asset** (fait en code ou au montage) : les textes et chiffres, les cartons et badges, le logo de la chaîne, les bandeaux de narrateur, et tout ce qui est géométrique ou graphique (barres, courbes, flèches, jauges, compteurs, traits, formes simples).
+- **N'est jamais un asset** (fait en code ou au montage) : les textes et chiffres, les cartons et badges, le logo de la chaîne du projet (celui qui est fourni, jamais celui des frames de référence), les bandeaux de narrateur, et tout ce qui est géométrique ou graphique (barres, courbes, flèches, jauges, compteurs, traits, formes simples).
 
 Ces éléments en code sont quand même notés dans une section « Éléments faits en code » de `Liste_assets.md`, sans prompt, pour que l'étape suivante sache les dessiner.
+
+### 2.2 bis Fiche de chaque élément fait en code
+
+Chaque élément fait en code (compteur, barre, jauge, courbe, flèche, icône, cadre…) reçoit une fiche. L'étape suivante dessine l'élément d'après cette fiche, sans deviner.
+
+1. **Chercher une référence de style, dans cet ordre, et s'arrêter au premier niveau qui en donne une.** L'agent ne décide lui-même qu'en dernier.
+   - **Niveau 1 : les candidats retenus** de l'idée (ceux de `plan_scenario.md`). Prendre l'élément graphique le plus proche de l'élément voulu (un compteur pour un compteur, des barres pour des barres).
+   - **Niveau 2 : les autres candidats de la même idée** (`scenario_candidats/`, non retenus). Ouvrir leur planche-contact et leurs frames. Ils ne fournissent ici que du **style graphique**, jamais d'assets ni de contenu.
+   - **Niveau 3 : les candidats des autres idées de la même recherche** (même chaîne, donc même univers visuel). Même usage : style graphique seulement.
+   - **Niveau 4 : décision de l'agent**, seulement si les niveaux 1 à 3 ne montrent aucun élément graphique utilisable. L'agent définit alors un style sobre, **dérivé de ce qui existe déjà** : la palette hex et les aplats des frames des candidats retenus et des assets générés, sans ombre, formes simples. Il écrit dans la fiche « style décidé par l'agent, aucune référence trouvée » et indique **quels niveaux il a cherchés**.
+   La frame choisie est copiée dans `references_code/`, avec son niveau noté dans la fiche.
+2. **Décrire ce qui est repris** de cette référence : palette (hex mesurée sur la frame), forme (barre pleine ou contour, coins droits ou arrondis), épaisseur des traits, police ou allure des chiffres, position à l'écran, ombre ou non, façon d'apparaître et de bouger.
+3. **Choisir le type** adapté à la donnée : compteur pour un total, jauge ou barre pour une part, barres côte à côte pour comparer deux valeurs, courbe pour une évolution, icônes répétées pour une proportion (« un sur treize »). Le type doit pouvoir se lire en quelques secondes.
+4. **Donner les données exactes** de `speech_adapte.md` (chiffres, unités, étiquettes), **sans en ajouter** : un chiffre qui est dans `recherches.md` mais pas dans le speech n'est pas affiché. Les textes affichés (titres, étiquettes) sont écrits en toutes lettres dans la fiche.
+5. **Dire l'animation** : ce qui entre, comment (compte, grandit, se dessine), à quel beat, pour quelle durée.
+6. **Ne pas reprendre** le logo, les badges, les textes et les chiffres de la frame de référence : seul le style est repris.
+
+Les fiches sont écrites dans `Liste_assets.md`, section « Éléments faits en code », au format :
+
+```
+| élément | beat | type | données | référence de style (niveau · candidat · frame) | style repris (hex, forme, trait, police) | animation | emplacement |
+```
 
 ### 2.3 Prévoir les mouvements de chaque asset
 
@@ -200,9 +224,9 @@ Ces éléments en code sont quand même notés dans une section « Éléments fa
 ### 2.4 Décomposer en pièces détachées
 
 Pour un asset à parties mobiles :
-1. **Découper selon les mouvements voulus, pas plus.** Un personnage qui ne fait que lever le bras n'a pas besoin de jambes en deux segments. Exemple complet : tête, torse, bassin, bras en deux segments, mains, jambes en deux segments, pieds. Ajouter des variantes (bouche ouverte, yeux fermés…) seulement si les beats les demandent.
+1. **Découper selon les mouvements voulus, pas plus.** Mais un mouvement qui **plie** un membre (croiser les bras, se prendre la tête, taper au clavier, se gratter) exige **deux segments** (bras et avant-bras, avec la main) : un bras en un seul bloc ne sait que pivoter droit. Un personnage qui ne fait que lever le bras n'a pas besoin de jambes en deux segments. Exemple complet : tête, torse, bassin, bras en deux segments, mains, jambes en deux segments, pieds. Ajouter des variantes (bouche ouverte, yeux fermés…) seulement si les beats les demandent.
 2. **Pour chaque pièce, noter** : son id, sa **pièce parent** (l'avant-bras a pour parent le haut du bras) et son **articulation** (le coude, l'épaule…). Les coordonnées exactes du pivot sont mesurées à l'étape 3, après découpage.
-3. **Une seule génération par asset**, qui contient toutes ses pièces. Elles sont **séparées les unes des autres** dans l'image, **à la même échelle**, vues dans une **pose neutre** (debout, bras écartés, pièces posées à plat), avec un **même style et un même fond**.
+3. **Une seule génération par asset**, qui contient toutes ses pièces. **Un personnage = un asset** : un groupe (une famille, une équipe) est découpé par personnage, une génération chacun, et les personnages qui ne bougent pas par membre (des enfants immobiles) sont regroupés entiers dans une même image. **Maximum 10 pièces par génération** : au-delà, les modèles d'image mélangent ou oublient des pièces. Elles sont **séparées les unes des autres** dans l'image, **à la même échelle**, vues dans une **pose neutre** (debout, bras écartés, pièces posées à plat), avec un **même style et un même fond**.
 4. **Chaque pièce dépasse un peu sur l'articulation suivante** (le haut du bras se prolonge sous l'épaule, l'avant-bras sous le coude), pour qu'aucun trou n'apparaisse quand la pièce pivote. Les pièces restent séparées dans l'image, mais chacune porte sa partie de recouvrement.
 5. **Les petits éléments qui ne bougent pas** (petits objets, icônes) sont regroupés dans une même image de 4 à 6 éléments, séparés, avec une référence par élément et un fond commun.
 
@@ -222,7 +246,7 @@ Un asset qui revient d'un beat à l'autre n'est listé qu'une fois, avec la mêm
 
 - **Référence** : parmi les frames du candidat concerné, celle où l'élément est le plus entier, le plus net et le moins caché. Si aucune frame ne montre l'élément, prendre la frame du même candidat la plus proche par sa nature (décor, objet, matière) comme **référence de style**. Il y a toujours une référence.
 - **Le fond dépend de l'image, il est décidé pour chaque génération :**
-  - **Image à détourer** (personnage ou pièces détachées, objet, icône, décor qui sera posé sur un autre fond) : un **fond uni détourable**, dont la couleur est **écrite explicitement en hexadécimal dans le prompt**. Vert pur `#00FF00` par défaut ; magenta `#FF00FF` si l'asset contient du vert ou du turquoise ; bleu `#0000FF` s'il contient les deux. La couleur n'apparaît nulle part dans l'asset, même approchée. Une seule couleur pour toutes les pièces d'un même élément. On note en une demi-ligne pourquoi cette couleur.
+  - **Image à détourer** (personnage ou pièces détachées, objet, icône, décor qui sera posé sur un autre fond) : un **fond uni détourable**, dont la couleur est **écrite explicitement en hexadécimal dans le prompt**. **La couleur se choisit sur des mesures, pas à l'œil** : mesurer les couleurs dominantes de la référence (médiane sur de petites zones, ou couleur la plus fréquente de chaque vêtement ou partie), les écrire en hexadécimal, puis choisir parmi vert `#00FF00`, magenta `#FF00FF` et bleu `#0000FF` celle dont la teinte est la plus éloignée de toutes les couleurs de l'asset (vert par défaut). Un violet-magenta ou un rose vif exclut le magenta ; un vert, un jaune-vert ou un turquoise très saturé exclut le vert ; un bleu vif exclut le bleu. Un bleu-teal désaturé (jean) n'exclut pas le vert. La couleur n'apparaît nulle part dans l'asset, même approchée. Une seule couleur pour toutes les pièces d'un même élément. On note en une demi-ligne pourquoi cette couleur.
   - **Image qui n'a pas besoin d'être détourée** (décor plein cadre, fond de scène, contenu d'écran rectangulaire) : **aucun fond uni**. Le prompt ne mentionne aucune couleur de fond et demande une image complète de bord à bord, et la liste note « détourage : non, fond : aucun (plein cadre) ».
 
 ### 2.7 Écrire le prompt de chaque génération
@@ -231,11 +255,12 @@ Le prompt demande à l'IA de transformer l'image de référence en l'asset voulu
 1. **le fond** : pour une image à détourer, « fond uni #XXXXXX, aplat parfait, aucun dégradé, aucune ombre, aucun sol, chaque élément entier avec de la marge » ; pour une image qui n'est pas détourée, « image pleine de bord à bord, sans fond uni » ;
 2. **ce qui est conservé** de la référence (cadrage, forme, proportions, style) et **ce qui est remplacé** (tenue, icône, contenu) ;
 3. **la description de l'asset** (forme, taille, détails) ;
-4. **les couleurs** en hexadécimal ;
+4. **les couleurs** en hexadécimal, **mesurées sur la frame** (jamais estimées ni recopiées d'un autre élément : un hex de mur rose n'est pas celui d'un haut rouge) ; chaque couleur nommée dans le texte a son hex ;
 5. **le style** (aplats, sans ombre portée) ;
-6. **la pose** : immobile, sans flou de mouvement ; pour des pièces détachées, la pose neutre de 2.4 ;
+6. **la pose** : immobile, sans flou de mouvement ; pour des pièces détachées, la pose neutre de 2.4, **cohérente avec l'asset** (un personnage assis garde ses jambes en position assise, avec la chaise et le bureau en pièces séparées ; ne pas écrire « assis » et « debout » dans le même prompt) ; mains vides : ne pas reprendre les objets tenus dans la référence ;
+6 bis. **le format** : « 16:9 paysage (1920x1080) » pour un décor plein cadre ; « grande image 16:9 » pour une planche de pièces ou de petits éléments ;
 7. **les pièces**, quand l'asset est décomposé : la liste exacte des pièces, leur séparation (aucune pièce ne touche une autre), la même échelle, et le recouvrement aux articulations (2.4, point 4) ;
-8. **les interdits** : ne pas reprendre le logo de la chaîne, les badges, les bandeaux ni le texte de la référence ; aucun logo réel ; aucune ressemblance avec une personne réelle ; aucun texte lisible sauf un texte imposé par le speech, donné mot pour mot.
+8. **les interdits** : ne pas reprendre le logo de la chaîne, les badges, les bandeaux ni le texte de la référence ; aucun logo réel ; aucune ressemblance avec une personne réelle ; **aucun texte, lettre ni chiffre dans l'image** (les modèles d'image les orthographient mal) : les panneaux, documents et étiquettes sont dessinés **vides** (panneau blanc, bande unie, lignes grises) et leur texte est ajouté en code, noté dans les fiches de 2.2 bis. Les objets qui doivent être reconnus sans texte (un avis d'expulsion, une fiche de paie) se distinguent par la forme et la couleur (bande rouge ou bleue, sceau, pièce).
 
 ### 2.8 Produire les fichiers de sortie
 
@@ -244,9 +269,10 @@ Dans `ideaN/animation/etape2_assets/` :
 ```
 etape2_assets/
   assets.json          les générations, au format du projet imgen d'IngXAi
-  Liste_assets.md      la même liste en tableau lisible + éléments faits en code
+  Liste_assets.md      la liste en tableau lisible, un récapitulatif par beat (décor, assets, éléments en code), les fiches des éléments en code, les décisions
   pieces.json          pour chaque asset décomposé : pièces, parents, articulations, mouvements
   references/          les frames de référence choisies, copiées (png, jpg ou webp)
+  references_code/    les frames qui servent de référence de style pour les éléments faits en code
 ```
 
 `assets.json` est un seul objet JSON valide :
@@ -299,6 +325,31 @@ Une tâche d'`assets.json` = une génération (un asset avec toutes ses pièces,
 - [ ] Chaque génération a un « détourage » oui ou non. S'il est oui, le prompt donne une couleur de fond en hexadécimal, identique pour toutes les pièces d'un élément, qui n'apparaît pas dans l'asset. S'il est non, le prompt ne mentionne aucune couleur de fond.
 - [ ] Le JSON est valide, les `id` sont uniques et valides, chaque tâche a au moins une référence existante.
 - [ ] Chaque prompt contient les interdits (logo, badges, bandeaux, texte).
+- [ ] **Récapitulatif par beat** : chaque beat a un décor (ou un fond uni noté), ses assets, ses éléments en code et ses données. Aucun beat sans fond ; aucun asset ou élément absent du récapitulatif.
+- [ ] **Chaque donnée affichée est dans `speech_adapte.md`** (pas seulement dans `recherches.md`).
+- [ ] Aucun prompt ne contient de texte à écrire dans l'image ; les textes sont dans les fiches.
+- [ ] Les hex des prompts sont mesurés sur la frame ; la couleur de fond est choisie sur ces mesures (2.6).
+- [ ] Aucune contradiction dans un prompt (assis/debout, entier/partiel, avec/sans fond) ; au plus 10 pièces par génération ; les mouvements qui plient un membre ont deux segments.
+- [ ] Les références identiques (même frame pour plusieurs assets) sont voulues ; une génération n'a pas deux fois la même référence.
+- [ ] Chaque élément fait en code a une fiche complète (type, données, référence de style, style repris, animation, emplacement).
+- [ ] Chaque référence de style est une frame réellement regardée, copiée dans `references_code/`, avec son niveau (1 à 3). Un style décidé par l'agent (niveau 4) n'est accepté que si les niveaux 1 à 3 ont été cherchés et sont cités dans la fiche.
+- [ ] Les couleurs et formes des fiches viennent des frames, pas d'une invention ; les chiffres viennent du speech.
+- [ ] Le style des éléments en code est cohérent avec celui des assets générés (mêmes aplats, mêmes couleurs).
+
+### 2.10 Pièges à anticiper (erreurs de dernière minute)
+
+1. **Un beat sans décor** : les éléments détourés flottent dans le vide. Vérifier le décor de chaque beat.
+2. **Un chiffre ou un nom qui n'est pas dans le speech** (venu de `recherches.md`) : ne pas l'afficher.
+3. **Un mouvement impossible avec les pièces prévues** (croiser les bras avec des bras d'un seul bloc).
+4. **Une couleur de fond trop proche d'un vêtement** (haut violet et fond magenta) : le détourage mange le vêtement.
+5. **Un hex faux** (recopié d'un autre élément, estimé à l'œil) : l'image sort d'une autre couleur que celle voulue.
+6. **Du texte dans l'image** (« FOR RENT », « PAYCHECK ») : orthographe fausse ; mettre le texte en code.
+7. **Une pose contradictoire** (« assis » puis « pose debout bras écartés »).
+8. **Un objet tenu dans la référence repris par erreur** (papiers dans les mains du père).
+9. **Une référence qui montre un élément caché** (décor derrière des personnages) : le modèle doit inventer les parties masquées ; le dire dans « à vérifier ».
+10. **Le logo ou les badges de la chaîne des frames** repris dans l'image ou dans le code.
+11. **Les chemins relatifs** du JSON à remplacer par des chemins absolus dans IngXAi ; les références doivent exister.
+12. **Aucun format** précisé : l'image sort carrée ; toujours écrire le format.
 
 ---
 
