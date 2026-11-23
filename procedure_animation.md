@@ -379,7 +379,7 @@ etape2_assets/
 
 Le fichier est produit pendant l'étape 2, au même moment que `pieces.json`, et vérifié dans les deux passes. Il n'y a aucune durée dans ses blocs.
 
-Une tâche d'`assets.json` = une génération (un asset avec toutes ses pièces, ou une image de petits éléments). Chaque tâche a au moins une référence. Les images générées prennent le nom de l'`id`. Les chemins sont relatifs au dépôt ; ils sont remplacés par les chemins absolus au moment d'utiliser le projet dans IngXAi.
+Une tâche d'`assets.json` = une génération (un asset avec toutes ses pièces, ou une image de petits éléments). Chaque tâche a au moins une référence. Les images générées prennent le nom de l'`id`. Les chemins sont relatifs au dépôt et le restent : IngXAi les fait télécharger depuis GitHub par sAutoniax (`depot_references`), rien n'est copié sur le PC.
 
 ### 2.9 Checklist de vérification
 
@@ -468,7 +468,7 @@ Idée 1 : (D1) la famille revient au beat 4 devant la porte avec les assets du b
 8. **Un objet tenu dans la référence repris par erreur** (papiers dans les mains du père).
 9. **Une référence qui montre un élément caché** (décor derrière des personnages) : le modèle doit inventer les parties masquées ; le dire dans « à vérifier ».
 10. **Le logo ou les badges de la chaîne des frames** repris dans l'image ou dans le code.
-11. **Les chemins relatifs** du JSON à remplacer par des chemins absolus dans IngXAi ; les références doivent exister.
+11. **Une référence qui n'existe pas dans le dépôt** : les chemins du JSON restent relatifs et sAutoniax les télécharge ; un chemin faux donne une erreur 404 à l'envoi. Les vérifier avant de pousser.
 12. **Aucun format** précisé : l'image sort carrée ; toujours écrire le format.
 13. **Des jambes ou des chaussures inventées** parce que la frame de référence est en plan serré : deuxième référence en pied.
 14. **Un chiffre exact affiché alors que le speech dit un mot** (« nearly half » écrit « 49 % »).
@@ -491,9 +491,73 @@ Idée 1 : (D1) la famille revient au beat 4 devant la porte avec les assets du b
 31. **Une durée écrite à la place du geste** : l'agent décrit le mouvement, l'animateur calcule les durées.
 32. **Un décor qui zoome seul** alors que des personnages sont posés dessus : ils glissent dans le décor ; zoomer le groupe.
 
+### 2.12 Quand toutes les idées ont fini l'étape 2 : le projet de génération des images
+
+**Quand.** Dès que **toutes** les idées du dépôt (`idea1` ... `ideaN`) ont leurs étapes 1 et 2 faites, c'est-à-dire pour chacune : `etape1_speech/speech_adapte.md`, `etape2_assets/assets.json` et `registre_verification.json` avec `passe_1` et `passe_2` à `true`. Il ne reste alors que la génération des images. L'agent ne demande rien : il lance le script ci-dessous, vérifie son résultat et livre le JSON.
+
+**Comment.** Depuis la racine du dépôt :
+
+```
+python3 outils/projet_images.py
+```
+
+Le script ne remplace pas le travail de l'agent, il l'assemble sans erreur de copie. Il :
+1. **refuse de produire quoi que ce soit** si une idée n'a pas fini les étapes 1 et 2 (il liste ce qui manque, idée par idée) : l'agent finit alors ces idées d'abord ;
+2. **ne garde que les images absentes** de `ideaN/animation/etape2_assets/generes/` (une image est présente si un fichier a pour nom l'`id` de l'asset, quelle que soit l'extension : `.png`, `.webp`...). Les images déjà générées ne sont jamais redemandées ;
+3. **refuse si une référence n'existe pas** dans le dépôt, ou si deux tâches ont le même `id` ;
+4. écrit les fichiers ci-dessous.
+
+**Fichiers produits**
+
+```
+generation_images/projet_images_global.json              toutes les idées, toutes les images restantes, un seul projet
+ideaN/animation/etape2_assets/projet_images.json         le même projet, pour une seule idée (toujours écrit, même sans image restante)
+```
+
+`projet_images_global.json` est un projet `imgen` d'IngXAi. Chaque tâche porte ses propres champs, parce que chaque image doit partir dans le dossier de **son** idée :
+
+```json
+{
+  "type": "imgen",
+  "projet": "Toutes les idées : images des assets restantes",
+  "depot_references": "officecenter632-maker/WorkspaceAnim",
+  "branche_references": "main",
+  "depot": "officecenter632-maker/WorkspaceAnim",
+  "taches": [
+    {
+      "id": "idea2__pere_locataire",
+      "titre": "...",
+      "prompt": "<prompt de assets.json, inchangé>",
+      "references": ["idea2/animation/etape2_assets/references/<fichier>"],
+      "depend_de": [],
+      "desactive": false,
+      "dossier_depot": "idea2/animation/etape2_assets/generes",
+      "nommage": "pere_locataire{ext}",
+      "message_commit": "Idée 2 : image générée {nom}",
+      "validation": "manuelle",
+      "mode_prompt": "fichier",
+      "consigne_prompt": ""
+    }
+  ]
+}
+```
+
+- **`id`** : `ideaN__<id de l'asset>`, pour qu'il soit unique dans le projet. Les `depend_de` sont préfixés de la même façon.
+- **`dossier_depot`, `nommage`, `message_commit` par tâche** : le fichier généré s'appelle `<id de l'asset>` + son vrai format (`{ext}`) et arrive dans `ideaN/animation/etape2_assets/generes/`, comme pour l'idée 1. L'étape 3 retrouve donc un asset par son `id` sans préfixe, **quelle que soit l'extension**.
+- Les prompts et les références sont ceux de `assets.json`, **jamais réécrits** par le script.
+
+**Si IngXAi ne lit pas `dossier_depot`, `nommage` et `message_commit` au niveau de la tâche**, le projet global enverrait toutes les images au même endroit : ne pas l'utiliser. Utiliser à la place les `projet_images.json` de chaque idée, un projet par idée : ils n'emploient que des champs au niveau du projet, déjà reconnus par IngXAi (c'est le format du projet de l'idée 1).
+
+**Vérifications avant de livrer** (l'agent les fait, sans demander) :
+- [ ] Le script s'est terminé sans erreur, et le total d'images affiché est égal à la somme des images manquantes de chaque idée.
+- [ ] Les JSON sont valides, aucune image déjà présente dans `generes/` n'y figure.
+- [ ] Le résultat est commité et poussé sur `main` (« Projet de génération des images : N images »).
+- [ ] Le registre de chaque idée n'est pas modifié : cette section ne rouvre pas les passes de 2.10.
+
 ---
 
 ## Étapes suivantes (à définir)
 
-- Étape 3 : commence seulement quand `registre_verification.json` a ses deux passes à `true`.
+- Génération des images : quand toutes les idées ont fini l'étape 2, `python3 outils/projet_images.py` produit le projet de génération (2.12).
+- Étape 3 : commence seulement quand `registre_verification.json` a ses deux passes à `true` et que les images de l'idée sont dans `generes/`.
 - Étape 4 :
