@@ -168,12 +168,13 @@ Mots maximum : NNN | Mots obtenus : NNN | Durée du speech : XX s
 
 ## Étape 2 : lister les assets et écrire leurs prompts
 
-**But :** à partir du speech et des frames des candidats, obtenir la liste des images à générer (les assets), chacune avec son image de référence, son fond et son **prompt complet**. Aucune validation humaine : l'agent fait tout et livre les fichiers.
+**But :** à partir du speech et des frames des candidats, obtenir la liste des images à générer (les assets), chacune avec son image de référence, son fond (ou l'absence de fond) et son **prompt complet**. Tout ce qui doit bouger est généré **en pièces détachées**, pour que l'animation en code soit fluide. Aucune validation humaine : l'agent fait tout et livre les fichiers.
 
 **Principes**
-- **Les assets sont des images fixes.** Il n'y a ni GIF ni vidéo. Le mouvement (déplacements, apparitions, zooms, animations) est fait en code à l'étape suivante.
-- **Rien d'inventé.** Un asset existe seulement si un beat du speech (étape 1) en a besoin et s'il correspond à un élément visible dans les frames d'un candidat retenu. On n'emprunte rien à un candidat non retenu.
-- **Même idée, mêmes références.** Les images de référence viennent uniquement des frames des candidats listés dans `plan_scenario.md`.
+- **Les assets sont des images fixes.** Il n'y a ni GIF ni vidéo. Le mouvement est fait en code à l'étape suivante, en déplaçant et en faisant pivoter des pièces.
+- **Ce qui bouge est généré en pièces détachées**, dans une seule image par élément (un personnage, une porte, un ventilateur, une balance…). On ne génère ni planches de poses ni élément entier à plusieurs poses : la pose se calcule en code.
+- **Rien d'inventé.** Un asset existe seulement si un beat du speech en a besoin et s'il correspond à un élément visible dans les frames d'un candidat retenu. On n'emprunte rien à un candidat non retenu.
+- **Mêmes références.** Les images de référence viennent uniquement des frames des candidats listés dans `plan_scenario.md`.
 
 Entrées : `speech_adapte.md` (beats), `plan_scenario.md` (candidats retenus), et pour chaque candidat retenu `segment.json` et `frames.axz`.
 
@@ -189,44 +190,54 @@ Pour chaque élément visible dans les frames d'un beat :
 
 Ces éléments en code sont quand même notés dans une section « Éléments faits en code » de `Liste_assets.md`, sans prompt, pour que l'étape suivante sache les dessiner.
 
-### 2.3 Une ligne par asset
+### 2.3 Prévoir les mouvements de chaque asset
+
+À partir des beats, noter pour chaque asset les mouvements qu'il doit faire (marcher, lever le bras, hocher la tête, ouvrir une porte, tourner, se balancer…). Trois cas :
+- **Il ne bouge pas par lui-même** (il peut être déplacé, zoomé ou apparaître en code) : une image unique.
+- **Il bouge d'un seul bloc** (glisse, tourne, grossit) : une image unique.
+- **Il a des parties qui bougent les unes par rapport aux autres** : il est décomposé en **pièces détachées** (2.4).
+
+### 2.4 Décomposer en pièces détachées
+
+Pour un asset à parties mobiles :
+1. **Découper selon les mouvements voulus, pas plus.** Un personnage qui ne fait que lever le bras n'a pas besoin de jambes en deux segments. Exemple complet : tête, torse, bassin, bras en deux segments, mains, jambes en deux segments, pieds. Ajouter des variantes (bouche ouverte, yeux fermés…) seulement si les beats les demandent.
+2. **Pour chaque pièce, noter** : son id, sa **pièce parent** (l'avant-bras a pour parent le haut du bras) et son **articulation** (le coude, l'épaule…). Les coordonnées exactes du pivot sont mesurées à l'étape 3, après découpage.
+3. **Une seule génération par asset**, qui contient toutes ses pièces. Elles sont **séparées les unes des autres** dans l'image, **à la même échelle**, vues dans une **pose neutre** (debout, bras écartés, pièces posées à plat), avec un **même style et un même fond**.
+4. **Chaque pièce dépasse un peu sur l'articulation suivante** (le haut du bras se prolonge sous l'épaule, l'avant-bras sous le coude), pour qu'aucun trou n'apparaisse quand la pièce pivote. Les pièces restent séparées dans l'image, mais chacune porte sa partie de recouvrement.
+5. **Les petits éléments qui ne bougent pas** (petits objets, icônes) sont regroupés dans une même image de 4 à 6 éléments, séparés, avec une référence par élément et un fond commun.
+
+### 2.5 Une ligne par asset
 
 Un asset qui revient d'un beat à l'autre n'est listé qu'une fois, avec la même forme partout. Chaque ligne contient :
 - **id** : nom court, lettres, chiffres, `_`, `.` et `-` seulement (c'est aussi le nom du fichier généré) ;
 - **beats** : les numéros de beats où il apparaît ;
 - **remplace** : l'élément de la frame de référence qu'il remplace ;
 - **nature** : *structurel conservé* (même rôle, même place, même taille) ou *thématique remplacé* (nouveau contenu du sujet, même forme visuelle) ;
-- **états** : les poses ou états nécessaires aux beats (de face, écran allumé…) ;
+- **mouvements** : ceux prévus en 2.3, et la liste des **pièces** si l'asset est décomposé (id, parent, articulation) ;
 - **image de référence** : le candidat et la frame choisie (nom du fichier) ;
 - **zone utile** et **à ne pas reprendre** (logo, badge, texte) ;
-- **fond** (voir 2.5).
+- **détourage** : oui ou non, et le **fond** (2.6).
 
-### 2.4 Élément clé, petit élément, planche
-
-- **Élément clé** (grand, important ou récurrent) : une génération à lui.
-- **Petits éléments** : regroupés en planche de 4 à 6 éléments de même famille, avec une image de référence par élément et un seul fond pour toute la planche.
-- **Poses d'un même personnage** : une planche de poses (même personnage, même tenue, même fond).
-
-### 2.5 Choisir l'image de référence et le fond
+### 2.6 Choisir l'image de référence et le fond
 
 - **Référence** : parmi les frames du candidat concerné, celle où l'élément est le plus entier, le plus net et le moins caché. Si aucune frame ne montre l'élément, prendre la frame du même candidat la plus proche par sa nature (décor, objet, matière) comme **référence de style**. Il y a toujours une référence.
-- **Fond détourable** : vert pur `#00FF00` par défaut ; magenta `#FF00FF` si l'asset contient du vert ou du turquoise ; bleu `#0000FF` s'il contient les deux. La couleur n'apparaît nulle part dans l'asset. Une seule couleur par élément, la même pour toutes ses poses.
-- **Plein cadre** (décor qui remplit tout le cadre, contenu d'écran) : aucun fond uni, le fond est « aucun (plein cadre) ».
+- **Le fond dépend de l'image, il est décidé pour chaque génération :**
+  - **Image à détourer** (personnage ou pièces détachées, objet, icône, décor qui sera posé sur un autre fond) : un **fond uni détourable**, dont la couleur est **écrite explicitement en hexadécimal dans le prompt**. Vert pur `#00FF00` par défaut ; magenta `#FF00FF` si l'asset contient du vert ou du turquoise ; bleu `#0000FF` s'il contient les deux. La couleur n'apparaît nulle part dans l'asset, même approchée. Une seule couleur pour toutes les pièces d'un même élément. On note en une demi-ligne pourquoi cette couleur.
+  - **Image qui n'a pas besoin d'être détourée** (décor plein cadre, fond de scène, contenu d'écran rectangulaire) : **aucun fond uni**. Le prompt ne mentionne aucune couleur de fond et demande une image complète de bord à bord, et la liste note « détourage : non, fond : aucun (plein cadre) ».
 
-### 2.6 Écrire le prompt de chaque génération
+### 2.7 Écrire le prompt de chaque génération
 
 Le prompt demande à l'IA de transformer l'image de référence en l'asset voulu. Il contient, dans cet ordre :
-1. **le fond** : « fond uni #00FF00, aplat parfait, aucun dégradé, aucune ombre, aucun sol, asset entier avec de la marge » (pour un plein cadre : « image pleine de bord à bord, sans fond uni ») ;
+1. **le fond** : pour une image à détourer, « fond uni #XXXXXX, aplat parfait, aucun dégradé, aucune ombre, aucun sol, chaque élément entier avec de la marge » ; pour une image qui n'est pas détourée, « image pleine de bord à bord, sans fond uni » ;
 2. **ce qui est conservé** de la référence (cadrage, forme, proportions, style) et **ce qui est remplacé** (tenue, icône, contenu) ;
 3. **la description de l'asset** (forme, taille, détails) ;
 4. **les couleurs** en hexadécimal ;
 5. **le style** (aplats, sans ombre portée) ;
-6. **la pose**, immobile, sans flou de mouvement ;
-7. **les interdits** : ne pas reprendre le logo de la chaîne, les badges, les bandeaux ni le texte de la référence ; aucun logo réel ; aucune ressemblance avec une personne réelle ; aucun texte lisible sauf un texte imposé par le speech, donné mot pour mot.
+6. **la pose** : immobile, sans flou de mouvement ; pour des pièces détachées, la pose neutre de 2.4 ;
+7. **les pièces**, quand l'asset est décomposé : la liste exacte des pièces, leur séparation (aucune pièce ne touche une autre), la même échelle, et le recouvrement aux articulations (2.4, point 4) ;
+8. **les interdits** : ne pas reprendre le logo de la chaîne, les badges, les bandeaux ni le texte de la référence ; aucun logo réel ; aucune ressemblance avec une personne réelle ; aucun texte lisible sauf un texte imposé par le speech, donné mot pour mot.
 
-Pour une planche : une seule image qui réunit tous les éléments, avec pour chacun sa référence et sa description, la consigne de transformer chaque élément à partir de **sa propre** référence, de bien les séparer et de les garder entiers.
-
-### 2.7 Produire les fichiers de sortie
+### 2.8 Produire les fichiers de sortie
 
 Dans `ideaN/animation/etape2_assets/` :
 
@@ -234,6 +245,7 @@ Dans `ideaN/animation/etape2_assets/` :
 etape2_assets/
   assets.json          les générations, au format du projet imgen d'IngXAi
   Liste_assets.md      la même liste en tableau lisible + éléments faits en code
+  pieces.json          pour chaque asset décomposé : pièces, parents, articulations, mouvements
   references/          les frames de référence choisies, copiées (png, jpg ou webp)
 ```
 
@@ -246,9 +258,9 @@ etape2_assets/
   "dossier": "ideaN/animation/etape2_assets/generes",
   "taches": [
     {
-      "id": "<id de l'asset ou de la planche>",
+      "id": "<id de l'asset>",
       "titre": "<nom lisible>",
-      "prompt": "<prompt complet de 2.6>",
+      "prompt": "<prompt complet de 2.7>",
       "references": ["ideaN/animation/etape2_assets/references/<fichier>"],
       "depend_de": [],
       "desactive": false
@@ -257,17 +269,35 @@ etape2_assets/
 }
 ```
 
-Une tâche = une génération (un élément clé, une planche ou une planche de poses). Chaque tâche a au moins une référence. Les images générées prennent le nom de l'`id`. Les chemins sont relatifs au dépôt ; ils sont remplacés par les chemins absolus au moment d'utiliser le projet dans IngXAi.
+`pieces.json` donne, pour chaque asset décomposé, la liste des pièces :
 
-### 2.8 Vérifications avant de passer à l'étape 3
+```json
+{
+  "<id de l'asset>": {
+    "fond": "#00FF00",
+    "mouvements": ["lève le bras droit", "hoche la tête"],
+    "pieces": [
+      {"id": "torse", "parent": null, "articulation": null},
+      {"id": "bras_droit_haut", "parent": "torse", "articulation": "épaule droite"},
+      {"id": "bras_droit_bas", "parent": "bras_droit_haut", "articulation": "coude droit"}
+    ]
+  }
+}
+```
+
+Une tâche d'`assets.json` = une génération (un asset avec toutes ses pièces, ou une image de petits éléments). Chaque tâche a au moins une référence. Les images générées prennent le nom de l'`id`. Les chemins sont relatifs au dépôt ; ils sont remplacés par les chemins absolus au moment d'utiliser le projet dans IngXAi.
+
+### 2.9 Vérifications avant de passer à l'étape 3
 
 - [ ] Toutes les frames citées ont été regardées.
 - [ ] Chaque asset renvoie à au moins un beat et à un élément d'une frame d'un candidat retenu.
-- [ ] Chaque objet, personnage ou décor visible dans les beats est dans la liste, dans une planche ou dans « Éléments faits en code ».
+- [ ] Chaque objet, personnage ou décor visible dans les beats est dans la liste, dans une image de petits éléments ou dans « Éléments faits en code ».
 - [ ] Aucun asset n'est un texte, un badge, un logo ou une forme géométrique.
 - [ ] Aucun GIF ni animation n'est demandé dans les prompts : images fixes uniquement.
+- [ ] Chaque asset à parties mobiles est décomposé en pièces, avec parent et articulation pour chaque pièce, et seulement les pièces utiles aux mouvements des beats.
+- [ ] Les prompts de pièces demandent des pièces séparées, à la même échelle, avec recouvrement aux articulations.
+- [ ] Chaque génération a un « détourage » oui ou non. S'il est oui, le prompt donne une couleur de fond en hexadécimal, identique pour toutes les pièces d'un élément, qui n'apparaît pas dans l'asset. S'il est non, le prompt ne mentionne aucune couleur de fond.
 - [ ] Le JSON est valide, les `id` sont uniques et valides, chaque tâche a au moins une référence existante.
-- [ ] Le fond du prompt est celui de la liste et n'apparaît pas dans les couleurs de l'asset ; toutes les poses d'un même élément ont le même fond.
 - [ ] Chaque prompt contient les interdits (logo, badges, bandeaux, texte).
 
 ---
