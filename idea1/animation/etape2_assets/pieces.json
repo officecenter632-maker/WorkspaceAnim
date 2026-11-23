@@ -41,7 +41,8 @@
         "parent": "pere_torse",
         "articulation": "taille"
       }
-    ]
+    ],
+    "ordre_des_couches": "un personnage : bras derrière le torse sauf quand il croise les bras ou se prend la tête (bras devant)"
   },
   "mere_locataire": {
     "fond": "#00FF00",
@@ -85,7 +86,8 @@
         "parent": "mere_torse",
         "articulation": "taille"
       }
-    ]
+    ],
+    "ordre_des_couches": "un personnage : bras derrière le torse sauf quand il croise les bras ou se prend la tête (bras devant)"
   },
   "travailleur_bureau": {
     "fond": "#00FF00",
@@ -144,12 +146,26 @@
         "parent": null,
         "articulation": null
       }
-    ]
+    ],
+    "ordre_des_couches": [
+      "chaise",
+      "bassin_jambes",
+      "bureau",
+      "torse",
+      "tete",
+      "bras_g_haut",
+      "bras_g_bas",
+      "bras_d_haut",
+      "bras_d_bas",
+      "ordinateur"
+    ],
+    "note_couches": "ordre de départ, à ajuster à l'étape 3 selon l'image générée"
   },
   "porte_avis": {
     "fond": "#00FF00",
     "mouvements": [
-      "le battant s'ouvre et se ferme autour de la charnière"
+      "le battant tremble de ±3° deux fois quand l'avis se colle (« court », 18,7 s)",
+      "le battant s'ouvre et se ferme autour de la charnière (réservé si une suite l'exige)"
     ],
     "pieces": [
       {
@@ -162,6 +178,14 @@
         "parent": "cadre_porte",
         "articulation": "charnière"
       }
+    ],
+    "objets_attaches": [
+      {
+        "objet": "avis_expulsion",
+        "parent": "battant",
+        "source": "papiers (image 1 sur 2, à séparer)"
+      }
     ]
-  }
+  },
+  "_convention": "gauche et droite = côtés gauche et droit de l'image (pas ceux du personnage)"
 }
