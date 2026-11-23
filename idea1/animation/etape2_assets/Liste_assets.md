@@ -94,7 +94,7 @@ Transition d'entrée : **T3_4**. Poussée de caméra lente du groupe décor + po
 |---|---|---|---|---|---|
 | decor_quartier | 16,0 | plein cadre | 100 % | 0 | |
 | porte_avis | 16,0 | x 50 %, pieds à y 96 % | 48 % | 1 | |
-| famille : père / mère / garçon / fille (mêmes assets qu'au beat 1) | 16,0 | père x 36 %, mère x 66 %, garçon x 62 %, fille x 66 % ; pieds à y 96 % | 50 % / 46 % / 31 % / 33 % | 1 / 1 / 2 / 2 | **décision à confirmer** : sans la famille l'avis d'expulsion n'a pas de sujet |
+| famille : père / mère / garçon / fille (mêmes assets qu'au beat 1) | 16,0 | père x 36 %, mère x 66 %, garçon x 62 %, fille x 66 % ; pieds à y 96 % | 50 % / 46 % / 31 % / 33 % | 1 / 1 / 2 / 2 | **décision prise** : sans la famille l'avis d'expulsion n'a pas de sujet |
 | avis_expulsion (papiers, image 1) | 18,7 (« court ») | x 50 %, y 62 % (sur la porte) | 12 % | 2 | parent : battant ; la porte tremble de ±3° deux fois |
 | compteur_dossiers | 20,4 (« 1.23 ») | x 3–31 %, y 4–19 % | 15 % | 5 | compte de 0 à 1.23 |
 | etiquette_source | 22,7 (« Princeton's ») | x 3–31 %, y 20–25 % | 5 % | 5 | |
@@ -115,7 +115,7 @@ Transition d'entrée : **T3_4**. Poussée de caméra lente du groupe décor + po
 |---|---|---|---|---|---|---|
 | T2_3 | beats 2 et 3 | c10 · t010000 (éclaboussure olive) | N1 | 10,0–10,6 s | éclaboussure plate `#909808` qui recouvre l'écran puis laisse voir le beat 3 | l'homme au drapeau, le texte |
 | T3_4 | beats 3 et 4 | c10 · t016500 (tourbillon bleu) | N1 | 16,0–16,6 s | tourbillon plat `#3050A8` | le texte « BUT CORPORATE… », les panneaux |
-| ouverture / fermeture | 0,0 et 28,7 | aucune | décision | coupe franche | début : première image du beat 1 ; fin : dernière image du beat 5 tenue jusqu'à 28,7 | à confirmer (rien dans la procédure) |
+| ouverture / fermeture | 0,0 et 28,7 | aucune | décision prise | coupe franche | début : première image du beat 1 ; fin : dernière image du beat 5 tenue jusqu'à 28,7 | aucun effet ajouté |
 Pas de transition entre les beats 1 et 2 ni entre 4 et 5 : même décor.
 
 ## Éléments à séparer après génération (étape 3)
@@ -144,12 +144,17 @@ Non utilisés : les cartons de texte des candidats 04 et 09 (la chute est dite p
 11. **Format** : « 16:9 » ajouté à tous les prompts.
 12. **Logo de la chaîne** : la liste précédente mettait « le logo de la chaîne » dans le code ; c'est celui du projet, pas celui des frames (« THE INFOGRAPHICS SHOW »).
 
+## Décisions prises (plus de point ouvert)
+1. **Famille au beat 4** : oui, mêmes assets, aucune génération de plus.
+2. **Ouverture et fermeture** : coupe franche.
+3. **Fond vert pour la mère** : malgré le jean teal (66° d'écart), car le bleu et le magenta sont pires ; on règle la tolérance du détourage à l'étape 3.
+
 ## Corrections de la passe 2
 0. **Animation** : tous les assets ont maintenant une consigne d'animation complète dans `pieces.json` (aucun asset fixe, aucune durée écrite) ; les durées qui figuraient dans les fiches ont été retirées.
 1. **Décor et personnages à des échelles différentes** : le décor venait de la frame zoomée t006500, les personnages en pied de t009000. Le décor vient maintenant de t009000.
 2. **Jambes et chaussures inventées** : la frame t006500 coupe les personnages à la taille. Deuxième référence en pied (t009000) pour le père, la mère et les enfants ; chaussures mesurées (père orange `#E08818`, mère `#908070`, enfants jaunes `#C8A820`), short du garçon `#101830` et chaussettes `#C83030`.
 3. **Hex du jean faux** (`#4E9CA2` mesuré sur la frame zoomée) : `#23868F` mesuré sur le plan large ; risque de bord vert noté.
-4. **Famille absente du beat 4** : l'avis d'expulsion posé sur une porte vide n'avait pas de sujet ; famille réutilisée (à confirmer).
+4. **Famille absente du beat 4** : l'avis d'expulsion posé sur une porte vide n'avait pas de sujet ; famille réutilisée (décision prise).
 5. **Donut sur le centre** : il aurait couvert la mère et les enfants ; carte blanche à droite, plus d'assombrissement.
 6. **Icônes en bas** : elles auraient coupé les pieds de la famille ; en haut à droite.
 7. **Étiquette « Austin » en bas à droite** : aurait caché les jambes de la mère ; en haut à droite.

@@ -158,6 +158,11 @@
         "fichier": "pieces.json, procedure_animation.md, Liste_assets.md",
         "changement": "bloc animation obligatoire pour les 11 assets (entrée, vie continue, mouvements décrits, sortie), procédure 2.5 ter, pièges 30 à 32, checklist ; durées retirées des fiches",
         "raison": "demande de l'utilisateur : aucun asset fixe, mouvement décrit exactement, durées laissées à l'animateur"
+      },
+      {
+        "fichier": "Liste_assets.md",
+        "changement": "trois décisions fermées : famille réutilisée au beat 4, coupe franche à l'ouverture et à la fermeture, fond vert pour la mère",
+        "raison": "demande de l'utilisateur : décider sans reposer la question"
       }
     ],
     "non_verifie": [
@@ -165,7 +170,6 @@
       "familles : la frame t009000 coupe encore les pieds des enfants au bord bas ; chaussures à vérifier à la génération",
       "limite de longueur des prompts dans IngXAi inconnue (le plus long fait 1966 caractères)",
       "les frames des candidats 04 et 09 (cartons de texte) n'ont pas été rouvertes en passe 2",
-      "décisions à confirmer par toi : famille au beat 4 ; coupe franche à l'ouverture et à la fermeture ; fond vert pour la mère malgré le jean teal",
       "relecture mot à mot des prompts faite par script et à la lecture des changements, pas une relecture humaine : à regarder à la première génération",
       "fiches d'animation ajoutées après la passe 2 : amplitudes (angles) estimées, non mesurées sur les frames, à ajuster à l'étape 3"
     ]
