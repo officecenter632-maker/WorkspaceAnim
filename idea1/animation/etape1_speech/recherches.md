@@ -1,6 +1,6 @@
 # Idée 1 : recherches et sources
 
-Faits recueillis dans cette conversation et recoupés par au moins deux sources. Aucune phrase n'est recopiée.
+Faits recueillis dans cette conversation et recoupés par au moins deux sources. Aucune phrase n'est recopiée. Seule une partie de ces faits est utilisée dans la version 30 s ; les autres (210 $, 31 %/27 %, sans-abri HUD, 3,6 M) sont conservés pour une version plus longue.
 
 | Point | Fait | Source (titre, site, date) |
 |---|---|---|
