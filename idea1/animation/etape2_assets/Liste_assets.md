@@ -158,7 +158,7 @@ Non utilisés : les cartons de texte des candidats 04 et 09 (la chute est dite p
 10. **Fauteuil orange du décor de bureau** : retiré, la chaise du travailleur est une pièce séparée (sinon deux chaises).
 11. **Travailleur** : la référence montre aussi la voiture et la pharmacie ; le prompt dit de les ignorer. Le bandeau « 26% WAGES » cache ses cuisses : le prompt les demande complètes.
 12. **Transitions** : T2_3 et T3_4 ajoutées avec leur référence ; frames copiées dans `references_code/`.
-13. **Beat 5 très court (2,6 s)** : aucune animation de moins de 0,9 s ; la maison monte en 1,0 s.
+13. **Beat 5 très court (2,6 s)** : noté ; l'animateur règle les durées pour tenir dans la fenêtre, la maison monte plus vite que la fiche de paie.
 14. **Objet attaché** : l'avis suit le battant de la porte.
 15. **Gauche et droite** : définis côtés de l'image dans les prompts et `pieces.json`.
 16. **Ordre des couches du travailleur** ajouté à `pieces.json`.
