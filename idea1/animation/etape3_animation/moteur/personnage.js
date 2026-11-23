@@ -36,12 +36,17 @@
       /* t : secondes. extra : gestes ajoutés par la scène { torse, tete, bgh, bgb, bdh, bdb } en degrés */
       maj: function (t, extra) {
         var e = extra || {}, sin = Math.sin;
-        haut.style.transform = 'rotate(' + (e.torse || 0) + 'deg)';
-        tete.style.transform = 'rotate(' + (e.tete || 0) + 'deg)';
-        bgh.style.transform = 'rotate(' + (r.bras_g + (e.bgh || 0) ) + 'deg)';
-        bgb.style.transform = 'rotate(' + ((r.coude_g || 0) + (e.bgb || 0)) + 'deg)';
-        bdh.style.transform = 'rotate(' + (r.bras_d + (e.bdh || 0) ) + 'deg)';
-        bdb.style.transform = 'rotate(' + ((r.coude_d || 0) + (e.bdb || 0)) + 'deg)';
+        /* respiration : étirement vertical d'environ 1 %, pieds fixes ; la tête suit avec retard */
+        var resp = 1 + 0.01 * sin(TAU * t / 3.6 + ph);
+        haut.style.transform = 'scale(1,' + resp + ') rotate(' + (e.torse || 0) + 'deg)';
+        tete.style.transform = 'rotate(' + ((e.tete || 0) + 1.2 * sin(TAU * t / 3.6 + ph - 0.7)) + 'deg)';
+        /* poids d'un pied à l'autre : tout le personnage pivote de ±1° autour des pieds */
+        sway.style.transform = 'rotate(' + (1 * sin(TAU * t / 5.5 + ph * 1.7)) + 'deg)';
+        /* bras relâchés : balancement par inertie, ±2° à l'épaule, ±3° au coude */
+        bgh.style.transform = 'rotate(' + (r.bras_g + (e.bgh || 0) + 2 * sin(TAU * t / 4.1 + ph + 1)) + 'deg)';
+        bgb.style.transform = 'rotate(' + (((r.coude_g || 0) + (e.bgb || 0)) + 3 * sin(TAU * t / 3.3 + ph + 1.6)) + 'deg)';
+        bdh.style.transform = 'rotate(' + (r.bras_d + (e.bdh || 0) + 2 * sin(TAU * t / 4.1 + ph + 3)) + 'deg)';
+        bdb.style.transform = 'rotate(' + (((r.coude_d || 0) + (e.bdb || 0)) + 3 * sin(TAU * t / 3.3 + ph + 3.6)) + 'deg)';
       }
     };
   };
@@ -55,7 +60,7 @@
     return {
       maj: function (t, extra) {
         var e = extra || {};
-        corps.style.transform = 'rotate(' + (e.rot || 0) + 'deg)';
+        corps.style.transform = 'rotate(' + ((e.rot || 0) + 1.5 * Math.sin(TAU * t / 4.8 + ph)) + 'deg) scale(1,' + (1 + 0.01 * Math.sin(TAU * t / 3.6 + ph + 0.5)) + ')';
       }
     };
   };

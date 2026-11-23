@@ -722,8 +722,6 @@ Beaucoup d'images sont des **planches** : les pièces d'un personnage sont déj�
 
 ### 3.3 L'animation : une page HTML vectorielle
 
-**Règle : on ne bouge, et on ne découpe, que pour un vrai mouvement.** Les micro-gestes de « vie » (respiration, balancement du poids, bras qui se balancent, flottement) **ne sont pas animés** : un personnage qui ne fait aucun geste au beat est immobile. Seuls comptent les `mouvements` de `pieces.json` et de `elements_code.json` (se prendre la tête, croiser les bras, compteur qui défile…). Conséquence pour le détourage (3.1) : un asset n'est découpé en pièces que s'il a au moins un vrai mouvement dans `pieces.json` ; sinon il reste une image entière. Les champs `vie` des fiches sont ignorés sauf demande de l'utilisateur.
-
 **Le livrable est la page HTML animée, en vectoriel. Aucun rendu vidéo (pas de MP4, pas d'enregistrement), aucun audio à cette étape.** L'agent ne produit pas de vidéo.
 
 ```
@@ -739,7 +737,7 @@ ideaN/animation/etape3_animation/
 - **Un beat à la fois, poussé dès qu'il fonctionne** (« Animation : beat N »). On ouvre la page, on regarde, on passe au suivant.
 - **Éléments en code** (cartes, compteurs, flèches, étiquettes) : dessinés en HTML/CSS ou SVG dans le moteur, jamais en images.
 
-**État du moteur (idée 1, beat 1 fait).** `moteur/moteur.js` (horloge, échelle de la scène, lecture / pause / curseur, flèches ← → pour avancer de 0,1 s), `moteur/personnage.js` (personnage articulé : jambes, haut du corps autour de la taille, bras haut > bras bas imbriqués, tête, qui ne bougent que par les gestes que la scène leur donne ; `creerBloc` pour une image entière), `moteur/elements.js` (compteur, pictogrammes). Tout est fonction du temps `t` : on peut glisser le curseur n'importe où. La sortie des éléments en code se fait à l'instant du changement de beat : la scène du beat 1 dure donc 5,7 s (5,3 + 0,4). Les pictogrammes de `icones_menages` : 7 maisons dont 4 rouges (choix de l'agent, l'étape 2 ne précise pas le nombre).
+**État du moteur (idée 1, beat 1 fait).** `moteur/moteur.js` (horloge, échelle de la scène, lecture / pause / curseur, flèches ← → pour avancer de 0,1 s), `moteur/personnage.js` (personnage articulé : jambes, haut du corps autour de la taille, bras haut > bras bas imbriqués, tête ; respiration, poids, balancement des bras ; `creerBloc` pour une image entière), `moteur/elements.js` (compteur, pictogrammes). Tout est fonction du temps `t` : on peut glisser le curseur n'importe où. La sortie des éléments en code se fait à l'instant du changement de beat : la scène du beat 1 dure donc 5,7 s (5,3 + 0,4). Les pictogrammes de `icones_menages` : 7 maisons dont 4 rouges (choix de l'agent, l'étape 2 ne précise pas le nombre).
 
 **Deux versions de la page : l'agent travaille sur l'une, l'utilisateur regarde l'autre.**
 - **Version de travail** : `etape3_animation/index.html`, qui n'appelle que des chemins (aucun SVG brut). C'est la seule que l'agent lit, modifie et commite. Elle reste légère en jetons.
