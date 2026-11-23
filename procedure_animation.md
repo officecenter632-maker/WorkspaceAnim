@@ -23,6 +23,7 @@ ideaN/scenario_candidats/
 4. **On ne recopie pas** les phrases des candidats.
 5. **On peut enrichir l'idée par des recherches.** Un speech complet dit forcément des choses que l'idée ne contient pas directement (explications, exemples, chiffres). On les cherche, on les vérifie et on les cite, mais elles servent toujours l'idée : elles la précisent ou l'illustrent, elles ne la remplacent pas.
 6. **L'agent décide seul.** Il choisit les candidats et écrit le speech dans le même mouvement, sans s'arrêter pour demander. Ses choix importants sont notés dans « Décisions prises ».
+7. **L'agent tranche lui-même tout ce qu'il peut trancher, à toutes les étapes.** Il ne pose pas de question à l'utilisateur quand il peut décider seul (réutilisation d'un asset, type de transition, couleur de fond, amplitude d'un mouvement, nom de fichier, ordre de travail, passer à l'étape suivante). Il choisit l'option la plus raisonnable, l'inscrit dans le registre (« décisions fermées ») avec sa raison, puis continue. Il ne demande JAMAIS « veux-tu que je continue ? » ni « confirmes-tu ? » : il continue. L'utilisateur corrige après coup s'il n'est pas d'accord. Une question n'est permise que pour une information qu'il est impossible de deviner ou de trouver (accès, mot de passe, choix purement personnel), et alors une seule question, jamais une liste.
 
 ---
 
@@ -424,7 +425,7 @@ Une fois les fichiers de 2.8 produits, l'agent **ne passe pas à l'étape 3**. I
 
 ### 2.10 bis Décisions fermées
 
-Quand un choix reste ouvert (réutiliser un asset dans un autre beat, type d'ouverture ou de fermeture, couleur de fond d'un détourage), Claude le tranche seul, l'inscrit dans le registre sous « décisions fermées » avec sa raison, et ne repose jamais la question à l'utilisateur. L'utilisateur corrige s'il n'est pas d'accord.
+Quand un choix reste ouvert (réutiliser un asset dans un autre beat, type d'ouverture ou de fermeture, couleur de fond d'un détourage), Claude le tranche seul (voir principe 7), l'inscrit dans le registre sous « décisions fermées » avec sa raison, et ne pose jamais la question à l'utilisateur, ni ne la repose si elle est déjà tranchée. L'utilisateur corrige s'il n'est pas d'accord.
 
 Idée 1 : (D1) la famille revient au beat 4 devant la porte avec les assets du beat 1, sans génération de plus ; (D2) ouverture et fermeture en coupe franche ; (D3) fond vert pour la mère malgré son jean teal #23868F, tolérance de détourage réglée à l'étape 3.
 
