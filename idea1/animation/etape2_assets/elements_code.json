@@ -1,6 +1,12 @@
 {
- "_convention": "Éléments faits en code (aucune génération). Même structure que pieces.json : entree, vie, mouvements, sortie. Aucune durée écrite (l'animateur les calcule). Gauche et droite = côtés de l'image. Les éléments en code ne zooment pas avec le décor : ils restent à leur taille et à leur place. Les amplitudes sont des valeurs de départ, à ajuster à l'étape 3.",
+ "_convention": "Éléments faits en code (aucune génération). Même structure que pieces.json : entree, vie, mouvements, sortie. Aucune durée écrite (l'animateur les calcule). Gauche et droite = côtés de l'image. Les éléments en code ne zooment pas avec le décor : ils restent à leur taille et à leur place. Les amplitudes sont des valeurs de départ, à ajuster à l'étape 3. Chaque élément a un champ reference_style : le fichier de references_code/ à regarder avant de dessiner, son niveau de recherche, ce qu'il faut reprendre et ce qu'il ne faut pas reprendre. Chemins relatifs à etape2_assets/.",
  "compteur_menages": {
+  "reference_style": {
+   "fichier": "references_code/rc_n1_c05_t000988000_pilules_prix.webp",
+   "niveau": "N1",
+   "a_reprendre": "carte blanche à coins arrondis, grand chiffre sombre en gras, légère ombre",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "La carte blanche glisse depuis le bord gauche de l'écran jusqu'à sa place (haut gauche) et se pose avec un très léger rebond. Elle arrive au mot « 12.1 » (0,66 s).",
   "vie": "Une fois posée, la carte flotte : montée et descente verticale d'environ 0,5 % de la hauteur de l'écran, en continu, lente. L'ombre suit.",
   "mouvements": [
@@ -18,6 +24,12 @@
   "sortie": "Au changement de beat (5,3 s), la carte et ses lignes s'effacent en glissant vers la gauche."
  },
  "icones_menages": {
+  "reference_style": {
+   "fichier": "references_code/rc_n1_c05_t000966000_cercle_fleche_carte_date.webp",
+   "niveau": "N1",
+   "a_reprendre": "icône de calendrier plate jaune-orangé, traits épais, aplats sans dégradé",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "Les 7 pictogrammes maison apparaissent l'un après l'autre de gauche à droite, chacun poussé du bas avec un petit rebond. Premier picto au mot « households » (1,99 s).",
   "vie": "Chaque picto se balance indépendamment de ±3° autour de sa base, à des rythmes un peu différents, en continu. Les pictos rouges battent de très légères pulsations d'échelle (environ 2 %).",
   "mouvements": [
@@ -30,6 +42,12 @@
   "sortie": "Au changement de beat (5,3 s), ils s'effacent ensemble en se réduisant vers leur centre."
  },
  "carte_donut": {
+  "reference_style": {
+   "fichier": "references_code/rc_n2_c02_t000136500_donut.webp",
+   "niveau": "N2",
+   "a_reprendre": "anneau plat épais, part colorée, chiffre au centre ; fond blanc de la carte à la place du fond sombre",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "La carte blanche glisse depuis le bord droit jusqu'à sa place (droite) et se pose avec un petit rebond, au mot « nearly » (5,3 s).",
   "vie": "La carte flotte très légèrement : montée et descente d'environ 0,5 % de la hauteur de l'écran, en continu. Le donut ne tourne pas.",
   "mouvements": [
@@ -47,6 +65,12 @@
   "sortie": "À 10,0 s la carte est recouverte par la transition T2_3 ; rien d'autre."
  },
  "etiquette_record": {
+  "reference_style": {
+   "fichier": "references_code/rc_n1_c05_t001019500_etiquettes_fleche.webp",
+   "niveau": "N1",
+   "a_reprendre": "étiquette blanche avec flèche rouge montante et texte sombre en capitales",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "L'étiquette glisse depuis le bord droit sous la carte du donut et se pose avec un petit rebond, au mot « record » (9,67 s).",
   "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu.",
   "mouvements": [
@@ -59,6 +83,12 @@
   "sortie": "Recouverte par T2_3 à 10,0 s."
  },
  "carte_date_2001": {
+  "reference_style": {
+   "fichier": "references_code/rc_n1_c05_t000966000_cercle_fleche_carte_date.webp",
+   "niveau": "N1",
+   "a_reprendre": "carte « DATE: » blanche avec icône de calendrier jaune-orangé, petit « DATE: » et grande date dessous",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "La carte blanche glisse depuis le bord gauche vers le haut gauche du panneau maison et se pose avec un petit rebond, au mot « 2001 » (12,0 s).",
   "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu. L'icône de calendrier se balance de ±2° autour de son point d'attache.",
   "mouvements": [
@@ -71,6 +101,12 @@
   "sortie": "Recouverte par T3_4 à 16,0 s."
  },
  "cercle_loyers": {
+  "reference_style": {
+   "fichier": "references_code/rc_n1_c05_t000966000_cercle_fleche_carte_date.webp",
+   "niveau": "N1",
+   "a_reprendre": "cercle rouge plat avec texte blanc gras, flèche en zigzag rouge épaisse",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "Le cercle rouge apparaît sur la maison en grossissant de 0 à sa taille avec un petit dépassement puis un retour, au mot « rents » (13,0 s). Le mot « RENTS » apparaît en blanc dans le cercle en même temps.",
   "vie": "Le cercle pulse doucement : variation d'échelle d'environ 3 %, en continu, comme un battement. La flèche, une fois dessinée, vibre à peine (déplacement de 0,3 % de la largeur de l'écran).",
   "mouvements": [
@@ -83,6 +119,12 @@
   "sortie": "Recouvert par T3_4 à 16,0 s."
  },
  "etiquette_revenus": {
+  "reference_style": {
+   "fichier": "references_code/rc_n1_c05_t001019500_etiquettes_fleche.webp",
+   "niveau": "N1",
+   "a_reprendre": "étiquette blanche avec flèche rouge, plus courte que celle des loyers",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "L'étiquette glisse depuis le bord droit et se pose en bas du panneau bureau avec un petit rebond, aux mots « renter incomes » (14,67 s). Sa flèche, plus courte que celle des loyers, se dessine après l'arrivée de l'étiquette.",
   "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu.",
   "mouvements": [
@@ -95,6 +137,12 @@
   "sortie": "Recouverte par T3_4 à 16,0 s."
  },
  "texte_panneau": {
+  "reference_style": {
+   "fichier": "references_code/rc_n1_c05_t000960500_panneau.webp",
+   "niveau": "N1",
+   "a_reprendre": "plaque de panneau teal avec « FOR RENT » en capitales blanches sur deux lignes, centrées, et un liseré blanc dessous ; poteau blanc",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "Le texte « FOR RENT » est inscrit sur le panneau de la maison dès l'arrivée de la maison (10,0 s), sans effet propre.",
   "vie": "Il suit exactement la maison : sa pulsation lente et son glissement d'entrée. Il ne bouge pas par rapport au panneau.",
   "mouvements": [
@@ -107,6 +155,12 @@
   "sortie": "Disparaît avec la maison, recouvert par T3_4 à 16,0 s. Absent au beat 5."
  },
  "compteur_dossiers": {
+  "reference_style": {
+   "fichier": "references_code/rc_n1_c05_t000988000_pilules_prix.webp",
+   "niveau": "N1",
+   "a_reprendre": "idem compteur_menages",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "La carte blanche glisse depuis le bord gauche vers le haut gauche et se pose avec un petit rebond, au mot « 1.23 » (20,4 s).",
   "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu.",
   "mouvements": [
@@ -119,6 +173,12 @@
   "sortie": "À 26,1 s, la carte s'efface en glissant vers la gauche."
  },
  "etiquette_source": {
+  "reference_style": {
+   "fichier": "references_code/rc_n1_c05_t001019500_etiquettes_fleche.webp",
+   "niveau": "N1",
+   "a_reprendre": "étiquette blanche, texte sombre plus petit",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "La petite étiquette glisse depuis le bord gauche sous le compteur et se pose avec un petit rebond, au mot « Princeton's » (22,7 s).",
   "vie": "Elle suit la flottaison du compteur (même mouvement, même sens, en même temps) : elle est attachée à lui.",
   "mouvements": [
@@ -131,6 +191,12 @@
   "sortie": "S'efface avec le compteur à 26,1 s."
  },
  "etiquette_austin": {
+  "reference_style": {
+   "fichier": "references_code/rc_n1_c05_t001019500_etiquettes_fleche.webp",
+   "niveau": "N1",
+   "a_reprendre": "idem etiquette_revenus",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "L'étiquette glisse depuis le bord droit vers le haut droit et se pose avec un petit rebond, au mot « Around » (24,1 s).",
   "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu.",
   "mouvements": [
@@ -143,6 +209,12 @@
   "sortie": "S'efface en glissant vers la droite à 26,1 s."
  },
  "texte_avis": {
+  "reference_style": {
+   "fichier": "references_code/rc_n1_c10_t000019000_titre_document.webp",
+   "niveau": "N1",
+   "a_reprendre": "titre de document en capitales sombres épaisses, centré en haut du document (comme « LOAN ») ; sur la bande rouge de l'avis ou bleue de la fiche, le texte est blanc",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "Le texte est imprimé sur l'objet dès l'apparition de l'objet : « EVICTION NOTICE » sur la bande rouge de l'avis (18,7 s), « PAYCHECK » sur la bande bleue de la fiche de paie (26,1 s).",
   "vie": "Il suit son objet exactement (position, rotation, échelle). Aucun mouvement propre.",
   "mouvements": [
@@ -160,6 +232,12 @@
   "sortie": "Disparaît avec l'objet : l'avis à 26,1 s, la fiche de paie à la fin du beat 5."
  },
  "escalier_ascenseur": {
+  "reference_style": {
+   "fichier": "references_code/rc_n2_c07_t000133500_camembert.webp",
+   "niveau": "N4 (couleurs seulement)",
+   "a_reprendre": "aucune frame n'existe pour un escalier ou un ascenseur (cherché en N1, N2, N3) : formes géométriques simples écrites par l'agent ; seules les couleurs des aplats viennent de cette frame (#314074, #C84E2E)",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "Les marches (gauche) et la cage d'ascenseur (droite) apparaissent à 26,1 s : les marches se construisent de bas en haut, chacune apparaissant l'une après l'autre ; la cage se déplie vers le haut depuis le sol.",
   "vie": "Les aplats ne bougent pas, mais leur teinte pulse très légèrement (environ 3 % de luminosité) en continu. Un fin trait de lumière descend la cage de haut en bas, en boucle, comme un câble.",
   "mouvements": [
@@ -177,6 +255,12 @@
   "sortie": "Reste en place jusqu'à la fin (28,7 s)."
  },
  "etiquette_paies": {
+  "reference_style": {
+   "fichier": "references_code/rc_n1_c05_t001019500_etiquettes_fleche.webp",
+   "niveau": "N1",
+   "a_reprendre": "idem etiquette_revenus",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "L'étiquette glisse depuis le bord gauche près de l'escalier et se pose avec un petit rebond, au mot « Paychecks » (26,1 s).",
   "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu.",
   "mouvements": [
@@ -189,6 +273,12 @@
   "sortie": "Reste jusqu'à la fin (28,7 s)."
  },
  "etiquette_logement": {
+  "reference_style": {
+   "fichier": "references_code/rc_n1_c05_t001019500_etiquettes_fleche.webp",
+   "niveau": "N1",
+   "a_reprendre": "idem etiquette_revenus",
+   "a_ne_pas_reprendre": "le logo « THE INFOGRAPHICS SHOW » et tout texte ou donnée de la frame"
+  },
   "entree": "L'étiquette glisse depuis le bord droit près de la cage et se pose avec un petit rebond, au mot « Housing » (27,4 s).",
   "vie": "Légère flottaison verticale d'environ 0,5 % de la hauteur de l'écran, en continu.",
   "mouvements": [
@@ -201,6 +291,12 @@
   "sortie": "Reste jusqu'à la fin (28,7 s)."
  },
  "transition_T2_3": {
+  "reference_style": {
+   "fichier": "references_code/rc_transition_t2_3_c10_t000010000_eclaboussure.webp",
+   "niveau": "N1",
+   "a_reprendre": "éclaboussure plate olive #909808 qui recouvre l'écran",
+   "a_ne_pas_reprendre": "l'homme au drapeau, le texte"
+  },
   "entree": "Aucune entrée propre : elle commence à 10,0 s, à la fin du beat 2.",
   "vie": "Pendant qu'elle couvre l'écran, l'éclaboussure ondule : ses bords se déforment en continu.",
   "mouvements": [
@@ -213,6 +309,12 @@
   "sortie": "Elle s'écoule vers le bas et disparaît, laissant le beat 3 en place."
  },
  "transition_T3_4": {
+  "reference_style": {
+   "fichier": "references_code/rc_transition_t3_4_c10_t000016500_tourbillon.webp",
+   "niveau": "N1",
+   "a_reprendre": "tourbillon plat bleu #3050A8",
+   "a_ne_pas_reprendre": "le texte « BUT CORPORATE… », les panneaux"
+  },
   "entree": "Aucune entrée propre : elle commence à 16,0 s, à la fin du beat 3.",
   "vie": "Pendant qu'il couvre l'écran, le tourbillon tourne en continu dans le même sens.",
   "mouvements": [
