@@ -21,7 +21,7 @@
         /* la carte glisse depuis le bord gauche, se pose avec un léger rebond ; à la sortie elle repart à gauche */
         var dx = -(o.x + o.w + 40) * (1 - ent) - (o.x + o.w + 40) * sor;
         /* vie : flotte d'environ 0,5 % de la hauteur de l'écran, lentement */
-        var flotte = t > o.entree.t0 + o.entree.d ? 0.005 * A.H * Math.sin(TAU * t / 3.8) : 0;
+        var flotte = 0; /* pas de flottement : micro-geste de « vie » non animé */
         carte.style.opacity = t < o.entree.t0 ? 0 : 1 - sor;
         carte.style.transform = 'translate(' + dx + 'px,' + flotte + 'px)';
         carte.style.boxShadow = '0 ' + (10 + flotte) + 'px ' + (28 + flotte) + 'px rgba(0,0,0,.28)';
@@ -55,8 +55,8 @@
           var vu = t >= t0 ? 1 : 0;
           /* poussé du bas avec un petit rebond ; ensuite balancement de ±3° à son propre rythme */
           var y = (1 - e) * (o.taille * 0.7);
-          var rot = t > t0 + 0.5 ? 3 * Math.sin(TAU * t / (2.6 + it.i * 0.37) + it.i * 1.3) : 0;
-          var pulse = it.rouge && t > t0 + 0.5 ? 1 + 0.02 * Math.sin(TAU * t / 1.1 + it.i) : 1;
+          var rot = 0; /* pas de balancement */
+          var pulse = 1; /* pas de pulsation */
           /* à la sortie : tous se réduisent vers leur centre */
           var sc = pulse * (1 - sor);
           it.el.style.opacity = vu ? Math.min(1, e * 4) : 0;
