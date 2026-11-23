@@ -660,9 +660,47 @@ ideaN/animation/etape2_assets/svg/<id>.svg               les SVG, poussés par l
 
 ---
 
-## Étapes suivantes (à définir)
+## Étape 3 : l'animation
+
+L'animation est une page HTML qui **appelle des fichiers par leur chemin**. Elle ne contient jamais le code SVG brut : seulement des chemins (`<img src="...">`) et la logique d'animation. Pas de serveur, pas de `fetch()` : la page s'ouvre par double-clic. Tout ce qui sert à l'animation est rangé dans un dossier dédié, séparé de l'étape 2 :
+
+```
+ideaN/animation/etape3_animation/
+  assets/<asset>/<piece>.svg     un fichier par pièce détourée (personnages, objets articulés)
+  decors/<id>.svg                décors et objets non articulés, un fichier chacun
+  pivots.json                    point d'articulation de chaque pièce
+  index_assets.json              chemin de chaque pièce et de chaque décor, état (fait / à faire)
+```
+
+### 3.1 Détourer les assets (première étape de l'animation)
+
+**Rien n'est animé avant que tous les assets de l'idée soient détourés.** Le détourage part des SVG de `etape2_assets/svg/` et de `pieces.json`.
+
+1. **Retirer le fond uni** (rectangle plein vert ou magenta, voir 2.13).
+2. **Détourer chaque élément** : un personnage ou un objet articulé est découpé en une pièce par entrée de `pieces.json`, **un fichier SVG par pièce**. Toutes les pièces d'un même asset gardent le **même cadre (`viewBox`)** que le SVG d'origine : empilées, elles se remettent exactement en place. Un décor, ou un objet sans pièces, reste un seul fichier.
+3. **Écrire le pivot** de chaque pièce dans `pivots.json` (l'articulation notée dans `pieces.json`).
+4. **Ranger** chaque fichier à son chemin ci-dessus et **le déclarer** dans `index_assets.json`.
+
+**Progressif.** Comme la vectorisation (2.13), le détourage est incrémental : il traite les assets dont le SVG existe et qui ne sont pas encore détourés, puis **pousse chaque asset sur `main` dès qu'il est fini** (un commit par asset, « Détourage : {asset} »), sans attendre les autres. Un asset déjà détouré n'est jamais refait, sauf si son SVG d'étape 2 a changé.
+
+**L'agent ne demande rien** : il détoure, vérifie, pousse.
+
+**Vérifications avant de pousser un asset**
+- [ ] Le fond uni a disparu.
+- [ ] Toutes les pièces de `pieces.json` ont leur fichier, au bon chemin, et sont déclarées dans `index_assets.json`.
+- [ ] Les pièces empilées reproduisent l'image d'origine (comparaison visuelle sur un rendu).
+- [ ] Aucun SVG brut n'est copié ailleurs que dans son fichier.
+
+**À préciser avant d'écrire le script** (point de discussion avec l'utilisateur) : comment retrouver les formes de chaque pièce dans un SVG de vectorizer.ai, qui n'a pas de groupes nommés.
+
+### 3.2 et suivantes : à définir
+
+Assemblage des scènes par beat, voix, rendu final : à définir après le détourage.
+
+---
+
+## Étapes suivantes
 
 - Génération des images : quand toutes les idées ont fini l'étape 2, `python3 outils/projet_images.py` produit le projet de génération (2.12).
 - Vectorisation : dès que des images sont dans `generes/`, `python3 outils/projet_svg.py` produit le projet ImageVectorizer des SVG (2.13), toujours à partir de l'étape 2.
-- Étape 3 : commence seulement quand `registre_verification.json` a ses deux passes à `true` et que les images de l'idée sont dans `generes/`.
-- Étape 4 :
+- Étape 3 (détourage 3.1) : commence quand `registre_verification.json` a ses deux passes à `true` et que les SVG de l'idée sont dans `svg/`.
