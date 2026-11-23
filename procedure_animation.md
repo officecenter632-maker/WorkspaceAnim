@@ -681,7 +681,7 @@ ideaN/animation/etape3_animation/
 3. **Écrire le pivot** de chaque pièce dans `pivots.json` (l'articulation notée dans `pieces.json`).
 4. **Ranger** chaque fichier à son chemin ci-dessus et **le déclarer** dans `index_assets.json`.
 
-**Progressif.** Comme la vectorisation (2.13), le détourage est incrémental : il traite les assets dont le SVG existe et qui ne sont pas encore détourés, puis **pousse chaque asset sur `main` dès qu'il est fini** (un commit par asset, « Détourage : {asset} »), sans attendre les autres. Un asset déjà détouré n'est jamais refait, sauf si son SVG d'étape 2 a changé.
+**Progressif.** Comme la vectorisation (2.13), le détourage est incrémental : il traite les assets dont le SVG existe et qui ne sont pas encore détourés, puis **pousse chaque asset sur `main` dès qu'il est fini** (un commit par asset, « Détourage : {asset} »), sans attendre les autres. Un asset déjà détouré n'est jamais refait, sauf si son SVG d'étape 2 a changé. **Règle de crédit : on ne regroupe jamais les pushs.** Chaque asset est poussé **dès qu'il passe ses vérifications**, avant de commencer le suivant, pour que rien ne soit perdu si la session s'arrête (crédits épuisés, coupure) : ce qui est déjà détouré est déjà sur `main`.
 
 **L'agent détoure lui-même, et c'est lui qui nomme.** L'utilisateur n'intervient pas : l'agent décide quelle forme appartient à quelle pièce, nomme chaque fichier, vérifie, pousse. Il ne demande rien.
 
