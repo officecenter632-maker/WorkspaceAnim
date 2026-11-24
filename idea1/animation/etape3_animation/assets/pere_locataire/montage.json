@@ -1,31 +1,31 @@
 {
-  "_note": "Père déjà assemblé sur son image. Raccords : bras coupés avec un trou au coude (avant-bras rapproché de 37 px pour recouvrir le haut du bras), épaules rapprochées du torse, tête descendue sur le torse, jambes remontées sous le torse (le torse recouvre la taille). Contrôle : outils/controler_raccords.py",
+  "_note": "Montage calcule : epaule dans l'emmanchure, centre du coude du bras = centre du haut de l'avant-bras, jambes remontees de 10 px sous le torse.",
+  "pere_bras_g_haut": {
+    "dx": 109,
+    "dy": 5
+  },
+  "pere_bras_g_bas": {
+    "dx": 154,
+    "dy": -40
+  },
+  "pere_bras_d_haut": {
+    "dx": -109,
+    "dy": 6
+  },
+  "pere_bras_d_bas": {
+    "dx": -153,
+    "dy": -39
+  },
+  "pere_jambes": {
+    "dx": 0,
+    "dy": -36
+  },
   "pere_torse": {
     "dx": 0,
     "dy": 0
   },
   "pere_tete": {
     "dx": 0,
-    "dy": 26
-  },
-  "pere_bras_g_haut": {
-    "dx": 40,
     "dy": 0
-  },
-  "pere_bras_g_bas": {
-    "dx": 73,
-    "dy": -25
-  },
-  "pere_bras_d_haut": {
-    "dx": -36,
-    "dy": 0
-  },
-  "pere_bras_d_bas": {
-    "dx": -69,
-    "dy": -25
-  },
-  "pere_jambes": {
-    "dx": 0,
-    "dy": -54
   }
 }

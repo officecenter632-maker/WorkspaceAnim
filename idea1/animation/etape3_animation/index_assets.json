@@ -28,8 +28,8 @@
       "mere_bras_g_bas",
       "mere_bras_d_haut",
       "mere_bras_d_bas",
-      "mere_tete",
-      "mere_torse"
+      "mere_torse",
+      "mere_tete"
     ],
     "pieces": {
       "mere_jambes": "assets/mere_locataire/mere_jambes.svg",
@@ -37,8 +37,8 @@
       "mere_bras_g_bas": "assets/mere_locataire/mere_bras_g_bas.svg",
       "mere_bras_d_haut": "assets/mere_locataire/mere_bras_d_haut.svg",
       "mere_bras_d_bas": "assets/mere_locataire/mere_bras_d_bas.svg",
-      "mere_tete": "assets/mere_locataire/mere_tete.svg",
-      "mere_torse": "assets/mere_locataire/mere_torse.svg"
+      "mere_torse": "assets/mere_locataire/mere_torse.svg",
+      "mere_tete": "assets/mere_locataire/mere_tete.svg"
     }
   },
   "porte_avis": {

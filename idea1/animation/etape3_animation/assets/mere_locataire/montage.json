@@ -1,10 +1,31 @@
 {
-  "_note": "Planche -> personnage assemblé. Décalage {dx,dy} en coordonnées du viewBox 1672x941. Valeurs à affiner en regardant l'assemblage.",
-  "mere_torse": {"dx": 0, "dy": 0},
-  "mere_tete": {"dx": 0, "dy": 0},
-  "mere_jambes": {"dx": -668, "dy": 282},
-  "mere_bras_g_haut": {"dx": 125, "dy": -15},
-  "mere_bras_g_bas": {"dx": 145, "dy": -63},
-  "mere_bras_d_haut": {"dx": -125, "dy": -15},
-  "mere_bras_d_bas": {"dx": -152, "dy": -50}
+  "_note": "Montage calcule : epaule dans l'emmanchure, centre du coude du bras = centre du haut de l'avant-bras, jambes remontees de 10 px sous le torse.",
+  "mere_bras_g_haut": {
+    "dx": 151,
+    "dy": 5
+  },
+  "mere_bras_g_bas": {
+    "dx": 169,
+    "dy": -60
+  },
+  "mere_bras_d_haut": {
+    "dx": -150,
+    "dy": 5
+  },
+  "mere_bras_d_bas": {
+    "dx": -167,
+    "dy": -60
+  },
+  "mere_jambes": {
+    "dx": 0,
+    "dy": -26
+  },
+  "mere_torse": {
+    "dx": 0,
+    "dy": 0
+  },
+  "mere_tete": {
+    "dx": 0,
+    "dy": 0
+  }
 }

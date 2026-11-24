@@ -1,62 +1,62 @@
 {
   "pere_locataire": {
+    "pere_bras_g_haut": {
+      "x": 633,
+      "y": 281
+    },
+    "pere_bras_g_bas": {
+      "x": 491,
+      "y": 428
+    },
+    "pere_bras_d_haut": {
+      "x": 1038,
+      "y": 280
+    },
+    "pere_bras_d_bas": {
+      "x": 1180,
+      "y": 428
+    },
     "pere_torse": {
-      "x": 840,
+      "x": 834,
       "y": 500
     },
     "pere_tete": {
-      "x": 840,
-      "y": 228
-    },
-    "pere_bras_g_haut": {
-      "x": 728,
-      "y": 285
-    },
-    "pere_bras_g_bas": {
-      "x": 590,
-      "y": 378
-    },
-    "pere_bras_d_haut": {
-      "x": 948,
-      "y": 285
-    },
-    "pere_bras_d_bas": {
-      "x": 1092,
-      "y": 378
+      "x": 834,
+      "y": 241
     },
     "pere_jambes": {
-      "x": 840,
+      "x": 834,
       "y": 500
     }
   },
   "mere_locataire": {
-    "mere_torse": {
-      "x": 680,
-      "y": 580
-    },
-    "mere_tete": {
-      "x": 688,
-      "y": 315
-    },
     "mere_bras_g_haut": {
-      "x": 470,
-      "y": 370
+      "x": 624,
+      "y": 278
     },
     "mere_bras_g_bas": {
-      "x": 335,
-      "y": 550
+      "x": 570,
+      "y": 435
     },
     "mere_bras_d_haut": {
-      "x": 930,
-      "y": 370
+      "x": 1050,
+      "y": 278
     },
     "mere_bras_d_bas": {
-      "x": 1078,
-      "y": 550
+      "x": 1104,
+      "y": 435
+    },
+    "mere_torse": {
+      "x": 836,
+      "y": 445
+    },
+    "mere_tete": {
+      "x": 836,
+      "y": 237
     },
     "mere_jambes": {
-      "x": 1350,
-      "y": 290
+      "x": 836,
+      "y": 445
     }
   },
   "porte_avis": {

@@ -1,28 +1,100 @@
 {
-  "asset": "pere_locataire",
-  "ordre": ["pere_jambes", "pere_bras_g_haut", "pere_bras_g_bas", "pere_bras_d_haut", "pere_bras_d_bas", "pere_torse", "pere_tete"],
-  "pieces": {
-    "pere_tete": [1, 2, 3, 19, 20, 21, 22, 23, 24, 25],
-    "pere_torse": [4, 26, 27],
-    "pere_bras_g_haut": [6, 29, 31],
-    "pere_bras_g_bas": [33],
-    "pere_bras_d_haut": [5, 28, 30],
-    "pere_bras_d_bas": [32],
-    "pere_jambes": [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45]
-  },
-  "pivots": {
-    "pere_torse": [840, 500],
-    "pere_tete": [840, 228],
-    "pere_bras_g_haut": [685, 290],
-    "pere_bras_g_bas": [590, 378],
-    "pere_bras_d_haut": [995, 290],
-    "pere_bras_d_bas": [1092, 378],
-    "pere_jambes": [840, 500]
-  },
-  "notes": [
-    "gauche/droite = cotes de l'image (gauche = x faible).",
-    "cou (forme 25) et contour du cou (forme 2) rattaches a la tete ; col de peau dans le t-shirt (formes 4, 26) rattache au torse.",
-    "chaussures, semelles, lacets et chevilles rattaches aux jambes.",
-    "vide visible entre torse (fin y=479) et jambes (debut y=525) : recouvrement a ajouter si le torse pivote."
+ "asset": "pere_locataire",
+ "ordre": [
+  "pere_jambes",
+  "pere_bras_g_haut",
+  "pere_bras_g_bas",
+  "pere_bras_d_haut",
+  "pere_bras_d_bas",
+  "pere_torse",
+  "pere_tete"
+ ],
+ "pieces": {
+  "pere_jambes": [
+   1,
+   11,
+   12,
+   18,
+   19,
+   25,
+   28,
+   29,
+   31,
+   32,
+   33,
+   34,
+   36
+  ],
+  "pere_bras_g_haut": [
+   7,
+   9,
+   21,
+   23
+  ],
+  "pere_bras_g_bas": [
+   4
+  ],
+  "pere_bras_d_haut": [
+   8,
+   10,
+   20,
+   22,
+   37
+  ],
+  "pere_bras_d_bas": [
+   5
+  ],
+  "pere_tete": [
+   3,
+   6,
+   14,
+   17,
+   24,
+   26,
+   27,
+   30,
+   35
+  ],
+  "pere_torse": [
+   2,
+   13,
+   15,
+   16
   ]
+ },
+ "pivots": {
+  "pere_bras_g_haut": [
+   633,
+   281
+  ],
+  "pere_bras_g_bas": [
+   491,
+   428
+  ],
+  "pere_bras_d_haut": [
+   1038,
+   280
+  ],
+  "pere_bras_d_bas": [
+   1180,
+   428
+  ],
+  "pere_torse": [
+   834,
+   500
+  ],
+  "pere_tete": [
+   834,
+   241
+  ],
+  "pere_jambes": [
+   834,
+   500
+  ]
+ },
+ "notes": [
+  "attribution automatique par recouvrement avec les composantes connexes de l'image generee",
+  "ligne d'epaule y=253",
+  "bords du torse x=736..935"
+ ]
 }
