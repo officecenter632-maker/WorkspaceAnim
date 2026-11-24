@@ -43,7 +43,7 @@
     var bgb = groupe(bgh, p + 'bras_g_bas'); img(bgb, p + 'bras_g_bas');
     var bdh = groupe(haut, p + 'bras_d_haut'); img(bdh, p + 'bras_d_haut');
     var bdb = groupe(bdh, p + 'bras_d_bas'); img(bdb, p + 'bras_d_bas');
-    img(haut, p + 'torse');
+    var torseImg = img(haut, p + 'torse');
     var tete = groupe(haut, p + 'tete'); img(tete, p + 'tete');
     /* visage : yeux et bouche sont des pièces séparées, dans le groupe de la tête (elles suivent ses mouvements) */
     var visage = null;
@@ -51,17 +51,24 @@
       visage = {};
       ['oeil_g', 'oeil_d', 'bouche'].forEach(function (k) { if (idx.pieces[p + k]) { var g = groupe(tete, p + k); img(g, p + k); visage[k] = g; } });
     }
+    /* bras devant le torse (se prendre la tête, croiser les bras) : l'ordre des couches change seulement quand l'état change */
+    var enAvant = false;
+    function bras_devant(v) {
+      if (v === enAvant) return; enAvant = v;
+      if (v) { haut.appendChild(bgh); haut.appendChild(bdh); } else { haut.insertBefore(bgh, torseImg); haut.insertBefore(bdh, torseImg); }
+    }
     var cli = cfg.clignement || { periode: 4, phase: 0 };
     var ph = cfg.phase || 0, TAU = 2 * Math.PI, r = cfg.repos || { bras_g: 0, bras_d: 0 };
     return {
       racine: racine,
-      /* t : secondes. extra : gestes ajoutés par la scène { torse, tete, bgh, bgb, bdh, bdb } en degrés, et bouche (facteur vertical, 1 = neutre) */
+      /* t : secondes. extra : gestes ajoutés par la scène { torse, tete, bgh, bgb, bdh, bdb } en degrés, bouche (facteur vertical, 1 = neutre), tdy (décalage vertical de la tête en px de l'image : hochement) et devant (vrai : les bras passent devant le torse et la tête) */
       maj: function (t, extra) {
         var e = extra || {}, sin = Math.sin;
         /* respiration : étirement vertical d'environ 1 %, pieds fixes ; la tête suit avec retard */
         var resp = 1 + 0.01 * sin(TAU * t / 3.6 + ph);
         haut.style.transform = 'scale(1,' + resp + ') rotate(' + (e.torse || 0) + 'deg)';
-        tete.style.transform = 'rotate(' + ((e.tete || 0) + 1.2 * sin(TAU * t / 3.6 + ph - 0.7)) + 'deg)';
+        tete.style.transform = 'translate(0,' + (e.tdy || 0) + 'px) rotate(' + ((e.tete || 0) + 1.2 * sin(TAU * t / 3.6 + ph - 0.7)) + 'deg)';
+        bras_devant(!!e.devant);
         if (visage) majVisage(visage, t, cli, e.bouche);
         /* poids d'un pied à l'autre : tout le personnage pivote de ±1° autour des pieds */
         sway.style.transform = 'rotate(' + (1 * sin(TAU * t / 5.5 + ph * 1.7)) + 'deg)';

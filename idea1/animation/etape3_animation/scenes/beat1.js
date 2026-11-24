@@ -34,9 +34,13 @@
     maj: function (t) {
       /* caméra : oscillation continue + poussée lente 105 % -> 109 %, sur le groupe décor + personnages */
       A.camera(t, 1.05 + 0.04 * A.clamp(t / 10, 0, 1));
-      /* expressions : à « more than half » (2,65 s) l'inquiétude monte (0,2 s avant le mot) : tête qui s'incline de 3°, bouche qui se resserre ; retour au neutre à la sortie (5,3 s) */
-      var inq = A.facile.sortie3(A.prog(t, 2.45, 0.35)) * (1 - A.facile.sortie3(A.prog(t, 5.3, 0.3)));
-      pere.maj(t, { tete: 3 * inq, bouche: 1 - 0.35 * inq }); mere.maj(t, { tete: -3 * inq, bouche: 1 - 0.35 * inq }); garcon.maj(t, { bouche: 1 - 0.35 * inq }); fille.maj(t, { bouche: 1 - 0.35 * inq });
+      /* expressions : à « more than half » (2,65 s) l'inquiétude monte (0,2 s avant le mot) : tête qui s'incline de 3°, bouche qui se resserre */
+      var inq = A.facile.sortie3(A.prog(t, 2.45, 0.35)) * (1 - A.facile.sortie3(A.prog(t, 9.7, 0.3)));   /* l'inquiétude dure pendant les beats 1 et 2 */
+      /* gestes des beats suivants (beat2.js...) : A.gestesFamille(t) renvoie des extras par personnage, fusionnés avec l'expression d'ici */
+      var g = A.gestesFamille ? A.gestesFamille(t) : {};
+      function fus(base, x) { var r = {}, k; x = x || {}; for (k in x) r[k] = x[k]; r.tete = (base.tete || 0) + (x.tete || 0); r.bouche = (base.bouche == null ? 1 : base.bouche) * (x.bouche == null ? 1 : x.bouche); return r; }
+      pere.maj(t, fus({ tete: 3 * inq, bouche: 1 - 0.35 * inq }, g.pere)); mere.maj(t, fus({ tete: -3 * inq, bouche: 1 - 0.35 * inq }, g.mere));
+      garcon.maj(t, fus({ bouche: 1 - 0.35 * inq }, g.garcon)); fille.maj(t, fus({ bouche: 1 - 0.35 * inq }, g.fille));
       compteur.maj(t); icones.maj(t);
     }
   });

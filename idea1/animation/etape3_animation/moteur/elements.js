@@ -66,4 +66,62 @@
       }
     };
   };
+
+  /* carte_donut : carte blanche à droite, anneau bleu déjà tracé, part rouge qui se dessine dans le sens des aiguilles d'une montre depuis le haut,
+     texte au centre, titre lettre par lettre. Ne zoome pas avec le décor (calque code).
+     o = { x, y, w, h, entree {t0,d}, part {t0,d,vers (0..1)}, centre {t0,texte:[ligne1,ligne2]}, titre {t0,d,texte}, sortie {t0,d} (facultatif) } */
+  A.creerDonut = function (parent, o) {
+    var carte = A.el('div', 'position:absolute;left:' + o.x + 'px;top:' + o.y + 'px;width:' + o.w + 'px;height:' + o.h + 'px;box-sizing:border-box;background:#fff;border-radius:24px;opacity:0;' + POLICE, parent);
+    var titre = A.el('div', 'position:absolute;left:0;right:0;top:26px;text-align:center;font-size:34px;line-height:40px;color:#1b2433;letter-spacing:.5px;white-space:nowrap;', carte);
+    var lettres = o.titre.texte.split('').map(function (c) { var sp = A.el('span', 'opacity:0;', titre); sp.textContent = c === ' ' ? '\u00a0' : c; return sp; });
+    var D = Math.min(o.w - 90, o.h - 130);
+    var svg = A.el('div', 'position:absolute;left:' + (o.w - D) / 2 + 'px;top:' + (88 + (o.h - 88 - D) / 2 - 8) + 'px;width:' + D + 'px;height:' + D + 'px;', carte);
+    svg.innerHTML = '<svg viewBox="0 0 200 200" width="100%" height="100%"><circle cx="100" cy="100" r="68" fill="none" stroke="#0b4f8f" stroke-width="44"/>' +
+      '<circle id="part" cx="100" cy="100" r="68" fill="none" stroke="#d63a3a" stroke-width="44" pathLength="100" stroke-dasharray="0 100" transform="rotate(-90 100 100)"/></svg>';
+    var part = svg.querySelector('#part');
+    var centre = A.el('div', 'position:absolute;left:0;top:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:' + Math.round(D * 0.085) + 'px;line-height:1.1;color:#1b2433;text-align:center;opacity:0;', svg);
+    centre.innerHTML = o.centre.texte.join('<br>');
+    return {
+      maj: function (t) {
+        var ent = F.rebond(A.prog(t, o.entree.t0, o.entree.d)), sor = o.sortie ? F.entree3(A.prog(t, o.sortie.t0, o.sortie.d)) : 0;
+        var dx = (A.L - o.x + 40) * (1 - ent) + (o.sortie ? (A.L - o.x + 40) * sor : 0);
+        var flotte = t > o.entree.t0 + o.entree.d ? 0.005 * A.H * Math.sin(TAU * t / 3.8 + 1) : 0;
+        carte.style.opacity = t < o.entree.t0 ? 0 : 1 - sor;
+        carte.style.transform = 'translate(' + dx + 'px,' + flotte + 'px)';
+        carte.style.boxShadow = '0 ' + (10 + flotte) + 'px ' + (28 + flotte) + 'px rgba(0,0,0,.28)';
+        var p = 100 * o.part.vers * F.sortie3(A.prog(t, o.part.t0, o.part.d));
+        part.setAttribute('stroke-dasharray', p + ' ' + (100 - p));
+        var c = F.sortie3(A.prog(t, o.centre.t0, 0.4));
+        centre.style.opacity = c; centre.style.transform = 'scale(' + (0.9 + 0.1 * c) + ')';
+        var n = lettres.length, u = A.prog(t, o.titre.t0, o.titre.d) * n;
+        lettres.forEach(function (sp, i) { sp.style.opacity = u > i ? 1 : 0; });
+      }
+    };
+  };
+
+  /* etiquette_record : étiquette blanche à droite avec une flèche rouge montante qui se dessine de sa base vers sa pointe (puis une pulsation de 8 %) et un texte sombre en capitales.
+     o = { x, y, w, h, texte, entree {t0,d}, fleche {t0,d}, sortie {t0,d} (facultatif) } */
+  A.creerEtiquette = function (parent, o) {
+    var carte = A.el('div', 'position:absolute;left:' + o.x + 'px;top:' + o.y + 'px;width:' + o.w + 'px;height:' + o.h + 'px;box-sizing:border-box;padding:0 28px;display:flex;align-items:center;gap:18px;background:#fff;border-radius:20px;opacity:0;' + POLICE, parent);
+    var ic = A.el('div', 'flex:none;width:' + Math.round(o.h * 0.9) + 'px;height:' + Math.round(o.h * 0.72) + 'px;', carte);
+    ic.innerHTML = '<svg viewBox="0 0 100 80" width="100%" height="100%" overflow="visible"><path id="tige" d="M6 66 L34 40 L52 54 L82 22" fill="none" stroke="#d63a3a" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="0 100"/>' +
+      '<polygon id="tete" points="94,8 86,38 64,18" fill="#d63a3a" stroke="#d63a3a" stroke-width="4" stroke-linejoin="round" opacity="0" style="transform-origin:78px 22px"/></svg>';
+    var tige = ic.querySelector('#tige'), tete = ic.querySelector('#tete');
+    var tx = A.el('div', 'font-size:' + Math.round(o.h * 0.4) + 'px;color:#1b2433;letter-spacing:.5px;white-space:nowrap;', carte); tx.textContent = o.texte;
+    return {
+      maj: function (t) {
+        var ent = F.rebond(A.prog(t, o.entree.t0, o.entree.d)), sor = o.sortie ? F.entree3(A.prog(t, o.sortie.t0, o.sortie.d)) : 0;
+        var dx = (A.L - o.x + 40) * (1 - ent) + (o.sortie ? (A.L - o.x + 40) * sor : 0);
+        var flotte = t > o.entree.t0 + o.entree.d ? 0.005 * A.H * Math.sin(TAU * t / 3.4 + 2) : 0;
+        carte.style.opacity = t < o.entree.t0 ? 0 : 1 - sor;
+        carte.style.transform = 'translate(' + dx + 'px,' + flotte + 'px)';
+        carte.style.boxShadow = '0 ' + (10 + flotte) + 'px ' + (28 + flotte) + 'px rgba(0,0,0,.28)';
+        var p = F.sortie3(A.prog(t, o.fleche.t0, o.fleche.d));
+        tige.setAttribute('stroke-dasharray', (100 * p) + ' 100');
+        tete.setAttribute('opacity', p > 0.97 ? 1 : 0);
+        var u = A.prog(t, o.fleche.t0 + o.fleche.d, 0.3);
+        tete.style.transform = 'scale(' + (1 + 0.08 * Math.sin(Math.PI * u)) + ')';
+      }
+    };
+  };
 })();
