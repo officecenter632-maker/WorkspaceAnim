@@ -6,48 +6,12 @@
   "dossier_sortie": "idea1/animation/etape2_assets/svg",
   "images": [
     {
-      "nom": "decor_maison_rose",
-      "source": "idea1/animation/etape2_assets/generes/decor_maison_rose.png"
-    },
-    {
       "nom": "pere_locataire",
-      "source": "idea1/animation/etape2_assets/generes/pere_locataire.png"
+      "source": "idea1/animation/etape2_assets/generes/pere_locataire.webp"
     },
     {
       "nom": "mere_locataire",
-      "source": "idea1/animation/etape2_assets/generes/mere_locataire.png"
-    },
-    {
-      "nom": "enfants_locataires",
-      "source": "idea1/animation/etape2_assets/generes/enfants_locataires.png"
-    },
-    {
-      "nom": "decor_quartier",
-      "source": "idea1/animation/etape2_assets/generes/decor_quartier.png"
-    },
-    {
-      "nom": "decor_champ",
-      "source": "idea1/animation/etape2_assets/generes/decor_champ.png"
-    },
-    {
-      "nom": "decor_bureau",
-      "source": "idea1/animation/etape2_assets/generes/decor_bureau.png"
-    },
-    {
-      "nom": "maison_a_louer",
-      "source": "idea1/animation/etape2_assets/generes/maison_a_louer.png"
-    },
-    {
-      "nom": "travailleur_bureau",
-      "source": "idea1/animation/etape2_assets/generes/travailleur_bureau.png"
-    },
-    {
-      "nom": "porte_avis",
-      "source": "idea1/animation/etape2_assets/generes/porte_avis.png"
-    },
-    {
-      "nom": "papiers",
-      "source": "idea1/animation/etape2_assets/generes/papiers.png"
+      "source": "idea1/animation/etape2_assets/generes/mere_locataire.webp"
     }
   ]
 }
