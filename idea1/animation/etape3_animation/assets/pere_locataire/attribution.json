@@ -7,7 +7,10 @@
   "pere_bras_d_haut",
   "pere_bras_d_bas",
   "pere_torse",
-  "pere_tete"
+  "pere_tete",
+  "pere_bouche",
+  "pere_oeil_d",
+  "pere_oeil_g"
  ],
  "pieces": {
   "pere_jambes": [
@@ -49,9 +52,6 @@
    6,
    14,
    17,
-   24,
-   26,
-   27,
    30,
    35
   ],
@@ -60,6 +60,15 @@
    13,
    15,
    16
+  ],
+  "pere_oeil_g": [
+   26
+  ],
+  "pere_oeil_d": [
+   27
+  ],
+  "pere_bouche": [
+   24
   ]
  },
  "pivots": {
@@ -90,11 +99,24 @@
   "pere_jambes": [
    834,
    500
+  ],
+  "pere_oeil_g": [
+   830,
+   117
+  ],
+  "pere_oeil_d": [
+   878,
+   113
+  ],
+  "pere_bouche": [
+   864,
+   173
   ]
  },
  "notes": [
   "attribution automatique par recouvrement avec les composantes connexes de l'image generee",
   "ligne d'epaule y=253",
-  "bords du torse x=736..935"
+  "bords du torse x=736..935",
+  "traits du visage isoles : oeil_g=26;oeil_d=27;bouche=24"
  ]
 }

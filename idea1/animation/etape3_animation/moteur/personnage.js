@@ -7,9 +7,17 @@
   var PLEIN = 'position:absolute;left:0;top:0;width:' + A.L + 'px;height:' + A.H + 'px;';
   function origine(e, p) { e.style.transformOrigin = p.x + 'px ' + p.y + 'px'; }
 
+  /* Clignement : 0 (yeux ouverts) à 1 (fermés), fonction du temps seulement. Fermeture 0,05 s, réouverture 0,10 s ; une fois sur quatre, un deuxième clignement rapide suit. */
+  A.clignement = function (t, periode, phase) {
+    var u = t + phase, n = Math.floor(u / periode), v = u - n * periode;
+    function une(x) { return x < 0 ? 0 : x < 0.05 ? x / 0.05 : x < 0.15 ? 1 - (x - 0.05) / 0.10 : 0; }
+    return Math.max(une(v), n % 4 === 3 ? une(v - 0.30) : 0);
+  };
+
   /* cfg : asset, prefixe, ancre {x,y} (les pieds, dans l'image assemblée), place {x,y,h} (pieds à l'écran, hauteur de l'écran),
      hauteurSource (hauteur du personnage dans l'image), repos {bras_g, bras_d} (angle de repos des bras, degrés),
-     phase (décale la vie pour que deux personnages ne bougent pas ensemble) */
+     phase (décale la vie pour que deux personnages ne bougent pas ensemble),
+     clignement {periode, phase} (secondes ; propre à chaque personnage, jamais synchrone avec un autre) */
   A.creerPersonnage = function (parent, cfg) {
     var idx = D.index[cfg.asset], piv = D.pivots[cfg.asset], mon = D.montage[cfg.asset] || {};
     function m(id) { return mon[id] || { dx: 0, dy: 0 }; }
@@ -30,16 +38,28 @@
     var bdb = groupe(bdh, p + 'bras_d_bas'); img(bdb, p + 'bras_d_bas');
     img(haut, p + 'torse');
     var tete = groupe(haut, p + 'tete'); img(tete, p + 'tete');
+    /* visage : yeux et bouche sont des pièces séparées, dans le groupe de la tête (elles suivent ses mouvements) */
+    var visage = null;
+    if (idx.pieces[p + 'oeil_g']) {
+      visage = {};
+      ['oeil_g', 'oeil_d', 'bouche'].forEach(function (k) { var g = groupe(tete, p + k); img(g, p + k); visage[k] = g; });
+    }
+    var cli = cfg.clignement || { periode: 4, phase: 0 };
     var ph = cfg.phase || 0, TAU = 2 * Math.PI, r = cfg.repos || { bras_g: 0, bras_d: 0 };
     return {
       racine: racine,
-      /* t : secondes. extra : gestes ajoutés par la scène { torse, tete, bgh, bgb, bdh, bdb } en degrés */
+      /* t : secondes. extra : gestes ajoutés par la scène { torse, tete, bgh, bgb, bdh, bdb } en degrés, et bouche (facteur vertical, 1 = neutre) */
       maj: function (t, extra) {
         var e = extra || {}, sin = Math.sin;
         /* respiration : étirement vertical d'environ 1 %, pieds fixes ; la tête suit avec retard */
         var resp = 1 + 0.01 * sin(TAU * t / 3.6 + ph);
         haut.style.transform = 'scale(1,' + resp + ') rotate(' + (e.torse || 0) + 'deg)';
         tete.style.transform = 'rotate(' + ((e.tete || 0) + 1.2 * sin(TAU * t / 3.6 + ph - 0.7)) + 'deg)';
+        if (visage) {
+          var sy = 1 - 0.9 * A.clignement(t, cli.periode, cli.phase);          /* yeux écrasés vers leur centre */
+          visage.oeil_g.style.transform = 'scale(1,' + sy + ')'; visage.oeil_d.style.transform = 'scale(1,' + sy + ')';
+          visage.bouche.style.transform = 'scale(1,' + (e.bouche == null ? 1 : e.bouche) + ')';   /* ouverture de la bouche : 1 = neutre */
+        }
         /* poids d'un pied à l'autre : tout le personnage pivote de ±1° autour des pieds */
         sway.style.transform = 'rotate(' + (1 * sin(TAU * t / 5.5 + ph * 1.7)) + 'deg)';
         /* bras relâchés : balancement par inertie, ±2° à l'épaule, ±3° au coude */

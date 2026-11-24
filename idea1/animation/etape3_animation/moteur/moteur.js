@@ -15,13 +15,13 @@
       rebond: function (x) { var c1 = 1.4, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); }
     },
     /* Caméra : oscillation continue, fonction du temps global (jamais figée, aucun saut entre deux beats), plus un zoom éventuel (poussée).
-       Marge d'échelle >= 1,03 pour qu'aucun bord n'apparaisse. S'applique au groupe décor + personnages, pas aux éléments en code. */
+       Marge d'échelle >= 1,05 pour qu'aucun bord n'apparaisse. S'applique au groupe décor + personnages, pas aux éléments en code. */
     camera: function (t, zoom) {
       var T = 2 * Math.PI;
-      var dx = 4 * Math.sin(T * t / 4.1) + 1.5 * Math.sin(T * t / 2.3 + 1.0);
-      var dy = 3 * Math.sin(T * t / 5.3 + 0.7) + 1 * Math.sin(T * t / 3.1 + 2.0);
-      var rot = 0.2 * Math.sin(T * t / 6.7 + 0.4);
-      Anim.monde.style.transform = 'translate(' + dx + 'px,' + dy + 'px) rotate(' + rot + 'deg) scale(' + (zoom || 1.03) + ')';
+      var dx = 9 * Math.sin(T * t / 4.1) + 3 * Math.sin(T * t / 2.3 + 1.0);
+      var dy = 7 * Math.sin(T * t / 5.3 + 0.7) + 2.5 * Math.sin(T * t / 3.1 + 2.0);
+      var rot = 0.35 * Math.sin(T * t / 6.7 + 0.4);
+      Anim.monde.style.transform = 'translate(' + dx + 'px,' + dy + 'px) rotate(' + rot + 'deg) scale(' + (zoom || 1.05) + ')';
     },
     el: function (tag, css, parent) {
       var e = document.createElement(tag);
@@ -35,7 +35,7 @@
     },
     demarrer: function () {
       var scene = document.getElementById('scene');
-      var monde = Anim.el('div', 'position:absolute;left:0;top:0;width:' + L + 'px;height:' + H + 'px;transform-origin:836px 660px', scene);
+      var monde = Anim.el('div', 'position:absolute;left:0;top:0;width:' + L + 'px;height:' + H + 'px;transform-origin:836px 560px', scene);
       var code = Anim.el('div', 'position:absolute;left:0;top:0;width:' + L + 'px;height:' + H + 'px', scene);
       Anim.monde = monde; Anim.code = code;
       Anim.scenes.forEach(function (s) { s.monter(monde, code); });

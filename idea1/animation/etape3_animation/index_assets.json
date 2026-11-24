@@ -8,7 +8,10 @@
       "pere_bras_d_haut",
       "pere_bras_d_bas",
       "pere_torse",
-      "pere_tete"
+      "pere_tete",
+      "pere_bouche",
+      "pere_oeil_d",
+      "pere_oeil_g"
     ],
     "pieces": {
       "pere_jambes": "assets/pere_locataire/pere_jambes.svg",
@@ -17,7 +20,10 @@
       "pere_bras_d_haut": "assets/pere_locataire/pere_bras_d_haut.svg",
       "pere_bras_d_bas": "assets/pere_locataire/pere_bras_d_bas.svg",
       "pere_torse": "assets/pere_locataire/pere_torse.svg",
-      "pere_tete": "assets/pere_locataire/pere_tete.svg"
+      "pere_tete": "assets/pere_locataire/pere_tete.svg",
+      "pere_bouche": "assets/pere_locataire/pere_bouche.svg",
+      "pere_oeil_d": "assets/pere_locataire/pere_oeil_d.svg",
+      "pere_oeil_g": "assets/pere_locataire/pere_oeil_g.svg"
     }
   },
   "mere_locataire": {
@@ -29,7 +35,10 @@
       "mere_bras_d_haut",
       "mere_bras_d_bas",
       "mere_torse",
-      "mere_tete"
+      "mere_tete",
+      "mere_bouche",
+      "mere_oeil_d",
+      "mere_oeil_g"
     ],
     "pieces": {
       "mere_jambes": "assets/mere_locataire/mere_jambes.svg",
@@ -38,7 +47,10 @@
       "mere_bras_d_haut": "assets/mere_locataire/mere_bras_d_haut.svg",
       "mere_bras_d_bas": "assets/mere_locataire/mere_bras_d_bas.svg",
       "mere_torse": "assets/mere_locataire/mere_torse.svg",
-      "mere_tete": "assets/mere_locataire/mere_tete.svg"
+      "mere_tete": "assets/mere_locataire/mere_tete.svg",
+      "mere_bouche": "assets/mere_locataire/mere_bouche.svg",
+      "mere_oeil_d": "assets/mere_locataire/mere_oeil_d.svg",
+      "mere_oeil_g": "assets/mere_locataire/mere_oeil_g.svg"
     }
   },
   "porte_avis": {

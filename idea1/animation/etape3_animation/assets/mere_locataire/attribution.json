@@ -7,7 +7,10 @@
   "mere_bras_d_haut",
   "mere_bras_d_bas",
   "mere_torse",
-  "mere_tete"
+  "mere_tete",
+  "mere_bouche",
+  "mere_oeil_d",
+  "mere_oeil_g"
  ],
  "pieces": {
   "mere_jambes": [
@@ -39,26 +42,32 @@
    3,
    4,
    16,
-   19,
    23,
    24,
    25,
    26,
-   27,
    28,
    29,
    30,
    31,
-   32,
-   33,
-   35,
-   36
+   32
   ],
   "mere_torse": [
    2,
    20,
    22,
    34
+  ],
+  "mere_oeil_g": [
+   27
+  ],
+  "mere_oeil_d": [
+   35,
+   36
+  ],
+  "mere_bouche": [
+   19,
+   33
   ]
  },
  "pivots": {
@@ -89,11 +98,24 @@
   "mere_jambes": [
    836,
    445
+  ],
+  "mere_oeil_g": [
+   787,
+   149
+  ],
+  "mere_oeil_d": [
+   832,
+   144
+  ],
+  "mere_bouche": [
+   802,
+   193
   ]
  },
  "notes": [
   "attribution automatique par recouvrement avec les composantes connexes de l'image generee",
   "ligne d'epaule y=249",
-  "bords du torse x=769..906"
+  "bords du torse x=769..906",
+  "traits du visage isoles : oeil_g=27;oeil_d=35,36;bouche=19,33"
  ]
 }
