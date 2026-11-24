@@ -12,14 +12,14 @@
       decor.src = 'decors/decor_maison_rose.svg'; decor.draggable = false;
       /* couche 1 : père (x 26 %, pieds à y 99 %, 78 % de l'écran) et mère (x 54 %, pieds à y 97 %, 72 %) */
       pere = A.creerPersonnage(monde, { asset: 'pere_locataire', prefixe: 'pere_', ancre: { x: 836, y: 886 }, hauteurSource: 874,
-        place: { x: 0.26, y: 0.99, h: 0.78 }, repos: { bras_g: -38, bras_d: 38, coude_g: 6, coude_d: -6 }, phase: 0, clignement: { periode: 3.6, phase: 0.9 } });
+        place: { x: 0.26, y: 0.99, h: 0.78 }, repos: { bras_g: -38, bras_d: 38, coude_g: 6, coude_d: -6 }, phase: 0, clignement: { periode: 3.0, phase: 0.9 } });
       mere = A.creerPersonnage(monde, { asset: 'mere_locataire', prefixe: 'mere_', ancre: { x: 837, y: 897 }, hauteurSource: 880,
-        place: { x: 0.54, y: 0.97, h: 0.72 }, repos: { bras_g: -16, bras_d: 16, coude_g: -8, coude_d: 8 }, phase: 2.1, clignement: { periode: 4.4, phase: 2.3 } });
+        place: { x: 0.54, y: 0.97, h: 0.72 }, repos: { bras_g: -16, bras_d: 16, coude_g: -8, coude_d: 8 }, phase: 2.1, clignement: { periode: 3.2, phase: 2.3 } });
       /* couche 2 : les enfants, devant la mère (garçon x 60 %, fille x 66 %, pieds à y 100 %) */
       garcon = A.creerBloc(monde, { asset: 'enfants_locataires', piece: 'garcon', ancre: { x: 628, y: 868 }, hauteurSource: 800,
-        place: { x: 0.60, y: 1.0, h: 0.53 }, phase: 0.8 });
+        place: { x: 0.60, y: 1.0, h: 0.53 }, phase: 0.8, clignement: { periode: 2.8, phase: 0.2 } });
       fille = A.creerBloc(monde, { asset: 'enfants_locataires', piece: 'fille', ancre: { x: 1055, y: 868 }, hauteurSource: 798,
-        place: { x: 0.66, y: 1.0, h: 0.56 }, phase: 3.4 });
+        place: { x: 0.66, y: 1.0, h: 0.56 }, phase: 3.4, clignement: { periode: 3.4, phase: 0.1 } });
       /* couche 5 : éléments en code (haut gauche : x 3 à 33 %, y 4 % ; haut droite : x 55 à 97 %, y 4 %) */
       compteur = A.creerCompteur(code, { x: 0.03 * A.L, y: 0.04 * A.H, w: 540,
         entree: { t0: 0.05, d: 0.61 },      /* arrive au mot « 12.1 » (0,66 s) */
@@ -36,7 +36,7 @@
       A.camera(t, 1.05 + 0.04 * A.clamp(t / 10, 0, 1));
       /* expressions : à « more than half » (2,65 s) l'inquiétude monte (0,2 s avant le mot) : tête qui s'incline de 3°, bouche qui se resserre ; retour au neutre à la sortie (5,3 s) */
       var inq = A.facile.sortie3(A.prog(t, 2.45, 0.35)) * (1 - A.facile.sortie3(A.prog(t, 5.3, 0.3)));
-      pere.maj(t, { tete: 3 * inq, bouche: 1 - 0.35 * inq }); mere.maj(t, { tete: -3 * inq, bouche: 1 - 0.35 * inq }); garcon.maj(t); fille.maj(t);
+      pere.maj(t, { tete: 3 * inq, bouche: 1 - 0.35 * inq }); mere.maj(t, { tete: -3 * inq, bouche: 1 - 0.35 * inq }); garcon.maj(t, { bouche: 1 - 0.35 * inq }); fille.maj(t, { bouche: 1 - 0.35 * inq });
       compteur.maj(t); icones.maj(t);
     }
   });

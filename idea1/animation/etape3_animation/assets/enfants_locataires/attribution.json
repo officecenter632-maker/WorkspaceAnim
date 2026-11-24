@@ -1,109 +1,152 @@
 {
-  "asset": "enfants_locataires",
-  "ordre": [
-    "garcon",
-    "fille"
+ "asset": "enfants_locataires",
+ "ordre": [
+  "garcon",
+  "garcon_bouche",
+  "garcon_oeil_d",
+  "garcon_oeil_g",
+  "fille",
+  "fille_bouche",
+  "fille_oeil_d",
+  "fille_oeil_g"
+ ],
+ "pieces": {
+  "garcon": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   43,
+   47,
+   57,
+   59,
+   65,
+   66,
+   69,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79
   ],
-  "pieces": {
-    "garcon": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      43,
-      47,
-      50,
-      51,
-      55,
-      57,
-      59,
-      65,
-      66,
-      69,
-      72,
-      73,
-      74,
-      75,
-      76,
-      77,
-      78,
-      79
-    ],
-    "fille": [
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      39,
-      40,
-      41,
-      42,
-      44,
-      45,
-      46,
-      48,
-      49,
-      52,
-      53,
-      54,
-      56,
-      58,
-      60,
-      61,
-      62,
-      63,
-      64,
-      67,
-      68,
-      70,
-      71,
-      80,
-      81
-    ]
-  },
-  "pivots": {
-    "garcon": [
-      630,
-      870
-    ],
-    "fille": [
-      1056,
-      870
-    ]
-  },
-  "notes": [
-    "deux personnages entiers, sans pieces articulees (pieces.json : garcon, fille). Separes par position : garcon x<800, fille x>=800.",
-    "pivot = centre des pieds de chaque enfant.",
-    "si les enfants doivent bouger les bras ou la tete, il faudra un second detourage en pieces (non prevu par pieces.json)."
+  "fille": [
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   44,
+   45,
+   46,
+   52,
+   53,
+   56,
+   58,
+   60,
+   61,
+   62,
+   63,
+   64,
+   67,
+   68,
+   70,
+   71,
+   80,
+   81
+  ],
+  "garcon_oeil_g": [
+   51
+  ],
+  "garcon_oeil_d": [
+   50
+  ],
+  "garcon_bouche": [
+   55
+  ],
+  "fille_oeil_g": [
+   49
+  ],
+  "fille_oeil_d": [
+   48
+  ],
+  "fille_bouche": [
+   54
   ]
+ },
+ "pivots": {
+  "garcon": [
+   630,
+   870
+  ],
+  "fille": [
+   1056,
+   870
+  ],
+  "garcon_oeil_g": [
+   577,
+   205
+  ],
+  "garcon_oeil_d": [
+   647,
+   202
+  ],
+  "garcon_bouche": [
+   616,
+   253
+  ],
+  "fille_oeil_g": [
+   1002,
+   186
+  ],
+  "fille_oeil_d": [
+   1060,
+   187
+  ],
+  "fille_bouche": [
+   1037,
+   243
+  ]
+ },
+ "notes": [
+  "deux personnages entiers, sans pieces articulees (pieces.json : garcon, fille). Separes par position : garcon x<800, fille x>=800.",
+  "pivot = centre des pieds de chaque enfant.",
+  "si les enfants doivent bouger les bras ou la tete, il faudra un second detourage en pieces (non prevu par pieces.json).",
+  "traits du visage isoles : oeil_g=49;oeil_d=48;bouche=54"
+ ]
 }

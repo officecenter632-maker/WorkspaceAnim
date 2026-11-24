@@ -79,11 +79,23 @@
     "etat": "fait",
     "ordre": [
       "garcon",
-      "fille"
+      "garcon_bouche",
+      "garcon_oeil_d",
+      "garcon_oeil_g",
+      "fille",
+      "fille_bouche",
+      "fille_oeil_d",
+      "fille_oeil_g"
     ],
     "pieces": {
       "garcon": "assets/enfants_locataires/garcon.svg",
-      "fille": "assets/enfants_locataires/fille.svg"
+      "garcon_bouche": "assets/enfants_locataires/garcon_bouche.svg",
+      "garcon_oeil_d": "assets/enfants_locataires/garcon_oeil_d.svg",
+      "garcon_oeil_g": "assets/enfants_locataires/garcon_oeil_g.svg",
+      "fille": "assets/enfants_locataires/fille.svg",
+      "fille_bouche": "assets/enfants_locataires/fille_bouche.svg",
+      "fille_oeil_d": "assets/enfants_locataires/fille_oeil_d.svg",
+      "fille_oeil_g": "assets/enfants_locataires/fille_oeil_g.svg"
     }
   },
   "travailleur_bureau": {
@@ -98,7 +110,9 @@
       "bras_d_haut",
       "bras_d_bas",
       "torse",
-      "tete"
+      "tete",
+      "oeil_d",
+      "oeil_g"
     ],
     "pieces": {
       "bureau": "assets/travailleur_bureau/bureau.svg",
@@ -110,7 +124,9 @@
       "bras_d_haut": "assets/travailleur_bureau/bras_d_haut.svg",
       "bras_d_bas": "assets/travailleur_bureau/bras_d_bas.svg",
       "torse": "assets/travailleur_bureau/torse.svg",
-      "tete": "assets/travailleur_bureau/tete.svg"
+      "tete": "assets/travailleur_bureau/tete.svg",
+      "oeil_d": "assets/travailleur_bureau/oeil_d.svg",
+      "oeil_g": "assets/travailleur_bureau/oeil_g.svg"
     }
   },
   "maison_a_louer": {

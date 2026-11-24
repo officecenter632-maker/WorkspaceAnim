@@ -1,167 +1,182 @@
 {
-  "asset": "travailleur_bureau",
-  "ordre": [
-    "bureau",
-    "ordinateur",
-    "chaise",
-    "bassin_jambes",
-    "bras_g_haut",
-    "bras_g_bas",
-    "bras_d_haut",
-    "bras_d_bas",
-    "torse",
-    "tete"
+ "asset": "travailleur_bureau",
+ "ordre": [
+  "bureau",
+  "ordinateur",
+  "chaise",
+  "bassin_jambes",
+  "bras_g_haut",
+  "bras_g_bas",
+  "bras_d_haut",
+  "bras_d_bas",
+  "torse",
+  "tete",
+  "oeil_d",
+  "oeil_g"
+ ],
+ "pieces": {
+  "bureau": [
+   36,
+   37,
+   69,
+   70,
+   71
   ],
-  "pieces": {
-    "bureau": [
-      36,
-      37,
-      69,
-      70,
-      71
-    ],
-    "ordinateur": [
-      21,
-      22,
-      23,
-      24,
-      25,
-      55,
-      56,
-      61,
-      63,
-      64,
-      65
-    ],
-    "chaise": [
-      31,
-      32,
-      33,
-      34,
-      35,
-      67,
-      72,
-      73,
-      74,
-      75,
-      76
-    ],
-    "bassin_jambes": [
-      26,
-      27,
-      28,
-      29,
-      30,
-      66,
-      68,
-      77,
-      78,
-      79,
-      80
-    ],
-    "bras_g_haut": [
-      19,
-      48
-    ],
-    "bras_g_bas": [
-      20,
-      58,
-      60
-    ],
-    "bras_d_haut": [
-      17,
-      46
-    ],
-    "bras_d_bas": [
-      18,
-      57,
-      59
-    ],
-    "torse": [
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      40,
-      41,
-      43,
-      44,
-      47,
-      49,
-      50,
-      62
-    ],
-    "tete": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      38,
-      39,
-      42,
-      45,
-      51,
-      52,
-      53,
-      54
-    ]
-  },
-  "pivots": {
-    "tete": [
-      255,
-      285
-    ],
-    "torse": [
-      730,
-      385
-    ],
-    "bras_g_haut": [
-      520,
-      110
-    ],
-    "bras_g_bas": [
-      485,
-      315
-    ],
-    "bras_d_haut": [
-      975,
-      95
-    ],
-    "bras_d_bas": [
-      1030,
-      300
-    ],
-    "bassin_jambes": [
-      470,
-      500
-    ],
-    "chaise": [
-      730,
-      865
-    ],
-    "bureau": [
-      1290,
-      520
-    ],
-    "ordinateur": [
-      1420,
-      430
-    ]
-  },
-  "notes": [
-    "gauche/droite = cotes de l'image (gauche = x faible).",
-    "planche : tete, bras, torse, jambes assises, chaise, bureau et ordinateur sont deja separes. L'assemblage se fait a l'etape 3.2.",
-    "le manchon clair (poignet de chemise) est rattache a l'avant-bras (bas), le gros manche a l'avant-bras haut.",
-    "le cou visible dans le col (forme 40) est rattache au torse ; le cou du visage reste avec la tete.",
-    "pivots a l'oeil, a ajuster avec les premiers essais d'animation.",
-    "contours des manchettes (formes 17 et 19) rattaches a l'avant-bras haut : dans l'original ils sont sous la manche ; rattaches a l'avant-bras bas ils passaient au-dessus."
+  "ordinateur": [
+   21,
+   22,
+   23,
+   24,
+   25,
+   55,
+   56,
+   61,
+   63,
+   64,
+   65
+  ],
+  "chaise": [
+   31,
+   32,
+   33,
+   34,
+   35,
+   67,
+   72,
+   73,
+   74,
+   75,
+   76
+  ],
+  "bassin_jambes": [
+   26,
+   27,
+   28,
+   29,
+   30,
+   66,
+   68,
+   77,
+   78,
+   79,
+   80
+  ],
+  "bras_g_haut": [
+   19,
+   48
+  ],
+  "bras_g_bas": [
+   20,
+   58,
+   60
+  ],
+  "bras_d_haut": [
+   17,
+   46
+  ],
+  "bras_d_bas": [
+   18,
+   57,
+   59
+  ],
+  "torse": [
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   40,
+   41,
+   43,
+   44,
+   47,
+   49,
+   50,
+   62
+  ],
+  "tete": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   38,
+   39,
+   42,
+   45,
+   51,
+   52
+  ],
+  "oeil_g": [
+   53
+  ],
+  "oeil_d": [
+   54
   ]
+ },
+ "pivots": {
+  "tete": [
+   255,
+   285
+  ],
+  "torse": [
+   730,
+   385
+  ],
+  "bras_g_haut": [
+   520,
+   110
+  ],
+  "bras_g_bas": [
+   485,
+   315
+  ],
+  "bras_d_haut": [
+   975,
+   95
+  ],
+  "bras_d_bas": [
+   1030,
+   300
+  ],
+  "bassin_jambes": [
+   470,
+   500
+  ],
+  "chaise": [
+   730,
+   865
+  ],
+  "bureau": [
+   1290,
+   520
+  ],
+  "ordinateur": [
+   1420,
+   430
+  ],
+  "oeil_g": [
+   287,
+   159
+  ],
+  "oeil_d": [
+   333,
+   162
+  ]
+ },
+ "notes": [
+  "gauche/droite = cotes de l'image (gauche = x faible).",
+  "planche : tete, bras, torse, jambes assises, chaise, bureau et ordinateur sont deja separes. L'assemblage se fait a l'etape 3.2.",
+  "le manchon clair (poignet de chemise) est rattache a l'avant-bras (bas), le gros manche a l'avant-bras haut.",
+  "le cou visible dans le col (forme 40) est rattache au torse ; le cou du visage reste avec la tete.",
+  "pivots a l'oeil, a ajuster avec les premiers essais d'animation.",
+  "contours des manchettes (formes 17 et 19) rattaches a l'avant-bras haut : dans l'original ils sont sous la manche ; rattaches a l'avant-bras bas ils passaient au-dessus.",
+  "traits du visage isoles : oeil_g=53;oeil_d=54"
+ ]
 }

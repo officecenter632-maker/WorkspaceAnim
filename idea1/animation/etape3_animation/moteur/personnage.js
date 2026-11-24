@@ -7,12 +7,19 @@
   var PLEIN = 'position:absolute;left:0;top:0;width:' + A.L + 'px;height:' + A.H + 'px;';
   function origine(e, p) { e.style.transformOrigin = p.x + 'px ' + p.y + 'px'; }
 
-  /* Clignement : 0 (yeux ouverts) à 1 (fermés), fonction du temps seulement. Fermeture 0,05 s, réouverture 0,10 s ; une fois sur quatre, un deuxième clignement rapide suit. */
+  /* Clignement : 0 (yeux ouverts) à 1 (fermés), fonction du temps seulement. Régulier : exactement un clignement par période (pas de double
+     clignement, pas de variation), fermeture 0,06 s, yeux clos 0,04 s, réouverture 0,10 s (0,2 s au total). */
   A.clignement = function (t, periode, phase) {
-    var u = t + phase, n = Math.floor(u / periode), v = u - n * periode;
-    function une(x) { return x < 0 ? 0 : x < 0.05 ? x / 0.05 : x < 0.15 ? 1 - (x - 0.05) / 0.10 : 0; }
-    return Math.max(une(v), n % 4 === 3 ? une(v - 0.30) : 0);
+    var v = (t + phase) % periode;
+    return v < 0.06 ? v / 0.06 : v < 0.10 ? 1 : v < 0.20 ? 1 - (v - 0.10) / 0.10 : 0;
   };
+  /* Visage : applique clignement (yeux écrasés vers leur centre) et ouverture de bouche (1 = neutre) aux pièces présentes. */
+  function majVisage(visage, t, cli, bouche) {
+    var sy = 1 - 0.9 * A.clignement(t, cli.periode, cli.phase);
+    if (visage.oeil_g) visage.oeil_g.style.transform = 'scale(1,' + sy + ')';
+    if (visage.oeil_d) visage.oeil_d.style.transform = 'scale(1,' + sy + ')';
+    if (visage.bouche) visage.bouche.style.transform = 'scale(1,' + (bouche == null ? 1 : bouche) + ')';
+  }
 
   /* cfg : asset, prefixe, ancre {x,y} (les pieds, dans l'image assemblée), place {x,y,h} (pieds à l'écran, hauteur de l'écran),
      hauteurSource (hauteur du personnage dans l'image), repos {bras_g, bras_d} (angle de repos des bras, degrés),
@@ -42,7 +49,7 @@
     var visage = null;
     if (idx.pieces[p + 'oeil_g']) {
       visage = {};
-      ['oeil_g', 'oeil_d', 'bouche'].forEach(function (k) { var g = groupe(tete, p + k); img(g, p + k); visage[k] = g; });
+      ['oeil_g', 'oeil_d', 'bouche'].forEach(function (k) { if (idx.pieces[p + k]) { var g = groupe(tete, p + k); img(g, p + k); visage[k] = g; } });
     }
     var cli = cfg.clignement || { periode: 4, phase: 0 };
     var ph = cfg.phase || 0, TAU = 2 * Math.PI, r = cfg.repos || { bras_g: 0, bras_d: 0 };
@@ -55,11 +62,7 @@
         var resp = 1 + 0.01 * sin(TAU * t / 3.6 + ph);
         haut.style.transform = 'scale(1,' + resp + ') rotate(' + (e.torse || 0) + 'deg)';
         tete.style.transform = 'rotate(' + ((e.tete || 0) + 1.2 * sin(TAU * t / 3.6 + ph - 0.7)) + 'deg)';
-        if (visage) {
-          var sy = 1 - 0.9 * A.clignement(t, cli.periode, cli.phase);          /* yeux écrasés vers leur centre */
-          visage.oeil_g.style.transform = 'scale(1,' + sy + ')'; visage.oeil_d.style.transform = 'scale(1,' + sy + ')';
-          visage.bouche.style.transform = 'scale(1,' + (e.bouche == null ? 1 : e.bouche) + ')';   /* ouverture de la bouche : 1 = neutre */
-        }
+        if (visage) majVisage(visage, t, cli, e.bouche);
         /* poids d'un pied à l'autre : tout le personnage pivote de ±1° autour des pieds */
         sway.style.transform = 'rotate(' + (1 * sin(TAU * t / 5.5 + ph * 1.7)) + 'deg)';
         /* bras relâchés : balancement par inertie, ±2° à l'épaule, ±3° au coude */
@@ -77,9 +80,18 @@
     var racine = A.el('div', PLEIN + 'transform-origin:0 0;transform:translate(' + (cfg.place.x * A.L - s * cfg.ancre.x) + 'px,' + (cfg.place.y * A.H - s * cfg.ancre.y) + 'px) scale(' + s + ');', parent);
     var corps = A.el('div', PLEIN, racine); origine(corps, cfg.ancre);
     var i = A.el('img', PLEIN + 'pointer-events:none;', corps); i.src = D.index[cfg.asset].pieces[cfg.piece]; i.draggable = false; i.alt = '';
+    /* visage : yeux et bouche en pièces séparées (nom : <piece>_oeil_g, <piece>_oeil_d, <piece>_bouche), dans le bloc, donc ils suivent son mouvement */
+    var visage = {}, nb = 0, cli = cfg.clignement || { periode: 3.2, phase: 0 };
+    ['oeil_g', 'oeil_d', 'bouche'].forEach(function (k) {
+      var id = cfg.piece + '_' + k; if (!D.index[cfg.asset].pieces[id]) return;
+      var g = A.el('div', PLEIN, corps); origine(g, D.pivots[cfg.asset][id]);
+      var im = A.el('img', PLEIN + 'pointer-events:none;', g); im.src = D.index[cfg.asset].pieces[id]; im.draggable = false; im.alt = '';
+      visage[k] = g; nb++;
+    });
     return {
       maj: function (t, extra) {
         var e = extra || {};
+        if (nb) majVisage(visage, t, cli, e.bouche);
         corps.style.transform = 'rotate(' + ((e.rot || 0) + 1.5 * Math.sin(TAU * t / 4.8 + ph)) + 'deg) scale(1,' + (1 + 0.01 * Math.sin(TAU * t / 3.6 + ph + 0.5)) + ')';
       }
     };
