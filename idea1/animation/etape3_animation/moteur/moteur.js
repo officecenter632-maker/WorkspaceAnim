@@ -40,7 +40,9 @@
       Anim.monde = monde; Anim.code = code;
       Anim.scenes.forEach(function (s) { s.monter(monde, code); });
       Anim.cadrer(); window.addEventListener('resize', Anim.cadrer);
-      Anim.brancher(); Anim.aller(0);
+      /* départ de la lecture : Anim.depart (secondes) ou #t=12.5 dans l'adresse ; 0 par défaut */
+      var m = /[#&]t=([\d.]+)/.exec(location.hash); if (m) Anim.depart = parseFloat(m[1]);
+      Anim.brancher(); Anim.aller(Anim.depart || 0);
       var dernier = null;
       function boucle(ms) {
         if (Anim.lecture) {
@@ -65,7 +67,7 @@
       if (tx) tx.textContent = Anim.t.toFixed(2) + ' / ' + Anim.duree.toFixed(2) + ' s';
     },
     jouer: function () {
-      if (Anim.t >= Anim.duree) Anim.aller(0);
+      if (Anim.t >= Anim.duree) Anim.aller(Anim.depart || 0);
       Anim.lecture = true; if (Anim.bouton) Anim.bouton.textContent = 'Pause';
     },
     pause: function () { Anim.lecture = false; if (Anim.bouton) Anim.bouton.textContent = 'Lecture'; },

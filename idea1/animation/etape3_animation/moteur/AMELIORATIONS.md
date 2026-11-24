@@ -32,3 +32,11 @@ Ce fichier est relu a la fin par l'utilisateur et une autre IA pour decider quoi
 - **Compatible avec les autres idees** : oui (ajouts seulement). Couleurs et textes de depart a rendre parametrables au report.
 - **Commit** : voir le commit « Plan 2 »
 
+### 2026-11-24 - Depart de la lecture reglable
+- **Fichier / fonction** : `moteur.js`, `Anim.demarrer` et `Anim.jouer` ; `outils/embarquer.py`
+- **Pourquoi** : en regardant le beat N, l'utilisateur devait attendre ou glisser le curseur depuis 0 s.
+- **Ce qui change** : `Anim.depart` (secondes) ou `#t=12.5` dans l'adresse fixe l'instant de depart ; « Lecture » apres la fin revient a ce depart. Par defaut 0 : comportement inchange. `embarquer.py` regle le depart au debut du dernier beat (ou `--depart=SECONDES`).
+- **Utilisation** : `Anim.depart = 10.0; Anim.demarrer();` ou ouvrir `index.html#t=10`
+- **Compatible avec les autres idees** : oui
+- **Commit** : voir le commit « Depart de la lecture »
+
