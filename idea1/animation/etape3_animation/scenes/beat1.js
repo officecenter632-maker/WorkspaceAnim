@@ -32,8 +32,8 @@
         sortie: { t0: 5.3, d: 0.3 } });
     },
     maj: function (t) {
-      /* poussée de caméra lente et continue : 100 % -> 104 %, sur le groupe décor + personnages */
-      A.monde.style.transform = 'scale(' + (1 + 0.04 * A.clamp(t / 10, 0, 1)) + ')';
+      /* caméra : oscillation continue + poussée lente 103 % -> 107 %, sur le groupe décor + personnages */
+      A.camera(t, 1.03 + 0.04 * A.clamp(t / 10, 0, 1));
       pere.maj(t); mere.maj(t); garcon.maj(t); fille.maj(t);
       compteur.maj(t); icones.maj(t);
     }

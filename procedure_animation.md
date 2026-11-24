@@ -28,6 +28,7 @@ ideaN/scenario_candidats/
 9. **Les images pour l'utilisateur sont des cartes fixes, en WebP, légères.** Toute image montrée à l'utilisateur pour contrôle (assemblage, articulations, comparaison) est une **image fixe**, jamais une animation, en **WebP** (jamais PNG), à l'échelle 1 et sans surcharge : de l'ordre de 1000 px de large et moins de 30 Ko. Pas de capture à double densité.
 10. **On ne touche pas à l'animation avant validation de la disposition** (3.2). Tant que l'utilisateur n'a pas validé la carte de montage, `donnees.js`, les scènes et le moteur ne sont pas modifiés.
 11. **Les visages sont vivants.** Un personnage dont le visage reste figé tout le plan paraît mort, même si son corps respire. Tout personnage visible plus de 2 secondes a donc un visage animé : au minimum le **clignement des yeux** et une **bouche** qui suit le speech sur les mots clés ; l'**expression** (sourcils, bouche, regard) suit l'émotion de chaque beat (inquiétude, stupeur, soulagement, colère) ; la tête **hoche ou s'incline** légèrement sur les mots appuyés. Pour que ce soit possible, **le visage est découpé en pièces** (2.4, point 8) : c'est une pièce animée, donc la règle « on ne découpe que ce qui bouge » la couvre. Les expressions sont des **pièces générées** (variantes de bouche et de sourcils), jamais des traits redessinés en code.
+12. **La caméra oscille toujours.** Pendant tout le film, du premier au dernier instant, la caméra bouge légèrement, comme tenue à la main : c'est un effet voulu, présent dans tous les plans, y compris pendant les transitions. Elle ne s'arrête jamais, ne fait jamais de saut à la frontière entre deux beats, et reste assez douce pour ne jamais gêner la lecture. Les détails et les valeurs sont en 3.3 ter.
 
 ---
 
@@ -280,7 +281,7 @@ Pour chaque beat, `Liste_assets.md` note **où et quand** chaque asset et chaque
 
 Elle est écrite dans `pieces.json`, dans un bloc `animation` par asset généré, et dans `elements_code.json` pour **chaque élément fait en code** (compteurs, étiquettes, flèches, cercles, donuts, textes sur objets, formes) **et chaque transition**, avec la même structure. Chaque entrée de `elements_code.json` porte aussi un champ `reference_style` (fichier de `references_code/`, niveau, à reprendre, à ne pas reprendre) : la frame que l'étape 3 doit regarder avant de dessiner l'élément. Un élément en code sans bloc d'animation ni référence de style est une erreur, comme un asset sans bloc :
 - **`entree`** : comment il arrive (présent dès la première image, glisse, tombe, fondu, après quelle transition).
-- **`vie`** : le mouvement **continu** tant qu'il est à l'écran (respiration, balancement, pulsation, poussée de caméra lente, défilement derrière un autre élément). Jamais « immobile ».
+- **`vie`** : le mouvement **continu** tant qu'il est à l'écran (respiration, balancement, pulsation, oscillation et poussée de caméra, défilement derrière un autre élément). Jamais « immobile ».
 - **`mouvements`** : un par geste voulu par le speech, avec `id`, les `pieces` concernées (ids de `pieces.json`), le `declencheur` (beat et mot-clé du speech, avec l'instant de 2.5 bis) et la `description` exacte du geste : quelle pièce, autour de quelle articulation, vers où (gauche et droite = côtés de l'image), de combien (angle ou fraction de l'écran), ce qui bouge avec elle (la tête suit, l'objet attaché suit), ce qui se passe après (tenu, retour à la pose neutre, rebond).
 - **`sortie`** : comment il disparaît ou ce qui le recouvre.
 
@@ -412,6 +413,7 @@ Cette checklist est déroulée **en entier à chaque passe** de 2.10 (deux fois)
 - [ ] **Bras = 2 pièces** (bras + avant-bras avec la main), jamais 3 ; aucune pièce n'est découpée si aucun beat ne l'anime.
 - [ ] **Le torse est demandé sans manches** (emmanchure nue) et la manche est sur le haut du bras (2.4, point 6).
 - [ ] **Les prompts imposent des extrémités arrondies avec recouvrement à chaque articulation animée**, « jamais coupées à plat » (2.4, point 7).
+- [ ] **La caméra oscille dans tous les plans**, sans arrêt ni saut entre deux beats (principe 12, 3.3 ter), et aucun bord de l'image n'apparaît aux extrêmes.
 - [ ] **Chaque personnage a un visage en pièces** (tête sans traits, yeux, sourcils si besoin, bouche neutre et variantes) et `pieces.json` décrit pour lui clignement, bouche et expression de chaque beat (2.4, point 8).
 - [ ] Chaque génération a un « détourage » oui ou non. S'il est oui, le prompt donne une couleur de fond en hexadécimal, identique pour toutes les pièces d'un élément, qui n'apparaît pas dans l'asset. S'il est non, le prompt ne mentionne aucune couleur de fond.
 - [ ] Le JSON est valide, les `id` sont uniques et valides, chaque tâche a au moins une référence existante.
@@ -516,6 +518,7 @@ Idée 1 : (D1) la famille revient au beat 4 devant la porte avec les assets du b
 34. **Une main découpée à part** : un bras en trois pièces (bras, avant-bras, main) multiplie les jointures à caler pour rien. La main fait partie de l'avant-bras.
 35. **Une pièce découpée sans être animée** : chaque pièce en plus est une jointure en plus à caler. On ne découpe que ce qui bouge.
 36. **Des membres coupés à plat** (le bras est un bloc de manche, l'avant-bras commence par un bord droit avec une marche) : aucun pivot ne peut réparer ça, les pièces ne se recouvrent pas. Asset refusé et regénéré (principe 8, 2.4 point 7), jamais rustiné.
+40. **Une caméra figée**, ou qui s'arrête ou saute au changement de beat : l'image paraît morte. L'oscillation est continue sur tout le film (principe 12).
 38. **Un visage figé** : yeux et bouche peints dans la tête, aucun clignement, aucune expression. Le corps respire mais le personnage est mort. Visage en pièces et animé (principe 11, 2.4 point 8).
 39. **Des clignements synchrones** entre deux personnages, ou à intervalle parfaitement régulier : ça se voit tout de suite. Chaque personnage a sa phase et sa période (3.3).
 37. **Réparer au lieu de regénérer** (déplacer des formes, ajouter un recouvrement, reconstruire les bras en vectoriel, décaler le montage pour cacher un défaut de forme) : le défaut revient dans l'animation. Interdit.
@@ -780,6 +783,13 @@ ideaN/animation/etape3_animation/
 - **Expression** : à chaque beat émotionnel, le changement se fait **un peu avant** le mot (0,2 à 0,3 s) : sourcils qui montent ou se rapprochent, bouche qui change, tête qui s'incline de 2 à 4°. L'expression tient jusqu'au beat suivant, puis revient à la neutre en 0,3 s.
 - **Regard** : si les yeux sont des pièces séparées, un déplacement de 2 à 4 px vers ce qui est important (le compteur qui apparaît, l'autre personnage) suffit.
 - **Rien d'excessif** : le but est que le visage soit vivant, pas qu'il grimace. Un personnage secondaire (enfant au fond) a le clignement et une expression par beat au plus.
+
+**Caméra : oscillation continue (3.3 ter).** Elle s'applique au groupe décor + personnages, **pas** aux éléments en code (compteurs, icônes, étiquettes), qui restent stables pour rester lisibles.
+- **Une seule fonction pour tout le film** : `Anim.camera(t, zoom)` du moteur, calculée à partir du temps **global** `t`. Elle ne dépend pas du beat : il n'y a donc ni saut ni redémarrage à la frontière entre deux beats, ni pendant une transition. Aucun hasard (on peut glisser le curseur sans que ça change).
+- **Mouvement** : somme de 2 à 3 sinusoïdes de périodes différentes (entre 2 et 7 s), pour ne jamais voir de répétition : translation horizontale de l'ordre de ±5 px et verticale de ±4 px sur une scène de 1672 px, rotation de ±0,2°. Plus lente que le balancement des personnages, jamais de secousse.
+- **Marge d'échelle** : l'échelle de base est d'**au moins 103 %**, pour que les bords ne se découvrent jamais pendant l'oscillation (la marge la plus faible est en bas, environ 8 px). La poussée de caméra lente d'un beat s'ajoute à cette base (par exemple 103 % à 107 %). Si une scène change la marge, on revérifie les extrêmes.
+- **Contrôle** : mesurer, sur toute la durée, que le groupe décor + personnages couvre toujours la scène entière.
+- **Dans le plan** : `pieces.json` décrit seulement la poussée ou la dérive propre à chaque beat ; l'oscillation est commune et n'est pas répétée.
 
 ### 3.4 et suivantes : à définir
 

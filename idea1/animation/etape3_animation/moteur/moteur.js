@@ -14,6 +14,15 @@
       /* dépasse un peu puis se pose : le petit rebond */
       rebond: function (x) { var c1 = 1.4, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); }
     },
+    /* Caméra : oscillation continue, fonction du temps global (jamais figée, aucun saut entre deux beats), plus un zoom éventuel (poussée).
+       Marge d'échelle >= 1,03 pour qu'aucun bord n'apparaisse. S'applique au groupe décor + personnages, pas aux éléments en code. */
+    camera: function (t, zoom) {
+      var T = 2 * Math.PI;
+      var dx = 4 * Math.sin(T * t / 4.1) + 1.5 * Math.sin(T * t / 2.3 + 1.0);
+      var dy = 3 * Math.sin(T * t / 5.3 + 0.7) + 1 * Math.sin(T * t / 3.1 + 2.0);
+      var rot = 0.2 * Math.sin(T * t / 6.7 + 0.4);
+      Anim.monde.style.transform = 'translate(' + dx + 'px,' + dy + 'px) rotate(' + rot + 'deg) scale(' + (zoom || 1.03) + ')';
+    },
     el: function (tag, css, parent) {
       var e = document.createElement(tag);
       if (css) e.style.cssText = css;
