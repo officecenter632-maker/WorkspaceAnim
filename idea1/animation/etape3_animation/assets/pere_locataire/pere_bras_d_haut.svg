@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941" width="1672" height="941">
-<defs><style>path{vector-effect:non-scaling-stroke}</style></defs>
+<defs><style>path{vector-effect:non-scaling-stroke}</style><clipPath id="c_ep_d"><rect x="900" y="0" width="772" height="332"/></clipPath></defs>
 <g id="pere_bras_d_haut" stroke-width="2" stroke-linejoin="bevel">
+<!--stub--><g id="c_stub" transform="translate(36 0)"><g clip-path="url(#c_ep_d)"><path fill="#e7dcc5" stroke="none" d="M805.41 242.74C807.31 250.77 810.75 259.72 816.62 265.25Q829.25 277.16 847.6 273.63C862.55 270.75 872.36 256.97 874.6 242.58Q887.98 244.51 898.13 247.35C905.87 249.52 911.76 253.62 918.47 259.79Q935.09 275.06 954.39 291.28L928.62 326.76L914.13 314.84L914.13 478.82L766.29 478.82L766.29 314.51L752.05 327.08L725.34 291.46Q752.44 268.48 767.06 255.81Q774.09 249.72 783.5 247.31Q794.47 244.49 805.41 242.74Z"/></g></g><!--/stub-->
 <path fill="none" stroke="#ebbca0" d="M1067.57 316.6L1040.79 345.07"/>
 <path fill="#e7dcc5" stroke="none" d="M1067.57 316.6L1040.79 345.07Q1040.2 346.07 1038.84 345.96L987.02 298.63Q999.67 283.01 1015.87 267.43C1033.9 281.99 1051.86 299.2 1069.45 314.5Q1068.78 315.71 1067.57 316.6Z"/>
 <path fill="#ef9b7a" stroke="none" d="M1067.57 316.6Q1085.73 333.68 1102.2 351.64Q1085.06 364.43 1067.12 375.95Q1055.34 359.89 1040.79 345.07L1067.57 316.6Z"/>
