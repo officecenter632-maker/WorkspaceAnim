@@ -8,6 +8,7 @@ Généré par Lexiax le 2026-11-22 18:05:50. 6 idée(s) cherchée(s), 10 candida
 (racine du dépôt)
   recherche.json          paramètres de la recherche (modèle, date, vidéos indexées, avertissements)
   LISEZ-MOI.md            ce fichier
+  moteur_commun/          le moteur d'animation, écrit une seule fois ; les idées le COPIENT (outils/installer_moteur.py), voir son LISEZ-MOI.md
   idea1/ ... idea6/    un dossier par idée du JSON d'origine, dans l'ordre
     scenario_candidats/
       idea.json           l'idée d'origine : {"id": ..., "texte": "..."}

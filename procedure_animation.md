@@ -29,6 +29,7 @@ ideaN/scenario_candidats/
 10. **On ne touche pas à l'animation avant validation de la disposition** (3.2). Tant que l'utilisateur n'a pas validé la carte de montage, `donnees.js`, les scènes et le moteur ne sont pas modifiés.
 11. **Les visages sont vivants.** Un personnage dont le visage reste figé tout le plan paraît mort, même si son corps respire. **Tous** les personnages sans exception (parents, enfants, personnage secondaire ou au fond, personnage d'un seul bloc comme les enfants) : un seul visage figé à l'écran suffit à ruiner la vie de la scène. Tout personnage visible plus de 2 secondes a donc un visage animé : au minimum le **clignement des yeux** et une **bouche** qui suit le speech sur les mots clés ; l'**expression** (sourcils, bouche, regard) suit l'émotion de chaque beat (inquiétude, stupeur, soulagement, colère) ; la tête **hoche ou s'incline** légèrement sur les mots appuyés. Pour que ce soit possible, **le visage est découpé en pièces** (2.4, point 8) : c'est une pièce animée, donc la règle « on ne découpe que ce qui bouge » la couvre. Les expressions sont des **pièces générées** (variantes de bouche et de sourcils), jamais des traits redessinés en code.
 12. **La caméra oscille toujours.** Pendant tout le film, du premier au dernier instant, la caméra bouge légèrement, comme tenue à la main : c'est un effet voulu, présent dans tous les plans, y compris pendant les transitions. Elle ne s'arrête jamais, ne fait jamais de saut à la frontière entre deux beats, et reste assez douce pour ne jamais gêner la lecture. Les détails et les valeurs sont en 3.3 ter.
+13. **Le moteur d'animation n'est jamais réécrit : on copie `moteur_commun/`.** Une idée installe le moteur avec `python3 outils/installer_moteur.py ideaN`, qui le place dans `ideaN/animation/etape3_animation/moteur/`. Toute amélioration se fait **sur cette copie**, jamais dans `moteur_commun/`, et chaque modification est **notée dans `moteur/AMELIORATIONS.md`**, à côté de la copie (section « Moteur commun », étape 3).
 
 ---
 
@@ -522,6 +523,7 @@ Idée 1 : (D1) la famille revient au beat 4 devant la porte avec les assets du b
 38. **Un visage figé** : yeux et bouche peints dans la tête, aucun clignement, aucune expression. Le corps respire mais le personnage est mort. Visage en pièces et animé (principe 11, 2.4 point 8).
 39. **Des clignements synchrones** entre deux personnages : ça se voit tout de suite. Chaque personnage a sa phase et sa période (3.3 bis). À l'inverse, **des clignements irréguliers, rares ou doubles au hasard** paraissent désordonnés : le rythme d'un personnage est régulier (un clignement par période, toujours le même intervalle).
 41. **Un visage animé pour certains personnages seulement** (parents oui, enfants non) : tous les personnages à l'écran ont yeux et bouche en pièces et clignent, enfants et personnages secondaires compris (principe 11).
+42. **Réécrire le moteur au lieu de copier `moteur_commun/`, ou améliorer le moteur sans le noter dans `AMELIORATIONS.md`** : on refait 6 fois le même travail, et les améliorations se perdent. Installer avec `installer_moteur.py`, modifier la copie seulement, noter chaque modification (principe 13).
 37. **Réparer au lieu de regénérer** (déplacer des formes, ajouter un recouvrement, reconstruire les bras en vectoriel, décaler le montage pour cacher un défaut de forme) : le défaut revient dans l'animation. Interdit.
 
 ### 2.12 Quand toutes les idées ont fini l'étape 2 : le projet de génération des images
@@ -761,7 +763,7 @@ Beaucoup d'images sont des **planches** : les pièces d'un personnage sont déj�
 ```
 ideaN/animation/etape3_animation/
   index.html            la page : une scène de 1672 x 941 mise à l'échelle de la fenêtre, avec lecture / pause / curseur de temps
-  moteur/               le code commun (horloge, chargement des pièces, gestes, éléments en code), sans bibliothèque externe
+  moteur/               COPIE de moteur_commun/ (horloge, pièces, gestes, éléments en code), sans bibliothèque externe ; + BASE.json et AMELIORATIONS.md (voir « Moteur commun »)
   scenes/beat1.js ...   un fichier par beat : ce qui est placé, quand, et les gestes
 ```
 
@@ -770,6 +772,17 @@ ideaN/animation/etape3_animation/
 - **Les données viennent de l'étape 2** : placements par beat (`Liste_assets.md`, « Mise en place par beat »), gestes (`pieces.json`), éléments en code (`elements_code.json`). L'agent n'invente ni position ni geste qui y figure déjà. Les durées des gestes, que l'étape 2 ne fixe pas, sont calculées à partir des instants des mots.
 - **Un beat à la fois, poussé dès qu'il fonctionne** (« Animation : beat N »). On ouvre la page, on regarde, on passe au suivant.
 - **Éléments en code** (cartes, compteurs, flèches, étiquettes) : dessinés en HTML/CSS ou SVG dans le moteur, jamais en images.
+
+### Moteur commun : copier, améliorer sur la copie, noter
+
+Le moteur est écrit une seule fois dans `moteur_commun/` à la racine du dépôt (voir son `LISEZ-MOI.md`). Un agent qui anime une idée **ne le réécrit pas** :
+
+1. **Installer au début de l'étape 3** : `python3 outils/installer_moteur.py ideaN`. Les fichiers vont dans **`ideaN/animation/etape3_animation/moteur/`**, à cet endroit précis et nulle part ailleurs. L'outil écrit aussi `BASE.json` (version et empreintes du moteur copié) et crée `AMELIORATIONS.md`. Il refuse d'écraser une copie déjà modifiée (`--force` seulement si l'utilisateur le demande).
+2. **Ne jamais modifier `moteur_commun/`** depuis une idée : une idée ne touche que sa copie. Une fonction manquante ou un défaut se corrige **dans la copie**, pas dans une scène, pas par un contournement de scène.
+3. **Noter chaque modification dans `ideaN/animation/etape3_animation/moteur/AMELIORATIONS.md`, au moment où elle est faite** (une entrée : fichier et fonction, pourquoi, ce qui change, exemple d'appel, compatible avec les autres idées oui ou non, commit). Une modification non notée sera perdue : personne ne saura la reporter.
+4. **Rendre les modifications compatibles** : ajouter des options et des fonctions, ne pas changer le comportement existant, pour que le moteur commun puisse les reprendre sans casser une autre idée.
+5. **Contrôler** : `python3 outils/diff_moteur.py ideaN` donne le patch exact entre le moteur commun et la copie, et signale un moteur modifié sans entrée dans `AMELIORATIONS.md`.
+6. **À la fin**, l'utilisateur et une autre IA relisent les `AMELIORATIONS.md` et les patchs de toutes les idées, choisissent ce qui est retenu et le reportent dans `moteur_commun/` (en changeant `VERSION`). L'agent d'une idée ne fait pas ce report.
 
 **État du moteur (idée 1, beat 1 fait).** `moteur/moteur.js` (horloge, échelle de la scène, lecture / pause / curseur, flèches ← → pour avancer de 0,1 s), `moteur/personnage.js` (personnage articulé : jambes, haut du corps autour de la taille, bras haut > bras bas imbriqués, tête ; respiration, poids, balancement des bras ; `creerBloc` pour une image entière), `moteur/elements.js` (compteur, pictogrammes). Tout est fonction du temps `t` : on peut glisser le curseur n'importe où. La sortie des éléments en code se fait à l'instant du changement de beat : la scène du beat 1 dure donc 5,7 s (5,3 + 0,4). Les pictogrammes de `icones_menages` : 7 maisons dont 4 rouges (choix de l'agent, l'étape 2 ne précise pas le nombre).
 
